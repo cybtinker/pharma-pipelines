@@ -46,5 +46,29 @@
    "Zugo-cel scleroderma data at ACR Nov 8; CTX611 Phase 2 readout 2H 2026",
    "New CFO (A.J. Silver) and CTO appointed"
   ]
+ },
+ "LLY": {
+  "date": "2026-10-29",
+  "title": "Q3 2026 results",
+  "url": "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm",
+  "points": [
+   "Revenue $24.4B, up 39%; volume +53%, prices -15%",
+   "Mounjaro $10.7B (+65%) and Zepbound $5.4B (+49%); Foundayo pill $184M",
+   "2026 revenue guidance raised to $91-92B (from $85-87B)",
+   "Approvals: Mounjaro heart-risk label, weekly insulin Onswik, Inluriyo for breast cancer, Jaypirca 1st-line CLL",
+   "Retatrutide filing planned Q1 2027; EloraTZP Phase 3 starts Q4 2026"
+  ]
+ },
+ "NVO": {
+  "date": "2026-11-05",
+  "title": "Q3 2026 results",
+  "url": "https://chemxplore.com/news/novo-nordisk-q3-2026-financial-report",
+  "points": [
+   "Sales DKK 79.2B, up 4% at constant currency; adjusted operating profit up 27%",
+   "Wegovy pill about $813M in the quarter, over 4x Lilly's Foundayo",
+   "Ozempic (-5%) and Wegovy injection (-2%) slipping in DKK",
+   "$1.4B impairments, including $0.7B on ziltivekimab; 2026 outlook -2% to +2%",
+   "CagriSema FDA decision expected by year-end, US launch early 2027; Mim8 positive EU opinion"
+  ]
  }
 }

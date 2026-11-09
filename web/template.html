@@ -8,17 +8,17 @@
   --bg:#eef1ef; --paper:#fbfcfb; --ink:#14201d; --muted:#5d6c67; --line:#cfd8d4; --grid:#e1e8e4;
   --accent:#0d5c63; --accent-ink:#ffffff; --accent-soft:#d5ebea;
   --approved:#22783e; --filed:#b06a00; --readout:#3150b0; --fail:#b0342b; --start:#6b4fa0;
-  --c-mrna:#a07800; --c-pfe:#2856a8; --c-abbv:#0d6b5a; --c-crsp:#8a3f9a; --cliff:#c2410c;
+  --c-mrna:#a07800; --c-pfe:#2856a8; --c-abbv:#0d6b5a; --c-crsp:#8a3f9a; --c-lly:#c0285a; --c-nvo:#5a6e12; --cliff:#c2410c;
   --display:"Archivo Narrow","Arial Narrow",sans-serif; --body:"Public Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#0c1312; --paper:#131d1b; --ink:#e2ebe8; --muted:#90a39d; --line:#283633; --grid:#1b2725;
   --accent:#58c2c8; --accent-ink:#0c1312; --accent-soft:#163337;
-  --approved:#6fd08d; --filed:#f0b450; --readout:#93a9f5; --fail:#f2877d; --start:#c3a8f0; --c-mrna:#e3bd4f; --c-pfe:#86a8ef; --c-abbv:#63c9b3; --c-crsp:#d39ae0; --cliff:#fb923c; color-scheme:dark}}
+  --approved:#6fd08d; --filed:#f0b450; --readout:#93a9f5; --fail:#f2877d; --start:#c3a8f0; --c-mrna:#e3bd4f; --c-pfe:#86a8ef; --c-abbv:#63c9b3; --c-crsp:#d39ae0; --c-lly:#f07ba0; --c-nvo:#b5cc5a; --cliff:#fb923c; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0c1312; --paper:#131d1b; --ink:#e2ebe8; --muted:#90a39d; --line:#283633; --grid:#1b2725;
   --accent:#58c2c8; --accent-ink:#0c1312; --accent-soft:#163337;
-  --approved:#6fd08d; --filed:#f0b450; --readout:#93a9f5; --fail:#f2877d; --start:#c3a8f0; --c-mrna:#e3bd4f; --c-pfe:#86a8ef; --c-abbv:#63c9b3; --c-crsp:#d39ae0; --cliff:#fb923c; color-scheme:dark}
+  --approved:#6fd08d; --filed:#f0b450; --readout:#93a9f5; --fail:#f2877d; --start:#c3a8f0; --c-mrna:#e3bd4f; --c-pfe:#86a8ef; --c-abbv:#63c9b3; --c-crsp:#d39ae0; --c-lly:#f07ba0; --c-nvo:#b5cc5a; --cliff:#fb923c; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
@@ -129,10 +129,12 @@ footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
   <p class="lede">When each drug hits its next milestone, and where it stands against the drugs it competes with.</p>
 
   <div class="filters" role="search">
-    <input id="q" type="search" placeholder="Ticker, drug or illness: PFE, myeloma, obesity" aria-label="Search" autocomplete="off">
+    <input id="q" type="search" placeholder="Search: LLY, Mounjaro, myeloma, obesity" aria-label="Search" autocomplete="off">
     <select id="type" aria-label="Drug type"><option value="">All drug types</option></select>
-    <span class="lab">Companies</span>
-    <span id="companies" class="chips"></span>
+    <select id="co" aria-label="Company"><option value="">All companies</option></select>
+    <select id="ill" aria-label="Illness"><option value="">All illnesses</option></select>
+    <select id="drug" aria-label="Drug"><option value="">All drugs</option></select>
+    <button type="button" class="chip" id="reset">Clear</button>
   </div>
 
   <section>
@@ -151,9 +153,9 @@ footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
     <div class="sh"><h2>Approved drugs and patent cliffs</h2><span class="legend" id="cliffleg"></span></div>
     <div class="two">
       <div class="chartbox"><h3>Projected sales, before and after US patent expiry</h3><svg id="cliff" role="img" aria-label="Projected sales of approved drugs around patent expiry"></svg></div>
-      <div class="chartbox"><h3>2025 sales losing US protection, by year</h3><svg id="atrisk" role="img" aria-label="Sales losing protection by year"></svg></div>
+      <div class="chartbox"><h3>Annual sales losing US protection, by year</h3><svg id="atrisk" role="img" aria-label="Sales losing protection by year"></svg></div>
     </div>
-    <div class="mkt" style="margin-top:12px"><table><thead><tr><th>Drug</th><th>Treats</th><th>2025 sales</th><th>Market position</th><th>US expiry</th><th>Kept 2 yrs after expiry</th><th>Sales 2 yrs after</th></tr></thead><tbody id="approved"></tbody></table></div>
+    <div class="mkt" style="margin-top:12px"><table><thead><tr><th>Drug</th><th>Treats</th><th>Annual sales</th><th>Market position</th><th>US expiry</th><th>Kept 2 yrs after expiry</th><th>Sales 2 yrs after</th></tr></thead><tbody id="approved"></tbody></table></div>
     <p class="hint" id="erosionnote"></p>
   </section>
 
@@ -188,7 +190,7 @@ footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
 const DATA=/*DATA*/[];
 const COMP=/*COMP*/{markets:[]};
 const ASOF="/*ASOF*/";
-const NAMES={MRNA:"Moderna",PFE:"Pfizer",ABBV:"AbbVie",CRSP:"CRISPR Therapeutics"};
+const NAMES={LLY:"Eli Lilly",NVO:"Novo Nordisk",PFE:"Pfizer",ABBV:"AbbVie",MRNA:"Moderna",CRSP:"CRISPR Therapeutics"};
 const KIND={approval:["Approval","--approved"],filing:["Filing","--filed"],adcom:["Advisory vote","--filed"],readout:["Data readout","--readout"],start:["Trial start","--start"],deal:["Deal","--start"],fail:["Failure","--fail"]};
 const today=new Date(ASOF+"T00:00:00");
 function range(v){let m;
@@ -203,16 +205,28 @@ function fmt(v){let m;
   if(m=v.match(/^(\d{4})-(Q\d|H\d)$/))return m[2]+" "+m[1];return v}
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
-const state={q:"",type:"",cos:new Set(Object.keys(NAMES)),sel:null};
-try{const s=JSON.parse(localStorage.getItem("pw2")||"null");if(s&&s.cos&&s.cos.length)state.cos=new Set(s.cos)}catch(e){}
+const state={q:"",type:"",ill:"",drug:"",cos:new Set(Object.keys(NAMES)),sel:null};
 
 const classOf={};COMP.markets.forEach(m=>m.players.forEach(p=>{if(p.ticker)classOf[p.ticker+"|"+p.drug.split(/[ (]/)[0].toLowerCase()]=m.drug_class}));
 const drugClass=d=>classOf[d.ticker+"|"+d.drug.split(/[ (]/)[0].toLowerCase()]||d.drug_type;
 const sel=document.getElementById("type");
 [...new Set(COMP.markets.map(m=>m.drug_class))].forEach(c=>{const o=document.createElement("option");o.value=c;o.textContent=c;sel.append(o)});
-const coBox=document.getElementById("companies");
-Object.entries(NAMES).forEach(([t,n])=>{const b=document.createElement("button");b.type="button";b.className="chip";b.id="co-"+t;b.textContent=t;b.title=n;
-  b.onclick=()=>{state.cos.has(t)?state.cos.delete(t):state.cos.add(t);if(!state.cos.size)state.cos.add(t);render()};coBox.append(b)});
+// dropdowns
+const ILLS=["Obesity","Diabetes","Alzheimer","Myeloma","Lymphoma","Lung cancer","Breast cancer","Prostate","Bladder","Sickle cell","Hemophilia","Flu","COVID","RSV","Melanoma","Eczema","Psoriasis","Crohn","Arthritis","Vitiligo","Hidradenitis","Migraine","Parkinson","Triglycerides","Blood clots","Heart"];
+function fill(id,opts){const el=document.getElementById(id);opts.forEach(([v,l])=>{const o=document.createElement("option");o.value=v;o.textContent=l;el.append(o)});return el}
+fill("co",Object.entries(NAMES).map(([t,n])=>[t,t+" · "+n])).onchange=e=>{state.cos=new Set(e.target.value?[e.target.value]:Object.keys(NAMES));fillDrugs();render()};
+fill("ill",ILLS.map(i=>[i.toLowerCase(),i])).onchange=e=>{state.ill=e.target.value;render()};
+function fillDrugs(){const el=document.getElementById("drug"),cur=state.drug;el.length=1;
+  const ds=[...new Set([...DATA.filter(d=>state.cos.has(d.ticker)).map(d=>d.drug),...APPR.products.filter(p=>state.cos.has(p.ticker)).map(p=>p.drug)])].sort((a,b)=>a.localeCompare(b));
+  fill("drug",ds.map(d=>[d,d]));el.value=ds.includes(cur)?cur:"";state.drug=el.value}
+document.getElementById("drug").onchange=e=>{state.drug=e.target.value;render()};
+document.getElementById("reset").onclick=()=>{state.q="";state.type="";state.ill="";state.drug="";state.cos=new Set(Object.keys(NAMES));["q","type","co","ill","drug"].forEach(id=>document.getElementById(id).value="");fillDrugs();render()};
+// one text test shared by every section: search words, illness and drug dropdowns
+function textOk(parts){const h=parts.join(" ").toLowerCase();
+  if(state.q&&!state.q.split(/\s+/).every(w=>h.includes(w)))return false;
+  if(state.ill&&!h.includes(state.ill.replace("diabetes","diabet")))return false;
+  if(state.drug){const k=state.drug.toLowerCase().split(/[ (/]/)[0];if(!h.includes(k))return false}
+  return true}
 document.getElementById("q").oninput=e=>{state.q=e.target.value.trim().toLowerCase();render()};
 sel.onchange=e=>{state.type=e.target.value;render()};
 document.getElementById("asof").textContent="Data as of "+fmt(ASOF);
@@ -227,7 +241,7 @@ document.getElementById("legend").innerHTML=["approval","filing","readout","star
 
 function matches(d){if(!state.cos.has(d.ticker))return false;
   if(state.type&&drugClass(d)!==state.type)return false;
-  if(state.q){const h=[d.ticker,NAMES[d.ticker],d.drug,d.illness,d.drug_type,...d.competitors].join(" ").toLowerCase();if(!state.q.split(/\s+/).every(w=>h.includes(w)))return false}
+  if(!textOk([d.ticker,NAMES[d.ticker],d.drug,d.illness,d.drug_type,...d.competitors]))return false;
   return true}
 
 function timeline(rows){
@@ -278,7 +292,7 @@ function board(){const el=document.getElementById("board");
   const ms=COMP.markets.filter(m=>{
     if(state.type&&m.drug_class!==state.type)return false;
     if(!m.players.some(p=>p.ticker&&state.cos.has(p.ticker)))return false;
-    if(state.q){const h=[m.market,m.mechanism,m.drug_class,...m.players.flatMap(p=>[p.drug,p.company,p.ticker||""])].join(" ").toLowerCase();if(!state.q.split(/\s+/).every(w=>h.includes(w)))return false}
+    if(!textOk([m.market,m.mechanism,m.drug_class,...m.players.flatMap(p=>[p.drug,p.company,p.ticker||""])]))return false;
     return true});
   if(!ms.length){el.innerHTML=`<p class="empty">No markets match these filters.</p>`;return}
   const byC={};ms.forEach(m=>(byC[m.drug_class]=byC[m.drug_class]||[]).push(m));
@@ -293,7 +307,7 @@ const BRIEFS=/*BRIEFS*/{};
 const shares={};
 const money=v=>v>=1?"$"+(Math.round(v*10)/10)+"B":"$"+Math.round(v*1000)+"M";
 function market(){const el=document.getElementById("mkt");
-  const rows=MKT.rows.filter(r=>state.cos.has(r.ticker)&&(!state.q||[r.ticker,NAMES[r.ticker],r.drug,r.market].join(" ").toLowerCase().includes(state.q)));
+  const rows=MKT.rows.filter(r=>state.cos.has(r.ticker)&&textOk([r.ticker,NAMES[r.ticker],r.drug,r.market]));
   el.innerHTML=rows.length?rows.map((r,i)=>{const k=r.ticker+r.drug,sh=shares[k]??r.share;
     const size=r.low==null?"<span class=\"num\">n/a</span>":`<span class="num">${r.low===r.high?money(r.low):money(r.low)+"–"+money(r.high)}</span><small>${r.size_url?`<a href="${esc(r.size_url)}" target="_blank" rel="noopener">${esc(r.size_src)}</a>`:esc(r.size_src||"")}</small>`;
     const slider=sh==null?"—":`<input type="range" id="sh-${i}" min="0" max="40" step="1" value="${sh}" aria-label="Share for ${esc(r.drug)}" data-k="${esc(k)}"> <span class="num">${sh}%</span><small>${esc(r.share_why||"")}</small>`;
@@ -303,14 +317,14 @@ function market(){const el=document.getElementById("mkt");
   el.querySelectorAll("input[type=range]").forEach(inp=>inp.oninput=e=>{shares[e.target.dataset.k]=+e.target.value;market();const n=document.getElementById(e.target.id);if(n)n.focus()});}
 function briefs(){document.getElementById("briefs").innerHTML=Object.entries(BRIEFS).filter(([t])=>state.cos.has(t)).map(([t,b])=>`<article class="brief"><span class="lab">${t} · ${esc(NAMES[t])}</span><h3>${esc(b.title)}</h3>${b.date?`<span class="when">${esc(fmt(b.date))}</span>`:""}<ul>${b.points.map(p=>`<li>${esc(p)}</li>`).join("")}</ul><a href="${esc(b.url)}" target="_blank" rel="noopener">Source</a></article>`).join("")}
 const APPR=/*APPR*/{products:[],erosion:{}};
-const COL={MRNA:"var(--c-mrna)",PFE:"var(--c-pfe)",ABBV:"var(--c-abbv)",CRSP:"var(--c-crsp)"};
+const COL={MRNA:"var(--c-mrna)",PFE:"var(--c-pfe)",ABBV:"var(--c-abbv)",CRSP:"var(--c-crsp)",LLY:"var(--c-lly)",NVO:"var(--c-nvo)"};
 const Y0=2024,Y1=2037,NOWY=2026;
 function proj(p,y){const c=APPR.erosion[p.kind].curve,at=i=>c[Math.min(Math.max(i,0),c.length-1)];
   if(!p.us_loe)return p.sales_2025;
   const base=p.sales_2025/(2025>=p.us_loe?at(2025-p.us_loe+1):1);
   return y<p.us_loe?base:base*at(y-p.us_loe+1)}
 function approved(){
-  const rows=APPR.products.filter(p=>state.cos.has(p.ticker)&&(!state.q||[p.ticker,NAMES[p.ticker],p.drug,p.use].join(" ").toLowerCase().split(" ").length&&state.q.split(/\s+/).every(w=>[p.ticker,NAMES[p.ticker],p.drug,p.use].join(" ").toLowerCase().includes(w))))
+  const rows=APPR.products.filter(p=>state.cos.has(p.ticker)&&textOk([p.ticker,NAMES[p.ticker],p.drug,p.use]))
     .sort((a,b)=>(a.us_loe||9999)-(b.us_loe||9999));
   document.getElementById("cliffleg").innerHTML=Object.keys(NAMES).map(t=>`<span><i class="swatch" style="background:${COL[t]}"></i>${t}</span>`).join("")+`<span><i class="swatch" style="background:var(--cliff)"></i>After expiry</span>`;
   // ribbon chart
@@ -318,7 +332,7 @@ function approved(){
   let g="",y=TOP;
   for(let yr=Y0;yr<=Y1;yr++){const x=LW+(yr-Y0)*cw;g+=`<line x1="${x}" y1="${TOP-6}" x2="${x}" y2="${TOP+rows.length*RH}" stroke="var(--grid)"/><text class="ax" x="${x+cw/2}" y="${TOP-10}" text-anchor="middle">${String(yr).slice(2)==="24"||yr%2===0?yr:"’"+String(yr).slice(2)}</text>`}
   rows.forEach(p=>{const mx=Math.max(...Array.from({length:n},(_,i)=>proj(p,Y0+i)));
-    g+=`<text class="rl" x="10" y="${y+15}">${esc(p.drug.length>28?p.drug.slice(0,27)+"…":p.drug)}</text><text class="rs" x="10" y="${y+29}">${p.ticker} · ${money(p.sales_2025)} in 2025</text>`;
+    g+=`<text class="rl" x="10" y="${y+15}">${esc(p.drug.length>28?p.drug.slice(0,27)+"…":p.drug)}</text><text class="rs" x="10" y="${y+29}">${p.ticker} · ${money(p.sales_2025)}/yr</text>`;
     for(let i=0;i<n;i++){const yr=Y0+i,v=proj(p,yr),h=Math.max(1.5,(v/mx)*24),after=p.us_loe&&yr>=p.us_loe,fut=yr>NOWY;
       g+=`<rect x="${LW+i*cw+1.5}" y="${y+RH/2+12-h}" width="${cw-3}" height="${h}" fill="${after?"var(--cliff)":COL[p.ticker]}" opacity="${fut?.55:.95}"><title>${esc(p.drug)} ${yr}: ~$${v.toFixed(2)}B${fut?" (projected)":""}</title></rect>`}
     if(p.us_loe&&p.us_loe>=Y0&&p.us_loe<=Y1){const x=LW+(p.us_loe-Y0)*cw;g+=`<line x1="${x}" y1="${y+2}" x2="${x}" y2="${y+RH-4}" stroke="var(--cliff)" stroke-width="2"/><text class="lo" x="${x-4}" y="${y+9}" text-anchor="end">${p.us_loe}</text>`}
@@ -338,11 +352,11 @@ function approved(){
   s2.setAttribute("width",W2);s2.setAttribute("height",H2+44);s2.setAttribute("viewBox",`0 0 ${W2} ${H2+44}`);s2.innerHTML=h2;
   // table
   document.getElementById("approved").innerHTML=rows.map(p=>{const c=APPR.erosion[p.kind],kept=c.curve[2],done=p.us_loe&&p.us_loe<=2025;
-    return`<tr><td><b><a class="tl" href="${esc(p.sales_src)}" target="_blank" rel="noopener" style="color:inherit">${esc(p.drug)}</a></b><small>${p.ticker} · ${p.kind==="small"?"small molecule":p.kind}</small></td><td>${esc(p.use)}${p.note?`<small>${esc(p.note)}</small>`:""}</td>
-    <td class="num">${money(p.sales_2025)}</td><td>${p.share?`${esc(p.share)}${p.share_src?`<small><a href="${esc(p.share_src)}" target="_blank" rel="noopener">source</a></small>`:""}`:`<small>No share figure published</small>`}</td>
+    return`<tr><td><b><a class="tl" href="${esc(p.sales_src)}" target="_blank" rel="noopener" style="color:inherit">${esc(p.drug)}</a></b><small>${p.ticker} · ${p.kind==="small"?"small molecule":p.kind==="peptide"?"peptide injection/pill":p.kind}</small></td><td>${esc(p.use)}${p.note?`<small>${esc(p.note)}</small>`:""}</td>
+    <td class="num">${money(p.sales_2025)}<small>${esc(p.sales_basis||"2025")}</small></td><td>${p.share?`${esc(p.share)}${p.share_src?`<small><a href="${esc(p.share_src)}" target="_blank" rel="noopener">source</a></small>`:""}`:`<small>No share figure published</small>`}</td>
     <td class="loe${done?" done":""}">${p.us_loe||"—"}<small><a href="${esc(p.source)}" target="_blank" rel="noopener">${esc(p.loe_note)}</a></small></td>
     <td class="num">${p.us_loe?Math.round(kept*100)+"%":"—"}</td><td class="num">${p.us_loe?(done?`<small>already past expiry</small>`:`~${money(p.sales_2025*kept)} in ${p.us_loe+2}`):"—"}</td></tr>`}).join("");
-  document.getElementById("erosionnote").innerHTML="How the after-expiry numbers are estimated: biologics follow "+`<a href="${esc(APPR.erosion.biologic.src)}" target="_blank" rel="noopener" style="color:var(--accent)">Humira's actual decline</a>`+" (kept 68% of sales in year 1, 21% by year 3). Small molecules assume typical generic entry (about 20% kept in year 1, 10% in year 2). Vaccines assume a slower fade (60% kept by year 2). Sales after expiry are US-driven estimates applied to global sales, so they are a rough guide.";
+  document.getElementById("erosionnote").innerHTML="How the after-expiry numbers are estimated: biologics follow "+`<a href="${esc(APPR.erosion.biologic.src)}" target="_blank" rel="noopener" style="color:var(--accent)">Humira's actual decline</a>`+" (kept 68% of sales in year 1, 21% by year 3). Small molecules assume typical generic entry (about 20% kept in year 1, 10% in year 2). Vaccines assume a slower fade (60% kept by year 2). GLP-1 peptides (Ozempic, Mounjaro) assume generics are slower to arrive in volume (35% kept by year 2). Sales after expiry are US-driven estimates applied to global sales, so they are a rough guide.";
 }
 const SIGNUP_URL="/*SIGNUP_URL*/";
 (function(){const f=document.getElementById("signup"),m=document.getElementById("su-msg"),b=document.getElementById("su-btn");
@@ -352,10 +366,9 @@ const SIGNUP_URL="/*SIGNUP_URL*/";
     try{await fetch(SIGNUP_URL,{method:"POST",mode:"no-cors",body:new URLSearchParams(new FormData(f))});m.textContent="You're on the list. The next digest will arrive on a day something changes.";f.reset();}
     catch(err){m.textContent="Sign-up didn't go through. Check your connection and try again.";}
     b.disabled=false});})();
-function render(){try{localStorage.setItem("pw2",JSON.stringify({cos:[...state.cos]}))}catch(e){}
-  Object.keys(NAMES).forEach(t=>document.getElementById("co-"+t).setAttribute("aria-pressed",state.cos.has(t)));
+function render(){
   const rows=DATA.filter(matches);if(state.sel&&!rows.some(r=>r.drug===state.sel))state.sel=null;
   timeline(rows);drawer(rows);board();approved();market();briefs()}
 let rt;addEventListener("resize",()=>{clearTimeout(rt);rt=setTimeout(render,150)});
-render();
+fillDrugs();render();
 </script>

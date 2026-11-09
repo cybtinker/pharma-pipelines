@@ -104,6 +104,30 @@
     "src": "William Blair (2025 actual: $115.8M)",
     "url": "https://www.biospace.com/business/vertex-crispr-set-lofty-goal-for-casgevy-gene-therapy-as-patient-starts-ramp"
    }
+  },
+  {
+   "ticker": "LLY",
+   "drug": "Retatrutide",
+   "market": "Obesity drugs, 2030",
+   "low": 80,
+   "high": 150,
+   "size_src": "Jefferies $80B peak; Goldman $105B; HSBC >$120B; Pfizer CEO $150B",
+   "size_url": "https://www.aol.com/articles/analysis-obesity-market-sales-potential-110742804.html",
+   "share": 12,
+   "share_why": "Highest weight loss in Phase 3 (~23%); filing Q1 2027",
+   "ref": null
+  },
+  {
+   "ticker": "NVO",
+   "drug": "CagriSema",
+   "market": "Obesity drugs, 2030",
+   "low": 80,
+   "high": 150,
+   "size_src": "Jefferies $80B peak; Goldman $105B; HSBC >$120B; Pfizer CEO $150B",
+   "size_url": "https://www.aol.com/articles/analysis-obesity-market-sales-potential-110742804.html",
+   "share": 6,
+   "share_why": "FDA decision by end of 2026, US launch early 2027",
+   "ref": null
   }
  ]
 }

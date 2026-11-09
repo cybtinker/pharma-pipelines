@@ -774,5 +774,356 @@
     "label": "Phase 2 topline"
    }
   ]
+ },
+ {
+  "ticker": "LLY",
+  "drug": "Retatrutide",
+  "illness": "Obesity, type 2 diabetes",
+  "drug_type": "Triple agonist injection (GIP/GLP-1/glucagon)",
+  "stage": "Phase 3 positive, filing planned",
+  "next_event": "FDA submission",
+  "next_event_date": "2027-Q1",
+  "latest_result": "Up to 22.6% weight loss at 80 weeks (TRIUMPH-3); beat Ozempic 2 mg head to head in diabetes",
+  "competitors": [
+   "CagriSema (Novo Nordisk)",
+   "Wegovy (Novo Nordisk)",
+   "MariTide (Amgen)"
+  ],
+  "sources": [
+   "https://www.hcplive.com/view/retatrutide-meets-phase-3-weight-loss-endpoints-in-2-obesity-trials",
+   "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-07-23",
+    "kind": "readout",
+    "label": "TRIUMPH-2 and -3 positive"
+   },
+   {
+    "date": "2027-Q1",
+    "kind": "filing",
+    "label": "FDA submission"
+   }
+  ]
+ },
+ {
+  "ticker": "LLY",
+  "drug": "Foundayo (orforglipron)",
+  "illness": "Obesity, type 2 diabetes",
+  "drug_type": "Oral GLP-1 pill",
+  "stage": "Approved 2026 (obesity)",
+  "next_event": "More indications",
+  "next_event_date": null,
+  "latest_result": "Q3 2026 sales $184M in first full quarters; showed heart safety in largest diabetes study",
+  "competitors": [
+   "Wegovy pill (Novo Nordisk)",
+   "Zepbound (Lilly)"
+  ],
+  "sources": [
+   "https://www.pharmacytimes.com/view/oral-glp-1-orforglipron-approved-for-obesity",
+   "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm"
+  ],
+  "needs_verification": "Exact approval date not captured",
+  "milestones": [
+   {
+    "date": "2026",
+    "kind": "approval",
+    "label": "FDA approval, obesity"
+   }
+  ]
+ },
+ {
+  "ticker": "LLY",
+  "drug": "Mounjaro / Zepbound (tirzepatide)",
+  "illness": "Type 2 diabetes, obesity, heart risk",
+  "drug_type": "GIP/GLP-1 injection",
+  "stage": "Approved; heart-risk label added Q3 2026",
+  "next_event": null,
+  "next_event_date": null,
+  "latest_result": "Q3 2026 sales $16.1B combined (Mounjaro $10.7B +65%, Zepbound $5.4B +49%)",
+  "competitors": [
+   "Ozempic / Wegovy (Novo Nordisk)"
+  ],
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm",
+   "https://www.i-mak.org/glp-1/"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2022-05-13",
+    "kind": "approval",
+    "label": "Mounjaro approved"
+   },
+   {
+    "date": "2023-11-08",
+    "kind": "approval",
+    "label": "Zepbound approved"
+   },
+   {
+    "date": "2026-Q3",
+    "kind": "approval",
+    "label": "Heart-risk reduction in T2D"
+   },
+   {
+    "date": "2036",
+    "kind": "fail",
+    "label": "Core US patent expires"
+   }
+  ]
+ },
+ {
+  "ticker": "LLY",
+  "drug": "EloraTZP (eloralintide + tirzepatide)",
+  "illness": "Obesity with type 2 diabetes",
+  "drug_type": "Amylin + GIP/GLP-1 combination",
+  "stage": "Phase 3 starting",
+  "next_event": "Phase 3 start",
+  "next_event_date": "2026-Q4",
+  "latest_result": "Phase 2: more weight loss and A1C drop than tirzepatide 15 mg alone",
+  "competitors": [
+   "CagriSema (Novo Nordisk)"
+  ],
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-Q4",
+    "kind": "start",
+    "label": "Phase 3 start"
+   }
+  ]
+ },
+ {
+  "ticker": "LLY",
+  "drug": "Kisunla (donanemab)",
+  "illness": "Early Alzheimer's disease",
+  "drug_type": "Anti-amyloid antibody",
+  "stage": "Approved 2024",
+  "next_event": null,
+  "next_event_date": null,
+  "latest_result": "Q3 2026 sales $193M (+175%)",
+  "competitors": [
+   "Leqembi (Eisai/Biogen)"
+  ],
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2024-07-02",
+    "kind": "approval",
+    "label": "FDA approval"
+   }
+  ]
+ },
+ {
+  "ticker": "LLY",
+  "drug": "Olomorasib",
+  "illness": "Lung cancer (KRAS G12C), 1st line",
+  "drug_type": "KRAS G12C inhibitor pill",
+  "stage": "Late stage (Phase 3)",
+  "next_event": null,
+  "next_event_date": null,
+  "latest_result": "ESMO 2026: durable first-line activity",
+  "competitors": [
+   "Lumakras (Amgen)",
+   "Krazati (BMS)"
+  ],
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm"
+  ],
+  "needs_verification": "Phase 3 stage from general knowledge; release gives no stage",
+  "milestones": [
+   {
+    "date": "2026-10",
+    "kind": "readout",
+    "label": "ESMO 2026 data"
+   }
+  ]
+ },
+ {
+  "ticker": "NVO",
+  "drug": "CagriSema",
+  "illness": "Obesity, type 2 diabetes",
+  "drug_type": "Amylin + GLP-1 injection",
+  "stage": "Filed, FDA decision expected by year-end",
+  "next_event": "FDA decision",
+  "next_event_date": "2026-Q4",
+  "latest_result": "REDEFINE: about 21-23% weight loss at 68 weeks; US launch planned early 2027",
+  "competitors": [
+   "Zepbound (Lilly)",
+   "Retatrutide (Lilly)"
+  ],
+  "sources": [
+   "https://chemxplore.com/news/novo-nordisk-q3-2026-financial-report",
+   "https://pharmaphorum.com/news/oral-wegovy-bolsters-novo-q3",
+   "https://lifesciencedaily.news/cagrisema-fda-review-novo-nordisk-nda-timeline-explained/"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2025-12-18",
+    "kind": "filing",
+    "label": "NDA submitted"
+   },
+   {
+    "date": "2026-Q4",
+    "kind": "approval",
+    "label": "FDA decision expected"
+   },
+   {
+    "date": "2027-Q1",
+    "kind": "start",
+    "label": "US launch planned"
+   }
+  ]
+ },
+ {
+  "ticker": "NVO",
+  "drug": "Wegovy pill (oral semaglutide)",
+  "illness": "Obesity",
+  "drug_type": "Oral GLP-1 pill",
+  "stage": "Approved, launched in 8 markets",
+  "next_event": null,
+  "next_event_date": null,
+  "latest_result": "Q3 2026 sales about $813M, over 4x Lilly's Foundayo",
+  "competitors": [
+   "Foundayo (Lilly)"
+  ],
+  "sources": [
+   "https://pharmaphorum.com/news/oral-wegovy-bolsters-novo-q3",
+   "https://chemxplore.com/news/novo-nordisk-q3-2026-financial-report"
+  ],
+  "needs_verification": "FDA approval month from general knowledge",
+  "milestones": [
+   {
+    "date": "2025-12",
+    "kind": "approval",
+    "label": "FDA approval"
+   },
+   {
+    "date": "2026-Q3",
+    "kind": "start",
+    "label": "Launched in 8 markets"
+   }
+  ]
+ },
+ {
+  "ticker": "NVO",
+  "drug": "Ozempic / Wegovy (semaglutide)",
+  "illness": "Type 2 diabetes, obesity",
+  "drug_type": "GLP-1 injection",
+  "stage": "Approved; sales slipping",
+  "next_event": null,
+  "next_event_date": null,
+  "latest_result": "Q3 2026: Ozempic DKK 29.7B (-5%), Wegovy DKK 20.4B (-2%). Generics already in India, China and others in 2026",
+  "competitors": [
+   "Mounjaro / Zepbound (Lilly)"
+  ],
+  "sources": [
+   "https://pharmaphorum.com/news/oral-wegovy-bolsters-novo-q3",
+   "https://www.i-mak.org/glp-1/"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2017-12-05",
+    "kind": "approval",
+    "label": "Ozempic approved"
+   },
+   {
+    "date": "2021-06-04",
+    "kind": "approval",
+    "label": "Wegovy approved"
+   },
+   {
+    "date": "2032",
+    "kind": "fail",
+    "label": "US generics possible"
+   }
+  ]
+ },
+ {
+  "ticker": "NVO",
+  "drug": "Zenagamtide (amycretin, oral)",
+  "illness": "Obesity, type 2 diabetes",
+  "drug_type": "Oral amylin + GLP-1",
+  "stage": "Phase 3",
+  "next_event": "Phase 3 AMAZE program",
+  "next_event_date": null,
+  "latest_result": "Phase 3 AMAZE 9 started Sept 2026",
+  "competitors": [
+   "Foundayo (Lilly)",
+   "Retatrutide (Lilly)"
+  ],
+  "sources": [
+   "https://chemxplore.com/news/novo-nordisk-q3-2026-financial-report",
+   "https://pharmaphorum.com/news/oral-wegovy-bolsters-novo-q3"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-09",
+    "kind": "start",
+    "label": "Phase 3 AMAZE 9 starts"
+   }
+  ]
+ },
+ {
+  "ticker": "NVO",
+  "drug": "Denecimig (Mim8)",
+  "illness": "Hemophilia A",
+  "drug_type": "Bispecific antibody (weekly or monthly)",
+  "stage": "EU positive opinion; US review",
+  "next_event": "US decision and launch",
+  "next_event_date": "2027-H1",
+  "latest_result": "CHMP positive opinion Sept 17, 2026",
+  "competitors": [
+   "Hemlibra (Roche)"
+  ],
+  "sources": [
+   "https://chemxplore.com/news/novo-nordisk-q3-2026-financial-report",
+   "https://pharmaphorum.com/news/oral-wegovy-bolsters-novo-q3"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-09-17",
+    "kind": "approval",
+    "label": "EU CHMP positive opinion"
+   },
+   {
+    "date": "2027-H1",
+    "kind": "approval",
+    "label": "Potential US launch"
+   }
+  ]
+ },
+ {
+  "ticker": "NVO",
+  "drug": "Ziltivekimab",
+  "illness": "Heart disease inflammation",
+  "drug_type": "IL-6 antibody",
+  "stage": "Phase 3 (written down)",
+  "next_event": null,
+  "next_event_date": null,
+  "latest_result": "Novo took a $0.7B impairment on it in Q3 2026",
+  "competitors": [],
+  "sources": [
+   "https://chemxplore.com/news/novo-nordisk-q3-2026-financial-report"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-11-05",
+    "kind": "fail",
+    "label": "$0.7B impairment"
+   }
+  ]
  }
 ]

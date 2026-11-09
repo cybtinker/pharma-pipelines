@@ -14,7 +14,7 @@ Usage: python3 collector/digest.py [--lake PATH] [--dry-run]
 """
 import argparse, datetime as dt, json, os, pathlib, re, urllib.parse, urllib.request
 
-NAMES = {"MRNA": "Moderna", "PFE": "Pfizer", "ABBV": "AbbVie", "CRSP": "CRISPR Therapeutics"}
+NAMES = {"LLY": "Eli Lilly", "NVO": "Novo Nordisk", "PFE": "Pfizer", "ABBV": "AbbVie", "MRNA": "Moderna", "CRSP": "CRISPR Therapeutics"}
 PAGE_URL = os.environ.get("PAGE_URL", "https://cybtinker.github.io/pharma-pipelines/")
 
 

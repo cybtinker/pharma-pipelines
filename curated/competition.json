@@ -122,21 +122,21 @@
     {
      "drug": "Zepbound",
      "company": "Lilly",
-     "ticker": null,
+     "ticker": "LLY",
      "stage": "approved",
      "note": null
     },
     {
      "drug": "Wegovy",
      "company": "Novo Nordisk",
-     "ticker": null,
+     "ticker": "NVO",
      "stage": "approved",
      "note": null
     },
     {
      "drug": "Foundayo (orforglipron, pill)",
      "company": "Lilly",
-     "ticker": null,
+     "ticker": "LLY",
      "stage": "approved",
      "note": "first GLP-1 pill without food rules",
      "source": "https://www.pharmacytimes.com/view/oral-glp-1-orforglipron-approved-for-obesity",
@@ -145,7 +145,7 @@
     {
      "drug": "CagriSema",
      "company": "Novo Nordisk",
-     "ticker": null,
+     "ticker": "NVO",
      "stage": "filed",
      "note": "FDA decision expected Q4 2026",
      "source": "https://lifesciencedaily.news/cagrisema-fda-review-novo-nordisk-nda-timeline-explained/",
@@ -166,6 +166,30 @@
      "ticker": "PFE",
      "stage": "p3",
      "note": "approval target 2028"
+    },
+    {
+     "drug": "Retatrutide",
+     "company": "Lilly",
+     "ticker": "LLY",
+     "stage": "p3",
+     "note": "positive Phase 3, filing Q1 2027",
+     "source": "https://www.hcplive.com/view/retatrutide-meets-phase-3-weight-loss-endpoints-in-2-obesity-trials"
+    },
+    {
+     "drug": "Wegovy pill",
+     "company": "Novo Nordisk",
+     "ticker": "NVO",
+     "stage": "approved",
+     "note": "$813M in Q3 2026",
+     "source": "https://pharmaphorum.com/news/oral-wegovy-bolsters-novo-q3"
+    },
+    {
+     "drug": "Zenagamtide (oral amycretin)",
+     "company": "Novo Nordisk",
+     "ticker": "NVO",
+     "stage": "p3",
+     "note": "Phase 3 started Sept 2026",
+     "source": "https://chemxplore.com/news/novo-nordisk-q3-2026-financial-report"
     }
    ]
   },
@@ -223,7 +247,7 @@
     {
      "drug": "Ebglyss",
      "company": "Lilly",
-     "ticker": null,
+     "ticker": "LLY",
      "stage": "approved",
      "note": null
     },
@@ -313,7 +337,7 @@
     {
      "drug": "Omvoh",
      "company": "Lilly",
-     "ticker": null,
+     "ticker": "LLY",
      "stage": "approved",
      "note": null
     },
@@ -485,7 +509,7 @@
     {
      "drug": "Verzenio",
      "company": "Lilly",
-     "ticker": null,
+     "ticker": "LLY",
      "stage": "approved",
      "note": null
     },
@@ -537,6 +561,50 @@
      "ticker": "CRSP",
      "stage": "p2",
      "note": null
+    }
+   ]
+  },
+  {
+   "id": "alz",
+   "drug_class": "Neurology antibodies",
+   "market": "Early Alzheimer's disease",
+   "mechanism": "Anti-amyloid",
+   "players": [
+    {
+     "drug": "Kisunla",
+     "company": "Lilly",
+     "ticker": "LLY",
+     "stage": "approved",
+     "note": "$193M in Q3 2026",
+     "source": "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm"
+    },
+    {
+     "drug": "Leqembi",
+     "company": "Eisai / Biogen",
+     "ticker": null,
+     "stage": "approved"
+    }
+   ]
+  },
+  {
+   "id": "hemA",
+   "drug_class": "Bispecific antibodies",
+   "market": "Hemophilia A",
+   "mechanism": "FVIII-mimetic bispecific",
+   "players": [
+    {
+     "drug": "Hemlibra",
+     "company": "Roche",
+     "ticker": null,
+     "stage": "approved"
+    },
+    {
+     "drug": "Denecimig (Mim8)",
+     "company": "Novo Nordisk",
+     "ticker": "NVO",
+     "stage": "filed",
+     "note": "EU positive opinion; US 1H 2027",
+     "source": "https://chemxplore.com/news/novo-nordisk-q3-2026-financial-report"
     }
    ]
   }

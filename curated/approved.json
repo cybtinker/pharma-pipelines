@@ -1,5 +1,5 @@
 {
- "note": "Sales are full-year 2025. Expiry is the US loss-of-exclusivity year. Post-expiry curves: biologics follow Humira's actual decline; small molecules and vaccines use stated assumptions.",
+ "note": "Sales are full-year 2025 for MRNA, PFE, ABBV, CRSP; LLY and NVO use the latest 2026 run-rate (see each row). Expiry is the US loss-of-exclusivity year.",
  "products": [
   {
    "ticker": "PFE",
@@ -266,6 +266,126 @@
    "note": "2025 sales $115.8M; ramping, Q3 2026 $99M",
    "source": "https://www.biospace.com/business/vertex-crispr-set-lofty-goal-for-casgevy-gene-therapy-as-patient-starts-ramp",
    "sales_src": "https://www.biospace.com/business/vertex-crispr-set-lofty-goal-for-casgevy-gene-therapy-as-patient-starts-ramp"
+  },
+  {
+   "ticker": "LLY",
+   "drug": "Mounjaro",
+   "use": "Type 2 diabetes",
+   "kind": "peptide",
+   "sales_2025": 39.1,
+   "sales_basis": "9M 2026 annualized",
+   "us_loe": 2036,
+   "loe_note": "Core US compound patent Jan 2036; follow-ons to 2041",
+   "share": null,
+   "share_src": null,
+   "note": "Q3 2026 $10.7B, +65%",
+   "source": "https://www.i-mak.org/glp-1/",
+   "sales_src": "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm"
+  },
+  {
+   "ticker": "LLY",
+   "drug": "Zepbound",
+   "use": "Obesity",
+   "kind": "peptide",
+   "sales_2025": 19.3,
+   "sales_basis": "9M 2026 annualized",
+   "us_loe": 2036,
+   "loe_note": "Same tirzepatide patent, Jan 2036",
+   "share": null,
+   "share_src": null,
+   "note": "Q3 2026 $5.4B, +49%",
+   "source": "https://www.i-mak.org/glp-1/",
+   "sales_src": "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm"
+  },
+  {
+   "ticker": "LLY",
+   "drug": "Kisunla",
+   "use": "Early Alzheimer's",
+   "kind": "biologic",
+   "sales_2025": 0.65,
+   "sales_basis": "9M 2026 annualized",
+   "us_loe": 2036,
+   "loe_note": "12-year US biologic exclusivity from 2024 (our calculation)",
+   "share": null,
+   "share_src": null,
+   "note": null,
+   "source": "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm",
+   "sales_src": "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm"
+  },
+  {
+   "ticker": "LLY",
+   "drug": "Ebglyss",
+   "use": "Eczema",
+   "kind": "biologic",
+   "sales_2025": 0.73,
+   "sales_basis": "9M 2026 annualized",
+   "us_loe": 2036,
+   "loe_note": "12-year US biologic exclusivity from 2024 (our calculation)",
+   "share": null,
+   "share_src": null,
+   "note": null,
+   "source": "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm",
+   "sales_src": "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm"
+  },
+  {
+   "ticker": "LLY",
+   "drug": "Jaypirca",
+   "use": "Blood cancers",
+   "kind": "small",
+   "sales_2025": 0.78,
+   "sales_basis": "9M 2026 annualized",
+   "us_loe": null,
+   "loe_note": "Not published",
+   "share": null,
+   "share_src": null,
+   "note": null,
+   "source": "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm",
+   "sales_src": "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm"
+  },
+  {
+   "ticker": "NVO",
+   "drug": "Ozempic",
+   "use": "Type 2 diabetes",
+   "kind": "peptide",
+   "sales_2025": 17.9,
+   "sales_basis": "Q3 2026 x4 (DKK 29.7B at ~6.6 DKK/$)",
+   "us_loe": 2032,
+   "loe_note": "US generics not before 2032; already generic in India and others",
+   "share": null,
+   "share_src": null,
+   "note": "Q3 2026 -5%",
+   "source": "https://www.i-mak.org/glp-1/",
+   "sales_src": "https://pharmaphorum.com/news/oral-wegovy-bolsters-novo-q3"
+  },
+  {
+   "ticker": "NVO",
+   "drug": "Wegovy (injection)",
+   "use": "Obesity",
+   "kind": "peptide",
+   "sales_2025": 12.3,
+   "sales_basis": "Q3 2026 x4 (DKK 20.4B)",
+   "us_loe": 2032,
+   "loe_note": "Same semaglutide patents, 2032",
+   "share": null,
+   "share_src": null,
+   "note": "Q3 2026 -2%",
+   "source": "https://www.i-mak.org/glp-1/",
+   "sales_src": "https://pharmaphorum.com/news/oral-wegovy-bolsters-novo-q3"
+  },
+  {
+   "ticker": "NVO",
+   "drug": "Wegovy pill",
+   "use": "Obesity",
+   "kind": "peptide",
+   "sales_2025": 3.25,
+   "sales_basis": "Q3 2026 x4 ($813M)",
+   "us_loe": 2032,
+   "loe_note": "Semaglutide compound; formulation patents may run later",
+   "share": null,
+   "share_src": null,
+   "note": "Launched 2026, growing fast",
+   "source": "https://www.i-mak.org/glp-1/",
+   "sales_src": "https://pharmaphorum.com/news/oral-wegovy-bolsters-novo-q3"
   }
  ],
  "erosion": {
@@ -303,6 +423,18 @@
     0.06
    ],
    "basis": "Assumption: typical generic erosion of ~80% in year 1 and ~90% by year 2",
+   "src": null
+  },
+  "peptide": {
+   "curve": [
+    1,
+    0.55,
+    0.35,
+    0.25,
+    0.2,
+    0.18
+   ],
+   "basis": "Assumption: injectable peptide generics are harder to make, so erosion is slower than pills",
    "src": null
   }
  }

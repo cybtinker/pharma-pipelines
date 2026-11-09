@@ -1,10 +1,50 @@
 {
   "companies": [
-    {"ticker": "MRNA", "name": "Moderna", "sponsor_query": "ModernaTX", "sec_cik": "0001682852"},
-    {"ticker": "PFE",  "name": "Pfizer", "sponsor_query": "Pfizer", "sec_cik": "0000078003"},
-    {"ticker": "ABBV", "name": "AbbVie", "sponsor_query": "AbbVie", "sec_cik": "0001551152"},
-    {"ticker": "CRSP", "name": "CRISPR Therapeutics", "sponsor_query": "CRISPR Therapeutics", "sec_cik": "0001674416"}
+    {
+      "ticker": "MRNA",
+      "name": "Moderna",
+      "sponsor_query": "ModernaTX",
+      "sec_cik": "0001682852"
+    },
+    {
+      "ticker": "PFE",
+      "name": "Pfizer",
+      "sponsor_query": "Pfizer",
+      "sec_cik": "0000078003"
+    },
+    {
+      "ticker": "ABBV",
+      "name": "AbbVie",
+      "sponsor_query": "AbbVie",
+      "sec_cik": "0001551152"
+    },
+    {
+      "ticker": "CRSP",
+      "name": "CRISPR Therapeutics",
+      "sponsor_query": "CRISPR Therapeutics",
+      "sec_cik": "0001674416"
+    },
+    {
+      "ticker": "LLY",
+      "name": "Eli Lilly",
+      "sponsor_query": "Eli Lilly and Company",
+      "sec_cik": "0000059478"
+    },
+    {
+      "ticker": "NVO",
+      "name": "Novo Nordisk",
+      "sponsor_query": "Novo Nordisk A/S",
+      "sec_cik": "0000353278"
+    }
   ],
-  "trial_phases": ["PHASE2", "PHASE3", "PHASE4"],
-  "sec_forms": ["8-K", "10-Q", "10-K"]
+  "trial_phases": [
+    "PHASE2",
+    "PHASE3",
+    "PHASE4"
+  ],
+  "sec_forms": [
+    "8-K",
+    "10-Q",
+    "10-K"
+  ]
 }
