@@ -8,16 +8,17 @@
   --bg:#eef1ef; --paper:#fbfcfb; --ink:#14201d; --muted:#5d6c67; --line:#cfd8d4; --grid:#e1e8e4;
   --accent:#0d5c63; --accent-ink:#ffffff; --accent-soft:#d5ebea;
   --approved:#22783e; --filed:#b06a00; --readout:#3150b0; --fail:#b0342b; --start:#6b4fa0;
+  --c-mrna:#a07800; --c-pfe:#2856a8; --c-abbv:#0d6b5a; --c-crsp:#8a3f9a; --cliff:#c2410c;
   --display:"Archivo Narrow","Arial Narrow",sans-serif; --body:"Public Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#0c1312; --paper:#131d1b; --ink:#e2ebe8; --muted:#90a39d; --line:#283633; --grid:#1b2725;
   --accent:#58c2c8; --accent-ink:#0c1312; --accent-soft:#163337;
-  --approved:#6fd08d; --filed:#f0b450; --readout:#93a9f5; --fail:#f2877d; --start:#c3a8f0; color-scheme:dark}}
+  --approved:#6fd08d; --filed:#f0b450; --readout:#93a9f5; --fail:#f2877d; --start:#c3a8f0; --c-mrna:#e3bd4f; --c-pfe:#86a8ef; --c-abbv:#63c9b3; --c-crsp:#d39ae0; --cliff:#fb923c; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0c1312; --paper:#131d1b; --ink:#e2ebe8; --muted:#90a39d; --line:#283633; --grid:#1b2725;
   --accent:#58c2c8; --accent-ink:#0c1312; --accent-soft:#163337;
-  --approved:#6fd08d; --filed:#f0b450; --readout:#93a9f5; --fail:#f2877d; --start:#c3a8f0; color-scheme:dark}
+  --approved:#6fd08d; --filed:#f0b450; --readout:#93a9f5; --fail:#f2877d; --start:#c3a8f0; --c-mrna:#e3bd4f; --c-pfe:#86a8ef; --c-abbv:#63c9b3; --c-crsp:#d39ae0; --cliff:#fb923c; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
@@ -97,6 +98,16 @@ h2{font-family:var(--display);font-weight:700;font-size:1.6rem;margin:0;text-tra
 .brief h3{font-family:var(--display);font-size:1.2rem;margin:0}
 .brief ul{margin:8px 0 6px;padding-left:18px;font-size:.86rem;display:flex;flex-direction:column;gap:4px}
 .brief .when{font-family:var(--mono);font-size:.75rem;color:var(--muted)}
+#cliff text,#atrisk text{font-family:var(--body);fill:var(--ink)}
+#cliff .ax,#atrisk .ax{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+#cliff .rl{font-size:12.5px;font-weight:600} #cliff .rs{font-size:11px;fill:var(--muted)}
+#cliff .lo{font-family:var(--mono);font-size:10.5px;fill:var(--cliff);font-weight:600}
+.two{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+.chartbox{background:var(--paper);border:1px solid var(--line);overflow-x:auto;padding:4px 0}
+.chartbox h3{font-family:var(--mono);font-size:.75rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:8px 12px 2px;font-weight:600}
+.swatch{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px}
+.mkt td.loe{font-family:var(--mono);color:var(--cliff);font-weight:600}
+.mkt td.loe.done{color:var(--muted)}
 footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
 </style>
 
@@ -124,6 +135,16 @@ footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
   <section>
     <div class="sh"><h2>Race board</h2><span class="legend"><span class="tok mine key">Company you track</span><span class="tok key">Competitor</span></span></div>
     <div id="board"></div>
+  </section>
+
+  <section>
+    <div class="sh"><h2>Approved drugs and patent cliffs</h2><span class="legend" id="cliffleg"></span></div>
+    <div class="two">
+      <div class="chartbox"><h3>Projected sales, before and after US patent expiry</h3><svg id="cliff" role="img" aria-label="Projected sales of approved drugs around patent expiry"></svg></div>
+      <div class="chartbox"><h3>2025 sales losing US protection, by year</h3><svg id="atrisk" role="img" aria-label="Sales losing protection by year"></svg></div>
+    </div>
+    <div class="mkt" style="margin-top:12px"><table><thead><tr><th>Drug</th><th>Treats</th><th>2025 sales</th><th>Market position</th><th>US expiry</th><th>Kept 2 yrs after expiry</th><th>Sales 2 yrs after</th></tr></thead><tbody id="approved"></tbody></table></div>
+    <p class="hint" id="erosionnote"></p>
   </section>
 
   <section>
@@ -258,10 +279,52 @@ function market(){const el=document.getElementById("mkt");
     return`<tr><td><b>${esc(r.drug)}</b><small>${esc(r.ticker)}</small></td><td>${esc(r.market)}</td><td>${size}</td><td>${slider}</td><td>${imp}</td><td>${ref}</td></tr>`}).join(""):`<tr><td colspan="6" class="empty">No market estimates for these filters.</td></tr>`;
   el.querySelectorAll("input[type=range]").forEach(inp=>inp.oninput=e=>{shares[e.target.dataset.k]=+e.target.value;market();const n=document.getElementById(e.target.id);if(n)n.focus()});}
 function briefs(){document.getElementById("briefs").innerHTML=Object.entries(BRIEFS).filter(([t])=>state.cos.has(t)).map(([t,b])=>`<article class="brief"><span class="lab">${t} · ${esc(NAMES[t])}</span><h3>${esc(b.title)}</h3>${b.date?`<span class="when">${esc(fmt(b.date))}</span>`:""}<ul>${b.points.map(p=>`<li>${esc(p)}</li>`).join("")}</ul><a href="${esc(b.url)}" target="_blank" rel="noopener">Source</a></article>`).join("")}
+const APPR=/*APPR*/{products:[],erosion:{}};
+const COL={MRNA:"var(--c-mrna)",PFE:"var(--c-pfe)",ABBV:"var(--c-abbv)",CRSP:"var(--c-crsp)"};
+const Y0=2024,Y1=2037,NOWY=2026;
+function proj(p,y){const c=APPR.erosion[p.kind].curve,at=i=>c[Math.min(Math.max(i,0),c.length-1)];
+  if(!p.us_loe)return p.sales_2025;
+  const base=p.sales_2025/(2025>=p.us_loe?at(2025-p.us_loe+1):1);
+  return y<p.us_loe?base:base*at(y-p.us_loe+1)}
+function approved(){
+  const rows=APPR.products.filter(p=>state.cos.has(p.ticker)&&(!state.q||[p.ticker,NAMES[p.ticker],p.drug,p.use].join(" ").toLowerCase().split(" ").length&&state.q.split(/\s+/).every(w=>[p.ticker,NAMES[p.ticker],p.drug,p.use].join(" ").toLowerCase().includes(w))))
+    .sort((a,b)=>(a.us_loe||9999)-(b.us_loe||9999));
+  document.getElementById("cliffleg").innerHTML=Object.keys(NAMES).map(t=>`<span><i class="swatch" style="background:${COL[t]}"></i>${t}</span>`).join("")+`<span><i class="swatch" style="background:var(--cliff)"></i>After expiry</span>`;
+  // ribbon chart
+  const svg=document.getElementById("cliff"),LW=220,W=Math.max(760,svg.parentElement.clientWidth-2),PW=W-LW-14,RH=36,TOP=26,n=Y1-Y0+1,cw=PW/n;
+  let g="",y=TOP;
+  for(let yr=Y0;yr<=Y1;yr++){const x=LW+(yr-Y0)*cw;g+=`<line x1="${x}" y1="${TOP-6}" x2="${x}" y2="${TOP+rows.length*RH}" stroke="var(--grid)"/><text class="ax" x="${x+cw/2}" y="${TOP-10}" text-anchor="middle">${String(yr).slice(2)==="24"||yr%2===0?yr:"’"+String(yr).slice(2)}</text>`}
+  rows.forEach(p=>{const mx=Math.max(...Array.from({length:n},(_,i)=>proj(p,Y0+i)));
+    g+=`<text class="rl" x="10" y="${y+15}">${esc(p.drug.length>28?p.drug.slice(0,27)+"…":p.drug)}</text><text class="rs" x="10" y="${y+29}">${p.ticker} · ${money(p.sales_2025)} in 2025</text>`;
+    for(let i=0;i<n;i++){const yr=Y0+i,v=proj(p,yr),h=Math.max(1.5,(v/mx)*24),after=p.us_loe&&yr>=p.us_loe,fut=yr>NOWY;
+      g+=`<rect x="${LW+i*cw+1.5}" y="${y+RH/2+12-h}" width="${cw-3}" height="${h}" fill="${after?"var(--cliff)":COL[p.ticker]}" opacity="${fut?.55:.95}"><title>${esc(p.drug)} ${yr}: ~$${v.toFixed(2)}B${fut?" (projected)":""}</title></rect>`}
+    if(p.us_loe&&p.us_loe>=Y0&&p.us_loe<=Y1){const x=LW+(p.us_loe-Y0)*cw;g+=`<line x1="${x}" y1="${y+2}" x2="${x}" y2="${y+RH-4}" stroke="var(--cliff)" stroke-width="2"/><text class="lo" x="${x-4}" y="${y+9}" text-anchor="end">${p.us_loe}</text>`}
+    else if(!p.us_loe)g+=`<text class="rs" x="${LW+PW-4}" y="${y+9}" text-anchor="end">no expiry date published</text>`;
+    else if(p.us_loe<Y0)g+=``;
+    y+=RH});
+  const xn=LW+(NOWY-Y0+0.85)*cw;g+=`<line x1="${xn}" y1="${TOP-6}" x2="${xn}" y2="${y}" stroke="var(--fail)" stroke-width="2"/>`;
+  svg.setAttribute("width",W);svg.setAttribute("height",y+6);svg.setAttribute("viewBox",`0 0 ${W} ${y+6}`);svg.innerHTML=rows.length?g:`<text x="20" y="40" class="rs">No approved drugs for these filters.</text>`;
+  // at-risk stacked bars
+  const s2=document.getElementById("atrisk"),W2=Math.max(760,s2.parentElement.clientWidth-2),L2=56,P2=W2-L2-14,H2=190,yrs=[];for(let yr=2026;yr<=2037;yr++)yrs.push(yr);
+  const tot=yr=>rows.filter(p=>p.us_loe===yr).reduce((a,p)=>a+p.sales_2025,0),mxv=Math.max(5,...yrs.map(tot)),top=Math.ceil(mxv/5)*5,bw=P2/yrs.length,Ys=v=>18+H2-(v/top)*H2;
+  let h2="";for(let v=0;v<=top;v+=5)h2+=`<line x1="${L2}" y1="${Ys(v)}" x2="${L2+P2}" y2="${Ys(v)}" stroke="var(--grid)"/><text class="ax" x="${L2-6}" y="${Ys(v)+4}" text-anchor="end">$${v}B</text>`;
+  yrs.forEach((yr,i)=>{let acc=0;const x=L2+i*bw+bw*0.18,w=bw*0.64;
+    rows.filter(p=>p.us_loe===yr).sort((a,b)=>b.sales_2025-a.sales_2025).forEach(p=>{const y0=Ys(acc+p.sales_2025),hh=Ys(acc)-y0;h2+=`<rect x="${x}" y="${y0}" width="${w}" height="${Math.max(hh-1,0.5)}" fill="${COL[p.ticker]}"><title>${esc(p.drug)} (${p.ticker}): $${p.sales_2025.toFixed(1)}B, US expiry ${yr}</title></rect>`;if(hh>13)h2+=`<text x="${x+w/2}" y="${y0+hh/2+4}" text-anchor="middle" style="font-size:10px;fill:var(--paper);font-weight:600">${esc(p.drug.split(/[ (]/)[0])}</text>`;acc+=p.sales_2025});
+    if(acc)h2+=`<text class="ax" x="${x+w/2}" y="${Ys(acc)-5}" text-anchor="middle" style="fill:var(--ink);font-weight:600">$${acc.toFixed(1)}B</text>`;
+    h2+=`<text class="ax" x="${x+w/2}" y="${18+H2+16}" text-anchor="middle">${yr}</text>`});
+  s2.setAttribute("width",W2);s2.setAttribute("height",H2+44);s2.setAttribute("viewBox",`0 0 ${W2} ${H2+44}`);s2.innerHTML=h2;
+  // table
+  document.getElementById("approved").innerHTML=rows.map(p=>{const c=APPR.erosion[p.kind],kept=c.curve[2],done=p.us_loe&&p.us_loe<=2025;
+    return`<tr><td><b><a class="tl" href="${esc(p.sales_src)}" target="_blank" rel="noopener" style="color:inherit">${esc(p.drug)}</a></b><small>${p.ticker} · ${p.kind==="small"?"small molecule":p.kind}</small></td><td>${esc(p.use)}${p.note?`<small>${esc(p.note)}</small>`:""}</td>
+    <td class="num">${money(p.sales_2025)}</td><td>${p.share?`${esc(p.share)}${p.share_src?`<small><a href="${esc(p.share_src)}" target="_blank" rel="noopener">source</a></small>`:""}`:`<small>No share figure published</small>`}</td>
+    <td class="loe${done?" done":""}">${p.us_loe||"—"}<small><a href="${esc(p.source)}" target="_blank" rel="noopener">${esc(p.loe_note)}</a></small></td>
+    <td class="num">${p.us_loe?Math.round(kept*100)+"%":"—"}</td><td class="num">${p.us_loe?(done?`<small>already past expiry</small>`:`~${money(p.sales_2025*kept)} in ${p.us_loe+2}`):"—"}</td></tr>`}).join("");
+  document.getElementById("erosionnote").innerHTML="How the after-expiry numbers are estimated: biologics follow "+`<a href="${esc(APPR.erosion.biologic.src)}" target="_blank" rel="noopener" style="color:var(--accent)">Humira's actual decline</a>`+" (kept 68% of sales in year 1, 21% by year 3). Small molecules assume typical generic entry (about 20% kept in year 1, 10% in year 2). Vaccines assume a slower fade (60% kept by year 2). Sales after expiry are US-driven estimates applied to global sales, so they are a rough guide.";
+}
 function render(){try{localStorage.setItem("pw2",JSON.stringify({cos:[...state.cos]}))}catch(e){}
   Object.keys(NAMES).forEach(t=>document.getElementById("co-"+t).setAttribute("aria-pressed",state.cos.has(t)));
   const rows=DATA.filter(matches);if(state.sel&&!rows.some(r=>r.drug===state.sel))state.sel=null;
-  timeline(rows);drawer(rows);board();market();briefs()}
+  timeline(rows);drawer(rows);board();approved();market();briefs()}
 let rt;addEventListener("resize",()=>{clearTimeout(rt);rt=setTimeout(render,150)});
 render();
 </script>
