@@ -1,0 +1,605 @@
+{
+ "fetched_at": "2026-11-09T21:33:13.798062Z",
+ "data": [
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07804004",
+     "briefTitle": "A Safety and Efficacy Study Evaluating CTX112 in Subjects With Refractory Neurologic Autoimmune Disease",
+     "acronym": "CRSP-AID-502"
+    },
+    "statusModule": {
+     "overallStatus": "NOT_YET_RECRUITING",
+     "startDateStruct": {
+      "date": "2026-11-01"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2029-12-30"
+     },
+     "completionDateStruct": {
+      "date": "2029-12-30"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-10-22"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "CRISPR Therapeutics"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Progressive Multiple Sclerosis (PMS)",
+      "Neuromyelitis Optica",
+      "Myelin Oligodendrocyte Glycoprotein Antibody-associated Disease",
+      "Autoimmune Encephalitis",
+      "Stiff-Person Syndrome"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 220
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "CTX112"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT04208529",
+     "briefTitle": "A Long-term Follow-up Study in Participants Who Received CTX001"
+    },
+    "statusModule": {
+     "overallStatus": "ENROLLING_BY_INVITATION",
+     "startDateStruct": {
+      "date": "2021-01-20"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2039-09-30"
+     },
+     "completionDateStruct": {
+      "date": "2039-09-30"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-08-11"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Vertex Pharmaceuticals Incorporated"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Beta-Thalassemia",
+      "Thalassemia",
+      "Sickle Cell Disease",
+      "Hematologic Diseases",
+      "Hemoglobinopathies",
+      "Genetic Diseases, Inborn",
+      "Sickle Cell Anemia"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 160
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "CTX001"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05643742",
+     "briefTitle": "A Safety and Efficacy Study Evaluating CTX112 in Subjects With Relapsed or Refractory B-Cell Malignancies"
+    },
+    "statusModule": {
+     "overallStatus": "RECRUITING",
+     "startDateStruct": {
+      "date": "2023-03-10"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2030-01"
+     },
+     "completionDateStruct": {
+      "date": "2030-02"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-11-14"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "CRISPR Therapeutics AG"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "B-cell Lymphoma",
+      "Non-Hodgkin Lymphoma",
+      "B-cell Malignancy",
+      "Chronic Lymphocytic Leukemia (CLL)/Small Lymphocytic Lymphoma (SLL)",
+      "Follicular Lymphoma",
+      "Mantle Cell Lymphoma",
+      "Marginal Zone Lymphoma",
+      "Large B-cell Lymphoma"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 120
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "CTX112"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07758634",
+     "briefTitle": "A Trial Evaluating Safety, Tolerability and Efficacy of CTX340 in Participants With Hypertension"
+    },
+    "statusModule": {
+     "overallStatus": "RECRUITING",
+     "startDateStruct": {
+      "date": "2026-08-08"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2028-07-01"
+     },
+     "completionDateStruct": {
+      "date": "2029-07-01"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-08-11"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "CRISPR Therapeutics AG"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Hypertension"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 69
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "CTX340"
+      },
+      {
+       "type": "DRUG",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07850076",
+     "briefTitle": "A Trial Evaluating the Safety, Tolerability, Pharmacokinetics, Pharmacodynamics, and Efficacy of CTX460 in Adults With Emphysema Associated With Severe Alpha-1 Antitrypsin Deficiency (AATD)"
+    },
+    "statusModule": {
+     "overallStatus": "NOT_YET_RECRUITING",
+     "startDateStruct": {
+      "date": "2026-10-31"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2030-06-30"
+     },
+     "completionDateStruct": {
+      "date": "2030-06-30"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-09-30"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "CRISPR Therapeutics"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Alpha-1 Antitrypsin Deficiency (AATD)"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 68
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "CTX460"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05356195",
+     "briefTitle": "Evaluation of Safety and Efficacy of CTX001 in Pediatric Participants With Transfusion-Dependent \u03b2-Thalassemia (TDT)"
+    },
+    "statusModule": {
+     "overallStatus": "ACTIVE_NOT_RECRUITING",
+     "startDateStruct": {
+      "date": "2022-05-03"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2027-11-14"
+     },
+     "completionDateStruct": {
+      "date": "2027-11-14"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-07-01"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Vertex Pharmaceuticals Incorporated"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Beta-Thalassemia",
+      "Thalassemia",
+      "Genetic Diseases, Inborn",
+      "Hematologic Diseases",
+      "Hemoglobinopathies"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 16
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "CTX001"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT03745287",
+     "briefTitle": "A Safety and Efficacy Study Evaluating CTX001 in Subjects With Severe Sickle Cell Disease"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2018-11-27"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2025-07-07"
+     },
+     "completionDateStruct": {
+      "date": "2025-07-07"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-09-16"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Vertex Pharmaceuticals Incorporated"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Sickle Cell Disease",
+      "Hematological Diseases",
+      "Hemoglobinopathies"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2",
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 63
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "Exa-cel"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT03655678",
+     "briefTitle": "A Safety and Efficacy Study Evaluating CTX001 in Participants With Transfusion-Dependent \u03b2-Thalassemia"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2018-09-14"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2025-11-13"
+     },
+     "completionDateStruct": {
+      "date": "2025-11-13"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-12-17"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Vertex Pharmaceuticals Incorporated"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Beta-Thalassemia",
+      "Thalassemia",
+      "Genetic Diseases, Inborn",
+      "Hematologic Diseases",
+      "Hemoglobinopathies"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2",
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 59
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "CTX001"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07549698",
+     "briefTitle": "Safety and Preliminary Efficacy of CTX112 in Adult Participants With Relapsed/Refractory Hematologic Autoimmune Disease"
+    },
+    "statusModule": {
+     "overallStatus": "RECRUITING",
+     "startDateStruct": {
+      "date": "2026-07-17"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2033-12"
+     },
+     "completionDateStruct": {
+      "date": "2033-12"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-10-20"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "CRISPR Therapeutics AG"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Warm Autoimmune Hemolytic Anemia (WAIHA)",
+      "ITP - Immune Thrombocytopenia",
+      "Warm Autoimmune Hemolytic Anemia",
+      "Immune Thrombocytopenic Purpura"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 60
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "CTX112"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT04035434",
+     "briefTitle": "A Safety and Efficacy Study Evaluating CTX110 in Subjects With Relapsed or Refractory B-Cell Malignancies (CARBON)"
+    },
+    "statusModule": {
+     "overallStatus": "TERMINATED",
+     "startDateStruct": {
+      "date": "2019-07-22"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2024-10-04"
+     },
+     "completionDateStruct": {
+      "date": "2024-10-04"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-10-24"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "CRISPR Therapeutics AG"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "B-cell Malignancy",
+      "Non-Hodgkin Lymphoma",
+      "B-cell Lymphoma",
+      "Adult B Cell ALL"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 93
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "CTX110"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05329649",
+     "briefTitle": "Evaluation of Safety and Efficacy of CTX001 in Pediatric Participants With Severe Sickle Cell Disease (SCD)"
+    },
+    "statusModule": {
+     "overallStatus": "ACTIVE_NOT_RECRUITING",
+     "startDateStruct": {
+      "date": "2022-05-02"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2027-06-06"
+     },
+     "completionDateStruct": {
+      "date": "2027-06-06"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-07-01"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Vertex Pharmaceuticals Incorporated"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Sickle Cell Disease",
+      "Hydroxyurea Failure",
+      "Hydroxyurea Intolerance",
+      "Hemoglobinopathies",
+      "Hematological Diseases"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 13
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "CTX001"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  }
+ ]
+}

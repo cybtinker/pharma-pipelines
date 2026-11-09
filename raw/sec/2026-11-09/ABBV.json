@@ -1,0 +1,365 @@
+{
+ "fetched_at": "2026-11-09T21:33:13.642727Z",
+ "data": [
+  {
+   "form": "10-Q",
+   "date": "2026-11-03",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000037/abbv-20260930.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-11-02",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465926121322/tm2628215d1_8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-10-30",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000033/abbv-20261030.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-10-15",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465926116227/tm2627361d1_8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-10-05",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000030/abbv-20261005.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-09-03",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465926104940/tm2624674d1_8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-08-18",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465926098367/tm2623337d1_8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-08-05",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465926091269/tm2621452d4_8k.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2026-08-03",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000026/abbv-20260630.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-07-31",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000023/abbv-20260731.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-07-06",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000021/abbv-20260706.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-06-22",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465926076067/tm2618365d1_8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-05-12",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465926059484/tm2614276d1_8k.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2026-05-08",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000017/abbv-20260331.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-04-29",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000013/abbv-20260429.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-04-03",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000011/abbv-20260403.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-03-04",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465926023534/tm266774d4_8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-02-26",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465926020643/tm266774d4_8k.htm"
+  },
+  {
+   "form": "10-K",
+   "date": "2026-02-20",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000008/abbv-20251231.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-02-04",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000004/abbv-20260204.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-01-07",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115226000002/abbv-20260107.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2025-11-04",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000049/abbv-20250930.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-10-31",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000047/abbv-20251031.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-10-03",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000043/abbv-20251003.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-09-11",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465925089245/tm2525781d1_8k.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2025-08-04",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000040/abbv-20250630.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-07-31",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000036/abbv-20250731.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-07-03",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000034/abbv-20250703.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-05-13",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465925047402/tm2513856d1_8k.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2025-05-09",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000029/abbv-20250331.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-04-25",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000026/abbv-20250425.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-04-03",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000023/abbv-20250403.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-02-26",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465925017490/tm255723d7_8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-02-19",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465925015015/tm255723d4_8k.htm"
+  },
+  {
+   "form": "10-K",
+   "date": "2025-02-14",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000020/abbv-20241231.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-02-14",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465925013467/tm256372d1_8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-02-05",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465925009673/tm255474d1_8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-01-31",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000011/abbv-20250131.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-01-10",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000006/abbv-20250109.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-01-06",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000002/abbv-20250106.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-12-13",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465924128413/tm2430950d1_8k.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2024-11-04",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115224000040/abbv-20240930.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-10-30",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115224000036/abbv-20241030.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-10-03",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115224000033/abbv-20241003.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-09-10",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465924098564/tm2423380d1_8k.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2024-08-07",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115224000031/abbv-20240630.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-07-25",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115224000026/abbv-20240725.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-07-03",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115224000024/abbv-20240703.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2024-05-03",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115224000020/abbv-20240331.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-04-26",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115224000016/abbv-20240426.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-04-03",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115224000013/abbv-20240403.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-02-26",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465924027585/tm246405d5_8k.htm"
+  },
+  {
+   "form": "10-K",
+   "date": "2024-02-20",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115224000011/abbv-20231231.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-02-20",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465924025262/tm246649d1_8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-02-12",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465924013692/tm245657d1_8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-02-02",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115224000007/abbv-20240202.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-01-05",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115224000002/abbv-20240105.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-12-06",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465923124047/tm2332303d1_8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-11-30",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000110465923122241/tm2331814d1_8k.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2023-11-06",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1551152/000155115223000045/abbv-20230930.htm"
+  }
+ ]
+}
