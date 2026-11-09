@@ -81,6 +81,22 @@ h2{font-family:var(--display);font-weight:700;font-size:1.6rem;margin:0;text-tra
 .key{display:inline-block;padding:0 6px;font-size:.75rem}
 @media (max-width:640px){.track{grid-template-columns:minmax(0,1fr)}.lane{border-left:0;border-top:1px dashed var(--line);flex-direction:row;flex-wrap:wrap;align-items:flex-start}.lane .lab{flex-basis:100%}}
 .empty{color:var(--muted);font-style:italic}
+.mkt{background:var(--paper);border:1px solid var(--line);overflow-x:auto}
+.mkt table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:760px}
+.mkt th{text-align:left;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600;padding:8px 10px;border-bottom:2px solid var(--ink)}
+.mkt td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+.mkt .num{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.mkt .big{font-family:var(--display);font-size:1.3rem;font-weight:700;color:var(--accent)}
+.mkt small{display:block;color:var(--muted);font-size:.76rem;line-height:1.35}
+.mkt small a,.brief a{color:var(--accent)}
+.mkt input[type=range]{width:110px;accent-color:var(--accent)}
+.bar{height:6px;background:var(--grid);margin-top:6px;position:relative}
+.bar i{position:absolute;inset:0 auto 0 0;background:var(--accent)}
+.briefs{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
+.brief{background:var(--paper);border:1px solid var(--line);padding:12px 14px;min-width:0}
+.brief h3{font-family:var(--display);font-size:1.2rem;margin:0}
+.brief ul{margin:8px 0 6px;padding-left:18px;font-size:.86rem;display:flex;flex-direction:column;gap:4px}
+.brief .when{font-family:var(--mono);font-size:.75rem;color:var(--muted)}
 footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
 </style>
 
@@ -108,6 +124,17 @@ footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
   <section>
     <div class="sh"><h2>Race board</h2><span class="legend"><span class="tok mine key">Company you track</span><span class="tok key">Competitor</span></span></div>
     <div id="board"></div>
+  </section>
+
+  <section>
+    <div class="sh"><h2>If approved: market share</h2><span class="legend">Move a slider to test your own share assumption</span></div>
+    <div class="mkt"><table><thead><tr><th>Drug</th><th>Market</th><th>Market size</th><th>Assumed share</th><th>Implied yearly sales</th><th>Analyst or company figure</th></tr></thead><tbody id="mkt"></tbody></table></div>
+    <p class="hint">Market sizes are cited analyst figures. Share percentages are this tracker's starting assumptions, not forecasts from the companies.</p>
+  </section>
+
+  <section>
+    <div class="sh"><h2>Latest earnings, in five lines</h2></div>
+    <div class="briefs" id="briefs"></div>
   </section>
 
   <footer>Sources: company releases, FDA documents and Q3 2026 earnings coverage; each drug links its sources in the timeline details. Quarter and half-year dates are company guidance, not FDA goal dates. Race board competitors in development were checked on Nov 9, 2026; underlined names link to the source. Research only, not investment advice.</footer>
@@ -217,10 +244,24 @@ function board(){const el=document.getElementById("board");
     return`<article class="race"><header><b>${esc(m.market)}</b><span>${esc(m.mechanism)} · ${appr} approved · ${m.players.length-appr} in development</span></header>
     <div class="track">${LANES.map(([k,l])=>`<div class="lane${k==="approved"?" finish":""}"><span class="lab">${l}</span>${lane(k).map(p=>`<div class="tok${p.ticker&&state.cos.has(p.ticker)?" mine":""}"><b>${p.source?`<a class="tl" href="${esc(p.source)}" target="_blank" rel="noopener">${esc(p.drug)}</a>`:esc(p.drug)}</b><small>${esc(p.company)}${p.note?" · "+esc(p.note):""}</small></div>`).join("")}</div>`).join("")}</div></article>`}).join("")}</div>`).join("")}
 
+const MKT=/*MKT*/{rows:[]};
+const BRIEFS=/*BRIEFS*/{};
+const shares={};
+const money=v=>v>=1?"$"+(Math.round(v*10)/10)+"B":"$"+Math.round(v*1000)+"M";
+function market(){const el=document.getElementById("mkt");
+  const rows=MKT.rows.filter(r=>state.cos.has(r.ticker)&&(!state.q||[r.ticker,NAMES[r.ticker],r.drug,r.market].join(" ").toLowerCase().includes(state.q)));
+  el.innerHTML=rows.length?rows.map((r,i)=>{const k=r.ticker+r.drug,sh=shares[k]??r.share;
+    const size=r.low==null?"<span class=\"num\">n/a</span>":`<span class="num">${r.low===r.high?money(r.low):money(r.low)+"–"+money(r.high)}</span><small>${r.size_url?`<a href="${esc(r.size_url)}" target="_blank" rel="noopener">${esc(r.size_src)}</a>`:esc(r.size_src||"")}</small>`;
+    const slider=sh==null?"—":`<input type="range" id="sh-${i}" min="0" max="40" step="1" value="${sh}" aria-label="Share for ${esc(r.drug)}" data-k="${esc(k)}"> <span class="num">${sh}%</span><small>${esc(r.share_why||"")}</small>`;
+    const imp=sh==null?"—":`<span class="big">${r.low===r.high?money(r.low*sh/100):money(r.low*sh/100)+"–"+money(r.high*sh/100)}</span><div class="bar"><i style="width:${Math.min(100,sh/40*100)}%"></i></div>`;
+    const ref=r.ref?`<span class="num">${money(r.ref.value)}</span><small>${esc(r.ref.label)}, <a href="${esc(r.ref.url)}" target="_blank" rel="noopener">${esc(r.ref.src)}</a></small>`:"—";
+    return`<tr><td><b>${esc(r.drug)}</b><small>${esc(r.ticker)}</small></td><td>${esc(r.market)}</td><td>${size}</td><td>${slider}</td><td>${imp}</td><td>${ref}</td></tr>`}).join(""):`<tr><td colspan="6" class="empty">No market estimates for these filters.</td></tr>`;
+  el.querySelectorAll("input[type=range]").forEach(inp=>inp.oninput=e=>{shares[e.target.dataset.k]=+e.target.value;market();const n=document.getElementById(e.target.id);if(n)n.focus()});}
+function briefs(){document.getElementById("briefs").innerHTML=Object.entries(BRIEFS).filter(([t])=>state.cos.has(t)).map(([t,b])=>`<article class="brief"><span class="lab">${t} · ${esc(NAMES[t])}</span><h3>${esc(b.title)}</h3>${b.date?`<span class="when">${esc(fmt(b.date))}</span>`:""}<ul>${b.points.map(p=>`<li>${esc(p)}</li>`).join("")}</ul><a href="${esc(b.url)}" target="_blank" rel="noopener">Source</a></article>`).join("")}
 function render(){try{localStorage.setItem("pw2",JSON.stringify({cos:[...state.cos]}))}catch(e){}
   Object.keys(NAMES).forEach(t=>document.getElementById("co-"+t).setAttribute("aria-pressed",state.cos.has(t)));
   const rows=DATA.filter(matches);if(state.sel&&!rows.some(r=>r.drug===state.sel))state.sel=null;
-  timeline(rows);drawer(rows);board()}
+  timeline(rows);drawer(rows);board();market();briefs()}
 let rt;addEventListener("resize",()=>{clearTimeout(rt);rt=setTimeout(render,150)});
 render();
 </script>

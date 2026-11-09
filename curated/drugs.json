@@ -7,13 +7,14 @@
   "stage": "Approved 2026-08-05",
   "next_event": "Confirmatory efficacy study in 65+ (accelerated approval)",
   "next_event_date": null,
-  "latest_result": "Phase 3 in 40,805 adults: 26.6% better than standard flu shot",
+  "latest_result": "Phase 3 in 40,805 adults: 26.6% better than standard flu shot. Limited US launch for 2026-27 season; also approved in Canada",
   "competitors": [
    "Fluzone High-Dose (Sanofi)",
    "Flublok (Sanofi)",
    "Fluad (CSL Seqirus)"
   ],
   "sources": [
+   "https://finviz.com/news/418243/moderna-reports-third-quarter-2026-financial-results-and-provides-business-updates",
    "https://www.fda.gov/media/194538/download",
    "https://www.biopharmadive.com/news/fda-approval-decisions-watch-2026/808684/"
   ],
@@ -101,20 +102,31 @@
   "drug": "Intismeran autogene (mRNA-4157, with Merck)",
   "illness": "Melanoma (adjuvant), other cancers",
   "drug_type": "Personalized mRNA cancer therapy",
-  "stage": "Phase 3 (status to confirm)",
-  "next_event": "Phase 3 readout",
-  "next_event_date": null,
-  "latest_result": "Phase 2b: 49% lower risk of recurrence or death vs Keytruda alone",
+  "stage": "Phase 3 positive",
+  "next_event": "Regulatory submissions with Merck",
+  "next_event_date": "2027-H1",
+  "latest_result": "Phase 3 INTerpath-001: 42% lower risk of recurrence or death vs Keytruda alone (HR 0.58)",
   "competitors": [],
   "sources": [
+   "https://finviz.com/news/418243/moderna-reports-third-quarter-2026-financial-results-and-provides-business-updates",
    "https://www.marketbeat.com/stocks/NASDAQ/MRNA/fda-events/"
   ],
-  "needs_verification": "Phase 3 status not in sources read",
+  "needs_verification": "Filing timing not given; H1 2027 is an estimate",
   "milestones": [
    {
     "date": "2024-06-03",
     "kind": "readout",
     "label": "Phase 2b 3-year data"
+   },
+   {
+    "date": "2026-10",
+    "kind": "readout",
+    "label": "Phase 3 positive at ESMO"
+   },
+   {
+    "date": "2027-H1",
+    "kind": "filing",
+    "label": "Filing (estimated)"
    }
   ]
  },
@@ -123,20 +135,26 @@
   "drug": "mRNA-1403",
   "illness": "Norovirus",
   "drug_type": "mRNA vaccine",
-  "stage": "Phase 3",
-  "next_event": "Readout",
+  "stage": "Phase 3 (interim missed early-success bar)",
+  "next_event": "Talks with regulators on path forward",
   "next_event_date": null,
-  "latest_result": "~25,000-person Phase 3 dosing since Sept 2024",
+  "latest_result": "Interim analysis did not meet criteria for early success; no new cohort this season",
   "competitors": [],
   "sources": [
+   "https://finviz.com/news/418243/moderna-reports-third-quarter-2026-financial-results-and-provides-business-updates",
    "https://www.marketbeat.com/stocks/NASDAQ/MRNA/fda-events/"
   ],
-  "needs_verification": "Current status not confirmed",
+  "needs_verification": null,
   "milestones": [
    {
     "date": "2024-09-30",
     "kind": "start",
     "label": "Phase 3 first patient"
+   },
+   {
+    "date": "2026-11-06",
+    "kind": "fail",
+    "label": "Interim missed early-success bar"
    }
   ]
  },

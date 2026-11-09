@@ -1,0 +1,109 @@
+{
+ "note": "Market sizes are cited analyst figures. Share percentages are this tracker's own starting assumptions; move the slider to test other cases.",
+ "rows": [
+  {
+   "ticker": "PFE",
+   "drug": "Berobenatide",
+   "market": "Obesity drugs, 2030",
+   "low": 80,
+   "high": 150,
+   "size_src": "Jefferies $80B peak; Goldman $105B; HSBC >$120B; Pfizer CEO $150B",
+   "size_url": "https://www.aol.com/articles/analysis-obesity-market-sales-potential-110742804.html",
+   "share": 3,
+   "share_why": "Monthly shot arriving ~2028, after Zepbound, Wegovy, Foundayo and CagriSema",
+   "ref": null
+  },
+  {
+   "ticker": "PFE",
+   "drug": "Elrexfio",
+   "market": "Multiple myeloma drugs, 2030",
+   "low": 33,
+   "high": 33,
+   "size_src": "Bloomberg Intelligence $33B",
+   "size_url": "https://www.fiercepharma.com/marketing/analysts-predict-myeloma-market-will-hit-33b-2030-and-tip-1-company-take-lions-share",
+   "share": 4,
+   "share_why": "Analysts expect J&J's Tecvayli to stay the top bispecific, with Elrexfio a main challenger",
+   "ref": null
+  },
+  {
+   "ticker": "ABBV",
+   "drug": "Etentamig",
+   "market": "Multiple myeloma drugs, 2030",
+   "low": 33,
+   "high": 33,
+   "size_src": "Bloomberg Intelligence $33B",
+   "size_url": "https://www.fiercepharma.com/marketing/analysts-predict-myeloma-market-will-hit-33b-2030-and-tip-1-company-take-lions-share",
+   "share": 2,
+   "share_why": "Fourth BCMA bispecific to market, decision expected 2027",
+   "ref": null
+  },
+  {
+   "ticker": "PFE",
+   "drug": "Tivunatamig",
+   "market": "PD-1 lung cancer market (Keytruda-level), 2030",
+   "low": 23,
+   "high": 34,
+   "size_src": "Keytruda $34.3B peak (2027), $23.2B in 2030, GlobalData consensus",
+   "size_url": "https://www.clinicaltrialsarena.com/analyst-comment/keytruda-beaten-summit-bispecific-nsclc/",
+   "share": 3,
+   "share_why": "Behind ivonescimab (FDA decision Nov 14) and pumitamig in the PD-1 x VEGF class",
+   "ref": {
+    "label": "Ivonescimab consensus, 2030",
+    "value": 1.7,
+    "src": "GlobalData",
+    "url": "https://www.clinicaltrialsarena.com/analyst-comment/keytruda-beaten-summit-bispecific-nsclc/"
+   }
+  },
+  {
+   "ticker": "MRNA",
+   "drug": "mFLUSIVA",
+   "market": "Seasonal flu vaccines (implied)",
+   "low": 5.5,
+   "high": 5.5,
+   "size_src": "Implied: $1.1B described as about one-fifth of the market",
+   "size_url": "https://www.pharmavoice.com/news/moderna-mrna-flu-vax-fda-nod-blockbuster-hurdles/827961/",
+   "share": 20,
+   "share_why": "William Blair peak case",
+   "ref": {
+    "label": "Peak sales estimate",
+    "value": 1.1,
+    "src": "William Blair",
+    "url": "https://www.pharmavoice.com/news/moderna-mrna-flu-vax-fda-nod-blockbuster-hurdles/827961/"
+   }
+  },
+  {
+   "ticker": "ABBV",
+   "drug": "Rinvoq (vitiligo + alopecia)",
+   "market": "New Rinvoq uses",
+   "low": null,
+   "high": null,
+   "size_src": null,
+   "size_url": null,
+   "share": null,
+   "share_why": null,
+   "ref": {
+    "label": "Combined peak sales, management",
+    "value": 2.0,
+    "src": "AbbVie Q3 2026 call",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/abbvie-abbv-q3-2026-earnings-211323080.html"
+   }
+  },
+  {
+   "ticker": "CRSP",
+   "drug": "Casgevy",
+   "market": "Sickle cell and beta thalassemia gene therapy",
+   "low": null,
+   "high": null,
+   "size_src": null,
+   "size_url": null,
+   "share": null,
+   "share_why": null,
+   "ref": {
+    "label": "2026 sales modeled",
+    "value": 0.344,
+    "src": "William Blair (2025 actual: $115.8M)",
+    "url": "https://www.biospace.com/business/vertex-crispr-set-lofty-goal-for-casgevy-gene-therapy-as-patient-starts-ramp"
+   }
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "MRNA": {
+  "date": "2026-11-06",
+  "title": "Q3 2026 results",
+  "url": "https://finviz.com/news/418243/moderna-reports-third-quarter-2026-financial-results-and-provides-business-updates",
+  "points": [
+   "Revenue $1.31B, up 29%, well above ~$0.89B expected, driven by international COVID deliveries",
+   "First profit in years: net income $162M, EPS $0.38",
+   "2026 revenue growth guidance raised to 15-25%; year-end cash now $8.1-8.3B after a ~$3B convertible note",
+   "Cancer vaccine with Merck positive in Phase 3 melanoma (42% lower risk); norovirus Phase 3 interim missed early-success bar",
+   "Flu/COVID combo approved in Canada and EU, awaiting FDA guidance to refile; Analyst Day Nov 12"
+  ]
+ },
+ "PFE": {
+  "date": null,
+  "title": "Q3 2026 results",
+  "url": "https://www.biotechreality.com/2026/11/pfizer-q3-2026-results.html",
+  "points": [
+   "Revenue $16.6B, flat; non-COVID products +7%, newer products +32%",
+   "2026 guidance raised to $62-64B revenue, adjusted EPS $2.95-3.05",
+   "Elrexfio Phase 3 positive; Litfulo vitiligo Phase 3 positive; Talzenna and Tukysa label expansions approved",
+   "COVID sales falling (Paxlovid -63%, Comirnaty -30%); $3.8B write-down on sigvotatug vedotin",
+   "2027 guidance expected mid-December"
+  ]
+ },
+ "ABBV": {
+  "date": null,
+  "title": "Q3 2026 results",
+  "url": "https://finance.yahoo.com/markets/stocks/articles/abbvie-abbv-q3-2026-earnings-211323080.html",
+  "points": [
+   "Revenue $17.4B, up ~10%; adjusted EPS $3.82, above expectations",
+   "2026 revenue guidance raised to ~$67.8B",
+   "Skyrizi $5.8B (+23%) and Rinvoq $2.7B (+24%) more than offset Humira's decline",
+   "Juvmo (Parkinson's) and Skyrizi SC induction approved; etentamig filed; Epkinly 1st-line lymphoma positive",
+   "Dividend raised 5.2%; 2027 guidance on the Q4 call"
+  ]
+ },
+ "CRSP": {
+  "date": "2026-11-02",
+  "title": "Q3 2026 business update",
+  "url": "https://ir.crisprtx.com/news-releases/news-release-details/crispr-therapeutics-provides-business-update-and-reports-third-7",
+  "points": [
+   "Casgevy sales $99M (+30% vs Q2); 750+ patients have started treatment; FDA approved for ages 2+",
+   "Cash $2.28B; net loss $111M",
+   "CTX310 cholesterol/triglyceride edit got RMAT status; Phase 1b data at AHA Nov 9",
+   "Zugo-cel scleroderma data at ACR Nov 8; CTX611 Phase 2 readout 2H 2026",
+   "New CFO (A.J. Silver) and CTO appointed"
+  ]
+ }
+}
