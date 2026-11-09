@@ -17,7 +17,24 @@
    "https://www.fda.gov/media/194538/download",
    "https://www.biopharmadive.com/news/fda-approval-decisions-watch-2026/808684/"
   ],
-  "needs_verification": null
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2025-12-05",
+    "kind": "filing",
+    "label": "BLA submitted"
+   },
+   {
+    "date": "2026-06-18",
+    "kind": "adcom",
+    "label": "FDA advisers vote yes"
+   },
+   {
+    "date": "2026-08-05",
+    "kind": "approval",
+    "label": "FDA approval, 50+"
+   }
+  ]
  },
  {
   "ticker": "MRNA",
@@ -35,7 +52,19 @@
   "sources": [
    "https://www.marketbeat.com/stocks/NASDAQ/MRNA/fda-events/"
   ],
-  "needs_verification": null
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2025-05-31",
+    "kind": "approval",
+    "label": "FDA approval"
+   },
+   {
+    "date": "2026-02-17",
+    "kind": "approval",
+    "label": "EU approval"
+   }
+  ]
  },
  {
   "ticker": "MRNA",
@@ -53,7 +82,19 @@
   "sources": [
    "https://www.marketbeat.com/stocks/NASDAQ/MRNA/fda-events/"
   ],
-  "needs_verification": null
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2024-05-31",
+    "kind": "approval",
+    "label": "FDA approval, 60+"
+   },
+   {
+    "date": "2025-06-12",
+    "kind": "approval",
+    "label": "Expanded to 18-59 at risk"
+   }
+  ]
  },
  {
   "ticker": "MRNA",
@@ -68,7 +109,14 @@
   "sources": [
    "https://www.marketbeat.com/stocks/NASDAQ/MRNA/fda-events/"
   ],
-  "needs_verification": "Phase 3 status not in sources read"
+  "needs_verification": "Phase 3 status not in sources read",
+  "milestones": [
+   {
+    "date": "2024-06-03",
+    "kind": "readout",
+    "label": "Phase 2b 3-year data"
+   }
+  ]
  },
  {
   "ticker": "MRNA",
@@ -83,7 +131,14 @@
   "sources": [
    "https://www.marketbeat.com/stocks/NASDAQ/MRNA/fda-events/"
   ],
-  "needs_verification": "Current status not confirmed"
+  "needs_verification": "Current status not confirmed",
+  "milestones": [
+   {
+    "date": "2024-09-30",
+    "kind": "start",
+    "label": "Phase 3 first patient"
+   }
+  ]
  },
  {
   "ticker": "MRNA",
@@ -98,14 +153,21 @@
   "sources": [
    "https://www.marketbeat.com/stocks/NASDAQ/MRNA/fda-events/"
   ],
-  "needs_verification": null
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2025-10-22",
+    "kind": "fail",
+    "label": "Phase 3 missed goal"
+   }
+  ]
  },
  {
   "ticker": "PFE",
   "drug": "Elrexfio (elranatamab)",
   "illness": "Multiple myeloma (relapsed)",
   "drug_type": "BCMA x CD3 bispecific antibody",
-  "stage": "Phase 3 positive, filing planned",
+  "stage": "Approved (2023); Phase 3 confirmatory positive",
   "next_event": "Full MM-5 data at medical meeting",
   "next_event_date": "2026-12",
   "latest_result": "MagnetisMM-32: ~68% progression-free at 18 months",
@@ -119,7 +181,24 @@
    "https://za.investing.com/news/stock-market-news/pfizer-q3-2026-slides-32-growth-in-new-products-guidance-raised-93CH-4547008",
    "https://gloom.sh/stocks/pfe/transcripts/q3-2026"
   ],
-  "needs_verification": null
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2023-08-14",
+    "kind": "approval",
+    "label": "FDA accelerated approval"
+   },
+   {
+    "date": "2026-10-15",
+    "kind": "readout",
+    "label": "Phase 3 MM-32 positive"
+   },
+   {
+    "date": "2026-12",
+    "kind": "readout",
+    "label": "MM-5 data at ASH"
+   }
+  ]
  },
  {
   "ticker": "PFE",
@@ -139,7 +218,19 @@
    "https://za.investing.com/news/stock-market-news/pfizer-q3-2026-slides-32-growth-in-new-products-guidance-raised-93CH-4547008",
    "https://gloom.sh/stocks/pfe/transcripts/q3-2026"
   ],
-  "needs_verification": null
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-10-17",
+    "kind": "readout",
+    "label": "Phase 2 data"
+   },
+   {
+    "date": "2027-Q1",
+    "kind": "start",
+    "label": "Early breast cancer Phase 3"
+   }
+  ]
  },
  {
   "ticker": "PFE",
@@ -159,7 +250,19 @@
    "https://za.investing.com/news/stock-market-news/pfizer-q3-2026-slides-32-growth-in-new-products-guidance-raised-93CH-4547008",
    "https://gloom.sh/stocks/pfe/transcripts/q3-2026"
   ],
-  "needs_verification": null
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-10-17",
+    "kind": "readout",
+    "label": "Phase 2 lung data"
+   },
+   {
+    "date": "2026-Q4",
+    "kind": "start",
+    "label": "More Phase 3 starts"
+   }
+  ]
  },
  {
   "ticker": "PFE",
@@ -179,7 +282,19 @@
    "https://gloom.sh/stocks/pfe/transcripts/q3-2026",
    "https://za.investing.com/news/stock-market-news/pfizer-q3-2026-slides-32-growth-in-new-products-guidance-raised-93CH-4547008"
   ],
-  "needs_verification": null
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2025-11-13",
+    "kind": "deal",
+    "label": "Pfizer closes Metsera deal"
+   },
+   {
+    "date": "2028",
+    "kind": "approval",
+    "label": "Target first approval"
+   }
+  ]
  },
  {
   "ticker": "PFE",
@@ -197,7 +312,19 @@
    "https://www.biotechreality.com/2026/11/pfizer-q3-2026-results.html",
    "https://gloom.sh/stocks/pfe/transcripts/q3-2026"
   ],
-  "needs_verification": null
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2027-Q1",
+    "kind": "readout",
+    "label": "MEVPRO-1"
+   },
+   {
+    "date": "2027-Q4",
+    "kind": "readout",
+    "label": "MEVPRO-2"
+   }
+  ]
  },
  {
   "ticker": "PFE",
@@ -215,7 +342,24 @@
    "https://www.biotechreality.com/2026/11/pfizer-q3-2026-results.html",
    "https://gloom.sh/stocks/pfe/transcripts/q3-2026"
   ],
-  "needs_verification": null
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-08",
+    "kind": "filing",
+    "label": "EU filing accepted"
+   },
+   {
+    "date": "2026-Q4",
+    "kind": "filing",
+    "label": "FDA update"
+   },
+   {
+    "date": "2027",
+    "kind": "approval",
+    "label": "EU opinion"
+   }
+  ]
  },
  {
   "ticker": "PFE",
@@ -234,7 +378,19 @@
    "https://www.biotechreality.com/2026/11/pfizer-q3-2026-results.html",
    "https://za.investing.com/news/stock-market-news/pfizer-q3-2026-slides-32-growth-in-new-products-guidance-raised-93CH-4547008"
   ],
-  "needs_verification": null
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-10",
+    "kind": "readout",
+    "label": "Phase 3 vitiligo positive"
+   },
+   {
+    "date": "2027-H1",
+    "kind": "filing",
+    "label": "Global filings"
+   }
+  ]
  },
  {
   "ticker": "PFE",
@@ -254,7 +410,19 @@
    "https://za.investing.com/news/stock-market-news/pfizer-q3-2026-slides-32-growth-in-new-products-guidance-raised-93CH-4547008",
    "https://gloom.sh/stocks/pfe/transcripts/q3-2026"
   ],
-  "needs_verification": null
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-10",
+    "kind": "readout",
+    "label": "Phase 2 eczema data"
+   },
+   {
+    "date": "2028",
+    "kind": "readout",
+    "label": "Phase 3 readouts"
+   }
+  ]
  },
  {
   "ticker": "ABBV",
@@ -273,7 +441,24 @@
    "https://www.marketbeat.com/stocks/NYSE/ABBV/fda-events/",
    "https://finance.yahoo.com/markets/stocks/articles/abbvie-abbv-q3-2026-earnings-211323080.html"
   ],
-  "needs_verification": null
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-09-03",
+    "kind": "readout",
+    "label": "Phase 3 CERVINO positive"
+   },
+   {
+    "date": "2026-10-27",
+    "kind": "filing",
+    "label": "BLA submitted"
+   },
+   {
+    "date": "2027-H2",
+    "kind": "approval",
+    "label": "FDA decision"
+   }
+  ]
  },
  {
   "ticker": "ABBV",
@@ -293,7 +478,19 @@
    "https://www.marketbeat.com/stocks/NYSE/ABBV/fda-events/",
    "https://finance.yahoo.com/markets/stocks/articles/abbvie-abbv-q3-2026-earnings-211323080.html"
   ],
-  "needs_verification": null
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-02-03",
+    "kind": "filing",
+    "label": "Vitiligo filed"
+   },
+   {
+    "date": "2027-H1",
+    "kind": "approval",
+    "label": "Vitiligo / alopecia decisions"
+   }
+  ]
  },
  {
   "ticker": "ABBV",
@@ -312,7 +509,24 @@
    "https://www.marketbeat.com/stocks/NYSE/ABBV/fda-events/",
    "https://finance.yahoo.com/markets/stocks/articles/abbvie-abbv-q3-2026-earnings-211323080.html"
   ],
-  "needs_verification": null
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-03-02",
+    "kind": "readout",
+    "label": "Phase 3 AFFIRM"
+   },
+   {
+    "date": "2026-04-27",
+    "kind": "filing",
+    "label": "sBLA"
+   },
+   {
+    "date": "2026-10-23",
+    "kind": "approval",
+    "label": "FDA approval"
+   }
+  ]
  },
  {
   "ticker": "ABBV",
@@ -327,7 +541,19 @@
   "sources": [
    "https://www.marketbeat.com/stocks/NYSE/ABBV/fda-events/"
   ],
-  "needs_verification": null
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2025-09-26",
+    "kind": "filing",
+    "label": "NDA"
+   },
+   {
+    "date": "2026-09-28",
+    "kind": "approval",
+    "label": "FDA approval"
+   }
+  ]
  },
  {
   "ticker": "ABBV",
@@ -346,7 +572,19 @@
    "https://finance.yahoo.com/healthcare/articles/abbv-q3-earnings-call-highlights-140000099.html",
    "https://finance.yahoo.com/markets/stocks/articles/abbvie-abbv-q3-2026-earnings-211323080.html"
   ],
-  "needs_verification": null
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-10",
+    "kind": "readout",
+    "label": "Phase 3 positive"
+   },
+   {
+    "date": "2027-Q1",
+    "kind": "filing",
+    "label": "Filing"
+   }
+  ]
  },
  {
   "ticker": "ABBV",
@@ -366,7 +604,19 @@
    "https://www.marketbeat.com/stocks/NYSE/ABBV/fda-events/",
    "https://finance.yahoo.com/markets/stocks/articles/abbvie-abbv-q3-2026-earnings-211323080.html"
   ],
-  "needs_verification": "Efficacy figure from summarized transcript"
+  "needs_verification": "Efficacy figure from summarized transcript",
+  "milestones": [
+   {
+    "date": "2026-10-22",
+    "kind": "readout",
+    "label": "Phase 3 INTREPID"
+   },
+   {
+    "date": "2027-H2",
+    "kind": "filing",
+    "label": "Submissions"
+   }
+  ]
  },
  {
   "ticker": "ABBV",
@@ -384,7 +634,14 @@
   "sources": [
    "https://www.marketbeat.com/stocks/NYSE/ABBV/fda-events/"
   ],
-  "needs_verification": null
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-Q4",
+    "kind": "readout",
+    "label": "Pivotal topline"
+   }
+  ]
  },
  {
   "ticker": "CRSP",
@@ -402,7 +659,19 @@
    "https://ir.crisprtx.com/news-releases/news-release-details/crispr-therapeutics-provides-business-update-and-reports-third-7",
    "https://ir.crisprtx.com/news-releases/news-release-details/crispr-therapeutics-provides-business-update-and-reports-15"
   ],
-  "needs_verification": null
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2023-12-08",
+    "kind": "approval",
+    "label": "FDA approval, 12+"
+   },
+   {
+    "date": "2026-07",
+    "kind": "approval",
+    "label": "FDA approval, age 2+"
+   }
+  ]
  },
  {
   "ticker": "CRSP",
@@ -420,7 +689,19 @@
   "sources": [
    "https://ir.crisprtx.com/news-releases/news-release-details/crispr-therapeutics-provides-business-update-and-reports-third-7"
   ],
-  "needs_verification": null
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-08-28",
+    "kind": "readout",
+    "label": "1-year Phase 1 data"
+   },
+   {
+    "date": "2026-11-09",
+    "kind": "readout",
+    "label": "Phase 1b at AHA"
+   }
+  ]
  },
  {
   "ticker": "CRSP",
@@ -437,7 +718,19 @@
   "sources": [
    "https://ir.crisprtx.com/news-releases/news-release-details/crispr-therapeutics-provides-business-update-and-reports-third-7"
   ],
-  "needs_verification": null
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-11-08",
+    "kind": "readout",
+    "label": "Scleroderma data at ACR"
+   },
+   {
+    "date": "2026-H2",
+    "kind": "readout",
+    "label": "Autoimmune and cancer updates"
+   }
+  ]
  },
  {
   "ticker": "CRSP",
@@ -455,6 +748,13 @@
   "sources": [
    "https://ir.crisprtx.com/news-releases/news-release-details/crispr-therapeutics-provides-business-update-and-reports-third-7"
   ],
-  "needs_verification": null
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-H2",
+    "kind": "readout",
+    "label": "Phase 2 topline"
+   }
+  ]
  }
 ]

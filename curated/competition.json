@@ -1,0 +1,516 @@
+{
+ "note": "Competitor stages are a first pass from public knowledge as of Nov 2026 and still need source checks.",
+ "markets": [
+  {
+   "id": "mm",
+   "drug_class": "Bispecific antibodies",
+   "market": "Multiple myeloma (relapsed)",
+   "mechanism": "BCMA x CD3",
+   "players": [
+    {
+     "drug": "Tecvayli",
+     "company": "J&J",
+     "ticker": null,
+     "stage": "approved",
+     "note": null
+    },
+    {
+     "drug": "Elrexfio",
+     "company": "Pfizer",
+     "ticker": "PFE",
+     "stage": "approved",
+     "note": null
+    },
+    {
+     "drug": "Lynozyfic",
+     "company": "Regeneron",
+     "ticker": null,
+     "stage": "approved",
+     "note": null
+    },
+    {
+     "drug": "Etentamig",
+     "company": "AbbVie",
+     "ticker": "ABBV",
+     "stage": "filed",
+     "note": "BLA Oct 2026"
+    },
+    {
+     "drug": "Talvey (GPRC5D)",
+     "company": "J&J",
+     "ticker": null,
+     "stage": "approved",
+     "note": "different target"
+    }
+   ]
+  },
+  {
+   "id": "dlbcl",
+   "drug_class": "Bispecific antibodies",
+   "market": "DLBCL lymphoma, 1st line",
+   "mechanism": "CD20 x CD3 + chemo",
+   "players": [
+    {
+     "drug": "Polivy + R-CHP",
+     "company": "Roche",
+     "ticker": null,
+     "stage": "approved",
+     "note": "current standard"
+    },
+    {
+     "drug": "Epkinly + R-CHOP",
+     "company": "AbbVie / Genmab",
+     "ticker": "ABBV",
+     "stage": "p3",
+     "note": "positive, filing 2027"
+    },
+    {
+     "drug": "Columvi + Pola-R-CHP",
+     "company": "Roche",
+     "ticker": null,
+     "stage": "p3",
+     "note": null
+    }
+   ]
+  },
+  {
+   "id": "nsclc",
+   "drug_class": "Bispecific antibodies",
+   "market": "Lung cancer (NSCLC), 1st line",
+   "mechanism": "PD-1 x VEGF",
+   "players": [
+    {
+     "drug": "Keytruda + chemo",
+     "company": "Merck",
+     "ticker": null,
+     "stage": "approved",
+     "note": "current standard"
+    },
+    {
+     "drug": "Ivonescimab",
+     "company": "Summit / Akeso",
+     "ticker": null,
+     "stage": "p3",
+     "note": "approved in China"
+    },
+    {
+     "drug": "Tivunatamig",
+     "company": "Pfizer",
+     "ticker": "PFE",
+     "stage": "p3",
+     "note": null
+    },
+    {
+     "drug": "Pumitamig (BNT327)",
+     "company": "BioNTech / BMS",
+     "ticker": null,
+     "stage": "p3",
+     "note": null
+    }
+   ]
+  },
+  {
+   "id": "obesity",
+   "drug_class": "GLP-1 and incretins",
+   "market": "Obesity",
+   "mechanism": "GLP-1 based",
+   "players": [
+    {
+     "drug": "Zepbound",
+     "company": "Lilly",
+     "ticker": null,
+     "stage": "approved",
+     "note": null
+    },
+    {
+     "drug": "Wegovy",
+     "company": "Novo Nordisk",
+     "ticker": null,
+     "stage": "approved",
+     "note": null
+    },
+    {
+     "drug": "Orforglipron (pill)",
+     "company": "Lilly",
+     "ticker": null,
+     "stage": "filed",
+     "note": null
+    },
+    {
+     "drug": "CagriSema",
+     "company": "Novo Nordisk",
+     "ticker": null,
+     "stage": "filed",
+     "note": null
+    },
+    {
+     "drug": "MariTide (monthly)",
+     "company": "Amgen",
+     "ticker": null,
+     "stage": "p3",
+     "note": null
+    },
+    {
+     "drug": "Berobenatide (monthly)",
+     "company": "Pfizer",
+     "ticker": "PFE",
+     "stage": "p3",
+     "note": "approval target 2028"
+    }
+   ]
+  },
+  {
+   "id": "vitiligo",
+   "drug_class": "JAK inhibitors",
+   "market": "Vitiligo",
+   "mechanism": "JAK",
+   "players": [
+    {
+     "drug": "Opzelura (cream)",
+     "company": "Incyte",
+     "ticker": null,
+     "stage": "approved",
+     "note": null
+    },
+    {
+     "drug": "Rinvoq",
+     "company": "AbbVie",
+     "ticker": "ABBV",
+     "stage": "filed",
+     "note": null
+    },
+    {
+     "drug": "Litfulo",
+     "company": "Pfizer",
+     "ticker": "PFE",
+     "stage": "p3",
+     "note": "Phase 3 positive"
+    },
+    {
+     "drug": "Povorcitinib",
+     "company": "Incyte",
+     "ticker": null,
+     "stage": "p3",
+     "note": null
+    }
+   ]
+  },
+  {
+   "id": "ad",
+   "drug_class": "Immunology antibodies",
+   "market": "Atopic dermatitis (eczema)",
+   "mechanism": "IL-4/IL-13/TSLP and others",
+   "players": [
+    {
+     "drug": "Dupixent",
+     "company": "Sanofi / Regeneron",
+     "ticker": null,
+     "stage": "approved",
+     "note": null
+    },
+    {
+     "drug": "Ebglyss",
+     "company": "Lilly",
+     "ticker": null,
+     "stage": "approved",
+     "note": null
+    },
+    {
+     "drug": "Nemluvio",
+     "company": "Galderma",
+     "ticker": null,
+     "stage": "approved",
+     "note": null
+    },
+    {
+     "drug": "Amlitelimab",
+     "company": "Sanofi",
+     "ticker": null,
+     "stage": "p3",
+     "note": null
+    },
+    {
+     "drug": "Tilrekimig",
+     "company": "Pfizer",
+     "ticker": "PFE",
+     "stage": "p3",
+     "note": "readout 2028"
+    }
+   ]
+  },
+  {
+   "id": "hs",
+   "drug_class": "Immunology antibodies",
+   "market": "Hidradenitis suppurativa",
+   "mechanism": "IL-17 / IL-1",
+   "players": [
+    {
+     "drug": "Humira",
+     "company": "AbbVie",
+     "ticker": "ABBV",
+     "stage": "approved",
+     "note": null
+    },
+    {
+     "drug": "Cosentyx",
+     "company": "Novartis",
+     "ticker": null,
+     "stage": "approved",
+     "note": null
+    },
+    {
+     "drug": "Bimzelx",
+     "company": "UCB",
+     "ticker": null,
+     "stage": "approved",
+     "note": null
+    },
+    {
+     "drug": "Sonelokimab",
+     "company": "MoonLake",
+     "ticker": null,
+     "stage": "p3",
+     "note": null
+    },
+    {
+     "drug": "Lutikizumab",
+     "company": "AbbVie",
+     "ticker": "ABBV",
+     "stage": "p3",
+     "note": "filing 2H 2027"
+    }
+   ]
+  },
+  {
+   "id": "crohns",
+   "drug_class": "Immunology antibodies",
+   "market": "Crohn's disease",
+   "mechanism": "IL-23",
+   "players": [
+    {
+     "drug": "Skyrizi",
+     "company": "AbbVie",
+     "ticker": "ABBV",
+     "stage": "approved",
+     "note": "SC induction approved Oct 2026"
+    },
+    {
+     "drug": "Omvoh",
+     "company": "Lilly",
+     "ticker": null,
+     "stage": "approved",
+     "note": null
+    },
+    {
+     "drug": "Tremfya",
+     "company": "J&J",
+     "ticker": null,
+     "stage": "approved",
+     "note": null
+    }
+   ]
+  },
+  {
+   "id": "flu",
+   "drug_class": "Vaccines",
+   "market": "Seasonal flu, older adults",
+   "mechanism": "Enhanced flu vaccines",
+   "players": [
+    {
+     "drug": "Fluzone High-Dose",
+     "company": "Sanofi",
+     "ticker": null,
+     "stage": "approved",
+     "note": null
+    },
+    {
+     "drug": "Flublok",
+     "company": "Sanofi",
+     "ticker": null,
+     "stage": "approved",
+     "note": null
+    },
+    {
+     "drug": "Fluad",
+     "company": "CSL Seqirus",
+     "ticker": null,
+     "stage": "approved",
+     "note": null
+    },
+    {
+     "drug": "mFLUSIVA (mRNA)",
+     "company": "Moderna",
+     "ticker": "MRNA",
+     "stage": "approved",
+     "note": "Aug 2026"
+    }
+   ]
+  },
+  {
+   "id": "rsv",
+   "drug_class": "Vaccines",
+   "market": "RSV, adults",
+   "mechanism": "RSV prefusion F",
+   "players": [
+    {
+     "drug": "Arexvy",
+     "company": "GSK",
+     "ticker": null,
+     "stage": "approved",
+     "note": null
+    },
+    {
+     "drug": "Abrysvo",
+     "company": "Pfizer",
+     "ticker": "PFE",
+     "stage": "approved",
+     "note": null
+    },
+    {
+     "drug": "mRESVIA (mRNA)",
+     "company": "Moderna",
+     "ticker": "MRNA",
+     "stage": "approved",
+     "note": null
+    }
+   ]
+  },
+  {
+   "id": "scd",
+   "drug_class": "Gene editing and gene therapy",
+   "market": "Sickle cell disease",
+   "mechanism": "One-time cell therapy",
+   "players": [
+    {
+     "drug": "Casgevy",
+     "company": "Vertex / CRISPR",
+     "ticker": "CRSP",
+     "stage": "approved",
+     "note": null
+    },
+    {
+     "drug": "Lyfgenia",
+     "company": "bluebird bio",
+     "ticker": null,
+     "stage": "approved",
+     "note": null
+    },
+    {
+     "drug": "BEAM-101",
+     "company": "Beam",
+     "ticker": null,
+     "stage": "p2",
+     "note": null
+    }
+   ]
+  },
+  {
+   "id": "lipid",
+   "drug_class": "Gene editing and gene therapy",
+   "market": "High triglycerides / LDL",
+   "mechanism": "ANGPTL3 / APOC3 lowering",
+   "players": [
+    {
+     "drug": "Evkeeza",
+     "company": "Regeneron",
+     "ticker": null,
+     "stage": "approved",
+     "note": "HoFH only"
+    },
+    {
+     "drug": "Tryngolza (olezarsen)",
+     "company": "Ionis",
+     "ticker": null,
+     "stage": "approved",
+     "note": "FCS; sHTG next"
+    },
+    {
+     "drug": "Redemplo (plozasiran)",
+     "company": "Arrowhead",
+     "ticker": null,
+     "stage": "approved",
+     "note": "FCS; sHTG next"
+    },
+    {
+     "drug": "CTX310 (one-time edit)",
+     "company": "CRISPR",
+     "ticker": "CRSP",
+     "stage": "p1",
+     "note": null
+    }
+   ]
+  },
+  {
+   "id": "breast",
+   "drug_class": "Small molecules",
+   "market": "HR+/HER2- breast cancer",
+   "mechanism": "CDK4/6 and CDK4",
+   "players": [
+    {
+     "drug": "Ibrance",
+     "company": "Pfizer",
+     "ticker": "PFE",
+     "stage": "approved",
+     "note": null
+    },
+    {
+     "drug": "Kisqali",
+     "company": "Novartis",
+     "ticker": null,
+     "stage": "approved",
+     "note": null
+    },
+    {
+     "drug": "Verzenio",
+     "company": "Lilly",
+     "ticker": null,
+     "stage": "approved",
+     "note": null
+    },
+    {
+     "drug": "Atirmociclib",
+     "company": "Pfizer",
+     "ticker": "PFE",
+     "stage": "p3",
+     "note": "CDK4-selective"
+    }
+   ]
+  },
+  {
+   "id": "fxi",
+   "drug_class": "siRNA and RNA drugs",
+   "market": "Blood clot prevention",
+   "mechanism": "Factor XI",
+   "players": [
+    {
+     "drug": "Asundexian",
+     "company": "Bayer",
+     "ticker": null,
+     "stage": "p3",
+     "note": null
+    },
+    {
+     "drug": "Milvexian",
+     "company": "BMS / J&J",
+     "ticker": null,
+     "stage": "p3",
+     "note": null
+    },
+    {
+     "drug": "Abelacimab",
+     "company": "Anthos (Novartis)",
+     "ticker": null,
+     "stage": "p3",
+     "note": null
+    },
+    {
+     "drug": "CTX611",
+     "company": "CRISPR / Sirius",
+     "ticker": "CRSP",
+     "stage": "p2",
+     "note": null
+    }
+   ]
+  }
+ ]
+}
