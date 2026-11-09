@@ -98,8 +98,10 @@ h2{font-family:var(--display);font-weight:700;font-size:1.6rem;margin:0;text-tra
 .brief h3{font-family:var(--display);font-size:1.2rem;margin:0}
 .brief ul{margin:8px 0 6px;padding-left:18px;font-size:.86rem;display:flex;flex-direction:column;gap:4px}
 .brief .when{font-family:var(--mono);font-size:.75rem;color:var(--muted)}
-#cliff text,#flow text,#cum text{font-family:var(--body);fill:var(--ink)}
-#cliff .ax,#flow .ax,#cum .ax{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+.copanel svg text{font-family:var(--body);fill:var(--ink)}
+#cliff text{font-family:var(--body);fill:var(--ink)}
+.copanel svg .ax{font-family:var(--mono);font-size:10.5px;fill:var(--muted)}
+#cliff .ax{font-family:var(--mono);font-size:11px;fill:var(--muted)}
 #cliff .rl{font-size:12.5px;font-weight:600} #cliff .rs{font-size:11px;fill:var(--muted)}
 #cliff .lo{font-family:var(--mono);font-size:10.5px;fill:var(--cliff);font-weight:600}
 .two{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
@@ -122,6 +124,14 @@ h2{font-family:var(--display);font-weight:700;font-size:1.6rem;margin:0;text-tra
 .lk-likely{background:var(--good-soft,var(--accent-soft));color:var(--approved)}
 .lk-unknown{background:var(--grid);color:var(--filed)}
 .lk-likely_failure{background:var(--grid);color:var(--fail)}
+.cogrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(480px,1fr));gap:12px}
+@media (max-width:540px){.cogrid{grid-template-columns:minmax(0,1fr)}}
+.copanel{background:var(--paper);border:1px solid var(--line);min-width:0}
+.copanel header{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;padding:10px 12px;border-bottom:1px solid var(--line)}
+.copanel header b{font-family:var(--display);font-size:1.15rem}
+.copanel .net{font-size:.8rem;color:var(--muted)}
+.copanel h4{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:10px 12px 0;font-weight:600}
+.copanel .cb{overflow-x:auto}
 footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
 </style>
 
@@ -157,11 +167,14 @@ footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
     <div class="sh"><h2>Approved drugs and patent cliffs</h2><span class="legend" id="cliffleg"></span></div>
     <div class="two">
       <div class="chartbox"><h3>Projected sales, before and after US patent expiry</h3><svg id="cliff" role="img" aria-label="Projected sales of approved drugs around patent expiry"></svg></div>
-      <div class="chartbox"><h3>Each year: new launches vs sales losing US protection</h3><svg id="flow" role="img" aria-label="New launch sales versus sales losing protection, by year"></svg></div>
-      <div class="chartbox"><h3>Cumulative change in yearly sales vs today</h3><svg id="cum" role="img" aria-label="Cumulative sales added and lost over time"></svg></div>
+
     </div>
     <div class="mkt" style="margin-top:12px"><table><thead><tr><th>Drug</th><th>Treats</th><th>Annual sales</th><th>Market position</th><th>US expiry</th><th>Kept 2 yrs after expiry</th><th>Sales 2 yrs after</th></tr></thead><tbody id="approved"></tbody></table></div>
     <p class="hint" id="erosionnote"></p>
+    <div class="sh" style="margin-top:22px;border-bottom-width:1px"><h2 style="font-size:1.25rem">Revenue impact by company</h2>
+      <span class="legend"><span><i class="swatch" style="background:var(--approved)"></i>Launch, likely</span><span><i class="swatch" style="background:var(--filed);opacity:.55"></i>Launch, unknown</span><span><i class="swatch" style="background:var(--fail);opacity:.55"></i>Launch, likely failure</span><span><i class="swatch" style="background:var(--cliff)"></i>Sales lost after expiry</span><span>Dashed line: added incl. unknown</span></span></div>
+    <p class="hint" style="margin-top:0">Each company has its own panel and its own scale. In the yearly chart, the left bar is new launches and the right bar is sales losing US protection. Use the Company dropdown to focus on one.</p>
+    <div class="cogrid" id="cogrid"></div>
     <div class="mkt" style="margin-top:12px"><table><thead><tr><th>Pipeline drug</th><th>Expected launch</th><th>Estimated yearly sales</th><th>Chance of success</th><th>Why</th></tr></thead><tbody id="launches"></tbody></table></div>
     <p class="hint" id="launchnote"></p>
   </section>
@@ -369,13 +382,13 @@ const SIGNUP_URL="/*SIGNUP_URL*/";
 const LAUNCH=/*LAUNCH*/{launches:[],ramp:[1]};
 const LK={likely:["Likely","var(--approved)"],unknown:["Unknown","var(--filed)"],likely_failure:["Likely failure","var(--fail)"]};
 const lkPill=k=>k?`<span class="lk lk-${k}">${LK[k][0]}</span>`:"";
-function flows(appr){
-  const L=LAUNCH.launches.filter(r=>state.cos.has(r.ticker)&&textOk([r.ticker,NAMES[r.ticker],r.drug,r.why])),yrs=[];for(let y=2026;y<=2037;y++)yrs.push(y);
-  // side by side: launches (stacked by likelihood) vs losing (stacked by company)
-  const svg=document.getElementById("flow"),W=Math.max(760,svg.parentElement.clientWidth-2),LM=60,PW=W-LM-14,H=200,T=24;
+function drawCo(L,appr,fs,cs){
+  const yrs=[];for(let y=2026;y<=2037;y++)yrs.push(y);
+  // side by side: launches (stacked by likelihood) vs losing (this company's drugs)
+  const svg=fs,W=Math.max(460,svg.parentElement.clientWidth-2),LM=52,PW=W-LM-10,H=140,T=20;
   const add=y=>L.filter(r=>r.launch_year===y),lose=y=>appr.filter(p=>p.us_loe===y);
   const sum=a=>a.reduce((s,x)=>s+x,0);
-  const mx=Math.max(5,...yrs.map(y=>Math.max(sum(add(y).map(r=>r.est_sales)),sum(lose(y).map(p=>p.sales_2025))))),top=Math.ceil(mx/10)*10,Y=v=>T+H-(v/top)*H,gw=PW/yrs.length,bw=gw*0.36;
+  const mx=Math.max(5,...yrs.map(y=>Math.max(sum(add(y).map(r=>r.est_sales)),sum(lose(y).map(p=>p.sales_2025))))),top=Math.ceil(mx/10)*10,Y=v=>T+H-(v/top)*H,gw=PW/yrs.length,bw=gw*0.38;
   let g="";for(let v=0;v<=top;v+=top/5)g+=`<line x1="${LM}" y1="${Y(v)}" x2="${LM+PW}" y2="${Y(v)}" stroke="var(--grid)"/><text class="ax" x="${LM-6}" y="${Y(v)+4}" text-anchor="end">$${Math.round(v)}B</text>`;
   yrs.forEach((y,i)=>{const x0=LM+i*gw+gw*0.12;let acc=0;
     ["likely","unknown","likely_failure"].forEach(k=>add(y).filter(r=>r.likelihood===k).sort((a,b)=>b.est_sales-a.est_sales).forEach(r=>{const y1=Y(acc+r.est_sales),h=Y(acc)-y1;
@@ -385,27 +398,39 @@ function flows(appr){
       g+=`<rect x="${x1}" y="${y1}" width="${bw}" height="${Math.max(h-1,0.6)}" fill="${COL[p.ticker]}"><title>${esc(p.drug)} (${p.ticker}) loses US protection ${y}: ${money(p.sales_2025)}/yr today</title></rect>`;
       if(h>14&&bw>18)g+=`<text x="${x1+bw/2}" y="${y1+h/2+3}" text-anchor="middle" style="font-size:9px;fill:var(--paper);font-weight:600">${esc(p.drug.split(/[ (]/)[0].slice(0,7))}</text>`;acc2+=p.sales_2025});
     if(acc2)g+=`<text class="ax" x="${x1+bw/2}" y="${Y(acc2)-4}" text-anchor="middle" style="fill:var(--cliff);font-weight:600">−${Math.round(acc2*10)/10}</text>`;
-    g+=`<text class="ax" x="${LM+i*gw+gw/2}" y="${T+H+16}" text-anchor="middle">${y}</text>`});
-  g+=`<g transform="translate(${LM},${T+H+30})" class="ax"><rect width="10" height="10" fill="var(--approved)"/><text x="14" y="9">Launch, likely</text><rect x="104" width="10" height="10" fill="var(--filed)" opacity=".55"/><text x="118" y="9">Unknown</text><rect x="184" width="10" height="10" fill="var(--fail)" opacity=".55"/><text x="198" y="9">Likely failure</text><text x="300" y="9">Right bar in each year: sales losing protection, by company color</text></g>`;
-  svg.setAttribute("width",W);svg.setAttribute("height",T+H+48);svg.setAttribute("viewBox",`0 0 ${W} ${T+H+48}`);svg.innerHTML=g;
+    g+=`<text class="ax" x="${LM+i*gw+gw/2}" y="${T+H+16}" text-anchor="middle">’${String(y).slice(2)}</text>`});
+  svg.setAttribute("width",W);svg.setAttribute("height",T+H+24);svg.setAttribute("viewBox",`0 0 ${W} ${T+H+24}`);svg.innerHTML=g;
   // cumulative: ramped launches vs erosion after expiry
   const ramp=LAUNCH.ramp,rv=(r,y)=>y<r.launch_year?0:r.est_sales*ramp[Math.min(y-r.launch_year,ramp.length-1)];
   const now=p=>proj(p,2026),lost=y=>sum(appr.filter(p=>p.us_loe&&p.us_loe>2026).map(p=>Math.max(0,now(p)-proj(p,y))));
   const gL=y=>sum(L.filter(r=>r.likelihood==="likely").map(r=>rv(r,y))),gA=y=>sum(L.filter(r=>r.likelihood!=="likely_failure").map(r=>rv(r,y)));
   const ser=yrs.map(y=>({y,lost:lost(y),likely:gL(y),all:gA(y)}));
-  const c=document.getElementById("cum"),Wc=Math.max(760,c.parentElement.clientWidth-2),Pc=Wc-LM-110,Hc=200;
+  const c=cs,Wc=Math.max(460,c.parentElement.clientWidth-2),Pc=Wc-LM-122,Hc=150;
   const mxc=Math.max(5,...ser.map(d=>Math.max(d.lost,d.all))),topc=Math.ceil(mxc/10)*10,mn=-topc,Yc=v=>T+Hc/2-(v/topc)*(Hc/2),Xc=i=>LM+i*(Pc/(yrs.length-1));
   let h="";for(let v=mn;v<=topc;v+=topc/2)h+=`<line x1="${LM}" y1="${Yc(v)}" x2="${LM+Pc}" y2="${Yc(v)}" stroke="var(${v===0?"--line":"--grid"})"/><text class="ax" x="${LM-6}" y="${Yc(v)+4}" text-anchor="end">${v>0?"+":v<0?"−":""}$${Math.abs(Math.round(v))}B</text>`;
-  yrs.forEach((y,i)=>h+=`<text class="ax" x="${Xc(i)}" y="${T+Hc+16}" text-anchor="middle">${y}</text>`);
+  yrs.forEach((y,i)=>h+=`<text class="ax" x="${Xc(i)}" y="${T+Hc+16}" text-anchor="middle">’${String(y).slice(2)}</text>`);
   const net=ser.map(d=>d.likely-d.lost);
   ser.forEach((d,i)=>{const v=net[i],bw2=Pc/yrs.length*0.5;h+=`<rect x="${Xc(i)-bw2/2}" y="${Math.min(Yc(0),Yc(v))}" width="${bw2}" height="${Math.abs(Yc(v)-Yc(0))}" fill="${v>=0?"var(--approved)":"var(--cliff)"}" opacity=".18"><title>${d.y}: net ${v>=0?"+":"−"}${money(Math.abs(v))}/yr vs today (likely launches minus lost sales)</title></rect>`});
   const line=(f,col,dash,neg)=>`<path d="${ser.map((d,i)=>(i?"L":"M")+Xc(i)+" "+Yc(neg?-f(d):f(d))).join("")}" fill="none" stroke="${col}" stroke-width="2.5"${dash?' stroke-dasharray="6 4"':""}/>`;
   h+=line(d=>d.all,"var(--approved)",true)+line(d=>d.likely,"var(--approved)",false)+line(d=>d.lost,"var(--cliff)",false,true);
-  const last=ser[ser.length-1],lab=(v,t,col)=>`<text x="${LM+Pc+8}" y="${Yc(v)+4}" style="font-size:11px;fill:${col};font-weight:600">${t}</text>`;
-  h+=lab(last.all,"+"+money(last.all)+" all","var(--approved)")+lab(last.likely-0.0001,"+"+money(last.likely)+" likely","var(--approved)")+lab(-last.lost,"−"+money(last.lost)+" lost","var(--cliff)");
+  const last=ser[ser.length-1];
+  const labs=[[last.likely,"+"+money(last.likely)+" likely","var(--approved)"],[-last.lost,"−"+money(last.lost)+" lost","var(--cliff)"]];
+  if(last.all-last.likely>0.05)labs.unshift([last.all,"+"+money(last.all)+" incl. unknown","var(--approved)"]);
+  const ys=labs.map(l=>Yc(l[0])+4);for(let k=1;k<ys.length;k++)if(ys[k]-ys[k-1]<13)ys[k]=ys[k-1]+13;
+  labs.forEach((l,k)=>h+=`<text x="${LM+Pc+8}" y="${ys[k]}" style="font-size:11px;fill:${l[2]};font-weight:600">${l[1]}</text>`);
   ser.forEach((d,i)=>h+=`<circle cx="${Xc(i)}" cy="${Yc(d.likely)}" r="3" fill="var(--approved)"><title>${d.y}: +${money(d.likely)} from likely launches, +${money(d.all)} incl. unknown</title></circle><circle cx="${Xc(i)}" cy="${Yc(-d.lost)}" r="3" fill="var(--cliff)"><title>${d.y}: −${money(d.lost)} lost to patent expiry</title></circle>`);
-  h+=`<g transform="translate(${LM},${T+Hc+30})" class="ax"><line x1="0" y1="5" x2="18" y2="5" stroke="var(--approved)" stroke-width="2.5"/><text x="22" y="9">Added, likely launches</text><line x1="160" y1="5" x2="178" y2="5" stroke="var(--approved)" stroke-width="2.5" stroke-dasharray="6 4"/><text x="182" y="9">Added, incl. unknown</text><line x1="320" y1="5" x2="338" y2="5" stroke="var(--cliff)" stroke-width="2.5"/><text x="342" y="9">Lost after patent expiry</text><rect x="480" width="10" height="10" fill="var(--approved)" opacity=".3"/><text x="494" y="9">Net (likely)</text></g>`;
-  c.setAttribute("width",Wc);c.setAttribute("height",T+Hc+48);c.setAttribute("viewBox",`0 0 ${Wc} ${T+Hc+48}`);c.innerHTML=h;
+  c.setAttribute("width",Wc);c.setAttribute("height",T+Hc+24);c.setAttribute("viewBox",`0 0 ${Wc} ${T+Hc+24}`);c.innerHTML=h;
+  return ser[ser.length-1];
+}
+function flows(appr){
+  const L=LAUNCH.launches.filter(r=>state.cos.has(r.ticker)&&textOk([r.ticker,NAMES[r.ticker],r.drug,r.why])),yrs=[];for(let y=2026;y<=2037;y++)yrs.push(y);
+  const cos=Object.keys(NAMES).filter(t=>state.cos.has(t)&&(L.some(r=>r.ticker===t)||appr.some(p=>p.ticker===t&&p.us_loe&&p.us_loe>=2026)));
+  const grid=document.getElementById("cogrid");
+  grid.innerHTML=cos.map(t=>`<article class="copanel"><header><b><i class="swatch" style="background:${COL[t]}"></i>${t} · ${esc(NAMES[t])}</b><span class="net" id="net-${t}"></span></header>
+    <h4>Each year: launches vs sales losing US protection</h4><div class="cb"><svg id="fl-${t}" role="img" aria-label="${esc(NAMES[t])} launches versus expiries"></svg></div>
+    <h4>Cumulative change in yearly sales vs today</h4><div class="cb"><svg id="cu-${t}" role="img" aria-label="${esc(NAMES[t])} cumulative change"></svg></div></article>`).join("")||`<p class="empty">No companies match these filters.</p>`;
+  cos.forEach(t=>{const last=drawCo(L.filter(r=>r.ticker===t),appr.filter(p=>p.ticker===t),document.getElementById("fl-"+t),document.getElementById("cu-"+t));
+    const net=last.likely-last.lost;document.getElementById("net-"+t).innerHTML=`By 2037: <b style="color:${net>=0?"var(--approved)":"var(--cliff)"}">${net>=0?"+":"−"}${money(Math.abs(net))}/yr</b> net (likely launches minus expiries)`});
   document.getElementById("launches").innerHTML=L.sort((a,b)=>a.launch_year-b.launch_year||b.est_sales-a.est_sales).map(r=>`<tr><td><b>${esc(r.drug)}</b><small>${r.ticker} · ${esc(NAMES[r.ticker])}</small></td><td class="num">${r.launch_year}</td><td class="num">~${money(r.est_sales)}<small>${esc(r.basis)}</small></td><td>${lkPill(r.likelihood)}</td><td>${esc(r.why)}</td></tr>`).join("")||`<tr><td colspan="5" class="empty">No pipeline launches for these filters.</td></tr>`;
   document.getElementById("launchnote").textContent=LAUNCH.note;
 }
