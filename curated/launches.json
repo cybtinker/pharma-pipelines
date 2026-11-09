@@ -14,7 +14,10 @@
    "est_sales": 5.8,
    "basis": "5% of a ~$115B obesity market (our assumption)",
    "likelihood": "likely",
-   "why": "Approved and launched"
+   "why": "Approved and on sale; Lilly reports its sales.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm"
+   ]
   },
   {
    "ticker": "NVO",
@@ -23,7 +26,10 @@
    "est_sales": 3.3,
    "basis": "Current run-rate (Q3 2026 x4)",
    "likelihood": "likely",
-   "why": "Approved, $813M in Q3"
+   "why": "Approved and on sale; $813M in Q3 2026.",
+   "sources": [
+    "https://pharmaphorum.com/news/oral-wegovy-bolsters-novo-q3"
+   ]
   },
   {
    "ticker": "MRNA",
@@ -32,7 +38,10 @@
    "est_sales": 1.1,
    "basis": "William Blair peak estimate",
    "likelihood": "likely",
-   "why": "Approved Aug 2026; limited first season"
+   "why": "Approved in Aug 2026; the first season is limited.",
+   "sources": [
+    "https://finviz.com/news/418243/moderna-reports-third-quarter-2026-financial-results-and-provides-business-updates"
+   ]
   },
   {
    "ticker": "NVO",
@@ -41,7 +50,12 @@
    "est_sales": 6.9,
    "basis": "6% of obesity market (our assumption)",
    "likelihood": "likely",
-   "why": "Filed; Novo expects approval by year-end"
+   "why": "Phase 3 REDEFINE showed about 21-23% weight loss and the FDA decision is expected by year-end.",
+   "sources": [
+    "https://chemxplore.com/news/novo-nordisk-q3-2026-financial-report",
+    "https://pharmaphorum.com/news/oral-wegovy-bolsters-novo-q3",
+    "https://lifesciencedaily.news/cagrisema-fda-review-novo-nordisk-nda-timeline-explained/"
+   ]
   },
   {
    "ticker": "ABBV",
@@ -50,7 +64,11 @@
    "est_sales": 0.7,
    "basis": "2% of $33B myeloma market (our assumption)",
    "likelihood": "likely",
-   "why": "Positive Phase 3, filed Oct 2026"
+   "why": "Phase 3 CERVINO beat standard therapy and AbbVie filed with the FDA on Oct 27, 2026.",
+   "sources": [
+    "https://www.marketbeat.com/stocks/NYSE/ABBV/fda-events/",
+    "https://finance.yahoo.com/markets/stocks/articles/abbvie-abbv-q3-2026-earnings-211323080.html"
+   ]
   },
   {
    "ticker": "ABBV",
@@ -59,7 +77,11 @@
    "est_sales": 2.0,
    "basis": "AbbVie management peak estimate",
    "likelihood": "likely",
-   "why": "Under FDA review"
+   "why": "An approved drug; the new vitiligo and alopecia uses are under FDA review.",
+   "sources": [
+    "https://www.marketbeat.com/stocks/NYSE/ABBV/fda-events/",
+    "https://finance.yahoo.com/markets/stocks/articles/abbvie-abbv-q3-2026-earnings-211323080.html"
+   ]
   },
   {
    "ticker": "ABBV",
@@ -68,7 +90,11 @@
    "est_sales": 1.0,
    "basis": "Our rough estimate",
    "likelihood": "likely",
-   "why": "Positive Phase 3, filing early 2027"
+   "why": "Phase 3 met its goal: 51% lower risk of progression or death.",
+   "sources": [
+    "https://finance.yahoo.com/healthcare/articles/abbv-q3-earnings-call-highlights-140000099.html",
+    "https://finance.yahoo.com/markets/stocks/articles/abbvie-abbv-q3-2026-earnings-211323080.html"
+   ]
   },
   {
    "ticker": "PFE",
@@ -77,7 +103,11 @@
    "est_sales": 0.5,
    "basis": "Our rough estimate",
    "likelihood": "likely",
-   "why": "Filed in EU and Canada; first vaccine of its kind"
+   "why": "Phase 3 VALOR supported filings in the EU and Canada.",
+   "sources": [
+    "https://www.biotechreality.com/2026/11/pfizer-q3-2026-results.html",
+    "https://gloom.sh/stocks/pfe/transcripts/q3-2026"
+   ]
   },
   {
    "ticker": "NVO",
@@ -86,7 +116,11 @@
    "est_sales": 1.0,
    "basis": "Our rough estimate",
    "likelihood": "likely",
-   "why": "Positive EU opinion; US launch 1H 2027"
+   "why": "EU regulators gave a positive opinion on Sept 17, 2026; US review is under way.",
+   "sources": [
+    "https://chemxplore.com/news/novo-nordisk-q3-2026-financial-report",
+    "https://pharmaphorum.com/news/oral-wegovy-bolsters-novo-q3"
+   ]
   },
   {
    "ticker": "LLY",
@@ -95,7 +129,11 @@
    "est_sales": 13.8,
    "basis": "12% of obesity market (our assumption)",
    "likelihood": "likely",
-   "why": "Positive Phase 3 (~23% weight loss); filing Q1 2027"
+   "why": "Phase 3 met its goals (up to 22.6% weight loss) and beat Ozempic head to head; Lilly plans to file.",
+   "sources": [
+    "https://www.hcplive.com/view/retatrutide-meets-phase-3-weight-loss-endpoints-in-2-obesity-trials",
+    "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm"
+   ]
   },
   {
    "ticker": "MRNA",
@@ -104,7 +142,11 @@
    "est_sales": 1.0,
    "basis": "Our rough estimate, Moderna share",
    "likelihood": "likely",
-   "why": "Positive Phase 3 in melanoma"
+   "why": "Phase 3 met its goal: 42% lower risk of melanoma coming back or death when added to Keytruda.",
+   "sources": [
+    "https://finviz.com/news/418243/moderna-reports-third-quarter-2026-financial-results-and-provides-business-updates",
+    "https://www.marketbeat.com/stocks/NASDAQ/MRNA/fda-events/"
+   ]
   },
   {
    "ticker": "PFE",
@@ -113,7 +155,11 @@
    "est_sales": 0.5,
    "basis": "Our rough estimate",
    "likelihood": "likely",
-   "why": "Two positive Phase 3 trials"
+   "why": "Two Phase 3 vitiligo trials were positive and Pfizer plans to file.",
+   "sources": [
+    "https://www.biotechreality.com/2026/11/pfizer-q3-2026-results.html",
+    "https://za.investing.com/news/stock-market-news/pfizer-q3-2026-slides-32-growth-in-new-products-guidance-raised-93CH-4547008"
+   ]
   },
   {
    "ticker": "PFE",
@@ -122,7 +168,11 @@
    "est_sales": 1.0,
    "basis": "Our rough estimate",
    "likelihood": "unknown",
-   "why": "Phase 3 readout Q1 2027; first-in-class"
+   "why": "Phase 3 has not read out yet (expected Q1 2027) and no efficacy data has been published.",
+   "sources": [
+    "https://www.biotechreality.com/2026/11/pfizer-q3-2026-results.html",
+    "https://gloom.sh/stocks/pfe/transcripts/q3-2026"
+   ]
   },
   {
    "ticker": "ABBV",
@@ -131,7 +181,11 @@
    "est_sales": 1.0,
    "basis": "Our rough estimate",
    "likelihood": "unknown",
-   "why": "Phase 3 hit but modest effect (31% HiSCR75)"
+   "why": "Phase 3 hit its goal, but the effect was modest, so approval and uptake are uncertain.",
+   "sources": [
+    "https://www.marketbeat.com/stocks/NYSE/ABBV/fda-events/",
+    "https://finance.yahoo.com/markets/stocks/articles/abbvie-abbv-q3-2026-earnings-211323080.html"
+   ]
   },
   {
    "ticker": "MRNA",
@@ -140,7 +194,11 @@
    "est_sales": 0.5,
    "basis": "Our rough estimate",
    "likelihood": "likely_failure",
-   "why": "Phase 3 interim missed early-success bar"
+   "why": "The Phase 3 interim look did not meet the bar for early success, and Moderna is not enrolling a new season.",
+   "sources": [
+    "https://finviz.com/news/418243/moderna-reports-third-quarter-2026-financial-results-and-provides-business-updates",
+    "https://www.marketbeat.com/stocks/NASDAQ/MRNA/fda-events/"
+   ]
   },
   {
    "ticker": "PFE",
@@ -149,7 +207,11 @@
    "est_sales": 3.4,
    "basis": "3% of obesity market (our assumption)",
    "likelihood": "unknown",
-   "why": "Phase 3 enrolling; late, crowded market"
+   "why": "Phase 3 is still enrolling, so there is no late-stage data yet.",
+   "sources": [
+    "https://gloom.sh/stocks/pfe/transcripts/q3-2026",
+    "https://za.investing.com/news/stock-market-news/pfizer-q3-2026-slides-32-growth-in-new-products-guidance-raised-93CH-4547008"
+   ]
   },
   {
    "ticker": "PFE",
@@ -158,7 +220,12 @@
    "est_sales": 0.85,
    "basis": "3% of PD-1 lung market (our assumption)",
    "likelihood": "unknown",
-   "why": "Strong Phase 2, but behind ivonescimab"
+   "why": "Phase 2 response rates looked strong, but that was a cross-trial comparison and Phase 3 is still running behind a rival.",
+   "sources": [
+    "https://www.biotechreality.com/2026/11/pfizer-q3-2026-results.html",
+    "https://za.investing.com/news/stock-market-news/pfizer-q3-2026-slides-32-growth-in-new-products-guidance-raised-93CH-4547008",
+    "https://gloom.sh/stocks/pfe/transcripts/q3-2026"
+   ]
   },
   {
    "ticker": "PFE",
@@ -167,7 +234,11 @@
    "est_sales": 1.5,
    "basis": "Our rough estimate",
    "likelihood": "unknown",
-   "why": "Good Phase 2; Phase 3 vs CDK4/6 ongoing"
+   "why": "Phase 2 was good (40% lower risk vs physician's choice), but the Phase 3 against approved CDK4/6 drugs is still running.",
+   "sources": [
+    "https://za.investing.com/news/stock-market-news/pfizer-q3-2026-slides-32-growth-in-new-products-guidance-raised-93CH-4547008",
+    "https://gloom.sh/stocks/pfe/transcripts/q3-2026"
+   ]
   },
   {
    "ticker": "LLY",
@@ -176,7 +247,10 @@
    "est_sales": 1.0,
    "basis": "Our rough estimate",
    "likelihood": "unknown",
-   "why": "Encouraging data; crowded KRAS field"
+   "why": "Encouraging data at ESMO 2026, but Phase 3 is running in a crowded KRAS field.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm"
+   ]
   },
   {
    "ticker": "NVO",
@@ -185,7 +259,10 @@
    "est_sales": 1.0,
    "basis": "Our rough estimate",
    "likelihood": "likely_failure",
-   "why": "Novo wrote down $0.7B in Q3 2026"
+   "why": "Novo wrote down $0.7B on it in Q3 2026, a sign it now expects less from the drug.",
+   "sources": [
+    "https://chemxplore.com/news/novo-nordisk-q3-2026-financial-report"
+   ]
   },
   {
    "ticker": "LLY",
@@ -194,7 +271,10 @@
    "est_sales": 3.0,
    "basis": "Our rough estimate",
    "likelihood": "unknown",
-   "why": "Phase 3 only starting Q4 2026"
+   "why": "Phase 2 beat tirzepatide alone, but Phase 3 is only starting.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm"
+   ]
   },
   {
    "ticker": "NVO",
@@ -203,7 +283,16 @@
    "est_sales": 3.0,
    "basis": "Our rough estimate",
    "likelihood": "unknown",
-   "why": "Phase 3 started Sept 2026"
+   "why": "Phase 3 only started in Sept 2026.",
+   "sources": [
+    "https://chemxplore.com/news/novo-nordisk-q3-2026-financial-report",
+    "https://pharmaphorum.com/news/oral-wegovy-bolsters-novo-q3"
+   ]
   }
- ]
+ ],
+ "rating_rules": {
+  "likely": "Approved, filed with regulators, or a Phase 3 trial met its main goal.",
+  "unknown": "Phase 3 or earlier trials are still running, or the data is mixed.",
+  "likely_failure": "A trial missed its main goal, the program was stopped, or the company wrote down its value."
+ }
 }

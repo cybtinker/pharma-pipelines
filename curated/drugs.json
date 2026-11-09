@@ -129,7 +129,8 @@
     "label": "Filing (estimated)"
    }
   ],
-  "likelihood": "likely"
+  "likelihood": "likely",
+  "likelihood_why": "Phase 3 met its goal: 42% lower risk of melanoma coming back or death when added to Keytruda."
  },
  {
   "ticker": "MRNA",
@@ -158,7 +159,8 @@
     "label": "Interim missed early-success bar"
    }
   ],
-  "likelihood": "likely_failure"
+  "likelihood": "likely_failure",
+  "likelihood_why": "The Phase 3 interim look did not meet the bar for early success, and Moderna is not enrolling a new season."
  },
  {
   "ticker": "MRNA",
@@ -181,7 +183,8 @@
     "label": "Phase 3 missed goal"
    }
   ],
-  "likelihood": "likely_failure"
+  "likelihood": "likely_failure",
+  "likelihood_why": "Phase 3 missed its main goal (6-23% efficacy) and Moderna stopped the program."
  },
  {
   "ticker": "PFE",
@@ -220,7 +223,8 @@
     "label": "MM-5 data at ASH"
    }
   ],
-  "likelihood": "likely"
+  "likelihood": "likely",
+  "likelihood_why": "Already approved; the confirmatory Phase 3 was positive (about 68% without progression at 18 months)."
  },
  {
   "ticker": "PFE",
@@ -253,7 +257,8 @@
     "label": "Early breast cancer Phase 3"
    }
   ],
-  "likelihood": "unknown"
+  "likelihood": "unknown",
+  "likelihood_why": "Phase 2 was good (40% lower risk vs physician's choice), but the Phase 3 against approved CDK4/6 drugs is still running."
  },
  {
   "ticker": "PFE",
@@ -286,7 +291,8 @@
     "label": "More Phase 3 starts"
    }
   ],
-  "likelihood": "unknown"
+  "likelihood": "unknown",
+  "likelihood_why": "Phase 2 response rates looked strong, but that was a cross-trial comparison and Phase 3 is still running behind a rival."
  },
  {
   "ticker": "PFE",
@@ -319,7 +325,8 @@
     "label": "Target first approval"
    }
   ],
-  "likelihood": "unknown"
+  "likelihood": "unknown",
+  "likelihood_why": "Phase 3 is still enrolling, so there is no late-stage data yet."
  },
  {
   "ticker": "PFE",
@@ -350,7 +357,8 @@
     "label": "MEVPRO-2"
    }
   ],
-  "likelihood": "unknown"
+  "likelihood": "unknown",
+  "likelihood_why": "Phase 3 has not read out yet (expected Q1 2027) and no efficacy data has been published."
  },
  {
   "ticker": "PFE",
@@ -386,7 +394,8 @@
     "label": "EU opinion"
    }
   ],
-  "likelihood": "likely"
+  "likelihood": "likely",
+  "likelihood_why": "Phase 3 VALOR supported filings in the EU and Canada."
  },
  {
   "ticker": "PFE",
@@ -418,7 +427,8 @@
     "label": "Global filings"
    }
   ],
-  "likelihood": "likely"
+  "likelihood": "likely",
+  "likelihood_why": "Two Phase 3 vitiligo trials were positive and Pfizer plans to file."
  },
  {
   "ticker": "PFE",
@@ -451,7 +461,8 @@
     "label": "Phase 3 readouts"
    }
   ],
-  "likelihood": "unknown"
+  "likelihood": "unknown",
+  "likelihood_why": "Phase 2 eczema results were solid, but Phase 3 is still running."
  },
  {
   "ticker": "ABBV",
@@ -488,7 +499,8 @@
     "label": "FDA decision"
    }
   ],
-  "likelihood": "likely"
+  "likelihood": "likely",
+  "likelihood_why": "Phase 3 CERVINO beat standard therapy and AbbVie filed with the FDA on Oct 27, 2026."
  },
  {
   "ticker": "ABBV",
@@ -521,7 +533,8 @@
     "label": "Vitiligo / alopecia decisions"
    }
   ],
-  "likelihood": "likely"
+  "likelihood": "likely",
+  "likelihood_why": "An approved drug; the new vitiligo and alopecia uses are under FDA review."
  },
  {
   "ticker": "ABBV",
@@ -616,7 +629,8 @@
     "label": "Filing"
    }
   ],
-  "likelihood": "likely"
+  "likelihood": "likely",
+  "likelihood_why": "Phase 3 met its goal: 51% lower risk of progression or death."
  },
  {
   "ticker": "ABBV",
@@ -649,7 +663,8 @@
     "label": "Submissions"
    }
   ],
-  "likelihood": "unknown"
+  "likelihood": "unknown",
+  "likelihood_why": "Phase 3 hit its goal, but the effect was modest, so approval and uptake are uncertain."
  },
  {
   "ticker": "ABBV",
@@ -675,7 +690,8 @@
     "label": "Pivotal topline"
    }
   ],
-  "likelihood": "unknown"
+  "likelihood": "unknown",
+  "likelihood_why": "Pivotal trials are running and no pivotal data has been published."
  },
  {
   "ticker": "CRSP",
@@ -736,7 +752,8 @@
     "label": "Phase 1b at AHA"
    }
   ],
-  "likelihood": "unknown"
+  "likelihood": "unknown",
+  "likelihood_why": "Only early Phase 1b data so far, even though the cholesterol drop looked large."
  },
  {
   "ticker": "CRSP",
@@ -766,7 +783,8 @@
     "label": "Autoimmune and cancer updates"
    }
   ],
-  "likelihood": "unknown"
+  "likelihood": "unknown",
+  "likelihood_why": "Very early data in a handful of lupus patients."
  },
  {
   "ticker": "CRSP",
@@ -792,7 +810,8 @@
     "label": "Phase 2 topline"
    }
   ],
-  "likelihood": "unknown"
+  "likelihood": "unknown",
+  "likelihood_why": "Phase 2 enrollment is complete, but there are no results yet."
  },
  {
   "ticker": "LLY",
@@ -825,7 +844,8 @@
     "label": "FDA submission"
    }
   ],
-  "likelihood": "likely"
+  "likelihood": "likely",
+  "likelihood_why": "Phase 3 met its goals (up to 22.6% weight loss) and beat Ozempic head to head; Lilly plans to file."
  },
  {
   "ticker": "LLY",
@@ -916,7 +936,8 @@
     "label": "Phase 3 start"
    }
   ],
-  "likelihood": "unknown"
+  "likelihood": "unknown",
+  "likelihood_why": "Phase 2 beat tirzepatide alone, but Phase 3 is only starting."
  },
  {
   "ticker": "LLY",
@@ -966,7 +987,8 @@
     "label": "ESMO 2026 data"
    }
   ],
-  "likelihood": "unknown"
+  "likelihood": "unknown",
+  "likelihood_why": "Encouraging data at ESMO 2026, but Phase 3 is running in a crowded KRAS field."
  },
  {
   "ticker": "NVO",
@@ -1004,7 +1026,8 @@
     "label": "US launch planned"
    }
   ],
-  "likelihood": "likely"
+  "likelihood": "likely",
+  "likelihood_why": "Phase 3 REDEFINE showed about 21-23% weight loss and the FDA decision is expected by year-end."
  },
  {
   "ticker": "NVO",
@@ -1096,7 +1119,8 @@
     "label": "Phase 3 AMAZE 9 starts"
    }
   ],
-  "likelihood": "unknown"
+  "likelihood": "unknown",
+  "likelihood_why": "Phase 3 only started in Sept 2026."
  },
  {
   "ticker": "NVO",
@@ -1127,7 +1151,8 @@
     "label": "Potential US launch"
    }
   ],
-  "likelihood": "likely"
+  "likelihood": "likely",
+  "likelihood_why": "EU regulators gave a positive opinion on Sept 17, 2026; US review is under way."
  },
  {
   "ticker": "NVO",
@@ -1150,6 +1175,7 @@
     "label": "$0.7B impairment"
    }
   ],
-  "likelihood": "likely_failure"
+  "likelihood": "likely_failure",
+  "likelihood_why": "Novo wrote down $0.7B on it in Q3 2026, a sign it now expects less from the drug."
  }
 ]

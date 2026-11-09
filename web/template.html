@@ -132,6 +132,12 @@ h2{font-family:var(--display);font-weight:700;font-size:1.6rem;margin:0;text-tra
 .copanel .net{font-size:.8rem;color:var(--muted)}
 .copanel h4{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:10px 12px 0;font-weight:600}
 .copanel .cb{overflow-x:auto}
+.lkwhy{margin-top:4px;font-size:.88rem;max-width:60ch}.lkwhy a{color:var(--accent)}
+.lkrules{margin:8px 0 12px;border:1px solid var(--line);background:var(--paper);padding:8px 12px;font-size:.9rem}
+.lkrules summary{cursor:pointer;font-weight:600}
+.lkrules ul{margin:8px 0;padding-left:0;list-style:none}.lkrules li{margin:5px 0}.lkrules li .lk{margin-right:6px}
+.lkrules p{margin:4px 0 0;color:var(--muted);font-size:.85rem}
+#launches .src{display:flex;gap:8px;margin-top:3px;font-size:.8rem}
 footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
 </style>
 
@@ -155,6 +161,11 @@ footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
     <div class="sh"><h2>Catalyst timeline</h2><div class="legend" id="legend"></div></div>
     <div class="tlbox"><svg id="tl" role="img" aria-label="Timeline of drug milestones"></svg></div>
     <p class="hint">Filled marks have happened; outlined marks are expected. The dot beside a pipeline drug is its chance of success: green likely, amber unknown, red likely failure. Bars are guided windows (a quarter or half-year). Tap a drug for details and sources.</p>
+    <details class="lkrules" id="lkrules"><summary>How we rate chance of success</summary>
+      <ul><li><span class="lk lk-likely">Likely</span> Approved, filed with regulators, or a Phase 3 trial met its main goal.</li>
+      <li><span class="lk lk-unknown">Unknown</span> Phase 3 or earlier trials are still running, or the data is mixed.</li>
+      <li><span class="lk lk-likely_failure">Likely failure</span> A trial missed its main goal, the program was stopped, or the company wrote down its value.</li></ul>
+      <p>These are our own judgments from trial results and company reports, not company guidance. Each drug's reason and sources are in its details (tap it on the timeline) and in the launches table below.</p></details>
     <div id="drawer"></div>
   </section>
 
@@ -276,7 +287,7 @@ function timeline(rows){
     grouped[t].forEach(d=>{const cy=y+RH/2,ms=d.milestones.map(m=>({...m,r:range(m.date)})).filter(m=>m.r).sort((a,b)=>a.r[0]-b.r[0]);
       let g=`<g class="row${state.sel===d.drug?" sel":""}" data-drug="${esc(d.drug)}" tabindex="0" role="button" aria-label="${esc(d.drug)}"><rect class="hit" x="0" y="${y}" width="${W}" height="${RH}" fill="transparent"/>`;
       const nm=d.drug.length>30?d.drug.slice(0,29)+"…":d.drug,il=d.illness.length>36?d.illness.slice(0,35)+"…":d.illness;
-      if(d.likelihood)g+=`<circle cx="${LW-12}" cy="${cy-6}" r="4" fill="${LK[d.likelihood][1]}"><title>Chance of success: ${LK[d.likelihood][0]}</title></circle>`;
+      if(d.likelihood)g+=`<circle cx="${LW-12}" cy="${cy-6}" r="4" fill="${LK[d.likelihood][1]}"><title>Chance of success: ${LK[d.likelihood][0]}. ${esc(d.likelihood_why||"")}</title></circle>`;
       g+=`<text class="rl" x="10" y="${cy-2}">${esc(nm)}</text><text class="rs" x="10" y="${cy+12}">${esc(il)}</text>`;
       if(ms.length>1){const a=Math.max(X(ms[0].r[0]),LW),b=Math.min(X(ms[ms.length-1].r[1]),LW+PW);if(b>a)g+=`<line x1="${a}" y1="${cy}" x2="${b}" y2="${cy}" stroke="var(--line)" stroke-width="2"/>`}
       const nextI=ms.findIndex(z=>z.r[1]>today);
@@ -303,7 +314,7 @@ function drawer(rows){const el=document.getElementById("drawer");const d=rows.fi
   if(!d){el.innerHTML="";return}
   const ms=[...d.milestones].sort((a,b)=>range(a.date)[0]-range(b.date)[0]);
   el.innerHTML=`<div class="drawer"><div><span class="lab">${esc(d.ticker)} · ${esc(NAMES[d.ticker])}</span><h3>${esc(d.drug)}</h3>
-    <div class="meta">${esc(d.illness)} · ${esc(d.drug_type)} · ${esc(d.stage)}</div>${d.likelihood?`<div style="margin-top:6px"><span class="lab">Chance of success</span> ${lkPill(d.likelihood)}</div>`:""}
+    <div class="meta">${esc(d.illness)} · ${esc(d.drug_type)} · ${esc(d.stage)}</div>${d.likelihood?`<div style="margin-top:6px"><span class="lab">Chance of success</span> ${lkPill(d.likelihood)}${d.likelihood_why?`<div class="lkwhy">${esc(d.likelihood_why)} <a href="#lkrules" onclick="document.getElementById('lkrules').open=true">How we rate</a></div>`:""}</div>`:""}
     ${d.latest_result?`<p>${esc(d.latest_result)}</p>`:""}${d.needs_verification?`<div class="verify">To verify: ${esc(d.needs_verification)}</div>`:""}
     <div class="src">${d.sources.map((s,i)=>`<a href="${esc(s)}" target="_blank" rel="noopener">Source ${i+1}</a>`).join("")}</div></div>
     <div><span class="lab">Milestones</span><ol>${ms.map(m=>`<li class="${range(m.date)[1]>today?"fut":""}"><time>${esc(fmt(m.date))}</time><span>${esc(m.label)}</span></li>`).join("")||"<li>None recorded</li>"}</ol></div></div>`}
@@ -431,7 +442,7 @@ function flows(appr){
     <h4>Cumulative change in yearly sales vs today</h4><div class="cb"><svg id="cu-${t}" role="img" aria-label="${esc(NAMES[t])} cumulative change"></svg></div></article>`).join("")||`<p class="empty">No companies match these filters.</p>`;
   cos.forEach(t=>{const last=drawCo(L.filter(r=>r.ticker===t),appr.filter(p=>p.ticker===t),document.getElementById("fl-"+t),document.getElementById("cu-"+t));
     const net=last.likely-last.lost;document.getElementById("net-"+t).innerHTML=`By 2037: <b style="color:${net>=0?"var(--approved)":"var(--cliff)"}">${net>=0?"+":"−"}${money(Math.abs(net))}/yr</b> net (likely launches minus expiries)`});
-  document.getElementById("launches").innerHTML=L.sort((a,b)=>a.launch_year-b.launch_year||b.est_sales-a.est_sales).map(r=>`<tr><td><b>${esc(r.drug)}</b><small>${r.ticker} · ${esc(NAMES[r.ticker])}</small></td><td class="num">${r.launch_year}</td><td class="num">~${money(r.est_sales)}<small>${esc(r.basis)}</small></td><td>${lkPill(r.likelihood)}</td><td>${esc(r.why)}</td></tr>`).join("")||`<tr><td colspan="5" class="empty">No pipeline launches for these filters.</td></tr>`;
+  document.getElementById("launches").innerHTML=L.sort((a,b)=>a.launch_year-b.launch_year||b.est_sales-a.est_sales).map(r=>`<tr><td><b>${esc(r.drug)}</b><small>${r.ticker} · ${esc(NAMES[r.ticker])}</small></td><td class="num">${r.launch_year}</td><td class="num">~${money(r.est_sales)}<small>${esc(r.basis)}</small></td><td>${lkPill(r.likelihood)}</td><td>${esc(r.why)}${r.sources?`<span class="src">${r.sources.map((u,i)=>`<a href="${esc(u)}" target="_blank" rel="noopener">Source ${i+1}</a>`).join("")}</span>`:""}</td></tr>`).join("")||`<tr><td colspan="5" class="empty">No pipeline launches for these filters.</td></tr>`;
   document.getElementById("launchnote").textContent=LAUNCH.note;
 }
 function render(){
