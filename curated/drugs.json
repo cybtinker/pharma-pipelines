@@ -1,0 +1,460 @@
+[
+ {
+  "ticker": "MRNA",
+  "drug": "mRNA-1010 (mFLUSIVA)",
+  "illness": "Seasonal flu, adults 50+",
+  "drug_type": "mRNA vaccine",
+  "stage": "Approved 2026-08-05",
+  "next_event": "Confirmatory efficacy study in 65+ (accelerated approval)",
+  "next_event_date": null,
+  "latest_result": "Phase 3 in 40,805 adults: 26.6% better than standard flu shot",
+  "competitors": [
+   "Fluzone High-Dose (Sanofi)",
+   "Flublok (Sanofi)",
+   "Fluad (CSL Seqirus)"
+  ],
+  "sources": [
+   "https://www.fda.gov/media/194538/download",
+   "https://www.biopharmadive.com/news/fda-approval-decisions-watch-2026/808684/"
+  ],
+  "needs_verification": null
+ },
+ {
+  "ticker": "MRNA",
+  "drug": "mNEXSPIKE (mRNA-1283)",
+  "illness": "COVID-19",
+  "drug_type": "mRNA vaccine",
+  "stage": "Approved 2025-05-31",
+  "next_event": "Annual strain update",
+  "next_event_date": null,
+  "latest_result": "Slightly higher efficacy than Spikevax, especially 65+",
+  "competitors": [
+   "Comirnaty (Pfizer/BioNTech)",
+   "Nuvaxovid (Novavax)"
+  ],
+  "sources": [
+   "https://www.marketbeat.com/stocks/NASDAQ/MRNA/fda-events/"
+  ],
+  "needs_verification": null
+ },
+ {
+  "ticker": "MRNA",
+  "drug": "mRESVIA (mRNA-1345)",
+  "illness": "RSV",
+  "drug_type": "mRNA vaccine",
+  "stage": "Approved (60+; 18-59 at risk 2025-06-12)",
+  "next_event": null,
+  "next_event_date": null,
+  "latest_result": "ConquerRSV Phase 3, ~37,000 adults",
+  "competitors": [
+   "Arexvy (GSK)",
+   "Abrysvo (Pfizer)"
+  ],
+  "sources": [
+   "https://www.marketbeat.com/stocks/NASDAQ/MRNA/fda-events/"
+  ],
+  "needs_verification": null
+ },
+ {
+  "ticker": "MRNA",
+  "drug": "Intismeran autogene (mRNA-4157, with Merck)",
+  "illness": "Melanoma (adjuvant), other cancers",
+  "drug_type": "Personalized mRNA cancer therapy",
+  "stage": "Phase 3 (status to confirm)",
+  "next_event": "Phase 3 readout",
+  "next_event_date": null,
+  "latest_result": "Phase 2b: 49% lower risk of recurrence or death vs Keytruda alone",
+  "competitors": [],
+  "sources": [
+   "https://www.marketbeat.com/stocks/NASDAQ/MRNA/fda-events/"
+  ],
+  "needs_verification": "Phase 3 status not in sources read"
+ },
+ {
+  "ticker": "MRNA",
+  "drug": "mRNA-1403",
+  "illness": "Norovirus",
+  "drug_type": "mRNA vaccine",
+  "stage": "Phase 3",
+  "next_event": "Readout",
+  "next_event_date": null,
+  "latest_result": "~25,000-person Phase 3 dosing since Sept 2024",
+  "competitors": [],
+  "sources": [
+   "https://www.marketbeat.com/stocks/NASDAQ/MRNA/fda-events/"
+  ],
+  "needs_verification": "Current status not confirmed"
+ },
+ {
+  "ticker": "MRNA",
+  "drug": "mRNA-1647",
+  "illness": "CMV (congenital)",
+  "drug_type": "mRNA vaccine",
+  "stage": "Failed Phase 3 (2025-10-22)",
+  "next_event": null,
+  "next_event_date": null,
+  "latest_result": "6-23% efficacy, missed primary goal; program stopped",
+  "competitors": [],
+  "sources": [
+   "https://www.marketbeat.com/stocks/NASDAQ/MRNA/fda-events/"
+  ],
+  "needs_verification": null
+ },
+ {
+  "ticker": "PFE",
+  "drug": "Elrexfio (elranatamab)",
+  "illness": "Multiple myeloma (relapsed)",
+  "drug_type": "BCMA x CD3 bispecific antibody",
+  "stage": "Phase 3 positive, filing planned",
+  "next_event": "Full MM-5 data at medical meeting",
+  "next_event_date": "2026-12",
+  "latest_result": "MagnetisMM-32: ~68% progression-free at 18 months",
+  "competitors": [
+   "Etentamig (AbbVie)",
+   "Tecvayli (J&J)",
+   "Lynozyfic (Regeneron)"
+  ],
+  "sources": [
+   "https://www.biotechreality.com/2026/11/pfizer-q3-2026-results.html",
+   "https://za.investing.com/news/stock-market-news/pfizer-q3-2026-slides-32-growth-in-new-products-guidance-raised-93CH-4547008",
+   "https://gloom.sh/stocks/pfe/transcripts/q3-2026"
+  ],
+  "needs_verification": null
+ },
+ {
+  "ticker": "PFE",
+  "drug": "Atirmociclib",
+  "illness": "HR+/HER2- breast cancer",
+  "drug_type": "Oral CDK4 inhibitor",
+  "stage": "Phase 3",
+  "next_event": "Early breast cancer Phase 3 start",
+  "next_event_date": "2027-Q1",
+  "latest_result": "Phase 2 HR 0.60 vs physician's choice",
+  "competitors": [
+   "Kisqali (Novartis)",
+   "Verzenio (Lilly)",
+   "Ibrance (Pfizer)"
+  ],
+  "sources": [
+   "https://za.investing.com/news/stock-market-news/pfizer-q3-2026-slides-32-growth-in-new-products-guidance-raised-93CH-4547008",
+   "https://gloom.sh/stocks/pfe/transcripts/q3-2026"
+  ],
+  "needs_verification": null
+ },
+ {
+  "ticker": "PFE",
+  "drug": "Tivunatamig",
+  "illness": "Lung cancer (1st line) and other tumors",
+  "drug_type": "PD-1 x VEGF bispecific antibody",
+  "stage": "Phase 3",
+  "next_event": "Additional Phase 3 starts",
+  "next_event_date": "2026",
+  "latest_result": "Phase 2 lung: ~78-81% response rate vs 45-68% for tislelizumab + chemo (cross-trial)",
+  "competitors": [
+   "Ivonescimab (Summit/Akeso)",
+   "Keytruda + chemo (Merck)"
+  ],
+  "sources": [
+   "https://www.biotechreality.com/2026/11/pfizer-q3-2026-results.html",
+   "https://za.investing.com/news/stock-market-news/pfizer-q3-2026-slides-32-growth-in-new-products-guidance-raised-93CH-4547008",
+   "https://gloom.sh/stocks/pfe/transcripts/q3-2026"
+  ],
+  "needs_verification": null
+ },
+ {
+  "ticker": "PFE",
+  "drug": "Berobenatide (from Metsera)",
+  "illness": "Obesity",
+  "drug_type": "Monthly GLP-1 injection",
+  "stage": "Phase 3",
+  "next_event": "First potential approval",
+  "next_event_date": "2028",
+  "latest_result": "Phase 3 VESPER program enrolling",
+  "competitors": [
+   "Zepbound (Lilly)",
+   "Wegovy (Novo Nordisk)",
+   "Orforglipron (Lilly)"
+  ],
+  "sources": [
+   "https://gloom.sh/stocks/pfe/transcripts/q3-2026",
+   "https://za.investing.com/news/stock-market-news/pfizer-q3-2026-slides-32-growth-in-new-products-guidance-raised-93CH-4547008"
+  ],
+  "needs_verification": null
+ },
+ {
+  "ticker": "PFE",
+  "drug": "Mevrometostat",
+  "illness": "Prostate cancer (mCRPC)",
+  "drug_type": "EZH2 inhibitor",
+  "stage": "Phase 3",
+  "next_event": "MEVPRO-1 readout",
+  "next_event_date": "2027-Q1",
+  "latest_result": null,
+  "competitors": [
+   "Pluvicto (Novartis)"
+  ],
+  "sources": [
+   "https://www.biotechreality.com/2026/11/pfizer-q3-2026-results.html",
+   "https://gloom.sh/stocks/pfe/transcripts/q3-2026"
+  ],
+  "needs_verification": null
+ },
+ {
+  "ticker": "PFE",
+  "drug": "Lyme disease vaccine (with Valneva)",
+  "illness": "Lyme disease",
+  "drug_type": "Protein vaccine",
+  "stage": "Filed in EU and Canada",
+  "next_event": "FDA update",
+  "next_event_date": "2026-Q4",
+  "latest_result": "Phase 3 VALOR basis for filing",
+  "competitors": [
+   "None approved"
+  ],
+  "sources": [
+   "https://www.biotechreality.com/2026/11/pfizer-q3-2026-results.html",
+   "https://gloom.sh/stocks/pfe/transcripts/q3-2026"
+  ],
+  "needs_verification": null
+ },
+ {
+  "ticker": "PFE",
+  "drug": "Litfulo (ritlecitinib)",
+  "illness": "Vitiligo",
+  "drug_type": "JAK inhibitor",
+  "stage": "Phase 3 positive, filing planned",
+  "next_event": "Regulatory submission",
+  "next_event_date": null,
+  "latest_result": "Better facial and body repigmentation at week 52",
+  "competitors": [
+   "Opzelura (Incyte)",
+   "Rinvoq (AbbVie, under review)"
+  ],
+  "sources": [
+   "https://www.biotechreality.com/2026/11/pfizer-q3-2026-results.html",
+   "https://za.investing.com/news/stock-market-news/pfizer-q3-2026-slides-32-growth-in-new-products-guidance-raised-93CH-4547008"
+  ],
+  "needs_verification": null
+ },
+ {
+  "ticker": "PFE",
+  "drug": "Tilrekimig",
+  "illness": "Atopic dermatitis, asthma, COPD",
+  "drug_type": "Trispecific antibody",
+  "stage": "Phase 3",
+  "next_event": "Phase 3 readouts",
+  "next_event_date": "2028",
+  "latest_result": "Phase 2 eczema: ~50% placebo-adjusted EASI-75",
+  "competitors": [
+   "Dupixent (Sanofi/Regeneron)",
+   "Ebglyss (Lilly)"
+  ],
+  "sources": [
+   "https://www.biotechreality.com/2026/11/pfizer-q3-2026-results.html",
+   "https://za.investing.com/news/stock-market-news/pfizer-q3-2026-slides-32-growth-in-new-products-guidance-raised-93CH-4547008",
+   "https://gloom.sh/stocks/pfe/transcripts/q3-2026"
+  ],
+  "needs_verification": null
+ },
+ {
+  "ticker": "ABBV",
+  "drug": "Etentamig",
+  "illness": "Multiple myeloma (relapsed)",
+  "drug_type": "BCMA x CD3 bispecific antibody",
+  "stage": "Filed (BLA 2026-10-27)",
+  "next_event": "FDA decision",
+  "next_event_date": "2027",
+  "latest_result": "Phase 3 CERVINO positive vs standard therapy",
+  "competitors": [
+   "Elrexfio (Pfizer)",
+   "Tecvayli (J&J)"
+  ],
+  "sources": [
+   "https://www.marketbeat.com/stocks/NYSE/ABBV/fda-events/",
+   "https://finance.yahoo.com/markets/stocks/articles/abbvie-abbv-q3-2026-earnings-211323080.html"
+  ],
+  "needs_verification": null
+ },
+ {
+  "ticker": "ABBV",
+  "drug": "Rinvoq (upadacitinib)",
+  "illness": "Vitiligo, alopecia areata",
+  "drug_type": "JAK inhibitor",
+  "stage": "Under FDA review",
+  "next_event": "US approvals",
+  "next_event_date": "2027-H1",
+  "latest_result": "Management sees ~$2B combined peak sales",
+  "competitors": [
+   "Opzelura (Incyte)",
+   "Litfulo (Pfizer)",
+   "Olumiant (Lilly)"
+  ],
+  "sources": [
+   "https://www.marketbeat.com/stocks/NYSE/ABBV/fda-events/",
+   "https://finance.yahoo.com/markets/stocks/articles/abbvie-abbv-q3-2026-earnings-211323080.html"
+  ],
+  "needs_verification": null
+ },
+ {
+  "ticker": "ABBV",
+  "drug": "Skyrizi SC induction",
+  "illness": "Crohn's disease",
+  "drug_type": "IL-23 antibody",
+  "stage": "Approved 2026-10-23",
+  "next_event": null,
+  "next_event_date": null,
+  "latest_result": "60% endoscopic response at week 16 (biologic-naive)",
+  "competitors": [
+   "Omvoh (Lilly)",
+   "Tremfya (J&J)"
+  ],
+  "sources": [
+   "https://www.marketbeat.com/stocks/NYSE/ABBV/fda-events/",
+   "https://finance.yahoo.com/markets/stocks/articles/abbvie-abbv-q3-2026-earnings-211323080.html"
+  ],
+  "needs_verification": null
+ },
+ {
+  "ticker": "ABBV",
+  "drug": "Juvmo (tavapadon)",
+  "illness": "Parkinson's disease",
+  "drug_type": "D1/D5 agonist pill",
+  "stage": "Approved 2026-09-28",
+  "next_event": null,
+  "next_event_date": null,
+  "latest_result": null,
+  "competitors": [],
+  "sources": [
+   "https://www.marketbeat.com/stocks/NYSE/ABBV/fda-events/"
+  ],
+  "needs_verification": null
+ },
+ {
+  "ticker": "ABBV",
+  "drug": "Epkinly + R-CHOP",
+  "illness": "DLBCL lymphoma (1st line)",
+  "drug_type": "CD20 x CD3 bispecific antibody",
+  "stage": "Phase 3 positive",
+  "next_event": "Filing",
+  "next_event_date": "2027-Q1",
+  "latest_result": "51% lower risk of progression or death",
+  "competitors": [
+   "Columvi (Roche)",
+   "Polivy (Roche)"
+  ],
+  "sources": [
+   "https://finance.yahoo.com/healthcare/articles/abbv-q3-earnings-call-highlights-140000099.html",
+   "https://finance.yahoo.com/markets/stocks/articles/abbvie-abbv-q3-2026-earnings-211323080.html"
+  ],
+  "needs_verification": null
+ },
+ {
+  "ticker": "ABBV",
+  "drug": "Lutikizumab",
+  "illness": "Hidradenitis suppurativa",
+  "drug_type": "IL-1a/b antibody",
+  "stage": "Phase 3",
+  "next_event": "Submissions",
+  "next_event_date": "2027-H2",
+  "latest_result": "Phase 3 topline 2026-10-22",
+  "competitors": [
+   "Cosentyx (Novartis)",
+   "Bimzelx (UCB)",
+   "Humira (AbbVie)"
+  ],
+  "sources": [
+   "https://www.marketbeat.com/stocks/NYSE/ABBV/fda-events/",
+   "https://finance.yahoo.com/markets/stocks/articles/abbvie-abbv-q3-2026-earnings-211323080.html"
+  ],
+  "needs_verification": "Efficacy figure from summarized transcript"
+ },
+ {
+  "ticker": "ABBV",
+  "drug": "Sura-vec (ABBV-RGX-314)",
+  "illness": "Wet AMD",
+  "drug_type": "Gene therapy",
+  "stage": "Pivotal",
+  "next_event": "Topline",
+  "next_event_date": "2026-Q4",
+  "latest_result": null,
+  "competitors": [
+   "Eylea (Regeneron)",
+   "Vabysmo (Roche)"
+  ],
+  "sources": [
+   "https://www.marketbeat.com/stocks/NYSE/ABBV/fda-events/"
+  ],
+  "needs_verification": null
+ },
+ {
+  "ticker": "CRSP",
+  "drug": "Casgevy (exa-cel, with Vertex)",
+  "illness": "Sickle cell disease, beta thalassemia",
+  "drug_type": "Ex vivo CRISPR gene editing",
+  "stage": "Approved (US age 2+ since 2026-07)",
+  "next_event": null,
+  "next_event_date": null,
+  "latest_result": "Q3 2026 revenue $99M, up 30% vs Q2; 750+ patients started treatment",
+  "competitors": [
+   "Lyfgenia (bluebird bio)"
+  ],
+  "sources": [
+   "https://ir.crisprtx.com/news-releases/news-release-details/crispr-therapeutics-provides-business-update-and-reports-third-7",
+   "https://ir.crisprtx.com/news-releases/news-release-details/crispr-therapeutics-provides-business-update-and-reports-15"
+  ],
+  "needs_verification": null
+ },
+ {
+  "ticker": "CRSP",
+  "drug": "CTX310",
+  "illness": "Severe high triglycerides, high LDL",
+  "drug_type": "In vivo CRISPR (ANGPTL3)",
+  "stage": "Phase 1b",
+  "next_event": "Phase 1b data at AHA",
+  "next_event_date": "2026-11-09",
+  "latest_result": "Top dose: -48% triglycerides, -53% LDL, lasting 1 year",
+  "competitors": [
+   "Evkeeza (Regeneron)",
+   "Plozasiran (Arrowhead)"
+  ],
+  "sources": [
+   "https://ir.crisprtx.com/news-releases/news-release-details/crispr-therapeutics-provides-business-update-and-reports-third-7"
+  ],
+  "needs_verification": null
+ },
+ {
+  "ticker": "CRSP",
+  "drug": "Zugo-cel (CTX112)",
+  "illness": "Lupus, scleroderma, other autoimmune; B-cell cancers",
+  "drug_type": "Off-the-shelf CAR-T",
+  "stage": "Phase 1/2",
+  "next_event": "Scleroderma data at ACR",
+  "next_event_date": "2026-11-08",
+  "latest_result": "Early lupus patient in drug-free remission at month 9",
+  "competitors": [
+   "Cabaletta, Kyverna CAR-T programs"
+  ],
+  "sources": [
+   "https://ir.crisprtx.com/news-releases/news-release-details/crispr-therapeutics-provides-business-update-and-reports-third-7"
+  ],
+  "needs_verification": null
+ },
+ {
+  "ticker": "CRSP",
+  "drug": "CTX611 (with Sirius)",
+  "illness": "Blood clots (anticoagulant)",
+  "drug_type": "siRNA (Factor XI)",
+  "stage": "Phase 2",
+  "next_event": "Top-line Phase 2",
+  "next_event_date": "2026-H2",
+  "latest_result": "Enrollment complete",
+  "competitors": [
+   "Abelacimab (Anthos/Novartis)",
+   "Asundexian (Bayer)"
+  ],
+  "sources": [
+   "https://ir.crisprtx.com/news-releases/news-release-details/crispr-therapeutics-provides-business-update-and-reports-third-7"
+  ],
+  "needs_verification": null
+ }
+]

@@ -1,0 +1,183 @@
+<title>Pipeline Watch</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: sticky filter bar, then a "next 12 months" FDA/readout calendar strip, then drug rows grouped by illness with rival drugs alongside */
+:root{
+  --bg:#f3f5f6; --surface:#ffffff; --ink:#132026; --muted:#5b6b72; --line:#d6dee1;
+  --accent:#0f6b72; --accent-soft:#dcefef; --date:#9a5b00; --date-soft:#fbefd9;
+  --good:#1f7a3a; --good-soft:#e1f2e5; --warn:#8a6400; --bad:#a3322a; --bad-soft:#f8e2df; --info:#3a4fa0; --info-soft:#e4e8f8;
+  --display:"Barlow Condensed","Arial Narrow",sans-serif; --body:"Public Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0e1518; --surface:#152025; --ink:#e3ecee; --muted:#93a5ab; --line:#26363c;
+  --accent:#5fc3c9; --accent-soft:#163338; --date:#f0b45a; --date-soft:#33280f;
+  --good:#6fd08a; --good-soft:#15301d; --warn:#e8c25a; --bad:#f08a80; --bad-soft:#3a1c19; --info:#9cadf2; --info-soft:#1c2340; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e1518; --surface:#152025; --ink:#e3ecee; --muted:#93a5ab; --line:#26363c;
+  --accent:#5fc3c9; --accent-soft:#163338; --date:#f0b45a; --date-soft:#33280f;
+  --good:#6fd08a; --good-soft:#15301d; --warn:#e8c25a; --bad:#f08a80; --bad-soft:#3a1c19; --info:#9cadf2; --info-soft:#1c2340; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
+.wrap{max-width:1100px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
+header.top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 24px}
+h1{font-family:var(--display);font-weight:700;font-size:2.4rem;letter-spacing:.01em;margin:0;line-height:1}
+h1 span{color:var(--accent)}
+.asof{font-family:var(--mono);font-size:.78rem;color:var(--muted)}
+.lede{color:var(--muted);max-width:65ch;margin:6px 0 0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.filters{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:12px;margin-top:12px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:10px}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+input[type=search],select{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:8px 10px;min-width:0}
+input[type=search]{flex:1 1 260px}
+select{flex:0 1 auto}
+input:focus-visible,select:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.chip{font:inherit;font-family:var(--mono);font-size:.82rem;font-weight:500;letter-spacing:.04em;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:5px 12px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+.label{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600}
+h2{font-family:var(--display);font-weight:600;font-size:1.5rem;margin:28px 0 10px;letter-spacing:.01em}
+h2 small{font-family:var(--body);font-size:.85rem;color:var(--muted);font-weight:400;margin-left:8px}
+.cal{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.ev{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--date);border-radius:6px;padding:10px 12px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.ev .when{font-family:var(--mono);font-size:.8rem;color:var(--date);font-weight:500}
+.ev .what{font-weight:600}
+.ev .who{font-size:.85rem;color:var(--muted)}
+.empty{color:var(--muted);font-style:italic}
+.group{margin-top:22px}
+.group h3{font-family:var(--display);font-size:1.15rem;font-weight:600;margin:0 0 8px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.drug{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px 16px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:8px 24px;margin-bottom:10px}
+@media (max-width:720px){.drug{grid-template-columns:minmax(0,1fr)}}
+.dhead{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline}
+.tk{font-family:var(--mono);font-size:.78rem;font-weight:500;background:var(--accent-soft);color:var(--accent);padding:1px 7px;border-radius:4px}
+.dname{font-weight:700;font-size:1.05rem}
+.meta{font-size:.88rem;color:var(--muted)}
+.pill{display:inline-block;font-size:.75rem;font-weight:600;padding:2px 8px;border-radius:999px;white-space:nowrap}
+.s-approved{background:var(--good-soft);color:var(--good)} .s-filed{background:var(--date-soft);color:var(--date)}
+.s-p3{background:var(--info-soft);color:var(--info)} .s-early{background:var(--accent-soft);color:var(--accent)} .s-failed{background:var(--bad-soft);color:var(--bad)}
+.result{margin:4px 0 0}
+.side{display:flex;flex-direction:column;gap:8px;min-width:0}
+.next{font-size:.9rem} .next b{font-family:var(--mono);color:var(--date);font-weight:500}
+.rivals{display:flex;flex-wrap:wrap;gap:4px}
+.rival{font-size:.8rem;border:1px solid var(--line);border-radius:4px;padding:1px 6px}
+.rival.tracked{border-color:var(--accent);color:var(--accent)}
+.src{font-size:.78rem} .src a{color:var(--accent)}
+.verify{font-size:.78rem;color:var(--warn)}
+.count{font-family:var(--mono);font-size:.8rem;color:var(--muted)}
+footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:75ch}
+@media (prefers-reduced-motion:no-preference){.drug,.ev{transition:border-color .15s}.drug:hover{border-color:var(--accent)}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <h1>Pipeline <span>Watch</span></h1>
+    <div class="asof" id="asof"></div>
+  </header>
+  <p class="lede">Late-stage drug pipelines for the companies you follow: what each drug treats, where it stands with the FDA, what the latest data showed, and who it competes with.</p>
+
+  <div class="filters" role="search">
+    <div class="row">
+      <label class="label" for="q" hidden>Search</label>
+      <input id="q" type="search" placeholder="Search a ticker, drug or illness (e.g. PFE, myeloma, obesity)" autocomplete="off">
+      <select id="stage" aria-label="Stage">
+        <option value="">All stages</option><option value="approved">Approved</option><option value="filed">Filed / under review</option>
+        <option value="p3">Phase 3</option><option value="early">Phase 1-2</option><option value="failed">Failed</option>
+      </select>
+      <select id="type" aria-label="Drug type"><option value="">All drug types</option></select>
+      <select id="window" aria-label="Upcoming window">
+        <option value="3">Next 3 months</option><option value="6">Next 6 months</option><option value="12" selected>Next 12 months</option><option value="36">Next 3 years</option>
+      </select>
+    </div>
+    <div class="row" id="companies"><span class="label">Companies</span></div>
+  </div>
+
+  <h2>Upcoming dates <small id="calnote"></small></h2>
+  <div class="cal" id="cal"></div>
+
+  <h2>Drugs by illness <small class="count" id="count"></small></h2>
+  <div id="list"></div>
+
+  <footer>Data gathered from company releases, FDA documents and Q3 2026 earnings coverage; every drug links its sources. Dates shown as a quarter or half-year are company guidance, not FDA goal dates. Competitor lists are a first pass and still being verified. This is research, not investment advice.</footer>
+</div>
+
+<script>
+const DATA = /*DATA*/[];
+const ASOF = "/*ASOF*/";
+const NAMES = {MRNA:"Moderna",PFE:"Pfizer",ABBV:"AbbVie",CRSP:"CRISPR Therapeutics"};
+const today = new Date(ASOF + "T00:00:00");
+
+function stageKey(s){s=s.toLowerCase();
+  if(s.includes("fail"))return"failed"; if(s.startsWith("approved"))return"approved";
+  if(s.includes("filed")||s.includes("review")||s.includes("filing planned"))return"filed";
+  if(s.includes("phase 3")||s.includes("pivotal"))return"p3"; return"early";}
+const STAGE_LABEL={approved:"Approved",filed:"Filed / review",p3:"Phase 3",early:"Phase 1-2",failed:"Failed"};
+
+// Turn "2026-11-09", "2026-12", "2027-Q1", "2026-H2", "2026" into an approximate date for sorting/windowing
+function toDate(v){ if(!v)return null; let m;
+  if(m=v.match(/^(\d{4})-(\d{2})-(\d{2})$/))return new Date(+m[1],+m[2]-1,+m[3]);
+  if(m=v.match(/^(\d{4})-(\d{2})$/))return new Date(+m[1],+m[2]-1,15);
+  if(m=v.match(/^(\d{4})-Q([1-4])$/))return new Date(+m[1],(+m[2]-1)*3+1,15);
+  if(m=v.match(/^(\d{4})-H([12])$/))return new Date(+m[1],m[2]==="1"?3:9,1);
+  if(m=v.match(/^(\d{4})$/))return new Date(+m[1],6,1); return null;}
+function fmtWhen(v){ let m;
+  if(m=v.match(/^(\d{4})-(\d{2})-(\d{2})$/))return new Date(+m[1],+m[2]-1,+m[3]).toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"});
+  if(m=v.match(/^(\d{4})-(\d{2})$/))return new Date(+m[1],+m[2]-1,1).toLocaleDateString("en-US",{month:"short",year:"numeric"});
+  if(m=v.match(/^(\d{4})-(Q\d|H\d)$/))return m[2]+" "+m[1]; return v;}
+
+const state={q:"",stage:"",type:"",win:12,cos:new Set(Object.keys(NAMES))};
+try{const s=JSON.parse(localStorage.getItem("pw-filters")||"null"); if(s){state.cos=new Set(s.cos);}}catch(e){}
+
+const types=[...new Set(DATA.map(d=>d.drug_type))].sort();
+const typeSel=document.getElementById("type");
+types.forEach(t=>{const o=document.createElement("option");o.value=t;o.textContent=t;typeSel.append(o)});
+const coRow=document.getElementById("companies");
+Object.entries(NAMES).forEach(([t,n])=>{const b=document.createElement("button");b.className="chip";b.type="button";b.id="co-"+t;
+  b.textContent=t;b.title=n;b.setAttribute("aria-pressed",state.cos.has(t));
+  b.onclick=()=>{state.cos.has(t)?state.cos.delete(t):state.cos.add(t);if(!state.cos.size)state.cos.add(t);render()};coRow.append(b)});
+document.getElementById("asof").textContent="Data as of "+fmtWhen(ASOF);
+document.getElementById("q").oninput=e=>{state.q=e.target.value.trim().toLowerCase();render()};
+document.getElementById("stage").onchange=e=>{state.stage=e.target.value;render()};
+typeSel.onchange=e=>{state.type=e.target.value;render()};
+document.getElementById("window").onchange=e=>{state.win=+e.target.value;render()};
+
+function matches(d){
+  if(!state.cos.has(d.ticker))return false;
+  if(state.stage&&stageKey(d.stage)!==state.stage)return false;
+  if(state.type&&d.drug_type!==state.type)return false;
+  if(state.q){const hay=[d.ticker,NAMES[d.ticker],d.drug,d.illness,d.drug_type,...d.competitors].join(" ").toLowerCase();
+    if(!state.q.split(/\s+/).every(w=>hay.includes(w)))return false;}
+  return true;}
+function esc(s){return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+function rivalTracked(r){return Object.values(NAMES).some(n=>r.includes(n))}
+
+function render(){
+  try{localStorage.setItem("pw-filters",JSON.stringify({cos:[...state.cos]}))}catch(e){}
+  Object.keys(NAMES).forEach(t=>document.getElementById("co-"+t).setAttribute("aria-pressed",state.cos.has(t)));
+  const rows=DATA.filter(matches);
+  // calendar
+  const end=new Date(today);end.setMonth(end.getMonth()+state.win);
+  const start=new Date(today);start.setDate(start.getDate()-7);
+  const evs=rows.filter(d=>d.next_event_date).map(d=>({d,at:toDate(d.next_event_date)})).filter(e=>e.at&&e.at>=start&&e.at<=end).sort((a,b)=>a.at-b.at);
+  const cal=document.getElementById("cal");
+  cal.innerHTML=evs.length?evs.map(({d})=>`<div class="ev"><span class="when">${esc(fmtWhen(d.next_event_date))}</span><span class="what">${esc(d.drug)}: ${esc(d.next_event)}</span><span class="who">${esc(NAMES[d.ticker])} · ${esc(d.illness)}</span></div>`).join(""):`<p class="empty">No dated events in this window for the current filters.</p>`;
+  document.getElementById("calnote").textContent=evs.length+" in the next "+state.win+" months";
+  // list grouped by stage order within illness? group by illness keyword (first segment)
+  const order=["filed","p3","approved","early","failed"];
+  const groups={};rows.forEach(d=>{const k=stageKey(d.stage);(groups[k]=groups[k]||[]).push(d)});
+  const list=document.getElementById("list");
+  document.getElementById("count").textContent=rows.length+" of "+DATA.length+" drugs";
+  list.innerHTML=rows.length?order.filter(k=>groups[k]).map(k=>`<section class="group"><h3>${STAGE_LABEL[k]}</h3>${groups[k].map(card).join("")}</section>`).join(""):`<p class="empty">No drugs match. Try clearing the search or adding companies.</p>`;
+}
+function card(d){const k=stageKey(d.stage);
+  return `<article class="drug"><div>
+    <div class="dhead"><span class="tk">${esc(d.ticker)}</span><span class="dname">${esc(d.drug)}</span><span class="pill s-${k}">${esc(d.stage)}</span></div>
+    <div class="meta">${esc(d.illness)} · ${esc(d.drug_type)}</div>
+    ${d.latest_result?`<p class="result">${esc(d.latest_result)}</p>`:""}
+    ${d.needs_verification?`<div class="verify">To verify: ${esc(d.needs_verification)}</div>`:""}
+  </div><div class="side">
+    ${d.next_event?`<div class="next"><span class="label">Next</span><br>${d.next_event_date?`<b>${esc(fmtWhen(d.next_event_date))}</b> · `:""}${esc(d.next_event)}</div>`:""}
+    ${d.competitors.length?`<div><span class="label">Competes with</span><div class="rivals">${d.competitors.map(r=>`<span class="rival${rivalTracked(r)?" tracked":""}">${esc(r)}</span>`).join("")}</div></div>`:""}
+    <div class="src">${d.sources.map((s,i)=>`<a href="${esc(s)}" target="_blank" rel="noopener">Source ${i+1}</a>`).join(" · ")}</div>
+  </div></article>`;}
+render();
+</script>
