@@ -171,12 +171,11 @@ footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
   <section>
     <div class="signup">
       <div><h2>Get the daily digest</h2><p>One email on days something changes: new trial results, status changes, FDA filings and dates coming up in the next two weeks. Unsubscribe any time.</p></div>
-      <form id="signup" method="post" action="https://buttondown.com/api/emails/embed-subscribe//*BD_USER*/" target="_blank">
+      <form id="signup">
         <input type="email" id="su-email" name="email" placeholder="Email address" required aria-label="Email address" autocomplete="email">
-        <input type="tel" id="su-phone" name="metadata__phone" placeholder="Phone (optional)" aria-label="Phone number, optional" autocomplete="tel">
-        <input type="hidden" name="tag" value="pipeline-watch">
+        <input type="tel" id="su-phone" name="phone" placeholder="Phone (optional)" aria-label="Phone number, optional" autocomplete="tel">
         <button type="submit" id="su-btn">Sign up</button>
-        <label class="ok"><input type="checkbox" id="su-ok" required> I agree to receive Pipeline Watch emails. My phone number is kept for future text alerts and is not shared.</label>
+        <label class="ok"><input type="checkbox" id="su-ok" name="consent" value="yes" required> I agree to receive Pipeline Watch emails. My phone number is kept for future text alerts and is not shared.</label>
         <span class="msg" id="su-msg"></span>
       </form>
     </div>
@@ -345,10 +344,14 @@ function approved(){
     <td class="num">${p.us_loe?Math.round(kept*100)+"%":"—"}</td><td class="num">${p.us_loe?(done?`<small>already past expiry</small>`:`~${money(p.sales_2025*kept)} in ${p.us_loe+2}`):"—"}</td></tr>`}).join("");
   document.getElementById("erosionnote").innerHTML="How the after-expiry numbers are estimated: biologics follow "+`<a href="${esc(APPR.erosion.biologic.src)}" target="_blank" rel="noopener" style="color:var(--accent)">Humira's actual decline</a>`+" (kept 68% of sales in year 1, 21% by year 3). Small molecules assume typical generic entry (about 20% kept in year 1, 10% in year 2). Vaccines assume a slower fade (60% kept by year 2). Sales after expiry are US-driven estimates applied to global sales, so they are a rough guide.";
 }
-const BD_USER="/*BD_USER*/";
-(function(){const f=document.getElementById("signup"),m=document.getElementById("su-msg");
-  if(!BD_USER||BD_USER.includes("BD_USER")){document.getElementById("su-btn").disabled=true;m.textContent="Sign-up opens on the public site once the mailing list is connected.";f.onsubmit=e=>e.preventDefault();}
-  else f.addEventListener("submit",()=>{m.textContent="Check your inbox to confirm your subscription."});})();
+const SIGNUP_URL="/*SIGNUP_URL*/";
+(function(){const f=document.getElementById("signup"),m=document.getElementById("su-msg"),b=document.getElementById("su-btn");
+  const live=SIGNUP_URL.startsWith("https://script.google.com/");
+  if(!live){b.disabled=true;m.textContent="Sign-up opens on the public site once the mailing list is connected.";}
+  f.addEventListener("submit",async e=>{e.preventDefault();if(!live)return;b.disabled=true;m.textContent="Signing you up…";
+    try{await fetch(SIGNUP_URL,{method:"POST",mode:"no-cors",body:new URLSearchParams(new FormData(f))});m.textContent="You're on the list. The next digest will arrive on a day something changes.";f.reset();}
+    catch(err){m.textContent="Sign-up didn't go through. Check your connection and try again.";}
+    b.disabled=false});})();
 function render(){try{localStorage.setItem("pw2",JSON.stringify({cos:[...state.cos]}))}catch(e){}
   Object.keys(NAMES).forEach(t=>document.getElementById("co-"+t).setAttribute("aria-pressed",state.cos.has(t)));
   const rows=DATA.filter(matches);if(state.sel&&!rows.some(r=>r.drug===state.sel))state.sel=null;

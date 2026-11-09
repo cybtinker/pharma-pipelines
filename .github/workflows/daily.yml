@@ -30,7 +30,8 @@ jobs:
       - name: Build and email the daily digest
         if: github.event_name != 'push'
         env:
-          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+          MAILER_URL: ${{ vars.MAILER_URL }}
+          MAILER_SECRET: ${{ secrets.MAILER_SECRET }}
           PAGE_URL: https://cybtinker.github.io/pharma-pipelines/
         run: python3 collector/digest.py
       - name: Commit new snapshots
@@ -43,7 +44,7 @@ jobs:
           git push
       - name: Build web page
         env:
-          BUTTONDOWN_USERNAME: ${{ vars.BUTTONDOWN_USERNAME }}
+          SIGNUP_URL: ${{ vars.MAILER_URL }}
         run: |
           python3 web/build.py
           mkdir -p _site && cp web/index.html _site/index.html && cp curated/drugs.json _site/drugs.json

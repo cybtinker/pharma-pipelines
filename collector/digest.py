@@ -6,12 +6,13 @@ Compares the two most recent snapshot days under raw/ and reports:
   - new SEC filings (8-K, 10-Q, 10-K)
   - drug milestones coming up in the next 14 days (curated/drugs.json)
 
-The digest is saved to digests/<YYYY-MM-DD>.md. When BUTTONDOWN_API_KEY is set and there is
-something to report, it is sent to the Buttondown subscriber list.
+The digest is saved to digests/<YYYY-MM-DD>.md. When MAILER_URL and MAILER_SECRET are set and
+there is something to report, it is posted to the Google Apps Script mailer (apps-script/Code.gs),
+which emails every active subscriber in the Google Sheet from Gmail.
 
 Usage: python3 collector/digest.py [--lake PATH] [--dry-run]
 """
-import argparse, datetime as dt, json, os, pathlib, re, urllib.request
+import argparse, datetime as dt, json, os, pathlib, re, urllib.parse, urllib.request
 
 NAMES = {"MRNA": "Moderna", "PFE": "Pfizer", "ABBV": "AbbVie", "CRSP": "CRISPR Therapeutics"}
 PAGE_URL = os.environ.get("PAGE_URL", "https://cybtinker.github.io/pharma-pipelines/")
@@ -106,14 +107,14 @@ def build(lake, today):
     return body
 
 
-def send(subject, body, key):
-    req = urllib.request.Request(
-        "https://api.buttondown.com/v1/emails",
-        data=json.dumps({"subject": subject, "body": body, "status": "about_to_send"}).encode(),
-        headers={"Authorization": f"Token {key}", "Content-Type": "application/json"},
-        method="POST")
-    with urllib.request.urlopen(req, timeout=60) as r:
-        print("Buttondown:", r.status)
+def send(subject, body, url, secret):
+    data = urllib.parse.urlencode({"action": "send", "secret": secret, "subject": subject, "body": body}).encode()
+    req = urllib.request.Request(url, data=data, method="POST")
+    with urllib.request.urlopen(req, timeout=120) as r:  # Apps Script redirects once; urllib follows it
+        result = json.loads(r.read().decode() or "{}")
+    print("Mailer:", result)
+    if not result.get("ok"):
+        raise SystemExit("Mailer refused the send: " + str(result))
 
 
 def main():
@@ -130,11 +131,11 @@ def main():
     out.parent.mkdir(exist_ok=True)
     out.write_text(body)
     print(body)
-    key = os.environ.get("BUTTONDOWN_API_KEY")
-    if key and not args.dry_run:
-        send(f"Pipeline Watch: {today:%b %d} update", body, key)
+    url, secret = os.environ.get("MAILER_URL"), os.environ.get("MAILER_SECRET")
+    if url and secret and not args.dry_run:
+        send(f"Pipeline Watch: {today:%b %d} update", body, url, secret)
     else:
-        print("(not emailed: no BUTTONDOWN_API_KEY or dry run)")
+        print("(not emailed: MAILER_URL/MAILER_SECRET not set, or dry run)")
 
 
 if __name__ == "__main__":

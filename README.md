@@ -25,10 +25,14 @@ To turn on the page once: repository Settings, Pages, Source: GitHub Actions.
 ## Web page
 `web/template.html` plus `curated/drugs.json` are built into `web/index.html` by `python3 web/build.py`. Filters: ticker chips, free-text search (ticker, drug, illness, competitor), stage, drug type, and an upcoming-dates window.
 
-## Email digest
-`collector/digest.py` compares the two latest snapshot days and lists trial status changes, newly posted results, new Phase 3 trials, new SEC filings, and milestones due in the next 14 days. It saves `digests/<date>.md` and, when there is news, emails it through Buttondown.
+## Email digest (Google Sheet + Gmail)
+`collector/digest.py` compares the two latest snapshot days and lists trial status changes, newly posted results, new Phase 3 trials, new SEC filings, and milestones due in the next 14 days. It saves `digests/<date>.md` and, on days with news, sends it to the mailer in `apps-script/Code.gs`, which emails every active subscriber in your Google Sheet from your Gmail. Every email has a one-click unsubscribe link.
 
-Setup (one time):
-1. Create a Buttondown account and copy the API key (Settings, API).
-2. In this repo: Settings, Secrets and variables, Actions. Add secret `BUTTONDOWN_API_KEY`, and add variable `BUTTONDOWN_USERNAME` (your Buttondown username).
-3. The sign-up form on the page then posts to your Buttondown list. Phone numbers are stored as the subscriber field `phone`.
+One-time setup (about 5 minutes):
+1. Create a Google Sheet (for example "Pipeline Watch subscribers"). Open Extensions, Apps Script, delete the sample code and paste in `apps-script/Code.gs`. Save.
+2. In Apps Script: Project Settings, Script properties, add `SEND_SECRET` with a long random value.
+3. Deploy, New deployment, type Web app. Execute as: Me. Who has access: Anyone. Authorize when asked. Copy the web app URL.
+4. In this GitHub repo: Settings, Secrets and variables, Actions. Add variable `MAILER_URL` (the web app URL) and secret `MAILER_SECRET` (same value as `SEND_SECRET`).
+5. Run the "Daily collect and publish" workflow once from the Actions tab. The sign-up form on the public page goes live and writes to the "Subscribers" tab.
+
+Gmail sends about 100 emails a day on a free account (1,500 on Google Workspace); the mailer stops at the limit.
