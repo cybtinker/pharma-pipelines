@@ -1,0 +1,209 @@
+{
+ "note": "Launch year and sales are estimates. Sales are rough peak yearly sales; cumulative chart ramps them in over 4 years (20%, 50%, 80%, 100%). Likelihood: likely = approved, filed or positive Phase 3; unknown = Phase 3 still running or mixed data; likely failure = missed endpoints or written down.",
+ "ramp": [
+  0.2,
+  0.5,
+  0.8,
+  1.0
+ ],
+ "launches": [
+  {
+   "ticker": "LLY",
+   "drug": "Foundayo (orforglipron)",
+   "launch_year": 2026,
+   "est_sales": 5.8,
+   "basis": "5% of a ~$115B obesity market (our assumption)",
+   "likelihood": "likely",
+   "why": "Approved and launched"
+  },
+  {
+   "ticker": "NVO",
+   "drug": "Wegovy pill",
+   "launch_year": 2026,
+   "est_sales": 3.3,
+   "basis": "Current run-rate (Q3 2026 x4)",
+   "likelihood": "likely",
+   "why": "Approved, $813M in Q3"
+  },
+  {
+   "ticker": "MRNA",
+   "drug": "mFLUSIVA flu vaccine",
+   "launch_year": 2026,
+   "est_sales": 1.1,
+   "basis": "William Blair peak estimate",
+   "likelihood": "likely",
+   "why": "Approved Aug 2026; limited first season"
+  },
+  {
+   "ticker": "NVO",
+   "drug": "CagriSema",
+   "launch_year": 2027,
+   "est_sales": 6.9,
+   "basis": "6% of obesity market (our assumption)",
+   "likelihood": "likely",
+   "why": "Filed; Novo expects approval by year-end"
+  },
+  {
+   "ticker": "ABBV",
+   "drug": "Etentamig",
+   "launch_year": 2027,
+   "est_sales": 0.7,
+   "basis": "2% of $33B myeloma market (our assumption)",
+   "likelihood": "likely",
+   "why": "Positive Phase 3, filed Oct 2026"
+  },
+  {
+   "ticker": "ABBV",
+   "drug": "Rinvoq vitiligo + alopecia",
+   "launch_year": 2027,
+   "est_sales": 2.0,
+   "basis": "AbbVie management peak estimate",
+   "likelihood": "likely",
+   "why": "Under FDA review"
+  },
+  {
+   "ticker": "ABBV",
+   "drug": "Epkinly 1st-line lymphoma",
+   "launch_year": 2027,
+   "est_sales": 1.0,
+   "basis": "Our rough estimate",
+   "likelihood": "likely",
+   "why": "Positive Phase 3, filing early 2027"
+  },
+  {
+   "ticker": "PFE",
+   "drug": "Lyme disease vaccine",
+   "launch_year": 2027,
+   "est_sales": 0.5,
+   "basis": "Our rough estimate",
+   "likelihood": "likely",
+   "why": "Filed in EU and Canada; first vaccine of its kind"
+  },
+  {
+   "ticker": "NVO",
+   "drug": "Denecimig (Mim8)",
+   "launch_year": 2027,
+   "est_sales": 1.0,
+   "basis": "Our rough estimate",
+   "likelihood": "likely",
+   "why": "Positive EU opinion; US launch 1H 2027"
+  },
+  {
+   "ticker": "LLY",
+   "drug": "Retatrutide",
+   "launch_year": 2028,
+   "est_sales": 13.8,
+   "basis": "12% of obesity market (our assumption)",
+   "likelihood": "likely",
+   "why": "Positive Phase 3 (~23% weight loss); filing Q1 2027"
+  },
+  {
+   "ticker": "MRNA",
+   "drug": "Intismeran (with Merck)",
+   "launch_year": 2028,
+   "est_sales": 1.0,
+   "basis": "Our rough estimate, Moderna share",
+   "likelihood": "likely",
+   "why": "Positive Phase 3 in melanoma"
+  },
+  {
+   "ticker": "PFE",
+   "drug": "Litfulo vitiligo",
+   "launch_year": 2028,
+   "est_sales": 0.5,
+   "basis": "Our rough estimate",
+   "likelihood": "likely",
+   "why": "Two positive Phase 3 trials"
+  },
+  {
+   "ticker": "PFE",
+   "drug": "Mevrometostat",
+   "launch_year": 2028,
+   "est_sales": 1.0,
+   "basis": "Our rough estimate",
+   "likelihood": "unknown",
+   "why": "Phase 3 readout Q1 2027; first-in-class"
+  },
+  {
+   "ticker": "ABBV",
+   "drug": "Lutikizumab",
+   "launch_year": 2028,
+   "est_sales": 1.0,
+   "basis": "Our rough estimate",
+   "likelihood": "unknown",
+   "why": "Phase 3 hit but modest effect (31% HiSCR75)"
+  },
+  {
+   "ticker": "MRNA",
+   "drug": "Norovirus vaccine (mRNA-1403)",
+   "launch_year": 2028,
+   "est_sales": 0.5,
+   "basis": "Our rough estimate",
+   "likelihood": "likely_failure",
+   "why": "Phase 3 interim missed early-success bar"
+  },
+  {
+   "ticker": "PFE",
+   "drug": "Berobenatide",
+   "launch_year": 2028,
+   "est_sales": 3.4,
+   "basis": "3% of obesity market (our assumption)",
+   "likelihood": "unknown",
+   "why": "Phase 3 enrolling; late, crowded market"
+  },
+  {
+   "ticker": "PFE",
+   "drug": "Tivunatamig",
+   "launch_year": 2029,
+   "est_sales": 0.85,
+   "basis": "3% of PD-1 lung market (our assumption)",
+   "likelihood": "unknown",
+   "why": "Strong Phase 2, but behind ivonescimab"
+  },
+  {
+   "ticker": "PFE",
+   "drug": "Atirmociclib",
+   "launch_year": 2029,
+   "est_sales": 1.5,
+   "basis": "Our rough estimate",
+   "likelihood": "unknown",
+   "why": "Good Phase 2; Phase 3 vs CDK4/6 ongoing"
+  },
+  {
+   "ticker": "LLY",
+   "drug": "Olomorasib",
+   "launch_year": 2029,
+   "est_sales": 1.0,
+   "basis": "Our rough estimate",
+   "likelihood": "unknown",
+   "why": "Encouraging data; crowded KRAS field"
+  },
+  {
+   "ticker": "NVO",
+   "drug": "Ziltivekimab",
+   "launch_year": 2029,
+   "est_sales": 1.0,
+   "basis": "Our rough estimate",
+   "likelihood": "likely_failure",
+   "why": "Novo wrote down $0.7B in Q3 2026"
+  },
+  {
+   "ticker": "LLY",
+   "drug": "EloraTZP",
+   "launch_year": 2030,
+   "est_sales": 3.0,
+   "basis": "Our rough estimate",
+   "likelihood": "unknown",
+   "why": "Phase 3 only starting Q4 2026"
+  },
+  {
+   "ticker": "NVO",
+   "drug": "Zenagamtide (oral amycretin)",
+   "launch_year": 2030,
+   "est_sales": 3.0,
+   "basis": "Our rough estimate",
+   "likelihood": "unknown",
+   "why": "Phase 3 started Sept 2026"
+  }
+ ]
+}

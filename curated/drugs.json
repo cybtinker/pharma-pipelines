@@ -128,7 +128,8 @@
     "kind": "filing",
     "label": "Filing (estimated)"
    }
-  ]
+  ],
+  "likelihood": "likely"
  },
  {
   "ticker": "MRNA",
@@ -156,7 +157,8 @@
     "kind": "fail",
     "label": "Interim missed early-success bar"
    }
-  ]
+  ],
+  "likelihood": "likely_failure"
  },
  {
   "ticker": "MRNA",
@@ -178,7 +180,8 @@
     "kind": "fail",
     "label": "Phase 3 missed goal"
    }
-  ]
+  ],
+  "likelihood": "likely_failure"
  },
  {
   "ticker": "PFE",
@@ -216,7 +219,8 @@
     "kind": "readout",
     "label": "MM-5 data at ASH"
    }
-  ]
+  ],
+  "likelihood": "likely"
  },
  {
   "ticker": "PFE",
@@ -248,7 +252,8 @@
     "kind": "start",
     "label": "Early breast cancer Phase 3"
    }
-  ]
+  ],
+  "likelihood": "unknown"
  },
  {
   "ticker": "PFE",
@@ -280,7 +285,8 @@
     "kind": "start",
     "label": "More Phase 3 starts"
    }
-  ]
+  ],
+  "likelihood": "unknown"
  },
  {
   "ticker": "PFE",
@@ -312,7 +318,8 @@
     "kind": "approval",
     "label": "Target first approval"
    }
-  ]
+  ],
+  "likelihood": "unknown"
  },
  {
   "ticker": "PFE",
@@ -342,7 +349,8 @@
     "kind": "readout",
     "label": "MEVPRO-2"
    }
-  ]
+  ],
+  "likelihood": "unknown"
  },
  {
   "ticker": "PFE",
@@ -377,7 +385,8 @@
     "kind": "approval",
     "label": "EU opinion"
    }
-  ]
+  ],
+  "likelihood": "likely"
  },
  {
   "ticker": "PFE",
@@ -408,7 +417,8 @@
     "kind": "filing",
     "label": "Global filings"
    }
-  ]
+  ],
+  "likelihood": "likely"
  },
  {
   "ticker": "PFE",
@@ -440,7 +450,8 @@
     "kind": "readout",
     "label": "Phase 3 readouts"
    }
-  ]
+  ],
+  "likelihood": "unknown"
  },
  {
   "ticker": "ABBV",
@@ -476,7 +487,8 @@
     "kind": "approval",
     "label": "FDA decision"
    }
-  ]
+  ],
+  "likelihood": "likely"
  },
  {
   "ticker": "ABBV",
@@ -508,7 +520,8 @@
     "kind": "approval",
     "label": "Vitiligo / alopecia decisions"
    }
-  ]
+  ],
+  "likelihood": "likely"
  },
  {
   "ticker": "ABBV",
@@ -602,7 +615,8 @@
     "kind": "filing",
     "label": "Filing"
    }
-  ]
+  ],
+  "likelihood": "likely"
  },
  {
   "ticker": "ABBV",
@@ -634,7 +648,8 @@
     "kind": "filing",
     "label": "Submissions"
    }
-  ]
+  ],
+  "likelihood": "unknown"
  },
  {
   "ticker": "ABBV",
@@ -659,7 +674,8 @@
     "kind": "readout",
     "label": "Pivotal topline"
    }
-  ]
+  ],
+  "likelihood": "unknown"
  },
  {
   "ticker": "CRSP",
@@ -719,7 +735,8 @@
     "kind": "readout",
     "label": "Phase 1b at AHA"
    }
-  ]
+  ],
+  "likelihood": "unknown"
  },
  {
   "ticker": "CRSP",
@@ -748,7 +765,8 @@
     "kind": "readout",
     "label": "Autoimmune and cancer updates"
    }
-  ]
+  ],
+  "likelihood": "unknown"
  },
  {
   "ticker": "CRSP",
@@ -773,7 +791,8 @@
     "kind": "readout",
     "label": "Phase 2 topline"
    }
-  ]
+  ],
+  "likelihood": "unknown"
  },
  {
   "ticker": "LLY",
@@ -805,7 +824,8 @@
     "kind": "filing",
     "label": "FDA submission"
    }
-  ]
+  ],
+  "likelihood": "likely"
  },
  {
   "ticker": "LLY",
@@ -895,7 +915,8 @@
     "kind": "start",
     "label": "Phase 3 start"
    }
-  ]
+  ],
+  "likelihood": "unknown"
  },
  {
   "ticker": "LLY",
@@ -944,7 +965,8 @@
     "kind": "readout",
     "label": "ESMO 2026 data"
    }
-  ]
+  ],
+  "likelihood": "unknown"
  },
  {
   "ticker": "NVO",
@@ -981,7 +1003,8 @@
     "kind": "start",
     "label": "US launch planned"
    }
-  ]
+  ],
+  "likelihood": "likely"
  },
  {
   "ticker": "NVO",
@@ -1072,7 +1095,8 @@
     "kind": "start",
     "label": "Phase 3 AMAZE 9 starts"
    }
-  ]
+  ],
+  "likelihood": "unknown"
  },
  {
   "ticker": "NVO",
@@ -1102,7 +1126,8 @@
     "kind": "approval",
     "label": "Potential US launch"
    }
-  ]
+  ],
+  "likelihood": "likely"
  },
  {
   "ticker": "NVO",
@@ -1124,6 +1149,7 @@
     "kind": "fail",
     "label": "$0.7B impairment"
    }
-  ]
+  ],
+  "likelihood": "likely_failure"
  }
 ]

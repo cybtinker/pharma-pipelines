@@ -8,17 +8,17 @@
   --bg:#eef1ef; --paper:#fbfcfb; --ink:#14201d; --muted:#5d6c67; --line:#cfd8d4; --grid:#e1e8e4;
   --accent:#0d5c63; --accent-ink:#ffffff; --accent-soft:#d5ebea;
   --approved:#22783e; --filed:#b06a00; --readout:#3150b0; --fail:#b0342b; --start:#6b4fa0;
-  --c-mrna:#a07800; --c-pfe:#2856a8; --c-abbv:#0d6b5a; --c-crsp:#8a3f9a; --c-lly:#c0285a; --c-nvo:#5a6e12; --cliff:#c2410c;
+  --c-mrna:#a07800; --c-pfe:#2856a8; --c-abbv:#4a5568; --c-crsp:#8a3f9a; --c-lly:#c0285a; --c-nvo:#5a6e12; --cliff:#c2410c;
   --display:"Archivo Narrow","Arial Narrow",sans-serif; --body:"Public Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#0c1312; --paper:#131d1b; --ink:#e2ebe8; --muted:#90a39d; --line:#283633; --grid:#1b2725;
   --accent:#58c2c8; --accent-ink:#0c1312; --accent-soft:#163337;
-  --approved:#6fd08d; --filed:#f0b450; --readout:#93a9f5; --fail:#f2877d; --start:#c3a8f0; --c-mrna:#e3bd4f; --c-pfe:#86a8ef; --c-abbv:#63c9b3; --c-crsp:#d39ae0; --c-lly:#f07ba0; --c-nvo:#b5cc5a; --cliff:#fb923c; color-scheme:dark}}
+  --approved:#6fd08d; --filed:#f0b450; --readout:#93a9f5; --fail:#f2877d; --start:#c3a8f0; --c-mrna:#e3bd4f; --c-pfe:#86a8ef; --c-abbv:#a9b4c4; --c-crsp:#d39ae0; --c-lly:#f07ba0; --c-nvo:#b5cc5a; --cliff:#fb923c; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0c1312; --paper:#131d1b; --ink:#e2ebe8; --muted:#90a39d; --line:#283633; --grid:#1b2725;
   --accent:#58c2c8; --accent-ink:#0c1312; --accent-soft:#163337;
-  --approved:#6fd08d; --filed:#f0b450; --readout:#93a9f5; --fail:#f2877d; --start:#c3a8f0; --c-mrna:#e3bd4f; --c-pfe:#86a8ef; --c-abbv:#63c9b3; --c-crsp:#d39ae0; --c-lly:#f07ba0; --c-nvo:#b5cc5a; --cliff:#fb923c; color-scheme:dark}
+  --approved:#6fd08d; --filed:#f0b450; --readout:#93a9f5; --fail:#f2877d; --start:#c3a8f0; --c-mrna:#e3bd4f; --c-pfe:#86a8ef; --c-abbv:#a9b4c4; --c-crsp:#d39ae0; --c-lly:#f07ba0; --c-nvo:#b5cc5a; --cliff:#fb923c; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
@@ -98,8 +98,8 @@ h2{font-family:var(--display);font-weight:700;font-size:1.6rem;margin:0;text-tra
 .brief h3{font-family:var(--display);font-size:1.2rem;margin:0}
 .brief ul{margin:8px 0 6px;padding-left:18px;font-size:.86rem;display:flex;flex-direction:column;gap:4px}
 .brief .when{font-family:var(--mono);font-size:.75rem;color:var(--muted)}
-#cliff text,#atrisk text{font-family:var(--body);fill:var(--ink)}
-#cliff .ax,#atrisk .ax{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+#cliff text,#flow text,#cum text{font-family:var(--body);fill:var(--ink)}
+#cliff .ax,#flow .ax,#cum .ax{font-family:var(--mono);font-size:11px;fill:var(--muted)}
 #cliff .rl{font-size:12.5px;font-weight:600} #cliff .rs{font-size:11px;fill:var(--muted)}
 #cliff .lo{font-family:var(--mono);font-size:10.5px;fill:var(--cliff);font-weight:600}
 .two{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
@@ -118,6 +118,10 @@ h2{font-family:var(--display);font-weight:700;font-size:1.6rem;margin:0;text-tra
 .signup button{font:inherit;font-weight:600;padding:9px 18px;border-radius:4px;border:0;background:var(--accent);color:var(--accent-ink);cursor:pointer}
 .signup button:disabled{opacity:.5;cursor:not-allowed}
 .signup .msg{flex-basis:100%;font-size:.8rem;opacity:.85}
+.lk{display:inline-block;font-size:.72rem;font-weight:600;padding:2px 8px;border-radius:999px;white-space:nowrap}
+.lk-likely{background:var(--good-soft,var(--accent-soft));color:var(--approved)}
+.lk-unknown{background:var(--grid);color:var(--filed)}
+.lk-likely_failure{background:var(--grid);color:var(--fail)}
 footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
 </style>
 
@@ -140,7 +144,7 @@ footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
   <section>
     <div class="sh"><h2>Catalyst timeline</h2><div class="legend" id="legend"></div></div>
     <div class="tlbox"><svg id="tl" role="img" aria-label="Timeline of drug milestones"></svg></div>
-    <p class="hint">Filled marks have happened; outlined marks are expected. Bars are guided windows (a quarter or half-year). Tap a drug for details and sources.</p>
+    <p class="hint">Filled marks have happened; outlined marks are expected. The dot beside a pipeline drug is its chance of success: green likely, amber unknown, red likely failure. Bars are guided windows (a quarter or half-year). Tap a drug for details and sources.</p>
     <div id="drawer"></div>
   </section>
 
@@ -153,10 +157,13 @@ footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
     <div class="sh"><h2>Approved drugs and patent cliffs</h2><span class="legend" id="cliffleg"></span></div>
     <div class="two">
       <div class="chartbox"><h3>Projected sales, before and after US patent expiry</h3><svg id="cliff" role="img" aria-label="Projected sales of approved drugs around patent expiry"></svg></div>
-      <div class="chartbox"><h3>Annual sales losing US protection, by year</h3><svg id="atrisk" role="img" aria-label="Sales losing protection by year"></svg></div>
+      <div class="chartbox"><h3>Each year: new launches vs sales losing US protection</h3><svg id="flow" role="img" aria-label="New launch sales versus sales losing protection, by year"></svg></div>
+      <div class="chartbox"><h3>Cumulative change in yearly sales vs today</h3><svg id="cum" role="img" aria-label="Cumulative sales added and lost over time"></svg></div>
     </div>
     <div class="mkt" style="margin-top:12px"><table><thead><tr><th>Drug</th><th>Treats</th><th>Annual sales</th><th>Market position</th><th>US expiry</th><th>Kept 2 yrs after expiry</th><th>Sales 2 yrs after</th></tr></thead><tbody id="approved"></tbody></table></div>
     <p class="hint" id="erosionnote"></p>
+    <div class="mkt" style="margin-top:12px"><table><thead><tr><th>Pipeline drug</th><th>Expected launch</th><th>Estimated yearly sales</th><th>Chance of success</th><th>Why</th></tr></thead><tbody id="launches"></tbody></table></div>
+    <p class="hint" id="launchnote"></p>
   </section>
 
   <section>
@@ -256,6 +263,7 @@ function timeline(rows){
     grouped[t].forEach(d=>{const cy=y+RH/2,ms=d.milestones.map(m=>({...m,r:range(m.date)})).filter(m=>m.r).sort((a,b)=>a.r[0]-b.r[0]);
       let g=`<g class="row${state.sel===d.drug?" sel":""}" data-drug="${esc(d.drug)}" tabindex="0" role="button" aria-label="${esc(d.drug)}"><rect class="hit" x="0" y="${y}" width="${W}" height="${RH}" fill="transparent"/>`;
       const nm=d.drug.length>30?d.drug.slice(0,29)+"…":d.drug,il=d.illness.length>36?d.illness.slice(0,35)+"…":d.illness;
+      if(d.likelihood)g+=`<circle cx="${LW-12}" cy="${cy-6}" r="4" fill="${LK[d.likelihood][1]}"><title>Chance of success: ${LK[d.likelihood][0]}</title></circle>`;
       g+=`<text class="rl" x="10" y="${cy-2}">${esc(nm)}</text><text class="rs" x="10" y="${cy+12}">${esc(il)}</text>`;
       if(ms.length>1){const a=Math.max(X(ms[0].r[0]),LW),b=Math.min(X(ms[ms.length-1].r[1]),LW+PW);if(b>a)g+=`<line x1="${a}" y1="${cy}" x2="${b}" y2="${cy}" stroke="var(--line)" stroke-width="2"/>`}
       const nextI=ms.findIndex(z=>z.r[1]>today);
@@ -282,7 +290,7 @@ function drawer(rows){const el=document.getElementById("drawer");const d=rows.fi
   if(!d){el.innerHTML="";return}
   const ms=[...d.milestones].sort((a,b)=>range(a.date)[0]-range(b.date)[0]);
   el.innerHTML=`<div class="drawer"><div><span class="lab">${esc(d.ticker)} · ${esc(NAMES[d.ticker])}</span><h3>${esc(d.drug)}</h3>
-    <div class="meta">${esc(d.illness)} · ${esc(d.drug_type)} · ${esc(d.stage)}</div>
+    <div class="meta">${esc(d.illness)} · ${esc(d.drug_type)} · ${esc(d.stage)}</div>${d.likelihood?`<div style="margin-top:6px"><span class="lab">Chance of success</span> ${lkPill(d.likelihood)}</div>`:""}
     ${d.latest_result?`<p>${esc(d.latest_result)}</p>`:""}${d.needs_verification?`<div class="verify">To verify: ${esc(d.needs_verification)}</div>`:""}
     <div class="src">${d.sources.map((s,i)=>`<a href="${esc(s)}" target="_blank" rel="noopener">Source ${i+1}</a>`).join("")}</div></div>
     <div><span class="lab">Milestones</span><ol>${ms.map(m=>`<li class="${range(m.date)[1]>today?"fut":""}"><time>${esc(fmt(m.date))}</time><span>${esc(m.label)}</span></li>`).join("")||"<li>None recorded</li>"}</ol></div></div>`}
@@ -341,15 +349,7 @@ function approved(){
     y+=RH});
   const xn=LW+(NOWY-Y0+0.85)*cw;g+=`<line x1="${xn}" y1="${TOP-6}" x2="${xn}" y2="${y}" stroke="var(--fail)" stroke-width="2"/>`;
   svg.setAttribute("width",W);svg.setAttribute("height",y+6);svg.setAttribute("viewBox",`0 0 ${W} ${y+6}`);svg.innerHTML=rows.length?g:`<text x="20" y="40" class="rs">No approved drugs for these filters.</text>`;
-  // at-risk stacked bars
-  const s2=document.getElementById("atrisk"),W2=Math.max(760,s2.parentElement.clientWidth-2),L2=56,P2=W2-L2-14,H2=190,yrs=[];for(let yr=2026;yr<=2037;yr++)yrs.push(yr);
-  const tot=yr=>rows.filter(p=>p.us_loe===yr).reduce((a,p)=>a+p.sales_2025,0),mxv=Math.max(5,...yrs.map(tot)),top=Math.ceil(mxv/5)*5,bw=P2/yrs.length,Ys=v=>18+H2-(v/top)*H2;
-  let h2="";for(let v=0;v<=top;v+=5)h2+=`<line x1="${L2}" y1="${Ys(v)}" x2="${L2+P2}" y2="${Ys(v)}" stroke="var(--grid)"/><text class="ax" x="${L2-6}" y="${Ys(v)+4}" text-anchor="end">$${v}B</text>`;
-  yrs.forEach((yr,i)=>{let acc=0;const x=L2+i*bw+bw*0.18,w=bw*0.64;
-    rows.filter(p=>p.us_loe===yr).sort((a,b)=>b.sales_2025-a.sales_2025).forEach(p=>{const y0=Ys(acc+p.sales_2025),hh=Ys(acc)-y0;h2+=`<rect x="${x}" y="${y0}" width="${w}" height="${Math.max(hh-1,0.5)}" fill="${COL[p.ticker]}"><title>${esc(p.drug)} (${p.ticker}): $${p.sales_2025.toFixed(1)}B, US expiry ${yr}</title></rect>`;if(hh>13)h2+=`<text x="${x+w/2}" y="${y0+hh/2+4}" text-anchor="middle" style="font-size:10px;fill:var(--paper);font-weight:600">${esc(p.drug.split(/[ (]/)[0])}</text>`;acc+=p.sales_2025});
-    if(acc)h2+=`<text class="ax" x="${x+w/2}" y="${Ys(acc)-5}" text-anchor="middle" style="fill:var(--ink);font-weight:600">$${acc.toFixed(1)}B</text>`;
-    h2+=`<text class="ax" x="${x+w/2}" y="${18+H2+16}" text-anchor="middle">${yr}</text>`});
-  s2.setAttribute("width",W2);s2.setAttribute("height",H2+44);s2.setAttribute("viewBox",`0 0 ${W2} ${H2+44}`);s2.innerHTML=h2;
+  flows(rows);
   // table
   document.getElementById("approved").innerHTML=rows.map(p=>{const c=APPR.erosion[p.kind],kept=c.curve[2],done=p.us_loe&&p.us_loe<=2025;
     return`<tr><td><b><a class="tl" href="${esc(p.sales_src)}" target="_blank" rel="noopener" style="color:inherit">${esc(p.drug)}</a></b><small>${p.ticker} · ${p.kind==="small"?"small molecule":p.kind==="peptide"?"peptide injection/pill":p.kind}</small></td><td>${esc(p.use)}${p.note?`<small>${esc(p.note)}</small>`:""}</td>
@@ -366,6 +366,49 @@ const SIGNUP_URL="/*SIGNUP_URL*/";
     try{await fetch(SIGNUP_URL,{method:"POST",mode:"no-cors",body:new URLSearchParams(new FormData(f))});m.textContent="You're on the list. The next digest will arrive on a day something changes.";f.reset();}
     catch(err){m.textContent="Sign-up didn't go through. Check your connection and try again.";}
     b.disabled=false});})();
+const LAUNCH=/*LAUNCH*/{launches:[],ramp:[1]};
+const LK={likely:["Likely","var(--approved)"],unknown:["Unknown","var(--filed)"],likely_failure:["Likely failure","var(--fail)"]};
+const lkPill=k=>k?`<span class="lk lk-${k}">${LK[k][0]}</span>`:"";
+function flows(appr){
+  const L=LAUNCH.launches.filter(r=>state.cos.has(r.ticker)&&textOk([r.ticker,NAMES[r.ticker],r.drug,r.why])),yrs=[];for(let y=2026;y<=2037;y++)yrs.push(y);
+  // side by side: launches (stacked by likelihood) vs losing (stacked by company)
+  const svg=document.getElementById("flow"),W=Math.max(760,svg.parentElement.clientWidth-2),LM=60,PW=W-LM-14,H=200,T=24;
+  const add=y=>L.filter(r=>r.launch_year===y),lose=y=>appr.filter(p=>p.us_loe===y);
+  const sum=a=>a.reduce((s,x)=>s+x,0);
+  const mx=Math.max(5,...yrs.map(y=>Math.max(sum(add(y).map(r=>r.est_sales)),sum(lose(y).map(p=>p.sales_2025))))),top=Math.ceil(mx/10)*10,Y=v=>T+H-(v/top)*H,gw=PW/yrs.length,bw=gw*0.36;
+  let g="";for(let v=0;v<=top;v+=top/5)g+=`<line x1="${LM}" y1="${Y(v)}" x2="${LM+PW}" y2="${Y(v)}" stroke="var(--grid)"/><text class="ax" x="${LM-6}" y="${Y(v)+4}" text-anchor="end">$${Math.round(v)}B</text>`;
+  yrs.forEach((y,i)=>{const x0=LM+i*gw+gw*0.12;let acc=0;
+    ["likely","unknown","likely_failure"].forEach(k=>add(y).filter(r=>r.likelihood===k).sort((a,b)=>b.est_sales-a.est_sales).forEach(r=>{const y1=Y(acc+r.est_sales),h=Y(acc)-y1;
+      g+=`<rect x="${x0}" y="${y1}" width="${bw}" height="${Math.max(h-1,0.6)}" fill="${LK[k][1]}" opacity="${k==="likely"?0.9:0.55}"><title>${esc(r.drug)} (${r.ticker}), launch ${y}: ~${money(r.est_sales)}/yr, ${LK[k][0].toLowerCase()}</title></rect>`;acc+=r.est_sales}));
+    if(acc)g+=`<text class="ax" x="${x0+bw/2}" y="${Y(acc)-4}" text-anchor="middle" style="fill:var(--approved);font-weight:600">+${Math.round(acc*10)/10}</text>`;
+    let acc2=0;const x1=x0+bw+2;lose(y).sort((a,b)=>b.sales_2025-a.sales_2025).forEach(p=>{const y1=Y(acc2+p.sales_2025),h=Y(acc2)-y1;
+      g+=`<rect x="${x1}" y="${y1}" width="${bw}" height="${Math.max(h-1,0.6)}" fill="${COL[p.ticker]}"><title>${esc(p.drug)} (${p.ticker}) loses US protection ${y}: ${money(p.sales_2025)}/yr today</title></rect>`;
+      if(h>14&&bw>18)g+=`<text x="${x1+bw/2}" y="${y1+h/2+3}" text-anchor="middle" style="font-size:9px;fill:var(--paper);font-weight:600">${esc(p.drug.split(/[ (]/)[0].slice(0,7))}</text>`;acc2+=p.sales_2025});
+    if(acc2)g+=`<text class="ax" x="${x1+bw/2}" y="${Y(acc2)-4}" text-anchor="middle" style="fill:var(--cliff);font-weight:600">−${Math.round(acc2*10)/10}</text>`;
+    g+=`<text class="ax" x="${LM+i*gw+gw/2}" y="${T+H+16}" text-anchor="middle">${y}</text>`});
+  g+=`<g transform="translate(${LM},${T+H+30})" class="ax"><rect width="10" height="10" fill="var(--approved)"/><text x="14" y="9">Launch, likely</text><rect x="104" width="10" height="10" fill="var(--filed)" opacity=".55"/><text x="118" y="9">Unknown</text><rect x="184" width="10" height="10" fill="var(--fail)" opacity=".55"/><text x="198" y="9">Likely failure</text><text x="300" y="9">Right bar in each year: sales losing protection, by company color</text></g>`;
+  svg.setAttribute("width",W);svg.setAttribute("height",T+H+48);svg.setAttribute("viewBox",`0 0 ${W} ${T+H+48}`);svg.innerHTML=g;
+  // cumulative: ramped launches vs erosion after expiry
+  const ramp=LAUNCH.ramp,rv=(r,y)=>y<r.launch_year?0:r.est_sales*ramp[Math.min(y-r.launch_year,ramp.length-1)];
+  const now=p=>proj(p,2026),lost=y=>sum(appr.filter(p=>p.us_loe&&p.us_loe>2026).map(p=>Math.max(0,now(p)-proj(p,y))));
+  const gL=y=>sum(L.filter(r=>r.likelihood==="likely").map(r=>rv(r,y))),gA=y=>sum(L.filter(r=>r.likelihood!=="likely_failure").map(r=>rv(r,y)));
+  const ser=yrs.map(y=>({y,lost:lost(y),likely:gL(y),all:gA(y)}));
+  const c=document.getElementById("cum"),Wc=Math.max(760,c.parentElement.clientWidth-2),Pc=Wc-LM-110,Hc=200;
+  const mxc=Math.max(5,...ser.map(d=>Math.max(d.lost,d.all))),topc=Math.ceil(mxc/10)*10,mn=-topc,Yc=v=>T+Hc/2-(v/topc)*(Hc/2),Xc=i=>LM+i*(Pc/(yrs.length-1));
+  let h="";for(let v=mn;v<=topc;v+=topc/2)h+=`<line x1="${LM}" y1="${Yc(v)}" x2="${LM+Pc}" y2="${Yc(v)}" stroke="var(${v===0?"--line":"--grid"})"/><text class="ax" x="${LM-6}" y="${Yc(v)+4}" text-anchor="end">${v>0?"+":v<0?"−":""}$${Math.abs(Math.round(v))}B</text>`;
+  yrs.forEach((y,i)=>h+=`<text class="ax" x="${Xc(i)}" y="${T+Hc+16}" text-anchor="middle">${y}</text>`);
+  const net=ser.map(d=>d.likely-d.lost);
+  ser.forEach((d,i)=>{const v=net[i],bw2=Pc/yrs.length*0.5;h+=`<rect x="${Xc(i)-bw2/2}" y="${Math.min(Yc(0),Yc(v))}" width="${bw2}" height="${Math.abs(Yc(v)-Yc(0))}" fill="${v>=0?"var(--approved)":"var(--cliff)"}" opacity=".18"><title>${d.y}: net ${v>=0?"+":"−"}${money(Math.abs(v))}/yr vs today (likely launches minus lost sales)</title></rect>`});
+  const line=(f,col,dash,neg)=>`<path d="${ser.map((d,i)=>(i?"L":"M")+Xc(i)+" "+Yc(neg?-f(d):f(d))).join("")}" fill="none" stroke="${col}" stroke-width="2.5"${dash?' stroke-dasharray="6 4"':""}/>`;
+  h+=line(d=>d.all,"var(--approved)",true)+line(d=>d.likely,"var(--approved)",false)+line(d=>d.lost,"var(--cliff)",false,true);
+  const last=ser[ser.length-1],lab=(v,t,col)=>`<text x="${LM+Pc+8}" y="${Yc(v)+4}" style="font-size:11px;fill:${col};font-weight:600">${t}</text>`;
+  h+=lab(last.all,"+"+money(last.all)+" all","var(--approved)")+lab(last.likely-0.0001,"+"+money(last.likely)+" likely","var(--approved)")+lab(-last.lost,"−"+money(last.lost)+" lost","var(--cliff)");
+  ser.forEach((d,i)=>h+=`<circle cx="${Xc(i)}" cy="${Yc(d.likely)}" r="3" fill="var(--approved)"><title>${d.y}: +${money(d.likely)} from likely launches, +${money(d.all)} incl. unknown</title></circle><circle cx="${Xc(i)}" cy="${Yc(-d.lost)}" r="3" fill="var(--cliff)"><title>${d.y}: −${money(d.lost)} lost to patent expiry</title></circle>`);
+  h+=`<g transform="translate(${LM},${T+Hc+30})" class="ax"><line x1="0" y1="5" x2="18" y2="5" stroke="var(--approved)" stroke-width="2.5"/><text x="22" y="9">Added, likely launches</text><line x1="160" y1="5" x2="178" y2="5" stroke="var(--approved)" stroke-width="2.5" stroke-dasharray="6 4"/><text x="182" y="9">Added, incl. unknown</text><line x1="320" y1="5" x2="338" y2="5" stroke="var(--cliff)" stroke-width="2.5"/><text x="342" y="9">Lost after patent expiry</text><rect x="480" width="10" height="10" fill="var(--approved)" opacity=".3"/><text x="494" y="9">Net (likely)</text></g>`;
+  c.setAttribute("width",Wc);c.setAttribute("height",T+Hc+48);c.setAttribute("viewBox",`0 0 ${Wc} ${T+Hc+48}`);c.innerHTML=h;
+  document.getElementById("launches").innerHTML=L.sort((a,b)=>a.launch_year-b.launch_year||b.est_sales-a.est_sales).map(r=>`<tr><td><b>${esc(r.drug)}</b><small>${r.ticker} · ${esc(NAMES[r.ticker])}</small></td><td class="num">${r.launch_year}</td><td class="num">~${money(r.est_sales)}<small>${esc(r.basis)}</small></td><td>${lkPill(r.likelihood)}</td><td>${esc(r.why)}</td></tr>`).join("")||`<tr><td colspan="5" class="empty">No pipeline launches for these filters.</td></tr>`;
+  document.getElementById("launchnote").textContent=LAUNCH.note;
+}
 function render(){
   const rows=DATA.filter(matches);if(state.sel&&!rows.some(r=>r.drug===state.sel))state.sel=null;
   timeline(rows);drawer(rows);board();approved();market();briefs()}
