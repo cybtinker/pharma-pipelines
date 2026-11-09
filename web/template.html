@@ -74,6 +74,7 @@ h2{font-family:var(--display);font-weight:700;font-size:1.6rem;margin:0;text-tra
 .lane.finish{background:var(--accent-soft)}
 .tok{font-size:.82rem;line-height:1.3;border:1px solid var(--line);border-radius:3px;padding:4px 7px;background:var(--bg);min-width:0}
 .tok b{display:block;font-weight:600}
+.tok a.tl{color:inherit;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:2px}
 .tok small{color:var(--muted);font-size:.74rem}
 .tok.mine{border-color:var(--accent);background:var(--accent);color:var(--accent-ink)}
 .tok.mine small{color:var(--accent-ink);opacity:.85}
@@ -109,7 +110,7 @@ footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
     <div id="board"></div>
   </section>
 
-  <footer>Sources: company releases, FDA documents and Q3 2026 earnings coverage; each drug links its sources in the timeline details. Quarter and half-year dates are company guidance, not FDA goal dates. Competitor stages on the race board are a first pass and still being checked. Research only, not investment advice.</footer>
+  <footer>Sources: company releases, FDA documents and Q3 2026 earnings coverage; each drug links its sources in the timeline details. Quarter and half-year dates are company guidance, not FDA goal dates. Race board competitors in development were checked on Nov 9, 2026; underlined names link to the source. Research only, not investment advice.</footer>
 </div>
 
 <script>
@@ -214,7 +215,7 @@ function board(){const el=document.getElementById("board");
     const lane=k=>m.players.filter(p=>(p.stage==="p1"||p.stage==="p2"?"early":p.stage)===k);
     const appr=lane("approved").length;
     return`<article class="race"><header><b>${esc(m.market)}</b><span>${esc(m.mechanism)} · ${appr} approved · ${m.players.length-appr} in development</span></header>
-    <div class="track">${LANES.map(([k,l])=>`<div class="lane${k==="approved"?" finish":""}"><span class="lab">${l}</span>${lane(k).map(p=>`<div class="tok${p.ticker&&state.cos.has(p.ticker)?" mine":""}"><b>${esc(p.drug)}</b><small>${esc(p.company)}${p.note?" · "+esc(p.note):""}</small></div>`).join("")}</div>`).join("")}</div></article>`}).join("")}</div>`).join("")}
+    <div class="track">${LANES.map(([k,l])=>`<div class="lane${k==="approved"?" finish":""}"><span class="lab">${l}</span>${lane(k).map(p=>`<div class="tok${p.ticker&&state.cos.has(p.ticker)?" mine":""}"><b>${p.source?`<a class="tl" href="${esc(p.source)}" target="_blank" rel="noopener">${esc(p.drug)}</a>`:esc(p.drug)}</b><small>${esc(p.company)}${p.note?" · "+esc(p.note):""}</small></div>`).join("")}</div>`).join("")}</div></article>`}).join("")}</div>`).join("")}
 
 function render(){try{localStorage.setItem("pw2",JSON.stringify({cos:[...state.cos]}))}catch(e){}
   Object.keys(NAMES).forEach(t=>document.getElementById("co-"+t).setAttribute("aria-pressed",state.cos.has(t)));

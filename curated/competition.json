@@ -1,5 +1,5 @@
 {
- "note": "Competitor stages are a first pass from public knowledge as of Nov 2026 and still need source checks.",
+ "note": "Pipeline-stage competitors were checked against news and company sources on 2026-11-09 (each links its source). Long-approved products are listed from public knowledge.",
  "markets": [
   {
    "id": "mm",
@@ -90,8 +90,10 @@
      "drug": "Ivonescimab",
      "company": "Summit / Akeso",
      "ticker": null,
-     "stage": "p3",
-     "note": "approved in China"
+     "stage": "filed",
+     "note": "FDA decision Nov 14, 2026 (EGFR-mutant, after TKI); 1st-line still Phase 3",
+     "source": "https://www.drugs.com/history/ivonescimab.html",
+     "checked": "2026-11-09"
     },
     {
      "drug": "Tivunatamig",
@@ -105,7 +107,9 @@
      "company": "BioNTech / BMS",
      "ticker": null,
      "stage": "p3",
-     "note": null
+     "note": "~70% response in Phase 2",
+     "source": "https://www.curetoday.com/view/pumitamig-shows-70-response-in-advanced-lung-cancer-regardless-of-pd-l1-status",
+     "checked": "2026-11-09"
     }
    ]
   },
@@ -130,25 +134,31 @@
      "note": null
     },
     {
-     "drug": "Orforglipron (pill)",
+     "drug": "Foundayo (orforglipron, pill)",
      "company": "Lilly",
      "ticker": null,
-     "stage": "filed",
-     "note": null
+     "stage": "approved",
+     "note": "first GLP-1 pill without food rules",
+     "source": "https://www.pharmacytimes.com/view/oral-glp-1-orforglipron-approved-for-obesity",
+     "checked": "2026-11-09"
     },
     {
      "drug": "CagriSema",
      "company": "Novo Nordisk",
      "ticker": null,
      "stage": "filed",
-     "note": null
+     "note": "FDA decision expected Q4 2026",
+     "source": "https://lifesciencedaily.news/cagrisema-fda-review-novo-nordisk-nda-timeline-explained/",
+     "checked": "2026-11-09"
     },
     {
      "drug": "MariTide (monthly)",
      "company": "Amgen",
      "ticker": null,
      "stage": "p3",
-     "note": null
+     "note": "Phase 3 readouts 2027",
+     "source": "https://lifesciencedaily.news/maritide-approval-amgen-phase-3-timeline/",
+     "checked": "2026-11-09"
     },
     {
      "drug": "Berobenatide (monthly)",
@@ -191,7 +201,9 @@
      "company": "Incyte",
      "ticker": null,
      "stage": "p3",
-     "note": null
+     "note": "Phase 3 STOP-V trials fully enrolled",
+     "source": "https://clinicaltrials.gov/study/NCT06113445",
+     "checked": "2026-11-09"
     }
    ]
   },
@@ -227,7 +239,9 @@
      "company": "Sanofi",
      "ticker": null,
      "stage": "p3",
-     "note": null
+     "note": "Phase 3 mostly positive, filings planned",
+     "source": "https://www.indianpharmapost.com/news/sanofis-amlitelimab-delivers-in-phase-3-trials-heads-for-global-filings-18975",
+     "checked": "2026-11-09"
     },
     {
      "drug": "Tilrekimig",
@@ -270,7 +284,9 @@
      "company": "MoonLake",
      "ticker": null,
      "stage": "p3",
-     "note": null
+     "note": "positive 1-year Phase 3, BLA planned",
+     "source": "https://www.dermatologytimes.com/view/moonlake-reports-positive-52-week-phase-3-data-for-sonelokimab-in-hidradenitis-suppurativa",
+     "checked": "2026-11-09"
     },
     {
      "drug": "Lutikizumab",
@@ -396,11 +412,13 @@
      "note": null
     },
     {
-     "drug": "BEAM-101",
+     "drug": "Risto-cel (BEAM-101)",
      "company": "Beam",
      "ticker": null,
      "stage": "p2",
-     "note": null
+     "note": "BLA as early as end 2026",
+     "source": "https://investors.beamtx.com/news-releases/news-release-details/beam-therapeutics-reports-first-quarter-2026-financial-results/",
+     "checked": "2026-11-09"
     }
    ]
   },
@@ -422,14 +440,18 @@
      "company": "Ionis",
      "ticker": null,
      "stage": "approved",
-     "note": "FCS; sHTG next"
+     "note": "sHTG approved Jun 2026",
+     "source": "https://hcplive.com/view/fda-approves-olezarsen-tryngolza-severe-hypertriglyceridemia",
+     "checked": "2026-11-09"
     },
     {
      "drug": "Redemplo (plozasiran)",
      "company": "Arrowhead",
      "ticker": null,
      "stage": "approved",
-     "note": "FCS; sHTG next"
+     "note": "FCS; sHTG filing by end 2026",
+     "source": "https://pharmacally.com/arrowhead-fda-star-plozasiran-severe-hypertriglyceridemia/",
+     "checked": "2026-11-09"
     },
     {
      "drug": "CTX310 (one-time edit)",
@@ -486,22 +508,28 @@
      "drug": "Asundexian",
      "company": "Bayer",
      "ticker": null,
-     "stage": "p3",
-     "note": null
+     "stage": "filed",
+     "note": "stroke prevention, priority review",
+     "source": "https://www.businesswire.com/news/home/20260518787299/en/",
+     "checked": "2026-11-09"
     },
     {
      "drug": "Milvexian",
      "company": "BMS / J&J",
      "ticker": null,
      "stage": "p3",
-     "note": null
+     "note": "failed in heart attack (ACS); AF and stroke trials ongoing",
+     "source": "https://www.hcplive.com/view/milvexian-fails-to-reduce-mace-after-acs-in-librexia-trial",
+     "checked": "2026-11-09"
     },
     {
      "drug": "Abelacimab",
      "company": "Anthos (Novartis)",
      "ticker": null,
      "stage": "p3",
-     "note": null
+     "note": "AF only, filing planned 2028",
+     "source": "https://www.fiercebiotech.com/biotech/novartis-narrows-focus-anticoagulant-once-anchored-anthos-spinout",
+     "checked": "2026-11-09"
     },
     {
      "drug": "CTX611",
