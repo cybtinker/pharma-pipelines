@@ -24,3 +24,11 @@ To turn on the page once: repository Settings, Pages, Source: GitHub Actions.
 
 ## Web page
 `web/template.html` plus `curated/drugs.json` are built into `web/index.html` by `python3 web/build.py`. Filters: ticker chips, free-text search (ticker, drug, illness, competitor), stage, drug type, and an upcoming-dates window.
+
+## Email digest
+`collector/digest.py` compares the two latest snapshot days and lists trial status changes, newly posted results, new Phase 3 trials, new SEC filings, and milestones due in the next 14 days. It saves `digests/<date>.md` and, when there is news, emails it through Buttondown.
+
+Setup (one time):
+1. Create a Buttondown account and copy the API key (Settings, API).
+2. In this repo: Settings, Secrets and variables, Actions. Add secret `BUTTONDOWN_API_KEY`, and add variable `BUTTONDOWN_USERNAME` (your Buttondown username).
+3. The sign-up form on the page then posts to your Buttondown list. Phone numbers are stored as the subscriber field `phone`.

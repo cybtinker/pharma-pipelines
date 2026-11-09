@@ -108,6 +108,16 @@ h2{font-family:var(--display);font-weight:700;font-size:1.6rem;margin:0;text-tra
 .swatch{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px}
 .mkt td.loe{font-family:var(--mono);color:var(--cliff);font-weight:600}
 .mkt td.loe.done{color:var(--muted)}
+.signup{background:var(--ink);color:var(--bg);padding:20px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:16px 28px;align-items:start}
+@media (max-width:760px){.signup{grid-template-columns:minmax(0,1fr)}}
+.signup h2{font-family:var(--display);font-size:1.6rem;margin:0;text-transform:uppercase}
+.signup p{margin:6px 0 0;font-size:.9rem;opacity:.85}
+.signup form{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.signup input[type=email],.signup input[type=tel]{font:inherit;font-size:.9rem;flex:1 1 200px;min-width:0;padding:9px 10px;border-radius:4px;border:1px solid var(--line);background:var(--paper);color:var(--ink)}
+.signup label.ok{flex-basis:100%;font-size:.8rem;display:flex;gap:8px;align-items:flex-start;opacity:.9}
+.signup button{font:inherit;font-weight:600;padding:9px 18px;border-radius:4px;border:0;background:var(--accent);color:var(--accent-ink);cursor:pointer}
+.signup button:disabled{opacity:.5;cursor:not-allowed}
+.signup .msg{flex-basis:100%;font-size:.8rem;opacity:.85}
 footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
 </style>
 
@@ -156,6 +166,20 @@ footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
   <section>
     <div class="sh"><h2>Latest earnings, in five lines</h2></div>
     <div class="briefs" id="briefs"></div>
+  </section>
+
+  <section>
+    <div class="signup">
+      <div><h2>Get the daily digest</h2><p>One email on days something changes: new trial results, status changes, FDA filings and dates coming up in the next two weeks. Unsubscribe any time.</p></div>
+      <form id="signup" method="post" action="https://buttondown.com/api/emails/embed-subscribe//*BD_USER*/" target="_blank">
+        <input type="email" id="su-email" name="email" placeholder="Email address" required aria-label="Email address" autocomplete="email">
+        <input type="tel" id="su-phone" name="metadata__phone" placeholder="Phone (optional)" aria-label="Phone number, optional" autocomplete="tel">
+        <input type="hidden" name="tag" value="pipeline-watch">
+        <button type="submit" id="su-btn">Sign up</button>
+        <label class="ok"><input type="checkbox" id="su-ok" required> I agree to receive Pipeline Watch emails. My phone number is kept for future text alerts and is not shared.</label>
+        <span class="msg" id="su-msg"></span>
+      </form>
+    </div>
   </section>
 
   <footer>Sources: company releases, FDA documents and Q3 2026 earnings coverage; each drug links its sources in the timeline details. Quarter and half-year dates are company guidance, not FDA goal dates. Race board competitors in development were checked on Nov 9, 2026; underlined names link to the source. Research only, not investment advice.</footer>
@@ -321,6 +345,10 @@ function approved(){
     <td class="num">${p.us_loe?Math.round(kept*100)+"%":"—"}</td><td class="num">${p.us_loe?(done?`<small>already past expiry</small>`:`~${money(p.sales_2025*kept)} in ${p.us_loe+2}`):"—"}</td></tr>`}).join("");
   document.getElementById("erosionnote").innerHTML="How the after-expiry numbers are estimated: biologics follow "+`<a href="${esc(APPR.erosion.biologic.src)}" target="_blank" rel="noopener" style="color:var(--accent)">Humira's actual decline</a>`+" (kept 68% of sales in year 1, 21% by year 3). Small molecules assume typical generic entry (about 20% kept in year 1, 10% in year 2). Vaccines assume a slower fade (60% kept by year 2). Sales after expiry are US-driven estimates applied to global sales, so they are a rough guide.";
 }
+const BD_USER="/*BD_USER*/";
+(function(){const f=document.getElementById("signup"),m=document.getElementById("su-msg");
+  if(!BD_USER||BD_USER.includes("BD_USER")){document.getElementById("su-btn").disabled=true;m.textContent="Sign-up opens on the public site once the mailing list is connected.";f.onsubmit=e=>e.preventDefault();}
+  else f.addEventListener("submit",()=>{m.textContent="Check your inbox to confirm your subscription."});})();
 function render(){try{localStorage.setItem("pw2",JSON.stringify({cos:[...state.cos]}))}catch(e){}
   Object.keys(NAMES).forEach(t=>document.getElementById("co-"+t).setAttribute("aria-pressed",state.cos.has(t)));
   const rows=DATA.filter(matches);if(state.sel&&!rows.some(r=>r.drug===state.sel))state.sel=null;

@@ -27,15 +27,23 @@ jobs:
       - name: Collect snapshots into the data lake
         if: github.event_name != 'push'
         run: python3 collector/collect.py
+      - name: Build and email the daily digest
+        if: github.event_name != 'push'
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+          PAGE_URL: https://cybtinker.github.io/pharma-pipelines/
+        run: python3 collector/digest.py
       - name: Commit new snapshots
         if: github.event_name != 'push'
         run: |
           git config user.name "pipeline-bot"
           git config user.email "pipeline-bot@users.noreply.github.com"
-          git add raw
+          git add raw digests
           git diff --cached --quiet || git commit -m "Data snapshot $(date -u +%F)"
           git push
       - name: Build web page
+        env:
+          BUTTONDOWN_USERNAME: ${{ vars.BUTTONDOWN_USERNAME }}
         run: |
           python3 web/build.py
           mkdir -p _site && cp web/index.html _site/index.html && cp curated/drugs.json _site/drugs.json
