@@ -35,6 +35,72 @@
       "name": "Novo Nordisk",
       "sponsor_query": "Novo Nordisk A/S",
       "sec_cik": "0000353278"
+    },
+    {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "sponsor_query": "Janssen",
+      "sec_cik": "0000200406"
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck",
+      "sponsor_query": "Merck Sharp & Dohme LLC",
+      "sec_cik": "0000310158"
+    },
+    {
+      "ticker": "BMY",
+      "name": "Bristol Myers Squibb",
+      "sponsor_query": "Bristol-Myers Squibb",
+      "sec_cik": "0000014272"
+    },
+    {
+      "ticker": "AMGN",
+      "name": "Amgen",
+      "sponsor_query": "Amgen",
+      "sec_cik": "0000318154"
+    },
+    {
+      "ticker": "GILD",
+      "name": "Gilead Sciences",
+      "sponsor_query": "Gilead Sciences",
+      "sec_cik": "0000882095"
+    },
+    {
+      "ticker": "VRTX",
+      "name": "Vertex",
+      "sponsor_query": "Vertex Pharmaceuticals Incorporated",
+      "sec_cik": "0000875320"
+    },
+    {
+      "ticker": "REGN",
+      "name": "Regeneron",
+      "sponsor_query": "Regeneron Pharmaceuticals",
+      "sec_cik": "0000872589"
+    },
+    {
+      "ticker": "BIIB",
+      "name": "Biogen",
+      "sponsor_query": "Biogen",
+      "sec_cik": "0000875045"
+    },
+    {
+      "ticker": "ZTS",
+      "name": "Zoetis",
+      "sponsor_query": "Zoetis",
+      "sec_cik": "0001555280"
+    },
+    {
+      "ticker": "VTRS",
+      "name": "Viatris",
+      "sponsor_query": "Viatris Inc.",
+      "sec_cik": "0001792044"
+    },
+    {
+      "ticker": "INCY",
+      "name": "Incyte",
+      "sponsor_query": "Incyte Corporation",
+      "sec_cik": "0000879169"
     }
   ],
   "trial_phases": [

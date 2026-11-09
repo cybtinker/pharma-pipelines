@@ -8,17 +8,17 @@
   --bg:#eef1ef; --paper:#fbfcfb; --ink:#14201d; --muted:#5d6c67; --line:#cfd8d4; --grid:#e1e8e4;
   --accent:#0d5c63; --accent-ink:#ffffff; --accent-soft:#d5ebea;
   --approved:#22783e; --filed:#b06a00; --readout:#3150b0; --fail:#b0342b; --start:#6b4fa0;
-  --c-mrna:#a07800; --c-pfe:#2856a8; --c-abbv:#4a5568; --c-crsp:#8a3f9a; --c-lly:#c0285a; --c-nvo:#5a6e12; --cliff:#c2410c;
+  --c-pfe:#2856a8; --c-lly:#c0285a; --c-jnj:#b42318; --c-abbv:#4a5568; --c-mrk:#00796b; --c-bmy:#6b4fbb; --c-amgn:#0369a1; --c-gild:#9a3412; --c-vrtx:#6d28d9; --c-regn:#0f766e; --c-biib:#4d7c0f; --c-zts:#a16207; --c-vtrs:#64748b; --c-incy:#be185d; --c-mrna:#a07800; --c-nvo:#5a6e12; --c-crsp:#8a3f9a; --cliff:#c2410c;
   --display:"Archivo Narrow","Arial Narrow",sans-serif; --body:"Public Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#0c1312; --paper:#131d1b; --ink:#e2ebe8; --muted:#90a39d; --line:#283633; --grid:#1b2725;
   --accent:#58c2c8; --accent-ink:#0c1312; --accent-soft:#163337;
-  --approved:#6fd08d; --filed:#f0b450; --readout:#93a9f5; --fail:#f2877d; --start:#c3a8f0; --c-mrna:#e3bd4f; --c-pfe:#86a8ef; --c-abbv:#a9b4c4; --c-crsp:#d39ae0; --c-lly:#f07ba0; --c-nvo:#b5cc5a; --cliff:#fb923c; color-scheme:dark}}
+  --approved:#6fd08d; --filed:#f0b450; --readout:#93a9f5; --fail:#f2877d; --start:#c3a8f0; --c-pfe:#86a8ef; --c-lly:#f07ba0; --c-jnj:#f4867c; --c-abbv:#a9b4c4; --c-mrk:#4fd1bf; --c-bmy:#b6a2f0; --c-amgn:#6cc4f0; --c-gild:#f59e6b; --c-vrtx:#c4a5ff; --c-regn:#5eead4; --c-biib:#a3d65c; --c-zts:#f3c35b; --c-vtrs:#b8c4d4; --c-incy:#f9a8d4; --c-mrna:#e3bd4f; --c-nvo:#b5cc5a; --c-crsp:#d39ae0; --cliff:#fb923c; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0c1312; --paper:#131d1b; --ink:#e2ebe8; --muted:#90a39d; --line:#283633; --grid:#1b2725;
   --accent:#58c2c8; --accent-ink:#0c1312; --accent-soft:#163337;
-  --approved:#6fd08d; --filed:#f0b450; --readout:#93a9f5; --fail:#f2877d; --start:#c3a8f0; --c-mrna:#e3bd4f; --c-pfe:#86a8ef; --c-abbv:#a9b4c4; --c-crsp:#d39ae0; --c-lly:#f07ba0; --c-nvo:#b5cc5a; --cliff:#fb923c; color-scheme:dark}
+  --approved:#6fd08d; --filed:#f0b450; --readout:#93a9f5; --fail:#f2877d; --start:#c3a8f0; --c-pfe:#86a8ef; --c-lly:#f07ba0; --c-jnj:#f4867c; --c-abbv:#a9b4c4; --c-mrk:#4fd1bf; --c-bmy:#b6a2f0; --c-amgn:#6cc4f0; --c-gild:#f59e6b; --c-vrtx:#c4a5ff; --c-regn:#5eead4; --c-biib:#a3d65c; --c-zts:#f3c35b; --c-vtrs:#b8c4d4; --c-incy:#f9a8d4; --c-mrna:#e3bd4f; --c-nvo:#b5cc5a; --c-crsp:#d39ae0; --cliff:#fb923c; color-scheme:dark}
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
@@ -138,6 +138,13 @@ h2{font-family:var(--display);font-weight:700;font-size:1.6rem;margin:0;text-tra
 .lkrules ul{margin:8px 0;padding-left:0;list-style:none}.lkrules li{margin:5px 0}.lkrules li .lk{margin-right:6px}
 .lkrules p{margin:4px 0 0;color:var(--muted);font-size:.85rem}
 #launches .src{display:flex;gap:8px;margin-top:3px;font-size:.8rem}
+@media (max-width:640px){.filters{position:static}}
+.cosel{flex-basis:100%;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.cosel .lab{margin-right:4px}
+.cotag{display:inline-flex;align-items:center;gap:6px;font:600 .82rem var(--body);border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;padding:4px 10px;cursor:pointer}
+.cotag span{color:var(--muted);font-size:1rem;line-height:1}
+.cotag:hover span{color:var(--ink)}
+.cosel select{width:auto}
 footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
 </style>
 
@@ -151,10 +158,10 @@ footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
   <div class="filters" role="search">
     <input id="q" type="search" placeholder="Search: LLY, Mounjaro, myeloma, obesity" aria-label="Search" autocomplete="off">
     <select id="type" aria-label="Drug type"><option value="">All drug types</option></select>
-    <select id="co" aria-label="Company"><option value="">All companies</option></select>
     <select id="ill" aria-label="Illness"><option value="">All illnesses</option></select>
     <select id="drug" aria-label="Drug"><option value="">All drugs</option></select>
     <button type="button" class="chip" id="reset">Clear</button>
+    <div class="cosel" id="cosel" aria-label="Companies shown"></div>
   </div>
 
   <section>
@@ -221,7 +228,10 @@ footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
 const DATA=/*DATA*/[];
 const COMP=/*COMP*/{markets:[]};
 const ASOF="/*ASOF*/";
-const NAMES={LLY:"Eli Lilly",NVO:"Novo Nordisk",PFE:"Pfizer",ABBV:"AbbVie",MRNA:"Moderna",CRSP:"CRISPR Therapeutics"};
+const NAMES={PFE:"Pfizer",LLY:"Eli Lilly",JNJ:"Johnson & Johnson",ABBV:"AbbVie",MRK:"Merck",BMY:"Bristol Myers Squibb",AMGN:"Amgen",GILD:"Gilead Sciences",VRTX:"Vertex",REGN:"Regeneron",BIIB:"Biogen",ZTS:"Zoetis",VTRS:"Viatris",INCY:"Incyte",MRNA:"Moderna",NVO:"Novo Nordisk",CRSP:"CRISPR Therapeutics"};
+const SP500=new Set(["PFE","LLY","JNJ","ABBV","MRK","BMY","AMGN","GILD","VRTX","REGN","BIIB","ZTS","VTRS","INCY","MRNA"]);
+const DEFAULT_COS=["PFE"];
+const COL=Object.fromEntries(Object.keys(NAMES).map(t=>[t,`var(--c-${t.toLowerCase()})`]));
 const KIND={approval:["Approval","--approved"],filing:["Filing","--filed"],adcom:["Advisory vote","--filed"],readout:["Data readout","--readout"],start:["Trial start","--start"],deal:["Deal","--start"],fail:["Failure","--fail"]};
 const today=new Date(ASOF+"T00:00:00");
 function range(v){let m;
@@ -236,22 +246,30 @@ function fmt(v){let m;
   if(m=v.match(/^(\d{4})-(Q\d|H\d)$/))return m[2]+" "+m[1];return v}
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
-const state={q:"",type:"",ill:"",drug:"",cos:new Set(Object.keys(NAMES)),sel:null};
+const state={q:"",type:"",ill:"",drug:"",cos:new Set(DEFAULT_COS),sel:null};
 
 const classOf={};COMP.markets.forEach(m=>m.players.forEach(p=>{if(p.ticker)classOf[p.ticker+"|"+p.drug.split(/[ (]/)[0].toLowerCase()]=m.drug_class}));
 const drugClass=d=>classOf[d.ticker+"|"+d.drug.split(/[ (]/)[0].toLowerCase()]||d.drug_type;
 const sel=document.getElementById("type");
 [...new Set(COMP.markets.map(m=>m.drug_class))].forEach(c=>{const o=document.createElement("option");o.value=c;o.textContent=c;sel.append(o)});
 // dropdowns
-const ILLS=["Obesity","Diabetes","Alzheimer","Myeloma","Lymphoma","Lung cancer","Breast cancer","Prostate","Bladder","Sickle cell","Hemophilia","Flu","COVID","RSV","Melanoma","Eczema","Psoriasis","Crohn","Arthritis","Vitiligo","Hidradenitis","Migraine","Parkinson","Triglycerides","Blood clots","Heart"];
+const ILLS=["Obesity","Diabetes","Alzheimer","Myeloma","Lymphoma","Lung cancer","Breast cancer","Prostate","Bladder","Sickle cell","Hemophilia","Flu","COVID","RSV","Melanoma","Eczema","Psoriasis","Crohn","Arthritis","Vitiligo","Hidradenitis","Migraine","Parkinson","Triglycerides","Blood clots","Heart","HIV","Kidney","Lupus","Myasthenia","Pain","Cystic fibrosis","Multiple sclerosis","Asthma","Cholesterol","Pulmonary","Eye","Spinal"];
 function fill(id,opts){const el=document.getElementById(id);opts.forEach(([v,l])=>{const o=document.createElement("option");o.value=v;o.textContent=l;el.append(o)});return el}
-fill("co",Object.entries(NAMES).map(([t,n])=>[t,t+" · "+n])).onchange=e=>{state.cos=new Set(e.target.value?[e.target.value]:Object.keys(NAMES));fillDrugs();render()};
+function coPicker(){const el=document.getElementById("cosel"),on=Object.keys(NAMES).filter(t=>state.cos.has(t)),off=Object.keys(NAMES).filter(t=>!state.cos.has(t));
+  el.innerHTML=`<span class="lab">Companies</span>`+on.map(t=>`<button type="button" class="cotag" data-t="${t}" title="Remove ${esc(NAMES[t])}"><i class="swatch" style="background:${COL[t]}"></i>${t} · ${esc(NAMES[t])}<span aria-hidden="true">×</span></button>`).join("")+
+    (off.length?`<select id="coadd" aria-label="Add a company"><option value="">+ Add company</option>${off.length>1?`<option value="*">Add all ${off.length}</option>`:""}${off.map(t=>`<option value="${t}">${t} · ${esc(NAMES[t])}${SP500.has(t)?"":" (not S&P 500)"}</option>`).join("")}</select>`:"")+
+    (on.length>1?`<button type="button" class="chip" id="coonly">Back to Pfizer only</button>`:"");
+  el.querySelectorAll(".cotag").forEach(b=>b.onclick=()=>{if(state.cos.size>1){state.cos.delete(b.dataset.t);coChanged()}});
+  const a=document.getElementById("coadd");if(a)a.onchange=()=>{(a.value==="*"?off:[a.value]).forEach(t=>state.cos.add(t));coChanged()};
+  const o=document.getElementById("coonly");if(o)o.onclick=()=>{state.cos=new Set(DEFAULT_COS);coChanged()}}
+function coChanged(){coPicker();fillDrugs();render()}
+coPicker();
 fill("ill",ILLS.map(i=>[i.toLowerCase(),i])).onchange=e=>{state.ill=e.target.value;render()};
 function fillDrugs(){const el=document.getElementById("drug"),cur=state.drug;el.length=1;
   const ds=[...new Set([...DATA.filter(d=>state.cos.has(d.ticker)).map(d=>d.drug),...APPR.products.filter(p=>state.cos.has(p.ticker)).map(p=>p.drug)])].sort((a,b)=>a.localeCompare(b));
   fill("drug",ds.map(d=>[d,d]));el.value=ds.includes(cur)?cur:"";state.drug=el.value}
 document.getElementById("drug").onchange=e=>{state.drug=e.target.value;render()};
-document.getElementById("reset").onclick=()=>{state.q="";state.type="";state.ill="";state.drug="";state.cos=new Set(Object.keys(NAMES));["q","type","co","ill","drug"].forEach(id=>document.getElementById(id).value="");fillDrugs();render()};
+document.getElementById("reset").onclick=()=>{state.q="";state.type="";state.ill="";state.drug="";state.cos=new Set(DEFAULT_COS);["q","type","ill","drug"].forEach(id=>document.getElementById(id).value="");coChanged()};
 // one text test shared by every section: search words, illness and drug dropdowns
 function textOk(parts){const h=parts.join(" ").toLowerCase();
   if(state.q&&!state.q.split(/\s+/).every(w=>h.includes(w)))return false;
@@ -349,7 +367,6 @@ function market(){const el=document.getElementById("mkt");
   el.querySelectorAll("input[type=range]").forEach(inp=>inp.oninput=e=>{shares[e.target.dataset.k]=+e.target.value;market();const n=document.getElementById(e.target.id);if(n)n.focus()});}
 function briefs(){document.getElementById("briefs").innerHTML=Object.entries(BRIEFS).filter(([t])=>state.cos.has(t)).map(([t,b])=>`<article class="brief"><span class="lab">${t} · ${esc(NAMES[t])}</span><h3>${esc(b.title)}</h3>${b.date?`<span class="when">${esc(fmt(b.date))}</span>`:""}<ul>${b.points.map(p=>`<li>${esc(p)}</li>`).join("")}</ul><a href="${esc(b.url)}" target="_blank" rel="noopener">Source</a></article>`).join("")}
 const APPR=/*APPR*/{products:[],erosion:{}};
-const COL={MRNA:"var(--c-mrna)",PFE:"var(--c-pfe)",ABBV:"var(--c-abbv)",CRSP:"var(--c-crsp)",LLY:"var(--c-lly)",NVO:"var(--c-nvo)"};
 const Y0=2024,Y1=2037,NOWY=2026;
 function proj(p,y){const c=APPR.erosion[p.kind].curve,at=i=>c[Math.min(Math.max(i,0),c.length-1)];
   if(!p.us_loe)return p.sales_2025;

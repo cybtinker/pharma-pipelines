@@ -1177,5 +1177,1025 @@
   ],
   "likelihood": "likely_failure",
   "likelihood_why": "Novo wrote down $0.7B on it in Q3 2026, a sign it now expects less from the drug."
+ },
+ {
+  "ticker": "JNJ",
+  "drug": "Icotyde (icotrokinra)",
+  "illness": "Plaque psoriasis; psoriatic arthritis",
+  "drug_type": "Oral IL-23 receptor peptide",
+  "stage": "Approved (psoriasis); Phase 3 PsA",
+  "next_event": "Psoriatic arthritis data",
+  "next_event_date": "2026-Q4",
+  "latest_result": "20,000+ patients started; J&J expects about $10B in sales",
+  "competitors": [
+   "Skyrizi (AbbVie)",
+   "Tremfya (J&J)",
+   "Sotyktu (BMS)"
+  ],
+  "sources": [
+   "https://www.jnj.com/media-center/press-releases/johnson-johnson-q3-2026-earnings-ceo-and-cfo-prepared-remarks/",
+   "https://www.biospace.com/j-js-innovative-medicines-carried-q3-as-medtech-disappoints-but-newer-medicines-absent"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-03",
+    "kind": "approval",
+    "label": "FDA approval, psoriasis"
+   },
+   {
+    "date": "2026-Q4",
+    "kind": "readout",
+    "label": "Psoriatic arthritis data"
+   }
+  ],
+  "likelihood": "likely",
+  "likelihood_why": "Already approved for psoriasis and broadly covered by insurers; arthritis data still to come."
+ },
+ {
+  "ticker": "JNJ",
+  "drug": "Inlexzo (TAR-200)",
+  "illness": "High-risk non-muscle-invasive bladder cancer",
+  "drug_type": "Drug-releasing bladder device",
+  "stage": "Approved; more data due",
+  "next_event": "High-risk NMIBC readout",
+  "next_event_date": "2026-Q4",
+  "latest_result": "About $200M of sales in first 9 months of 2026",
+  "competitors": [],
+  "sources": [
+   "https://www.jnj.com/media-center/press-releases/johnson-johnson-q3-2026-earnings-ceo-and-cfo-prepared-remarks/"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-Q4",
+    "kind": "readout",
+    "label": "High-risk NMIBC data"
+   }
+  ],
+  "likelihood": "likely",
+  "likelihood_why": "Already approved and selling; the next readout could widen its use."
+ },
+ {
+  "ticker": "JNJ",
+  "drug": "Rybrevant subcutaneous (head and neck)",
+  "illness": "Head and neck cancer",
+  "drug_type": "Bispecific antibody (EGFR x MET)",
+  "stage": "Under FDA review",
+  "next_event": "FDA approval expected",
+  "next_event_date": "2026-Q4",
+  "latest_result": "Rybrevant sales +64% in Q3",
+  "competitors": [],
+  "sources": [
+   "https://www.jnj.com/media-center/press-releases/johnson-johnson-q3-2026-earnings-ceo-and-cfo-prepared-remarks/"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-Q4",
+    "kind": "approval",
+    "label": "FDA decision expected"
+   }
+  ],
+  "likelihood": "likely",
+  "likelihood_why": "Under FDA review and J&J expects approval by year-end."
+ },
+ {
+  "ticker": "JNJ",
+  "drug": "Imaavy (nipocalimab)",
+  "illness": "Myasthenia gravis; warm autoimmune hemolytic anemia",
+  "drug_type": "FcRn antibody",
+  "stage": "Approved (2 uses)",
+  "next_event": "More indications",
+  "next_event_date": null,
+  "latest_result": "Approved for wAIHA in Q3 2026 as the first advanced treatment",
+  "competitors": [
+   "Vyvgart (argenx)",
+   "Rystiggo (UCB)"
+  ],
+  "sources": [
+   "https://www.jnj.com/media-center/press-releases/johnson-johnson-q3-2026-earnings-ceo-and-cfo-prepared-remarks/"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-Q3",
+    "kind": "approval",
+    "label": "FDA approval, wAIHA"
+   }
+  ],
+  "likelihood": "likely",
+  "likelihood_why": "Approved for two diseases."
+ },
+ {
+  "ticker": "JNJ",
+  "drug": "Pasritamig",
+  "illness": "Advanced prostate cancer",
+  "drug_type": "Bispecific antibody (KLK2 x CD3)",
+  "stage": "Clinical (phase not stated)",
+  "next_event": "Data readout",
+  "next_event_date": "2026-Q4",
+  "latest_result": "First-in-class; no efficacy data published yet",
+  "competitors": [
+   "Xaluritamig (Amgen)"
+  ],
+  "sources": [
+   "https://www.jnj.com/media-center/press-releases/johnson-johnson-q3-2026-earnings-ceo-and-cfo-prepared-remarks/"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-Q4",
+    "kind": "readout",
+    "label": "Data readout"
+   }
+  ],
+  "likelihood": "unknown",
+  "likelihood_why": "Early, first-in-class drug with results still to come."
+ },
+ {
+  "ticker": "MRK",
+  "drug": "Sacituzumab tirumotecan (sac-TMT)",
+  "illness": "Lung and other cancers",
+  "drug_type": "TROP2 antibody-drug conjugate",
+  "stage": "Phase 3",
+  "next_event": "Phase 3 readouts",
+  "next_event_date": null,
+  "latest_result": "Investors are tracking Phase 3 timelines",
+  "competitors": [
+   "Datroway (AstraZeneca/Daiichi)",
+   "Trodelvy (Gilead)"
+  ],
+  "sources": [
+   "https://finimize.com/content/mercks-keytruda-and-gardasil-powered-a-strong-q3-beat"
+  ],
+  "needs_verification": "Readout timing not stated in the Q3 report",
+  "milestones": [],
+  "likelihood": "unknown",
+  "likelihood_why": "Phase 3 trials still running; no late-stage results in Merck's Q3 report."
+ },
+ {
+  "ticker": "MRK",
+  "drug": "Winrevair (sotatercept)",
+  "illness": "Pulmonary arterial hypertension",
+  "drug_type": "Activin signaling inhibitor",
+  "stage": "Approved; growing",
+  "next_event": null,
+  "next_event_date": null,
+  "latest_result": "Q3 2026 sales $694M, up 94%",
+  "competitors": [],
+  "sources": [
+   "https://finimize.com/content/mercks-keytruda-and-gardasil-powered-a-strong-q3-beat"
+  ],
+  "needs_verification": null,
+  "milestones": [],
+  "likelihood": "likely",
+  "likelihood_why": "Approved and nearly doubling sales."
+ },
+ {
+  "ticker": "BMY",
+  "drug": "Milvexian",
+  "illness": "Atrial fibrillation; stroke prevention",
+  "drug_type": "Oral Factor XIa inhibitor",
+  "stage": "Phase 3",
+  "next_event": "AF Phase 3 results",
+  "next_event_date": "2027-Q1",
+  "latest_result": "Secondary stroke prevention results named as a near-term catalyst",
+  "competitors": [
+   "Asundexian (Bayer)",
+   "Abelacimab (Novartis)"
+  ],
+  "sources": [
+   "https://zacks.com/stock/news/3019664/bmy-q3-earnings-call-highlights-raised-outlook-and-pipeline-progress"
+  ],
+  "needs_verification": "Partner (J&J) not confirmed on the page read",
+  "milestones": [
+   {
+    "date": "2027-Q1",
+    "kind": "readout",
+    "label": "AF Phase 3 results"
+   }
+  ],
+  "likelihood": "unknown",
+  "likelihood_why": "Large Phase 3 trials still running; a rival in this drug class failed before."
+ },
+ {
+  "ticker": "BMY",
+  "drug": "Admilparant",
+  "illness": "Idiopathic pulmonary fibrosis",
+  "drug_type": "Oral LPA1 antagonist",
+  "stage": "Phase 3 positive",
+  "next_event": "More data",
+  "next_event_date": null,
+  "latest_result": "Phase 3: 60 mg dose worked; 120 mg dose missed",
+  "competitors": [
+   "Ofev (Boehringer)",
+   "Nerandomilast (Boehringer)"
+  ],
+  "sources": [
+   "https://www.zacks.com/stock/news/3018802/bmy-q3-earnings-tops-estimates-higher-charges-weigh-on-outlook",
+   "https://zacks.com/stock/news/3019664/bmy-q3-earnings-call-highlights-raised-outlook-and-pipeline-progress"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-Q3",
+    "kind": "readout",
+    "label": "Phase 3 positive (60 mg)"
+   }
+  ],
+  "likelihood": "likely",
+  "likelihood_why": "Phase 3 met its goal at one dose, though the higher dose did not."
+ },
+ {
+  "ticker": "BMY",
+  "drug": "Iza-bren (izalontamab brengitecan)",
+  "illness": "Breast and lung cancer",
+  "drug_type": "Bispecific antibody-drug conjugate (EGFR x HER3)",
+  "stage": "Phase 3 positive",
+  "next_event": "Filing",
+  "next_event_date": null,
+  "latest_result": "Positive Phase 3 results in Q3 2026",
+  "competitors": [],
+  "sources": [
+   "https://www.zacks.com/stock/news/3018802/bmy-q3-earnings-tops-estimates-higher-charges-weigh-on-outlook"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-Q3",
+    "kind": "readout",
+    "label": "Phase 3 positive"
+   }
+  ],
+  "likelihood": "likely",
+  "likelihood_why": "A Phase 3 trial met its goal."
+ },
+ {
+  "ticker": "BMY",
+  "drug": "RYZ101",
+  "illness": "Neuroendocrine tumors",
+  "drug_type": "Radiopharmaceutical (actinium-225)",
+  "stage": "Phase 3 positive",
+  "next_event": "Filing",
+  "next_event_date": null,
+  "latest_result": "Positive Phase 3 results in Q3 2026",
+  "competitors": [
+   "Lutathera (Novartis)"
+  ],
+  "sources": [
+   "https://www.zacks.com/stock/news/3018802/bmy-q3-earnings-tops-estimates-higher-charges-weigh-on-outlook"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-Q3",
+    "kind": "readout",
+    "label": "Phase 3 positive"
+   }
+  ],
+  "likelihood": "likely",
+  "likelihood_why": "A registrational Phase 3 trial met its goal."
+ },
+ {
+  "ticker": "BMY",
+  "drug": "Pumitamig (with BioNTech)",
+  "illness": "Non-small cell lung cancer",
+  "drug_type": "Bispecific antibody (PD-L1 x VEGF)",
+  "stage": "Phase 2",
+  "next_event": "Phase 3",
+  "next_event_date": null,
+  "latest_result": "Positive Phase 2 with docetaxel after first-line therapy",
+  "competitors": [
+   "Ivonescimab (Summit/Akeso)",
+   "Tivunatamig (Pfizer)"
+  ],
+  "sources": [
+   "https://www.zacks.com/stock/news/3018802/bmy-q3-earnings-tops-estimates-higher-charges-weigh-on-outlook"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-Q3",
+    "kind": "readout",
+    "label": "Phase 2 positive"
+   }
+  ],
+  "likelihood": "unknown",
+  "likelihood_why": "Only Phase 2 data so far."
+ },
+ {
+  "ticker": "AMGN",
+  "drug": "MariTide (maridebart cafraglutide)",
+  "illness": "Obesity; type 2 diabetes",
+  "drug_type": "Monthly GLP-1 antibody-peptide",
+  "stage": "Phase 3",
+  "next_event": "More Phase 3 starts",
+  "next_event_date": "2026-Q4",
+  "latest_result": "MARITIME Phase 3 trials enrolling; no Phase 3 efficacy results yet",
+  "competitors": [
+   "Zepbound (Lilly)",
+   "Wegovy (Novo)",
+   "Retatrutide (Lilly)"
+  ],
+  "sources": [
+   "https://www.amgen.com/newsroom/press-releases/2026/11/amgen-reports-third-quarter-2026-financial-results"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-Q4",
+    "kind": "start",
+    "label": "Two more diabetes Phase 3 trials"
+   }
+  ],
+  "likelihood": "unknown",
+  "likelihood_why": "Phase 3 program is still enrolling, so results are years away."
+ },
+ {
+  "ticker": "AMGN",
+  "drug": "Olpasiran",
+  "illness": "Lp(a) heart risk",
+  "drug_type": "siRNA",
+  "stage": "Phase 3",
+  "next_event": "OCEAN(a)-Outcomes results",
+  "next_event_date": null,
+  "latest_result": "Outcomes trial ongoing",
+  "competitors": [
+   "Pelacarsen (Novartis)",
+   "Lepodisiran (Lilly)"
+  ],
+  "sources": [
+   "https://www.amgen.com/newsroom/press-releases/2026/11/amgen-reports-third-quarter-2026-financial-results"
+  ],
+  "needs_verification": null,
+  "milestones": [],
+  "likelihood": "unknown",
+  "likelihood_why": "Heart-outcomes trial still running and no drug in this class is approved yet."
+ },
+ {
+  "ticker": "AMGN",
+  "drug": "Imdelltra first-line maintenance",
+  "illness": "Small cell lung cancer",
+  "drug_type": "Bispecific T-cell engager (DLL3)",
+  "stage": "Phase 3 positive",
+  "next_event": "Label expansion",
+  "next_event_date": null,
+  "latest_result": "DeLLphi-305: 58% lower risk of death",
+  "competitors": [],
+  "sources": [
+   "https://www.amgen.com/newsroom/press-releases/2026/11/amgen-reports-third-quarter-2026-financial-results",
+   "https://www.amgen.com/stories/2026/11/highlights-from-amgens-2026-third-quarter-earnings-report"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-09-22",
+    "kind": "readout",
+    "label": "Phase 3 survival benefit with Imfinzi"
+   }
+  ],
+  "likelihood": "likely",
+  "likelihood_why": "Phase 3 met its goal with a large survival benefit."
+ },
+ {
+  "ticker": "AMGN",
+  "drug": "Tezspire (eosinophilic esophagitis)",
+  "illness": "Eosinophilic esophagitis",
+  "drug_type": "TSLP antibody",
+  "stage": "Phase 3 positive",
+  "next_event": "Filing",
+  "next_event_date": null,
+  "latest_result": "CROSSING: 65-69% remission vs 3.5% placebo",
+  "competitors": [
+   "Dupixent (Sanofi/Regeneron)"
+  ],
+  "sources": [
+   "https://www.amgen.com/newsroom/press-releases/2026/11/amgen-reports-third-quarter-2026-financial-results",
+   "https://www.amgen.com/stories/2026/11/highlights-from-amgens-2026-third-quarter-earnings-report"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-09-08",
+    "kind": "readout",
+    "label": "Phase 3 positive"
+   }
+  ],
+  "likelihood": "likely",
+  "likelihood_why": "Phase 3 met its goal by a wide margin."
+ },
+ {
+  "ticker": "AMGN",
+  "drug": "Xaluritamig",
+  "illness": "Prostate cancer",
+  "drug_type": "Bispecific T-cell engager (STEAP1)",
+  "stage": "Phase 3",
+  "next_event": null,
+  "next_event_date": null,
+  "latest_result": "Phase 3 trials enrolling",
+  "competitors": [
+   "Pluvicto (Novartis)",
+   "Pasritamig (J&J)"
+  ],
+  "sources": [
+   "https://www.amgen.com/newsroom/press-releases/2026/11/amgen-reports-third-quarter-2026-financial-results"
+  ],
+  "needs_verification": null,
+  "milestones": [],
+  "likelihood": "unknown",
+  "likelihood_why": "Phase 3 still running."
+ },
+ {
+  "ticker": "GILD",
+  "drug": "Anito-cel (with Arcellx)",
+  "illness": "Relapsed multiple myeloma",
+  "drug_type": "CAR-T cell therapy (BCMA)",
+  "stage": "Under FDA review",
+  "next_event": "FDA decision",
+  "next_event_date": "2026-12-23",
+  "latest_result": "Filed with FDA",
+  "competitors": [
+   "Carvykti (J&J/Legend)",
+   "Abecma (BMS)"
+  ],
+  "sources": [
+   "https://www.zacks.com/stock/news/3019881/gild-beats-q3-earnings-on-hiv-strength-trodelvy-sales-growth"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-12-23",
+    "kind": "approval",
+    "label": "FDA decision date"
+   }
+  ],
+  "likelihood": "likely",
+  "likelihood_why": "Filed with the FDA, decision due Dec 23, 2026."
+ },
+ {
+  "ticker": "GILD",
+  "drug": "Once-weekly oral lenacapavir",
+  "illness": "HIV",
+  "drug_type": "Oral capsid inhibitor",
+  "stage": "Under FDA review",
+  "next_event": "FDA decision",
+  "next_event_date": "2027-02",
+  "latest_result": "Under FDA review",
+  "competitors": [],
+  "sources": [
+   "https://www.zacks.com/stock/news/3019881/gild-beats-q3-earnings-on-hiv-strength-trodelvy-sales-growth"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2027-02",
+    "kind": "approval",
+    "label": "FDA decision"
+   }
+  ],
+  "likelihood": "likely",
+  "likelihood_why": "Filed with the FDA, decision expected Feb 2027."
+ },
+ {
+  "ticker": "GILD",
+  "drug": "Bixlenvo (bictegravir + lenacapavir)",
+  "illness": "HIV (switch therapy)",
+  "drug_type": "Single daily tablet",
+  "stage": "Approved",
+  "next_event": null,
+  "next_event_date": null,
+  "latest_result": "FDA approved in Aug 2026",
+  "competitors": [],
+  "sources": [
+   "https://www.gilead.com/news/news-details/2026/gilead-sciences-announces-third-quarter-2026-financial-results",
+   "https://www.zacks.com/stock/news/3019881/gild-beats-q3-earnings-on-hiv-strength-trodelvy-sales-growth"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-08",
+    "kind": "approval",
+    "label": "FDA approval"
+   }
+  ],
+  "likelihood": "likely",
+  "likelihood_why": "Approved."
+ },
+ {
+  "ticker": "GILD",
+  "drug": "Once-yearly lenacapavir",
+  "illness": "HIV prevention",
+  "drug_type": "Injectable capsid inhibitor",
+  "stage": "Phase 3",
+  "next_event": "PURPOSE-365 results",
+  "next_event_date": null,
+  "latest_result": "Phase 3 ongoing",
+  "competitors": [],
+  "sources": [
+   "https://www.gilead.com/news/news-details/2026/gilead-sciences-announces-third-quarter-2026-financial-results"
+  ],
+  "needs_verification": null,
+  "milestones": [],
+  "likelihood": "unknown",
+  "likelihood_why": "Phase 3 still running; approval depends on the data."
+ },
+ {
+  "ticker": "GILD",
+  "drug": "Emvistegrast",
+  "illness": "Ulcerative colitis",
+  "drug_type": "Oral alpha-4-beta-7 integrin inhibitor",
+  "stage": "Phase 2 positive",
+  "next_event": "Phase 3 start",
+  "next_event_date": "2027",
+  "latest_result": "SWIFT Phase 2 met its main goal at week 12",
+  "competitors": [],
+  "sources": [
+   "https://www.gilead.com/news/news-details/2026/gilead-sciences-announces-third-quarter-2026-financial-results"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2027",
+    "kind": "start",
+    "label": "Phase 3 start"
+   }
+  ],
+  "likelihood": "unknown",
+  "likelihood_why": "Only Phase 2 so far; Phase 3 starts in 2027."
+ },
+ {
+  "ticker": "VRTX",
+  "drug": "Povetacicept",
+  "illness": "IgA nephropathy",
+  "drug_type": "Dual BAFF/APRIL inhibitor",
+  "stage": "Under FDA priority review",
+  "next_event": "FDA decision",
+  "next_event_date": "2026-11-30",
+  "latest_result": "RAINIER Phase 3 interim analysis basis for filing",
+  "competitors": [
+   "Atacicept (Vera)",
+   "Sibeprenlimab (Otsuka)"
+  ],
+  "sources": [
+   "https://finviz.com/news/413471/vertex-reports-third-quarter-2026-financial-results"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-11-30",
+    "kind": "approval",
+    "label": "FDA decision date"
+   }
+  ],
+  "likelihood": "likely",
+  "likelihood_why": "Filed for accelerated approval with an FDA decision due Nov 30, 2026."
+ },
+ {
+  "ticker": "VRTX",
+  "drug": "Inaxaplin",
+  "illness": "APOL1-mediated kidney disease",
+  "drug_type": "Oral APOL1 inhibitor",
+  "stage": "Phase 3",
+  "next_event": "Interim analysis",
+  "next_event_date": "2027-H1",
+  "latest_result": "Phase 2b: urine protein down about 43%",
+  "competitors": [],
+  "sources": [
+   "https://finviz.com/news/413471/vertex-reports-third-quarter-2026-financial-results"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2027-H1",
+    "kind": "readout",
+    "label": "Phase 3 interim analysis"
+   }
+  ],
+  "likelihood": "unknown",
+  "likelihood_why": "Phase 3 interim results not in yet."
+ },
+ {
+  "ticker": "VRTX",
+  "drug": "Suzetrigine (Journavx) in diabetic nerve pain",
+  "illness": "Diabetic peripheral neuropathy",
+  "drug_type": "Oral NaV1.8 pain blocker",
+  "stage": "Phase 3",
+  "next_event": "Phase 3 results",
+  "next_event_date": "2027-H2",
+  "latest_result": "Two Phase 3 trials finishing enrollment by end of 2026",
+  "competitors": [],
+  "sources": [
+   "https://finviz.com/news/413471/vertex-reports-third-quarter-2026-financial-results"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2027-H2",
+    "kind": "readout",
+    "label": "Phase 3 results"
+   }
+  ],
+  "likelihood": "unknown",
+  "likelihood_why": "Phase 3 results not due until mid-2027."
+ },
+ {
+  "ticker": "VRTX",
+  "drug": "Atumelnant (from Crinetics)",
+  "illness": "Congenital adrenal hyperplasia",
+  "drug_type": "Oral ACTH antagonist",
+  "stage": "Phase 3",
+  "next_event": "Finish enrollment",
+  "next_event_date": "2027-Q1",
+  "latest_result": "Phase 3 enrolling",
+  "competitors": [
+   "Crenessity (Neurocrine)"
+  ],
+  "sources": [
+   "https://finviz.com/news/413471/vertex-reports-third-quarter-2026-financial-results"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2027-Q1",
+    "kind": "start",
+    "label": "Enrollment complete"
+   }
+  ],
+  "likelihood": "unknown",
+  "likelihood_why": "Phase 3 still enrolling."
+ },
+ {
+  "ticker": "VRTX",
+  "drug": "Zimislecel",
+  "illness": "Type 1 diabetes",
+  "drug_type": "Stem-cell-derived islet cells",
+  "stage": "Deprioritized",
+  "next_event": null,
+  "next_event_date": null,
+  "latest_result": "Vertex is focusing on VX-017 instead (zimislecel only fits blood types A or AB)",
+  "competitors": [],
+  "sources": [
+   "https://finviz.com/news/413471/vertex-reports-third-quarter-2026-financial-results"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-Q3",
+    "kind": "fail",
+    "label": "Deprioritized for VX-017"
+   }
+  ],
+  "likelihood": "likely_failure",
+  "likelihood_why": "Vertex stopped prioritizing it in favor of VX-017."
+ },
+ {
+  "ticker": "REGN",
+  "drug": "Cemdisiran",
+  "illness": "Generalized myasthenia gravis",
+  "drug_type": "siRNA (C5)",
+  "stage": "Under FDA review",
+  "next_event": "FDA decision",
+  "next_event_date": "2026-11",
+  "latest_result": "FDA decision expected November 2026",
+  "competitors": [
+   "Vyvgart (argenx)",
+   "Imaavy (J&J)"
+  ],
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/0000872589/000087258926000032/exhibit991q32026.htm",
+   "https://www.zacks.com/stock/news/3019989/regn-q3-earnings-beat-on-dupixent-profits-&-eylea-hd-growth,-stock-up"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-11",
+    "kind": "approval",
+    "label": "FDA decision"
+   }
+  ],
+  "likelihood": "likely",
+  "likelihood_why": "Filed with the FDA, decision expected this month."
+ },
+ {
+  "ticker": "REGN",
+  "drug": "Odronextamab (Ordspono)",
+  "illness": "Relapsed DLBCL lymphoma",
+  "drug_type": "Bispecific antibody (CD20 x CD3)",
+  "stage": "BLA resubmitted",
+  "next_event": "FDA decision",
+  "next_event_date": "2027-02",
+  "latest_result": "FDA accepted the resubmission",
+  "competitors": [
+   "Epkinly (AbbVie/Genmab)",
+   "Columvi (Roche)"
+  ],
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/0000872589/000087258926000032/exhibit991q32026.htm"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2027-02",
+    "kind": "approval",
+    "label": "FDA target date"
+   }
+  ],
+  "likelihood": "likely",
+  "likelihood_why": "Resubmitted and accepted, with an FDA decision due Feb 2027."
+ },
+ {
+  "ticker": "REGN",
+  "drug": "Pasatru (garetosmab)",
+  "illness": "Fibrodysplasia ossificans progressiva (FOP)",
+  "drug_type": "Activin A antibody",
+  "stage": "Approved (US)",
+  "next_event": "EU decision",
+  "next_event_date": null,
+  "latest_result": "FDA approved Aug 2026",
+  "competitors": [],
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/0000872589/000087258926000032/exhibit991q32026.htm"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-08",
+    "kind": "approval",
+    "label": "FDA approval"
+   }
+  ],
+  "likelihood": "likely",
+  "likelihood_why": "Approved in the US."
+ },
+ {
+  "ticker": "REGN",
+  "drug": "Factor XI antibodies (cenvacibart, amrecibart)",
+  "illness": "Blood clot prevention",
+  "drug_type": "Factor XI antibodies",
+  "stage": "Phase 3",
+  "next_event": null,
+  "next_event_date": null,
+  "latest_result": "Phase 3 started",
+  "competitors": [
+   "Milvexian (BMS)",
+   "Abelacimab (Novartis)"
+  ],
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/0000872589/000087258926000032/exhibit991q32026.htm"
+  ],
+  "needs_verification": null,
+  "milestones": [],
+  "likelihood": "unknown",
+  "likelihood_why": "Phase 3 only just started."
+ },
+ {
+  "ticker": "REGN",
+  "drug": "Trevogrumab",
+  "illness": "Obesity (keeping muscle on GLP-1s)",
+  "drug_type": "Myostatin antibody",
+  "stage": "Phase 2",
+  "next_event": null,
+  "next_event_date": null,
+  "latest_result": "New COURAGE Phase 2 data at EASD 2026",
+  "competitors": [
+   "Bimagrumab (Lilly)"
+  ],
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/0000872589/000087258926000032/exhibit991q32026.htm"
+  ],
+  "needs_verification": null,
+  "milestones": [],
+  "likelihood": "unknown",
+  "likelihood_why": "Only Phase 2 data so far."
+ },
+ {
+  "ticker": "BIIB",
+  "drug": "Litifilimab",
+  "illness": "Lupus (SLE and CLE)",
+  "drug_type": "BDCA2 antibody",
+  "stage": "Phase 3",
+  "next_event": "TOPAZ-1 and -2 results",
+  "next_event_date": "2026-12",
+  "latest_result": "No Phase 3 results yet",
+  "competitors": [],
+  "sources": [
+   "https://www.biopharmawatch.com/news/BIIB/biogen-reports-third-quarter-2026-results"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-12",
+    "kind": "readout",
+    "label": "SLE Phase 3 results"
+   },
+   {
+    "date": "2027-H1",
+    "kind": "readout",
+    "label": "CLE Phase 3 results"
+   }
+  ],
+  "likelihood": "unknown",
+  "likelihood_why": "Phase 3 results due in December 2026."
+ },
+ {
+  "ticker": "BIIB",
+  "drug": "Felzartamab",
+  "illness": "Antibody-mediated kidney transplant rejection",
+  "drug_type": "CD38 antibody",
+  "stage": "Phase 3",
+  "next_event": "Phase 3 results",
+  "next_event_date": "2027-H1",
+  "latest_result": "No Phase 3 results yet",
+  "competitors": [],
+  "sources": [
+   "https://www.biopharmawatch.com/news/BIIB/biogen-reports-third-quarter-2026-results"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2027-H1",
+    "kind": "readout",
+    "label": "Phase 3 results"
+   }
+  ],
+  "likelihood": "unknown",
+  "likelihood_why": "Phase 3 still running."
+ },
+ {
+  "ticker": "BIIB",
+  "drug": "Zorevunersen",
+  "illness": "Dravet syndrome",
+  "drug_type": "Antisense oligonucleotide",
+  "stage": "Phase 3",
+  "next_event": "Phase 3 results",
+  "next_event_date": "2027-Q3",
+  "latest_result": "No Phase 3 results yet",
+  "competitors": [],
+  "sources": [
+   "https://www.biopharmawatch.com/news/BIIB/biogen-reports-third-quarter-2026-results"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2027-Q3",
+    "kind": "readout",
+    "label": "Phase 3 results"
+   }
+  ],
+  "likelihood": "unknown",
+  "likelihood_why": "Phase 3 results not due until Q3 2027."
+ },
+ {
+  "ticker": "INCY",
+  "drug": "Povorcitinib",
+  "illness": "Hidradenitis suppurativa; prurigo nodularis",
+  "drug_type": "Oral JAK1 inhibitor",
+  "stage": "Filed (US); positive EU opinion",
+  "next_event": "US approval",
+  "next_event_date": "2027-Q1",
+  "latest_result": "CHMP positive opinion Sept 2026",
+  "competitors": [
+   "Cosentyx (Novartis)",
+   "Bimzelx (UCB)",
+   "Lutikizumab (AbbVie)"
+  ],
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000063/incy-q32026xexx991.htm"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-09",
+    "kind": "approval",
+    "label": "EU CHMP positive opinion"
+   },
+   {
+    "date": "2026-Q4",
+    "kind": "readout",
+    "label": "Prurigo nodularis Phase 3"
+   },
+   {
+    "date": "2027-Q1",
+    "kind": "approval",
+    "label": "Potential US approval"
+   }
+  ],
+  "likelihood": "likely",
+  "likelihood_why": "EU regulators recommended approval and a US decision is expected Q1 2027."
+ },
+ {
+  "ticker": "INCY",
+  "drug": "Opzelura (ruxolitinib cream) in HS",
+  "illness": "Mild-to-moderate hidradenitis suppurativa",
+  "drug_type": "Topical JAK inhibitor",
+  "stage": "Phase 3",
+  "next_event": "TRuE-HS1/2 results",
+  "next_event_date": "2026-Q4",
+  "latest_result": "No Phase 3 results yet",
+  "competitors": [],
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000063/incy-q32026xexx991.htm"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-Q4",
+    "kind": "readout",
+    "label": "Phase 3 topline"
+   }
+  ],
+  "likelihood": "unknown",
+  "likelihood_why": "Phase 3 results due by year-end."
+ },
+ {
+  "ticker": "INCY",
+  "drug": "INCA033989 (mutant CALR antibody)",
+  "illness": "Essential thrombocythemia; myelofibrosis",
+  "drug_type": "Antibody",
+  "stage": "Phase 3",
+  "next_event": "Phase 1 MF data",
+  "next_event_date": "2026-Q4",
+  "latest_result": "Phase 3 in ET started mid-2026",
+  "competitors": [],
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000063/incy-q32026xexx991.htm"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-Q4",
+    "kind": "readout",
+    "label": "Phase 1 MF data"
+   }
+  ],
+  "likelihood": "unknown",
+  "likelihood_why": "Early but first-in-class; Phase 3 just started."
+ },
+ {
+  "ticker": "INCY",
+  "drug": "Monjuvi (tafasitamab) first-line DLBCL",
+  "illness": "Newly diagnosed DLBCL lymphoma",
+  "drug_type": "CD19 antibody",
+  "stage": "Filed",
+  "next_event": "US approval",
+  "next_event_date": "2027-Q1",
+  "latest_result": "Submissions under review",
+  "competitors": [],
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000063/incy-q32026xexx991.htm"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2027-Q1",
+    "kind": "approval",
+    "label": "Potential US approval"
+   }
+  ],
+  "likelihood": "likely",
+  "likelihood_why": "Filed with regulators; US decision expected Q1 2027."
+ },
+ {
+  "ticker": "VTRS",
+  "drug": "Fast-acting meloxicam",
+  "illness": "Acute pain",
+  "drug_type": "Oral NSAID (fast-acting)",
+  "stage": "Filed",
+  "next_event": "Approval and launch",
+  "next_event_date": null,
+  "latest_result": "Viatris lists a potential upcoming approval",
+  "competitors": [],
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/0001792044/000179204426000053/exhibit991-3q26earningsrel.htm"
+  ],
+  "needs_verification": "Filing date and FDA decision date not stated",
+  "milestones": [],
+  "likelihood": "likely",
+  "likelihood_why": "Viatris describes it as nearing approval."
+ },
+ {
+  "ticker": "VTRS",
+  "drug": "Ryzumvi (phentolamine) for presbyopia",
+  "illness": "Presbyopia (near vision)",
+  "drug_type": "Eye drops",
+  "stage": "Approved",
+  "next_event": "Launch",
+  "next_event_date": null,
+  "latest_result": "FDA approved Oct 2026",
+  "competitors": [],
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/0001792044/000179204426000053/exhibit991-3q26earningsrel.htm"
+  ],
+  "needs_verification": null,
+  "milestones": [
+   {
+    "date": "2026-10",
+    "kind": "approval",
+    "label": "FDA approval"
+   }
+  ],
+  "likelihood": "likely",
+  "likelihood_why": "Approved."
  }
 ]

@@ -288,6 +288,322 @@
     "https://chemxplore.com/news/novo-nordisk-q3-2026-financial-report",
     "https://pharmaphorum.com/news/oral-wegovy-bolsters-novo-q3"
    ]
+  },
+  {
+   "ticker": "JNJ",
+   "drug": "Icotyde (icotrokinra)",
+   "launch_year": 2026,
+   "est_sales": 5.0,
+   "basis": "Half of J&J's ~$10B expectation (our haircut)",
+   "likelihood": "likely",
+   "why": "Already approved for psoriasis and broadly covered by insurers; arthritis data still to come.",
+   "sources": [
+    "https://www.jnj.com/media-center/press-releases/johnson-johnson-q3-2026-earnings-ceo-and-cfo-prepared-remarks/",
+    "https://www.biospace.com/j-js-innovative-medicines-carried-q3-as-medtech-disappoints-but-newer-medicines-absent"
+   ]
+  },
+  {
+   "ticker": "JNJ",
+   "drug": "Rybrevant SC head and neck",
+   "launch_year": 2027,
+   "est_sales": 0.5,
+   "basis": "Our rough estimate",
+   "likelihood": "likely",
+   "why": "Under FDA review and J&J expects approval by year-end.",
+   "sources": [
+    "https://www.jnj.com/media-center/press-releases/johnson-johnson-q3-2026-earnings-ceo-and-cfo-prepared-remarks/"
+   ]
+  },
+  {
+   "ticker": "JNJ",
+   "drug": "Pasritamig",
+   "launch_year": 2029,
+   "est_sales": 1.0,
+   "basis": "Our rough estimate",
+   "likelihood": "unknown",
+   "why": "Early, first-in-class drug with results still to come.",
+   "sources": [
+    "https://www.jnj.com/media-center/press-releases/johnson-johnson-q3-2026-earnings-ceo-and-cfo-prepared-remarks/"
+   ]
+  },
+  {
+   "ticker": "MRK",
+   "drug": "Sac-TMT",
+   "launch_year": 2028,
+   "est_sales": 1.5,
+   "basis": "Our rough estimate",
+   "likelihood": "unknown",
+   "why": "Phase 3 trials still running; no late-stage results in Merck's Q3 report.",
+   "sources": [
+    "https://finimize.com/content/mercks-keytruda-and-gardasil-powered-a-strong-q3-beat"
+   ]
+  },
+  {
+   "ticker": "BMY",
+   "drug": "Iza-bren",
+   "launch_year": 2028,
+   "est_sales": 1.5,
+   "basis": "Our rough estimate",
+   "likelihood": "likely",
+   "why": "A Phase 3 trial met its goal.",
+   "sources": [
+    "https://www.zacks.com/stock/news/3018802/bmy-q3-earnings-tops-estimates-higher-charges-weigh-on-outlook"
+   ]
+  },
+  {
+   "ticker": "BMY",
+   "drug": "Admilparant",
+   "launch_year": 2028,
+   "est_sales": 1.0,
+   "basis": "Our rough estimate",
+   "likelihood": "likely",
+   "why": "Phase 3 met its goal at one dose, though the higher dose did not.",
+   "sources": [
+    "https://www.zacks.com/stock/news/3018802/bmy-q3-earnings-tops-estimates-higher-charges-weigh-on-outlook",
+    "https://zacks.com/stock/news/3019664/bmy-q3-earnings-call-highlights-raised-outlook-and-pipeline-progress"
+   ]
+  },
+  {
+   "ticker": "BMY",
+   "drug": "RYZ101",
+   "launch_year": 2028,
+   "est_sales": 0.5,
+   "basis": "Our rough estimate",
+   "likelihood": "likely",
+   "why": "A registrational Phase 3 trial met its goal.",
+   "sources": [
+    "https://www.zacks.com/stock/news/3018802/bmy-q3-earnings-tops-estimates-higher-charges-weigh-on-outlook"
+   ]
+  },
+  {
+   "ticker": "BMY",
+   "drug": "Milvexian",
+   "launch_year": 2028,
+   "est_sales": 2.0,
+   "basis": "Our rough estimate",
+   "likelihood": "unknown",
+   "why": "Large Phase 3 trials still running; a rival in this drug class failed before.",
+   "sources": [
+    "https://zacks.com/stock/news/3019664/bmy-q3-earnings-call-highlights-raised-outlook-and-pipeline-progress"
+   ]
+  },
+  {
+   "ticker": "AMGN",
+   "drug": "MariTide",
+   "launch_year": 2029,
+   "est_sales": 4.6,
+   "basis": "4% of a ~$115B obesity market (our assumption)",
+   "likelihood": "unknown",
+   "why": "Phase 3 program is still enrolling, so results are years away.",
+   "sources": [
+    "https://www.amgen.com/newsroom/press-releases/2026/11/amgen-reports-third-quarter-2026-financial-results"
+   ]
+  },
+  {
+   "ticker": "AMGN",
+   "drug": "Olpasiran",
+   "launch_year": 2028,
+   "est_sales": 1.0,
+   "basis": "Our rough estimate",
+   "likelihood": "unknown",
+   "why": "Heart-outcomes trial still running and no drug in this class is approved yet.",
+   "sources": [
+    "https://www.amgen.com/newsroom/press-releases/2026/11/amgen-reports-third-quarter-2026-financial-results"
+   ]
+  },
+  {
+   "ticker": "AMGN",
+   "drug": "Tezspire EoE",
+   "launch_year": 2027,
+   "est_sales": 0.4,
+   "basis": "Our rough estimate",
+   "likelihood": "likely",
+   "why": "Phase 3 met its goal by a wide margin.",
+   "sources": [
+    "https://www.amgen.com/newsroom/press-releases/2026/11/amgen-reports-third-quarter-2026-financial-results",
+    "https://www.amgen.com/stories/2026/11/highlights-from-amgens-2026-third-quarter-earnings-report"
+   ]
+  },
+  {
+   "ticker": "GILD",
+   "drug": "Anito-cel",
+   "launch_year": 2027,
+   "est_sales": 1.0,
+   "basis": "Our rough estimate",
+   "likelihood": "likely",
+   "why": "Filed with the FDA, decision due Dec 23, 2026.",
+   "sources": [
+    "https://www.zacks.com/stock/news/3019881/gild-beats-q3-earnings-on-hiv-strength-trodelvy-sales-growth"
+   ]
+  },
+  {
+   "ticker": "GILD",
+   "drug": "Weekly oral lenacapavir",
+   "launch_year": 2027,
+   "est_sales": 1.0,
+   "basis": "Our rough estimate",
+   "likelihood": "likely",
+   "why": "Filed with the FDA, decision expected Feb 2027.",
+   "sources": [
+    "https://www.zacks.com/stock/news/3019881/gild-beats-q3-earnings-on-hiv-strength-trodelvy-sales-growth"
+   ]
+  },
+  {
+   "ticker": "GILD",
+   "drug": "Emvistegrast",
+   "launch_year": 2030,
+   "est_sales": 1.0,
+   "basis": "Our rough estimate",
+   "likelihood": "unknown",
+   "why": "Only Phase 2 so far; Phase 3 starts in 2027.",
+   "sources": [
+    "https://www.gilead.com/news/news-details/2026/gilead-sciences-announces-third-quarter-2026-financial-results"
+   ]
+  },
+  {
+   "ticker": "VRTX",
+   "drug": "Povetacicept",
+   "launch_year": 2027,
+   "est_sales": 1.5,
+   "basis": "Our rough estimate",
+   "likelihood": "likely",
+   "why": "Filed for accelerated approval with an FDA decision due Nov 30, 2026.",
+   "sources": [
+    "https://finviz.com/news/413471/vertex-reports-third-quarter-2026-financial-results"
+   ]
+  },
+  {
+   "ticker": "VRTX",
+   "drug": "Inaxaplin",
+   "launch_year": 2028,
+   "est_sales": 0.8,
+   "basis": "Our rough estimate",
+   "likelihood": "unknown",
+   "why": "Phase 3 interim results not in yet.",
+   "sources": [
+    "https://finviz.com/news/413471/vertex-reports-third-quarter-2026-financial-results"
+   ]
+  },
+  {
+   "ticker": "VRTX",
+   "drug": "Suzetrigine diabetic nerve pain",
+   "launch_year": 2028,
+   "est_sales": 1.0,
+   "basis": "Our rough estimate",
+   "likelihood": "unknown",
+   "why": "Phase 3 results not due until mid-2027.",
+   "sources": [
+    "https://finviz.com/news/413471/vertex-reports-third-quarter-2026-financial-results"
+   ]
+  },
+  {
+   "ticker": "REGN",
+   "drug": "Cemdisiran",
+   "launch_year": 2027,
+   "est_sales": 0.5,
+   "basis": "Our rough estimate",
+   "likelihood": "likely",
+   "why": "Filed with the FDA, decision expected this month.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0000872589/000087258926000032/exhibit991q32026.htm",
+    "https://www.zacks.com/stock/news/3019989/regn-q3-earnings-beat-on-dupixent-profits-&-eylea-hd-growth,-stock-up"
+   ]
+  },
+  {
+   "ticker": "REGN",
+   "drug": "Odronextamab",
+   "launch_year": 2027,
+   "est_sales": 0.3,
+   "basis": "Our rough estimate",
+   "likelihood": "likely",
+   "why": "Resubmitted and accepted, with an FDA decision due Feb 2027.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0000872589/000087258926000032/exhibit991q32026.htm"
+   ]
+  },
+  {
+   "ticker": "BIIB",
+   "drug": "Litifilimab",
+   "launch_year": 2028,
+   "est_sales": 1.0,
+   "basis": "Our rough estimate",
+   "likelihood": "unknown",
+   "why": "Phase 3 results due in December 2026.",
+   "sources": [
+    "https://www.biopharmawatch.com/news/BIIB/biogen-reports-third-quarter-2026-results"
+   ]
+  },
+  {
+   "ticker": "BIIB",
+   "drug": "Felzartamab",
+   "launch_year": 2028,
+   "est_sales": 0.8,
+   "basis": "Our rough estimate",
+   "likelihood": "unknown",
+   "why": "Phase 3 still running.",
+   "sources": [
+    "https://www.biopharmawatch.com/news/BIIB/biogen-reports-third-quarter-2026-results"
+   ]
+  },
+  {
+   "ticker": "BIIB",
+   "drug": "Zorevunersen",
+   "launch_year": 2028,
+   "est_sales": 0.5,
+   "basis": "Our rough estimate",
+   "likelihood": "unknown",
+   "why": "Phase 3 results not due until Q3 2027.",
+   "sources": [
+    "https://www.biopharmawatch.com/news/BIIB/biogen-reports-third-quarter-2026-results"
+   ]
+  },
+  {
+   "ticker": "INCY",
+   "drug": "Povorcitinib",
+   "launch_year": 2027,
+   "est_sales": 1.0,
+   "basis": "Our rough estimate",
+   "likelihood": "likely",
+   "why": "EU regulators recommended approval and a US decision is expected Q1 2027.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000063/incy-q32026xexx991.htm"
+   ]
+  },
+  {
+   "ticker": "INCY",
+   "drug": "Monjuvi first-line DLBCL",
+   "launch_year": 2027,
+   "est_sales": 0.3,
+   "basis": "Our rough estimate",
+   "likelihood": "likely",
+   "why": "Filed with regulators; US decision expected Q1 2027.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000063/incy-q32026xexx991.htm"
+   ]
+  },
+  {
+   "ticker": "INCY",
+   "drug": "Opzelura HS",
+   "launch_year": 2027,
+   "est_sales": 0.3,
+   "basis": "Our rough estimate",
+   "likelihood": "unknown",
+   "why": "Phase 3 results due by year-end.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000063/incy-q32026xexx991.htm"
+   ]
+  },
+  {
+   "ticker": "VTRS",
+   "drug": "Fast-acting meloxicam",
+   "launch_year": 2027,
+   "est_sales": 0.2,
+   "basis": "Our rough estimate",
+   "likelihood": "likely",
+   "why": "Viatris describes it as nearing approval.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0001792044/000179204426000053/exhibit991-3q26earningsrel.htm"
+   ]
   }
  ],
  "rating_rules": {

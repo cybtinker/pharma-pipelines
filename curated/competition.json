@@ -10,7 +10,7 @@
     {
      "drug": "Tecvayli",
      "company": "J&J",
-     "ticker": null,
+     "ticker": "JNJ",
      "stage": "approved",
      "note": null
     },
@@ -24,7 +24,7 @@
     {
      "drug": "Lynozyfic",
      "company": "Regeneron",
-     "ticker": null,
+     "ticker": "REGN",
      "stage": "approved",
      "note": null
     },
@@ -38,7 +38,7 @@
     {
      "drug": "Talvey (GPRC5D)",
      "company": "J&J",
-     "ticker": null,
+     "ticker": "JNJ",
      "stage": "approved",
      "note": "different target"
     }
@@ -82,7 +82,7 @@
     {
      "drug": "Keytruda + chemo",
      "company": "Merck",
-     "ticker": null,
+     "ticker": "MRK",
      "stage": "approved",
      "note": "current standard"
     },
@@ -105,7 +105,7 @@
     {
      "drug": "Pumitamig (BNT327)",
      "company": "BioNTech / BMS",
-     "ticker": null,
+     "ticker": "BMY",
      "stage": "p3",
      "note": "~70% response in Phase 2",
      "source": "https://www.curetoday.com/view/pumitamig-shows-70-response-in-advanced-lung-cancer-regardless-of-pd-l1-status",
@@ -154,7 +154,7 @@
     {
      "drug": "MariTide (monthly)",
      "company": "Amgen",
-     "ticker": null,
+     "ticker": "AMGN",
      "stage": "p3",
      "note": "Phase 3 readouts 2027",
      "source": "https://lifesciencedaily.news/maritide-approval-amgen-phase-3-timeline/",
@@ -202,7 +202,7 @@
     {
      "drug": "Opzelura (cream)",
      "company": "Incyte",
-     "ticker": null,
+     "ticker": "INCY",
      "stage": "approved",
      "note": null
     },
@@ -223,7 +223,7 @@
     {
      "drug": "Povorcitinib",
      "company": "Incyte",
-     "ticker": null,
+     "ticker": "INCY",
      "stage": "p3",
      "note": "Phase 3 STOP-V trials fully enrolled",
      "source": "https://clinicaltrials.gov/study/NCT06113445",
@@ -240,7 +240,7 @@
     {
      "drug": "Dupixent",
      "company": "Sanofi / Regeneron",
-     "ticker": null,
+     "ticker": "REGN",
      "stage": "approved",
      "note": null
     },
@@ -344,7 +344,7 @@
     {
      "drug": "Tremfya",
      "company": "J&J",
-     "ticker": null,
+     "ticker": "JNJ",
      "stage": "approved",
      "note": null
     }
@@ -455,7 +455,7 @@
     {
      "drug": "Evkeeza",
      "company": "Regeneron",
-     "ticker": null,
+     "ticker": "REGN",
      "stage": "approved",
      "note": "HoFH only"
     },
@@ -540,7 +540,7 @@
     {
      "drug": "Milvexian",
      "company": "BMS / J&J",
-     "ticker": null,
+     "ticker": "BMY",
      "stage": "p3",
      "note": "failed in heart attack (ACS); AF and stroke trials ongoing",
      "source": "https://www.hcplive.com/view/milvexian-fails-to-reduce-mace-after-acs-in-librexia-trial",
@@ -581,7 +581,7 @@
     {
      "drug": "Leqembi",
      "company": "Eisai / Biogen",
-     "ticker": null,
+     "ticker": "BIIB",
      "stage": "approved"
     }
    ]

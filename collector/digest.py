@@ -14,7 +14,7 @@ Usage: python3 collector/digest.py [--lake PATH] [--dry-run]
 """
 import argparse, datetime as dt, json, os, pathlib, re, urllib.parse, urllib.request
 
-NAMES = {"LLY": "Eli Lilly", "NVO": "Novo Nordisk", "PFE": "Pfizer", "ABBV": "AbbVie", "MRNA": "Moderna", "CRSP": "CRISPR Therapeutics"}
+NAMES = {c["ticker"]: c["name"] for c in json.loads((pathlib.Path(__file__).resolve().parents[1] / "config/watchlist.json").read_text())["companies"]}
 PAGE_URL = os.environ.get("PAGE_URL", "https://cybtinker.github.io/pharma-pipelines/")
 
 

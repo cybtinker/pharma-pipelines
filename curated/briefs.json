@@ -70,5 +70,137 @@
    "$1.4B impairments, including $0.7B on ziltivekimab; 2026 outlook -2% to +2%",
    "CagriSema FDA decision expected by year-end, US launch early 2027; Mim8 positive EU opinion"
   ]
+ },
+ "JNJ": {
+  "date": "2026-10-13",
+  "title": "Q3 2026 results",
+  "url": "https://www.jnj.com/media-center/press-releases/johnson-johnson-q3-2026-earnings-ceo-and-cfo-prepared-remarks/",
+  "points": [
+   "Sales $25.4B, up 6%; drug business (Innovative Medicine) up about 8% to $16.8B",
+   "2026 guidance raised to about $100.7B in sales; adjusted EPS $11.05-11.15",
+   "Darzalex $4.2B (+15%), Tremfya about $2.4B (+68%), Caplyta passed $1B so far this year",
+   "Icotyde (psoriasis pill) launched March 2026; Rybrevant under-the-skin approval for head and neck cancer expected by year-end",
+   "$5.5B ovarian talc settlement charge; bought Firefly Bio for $1B; medical devices missed expectations"
+  ]
+ },
+ "MRK": {
+  "date": "2026-10-29",
+  "title": "Q3 2026 results",
+  "url": "https://finimize.com/content/mercks-keytruda-and-gardasil-powered-a-strong-q3-beat",
+  "points": [
+   "Revenue $18.1B, up 5%; adjusted EPS $2.49, ahead of forecasts",
+   "2026 revenue guidance narrowed to $66.8-67.3B and EPS outlook raised",
+   "Keytruda $8.6B (+6%), including $830M from the under-the-skin Keytruda Qlex; patents start expiring in 2028",
+   "Gardasil about $2B (+14%) and Winrevair $694M (+94%)",
+   "About $550M of sales came from customers buying early, so next quarter may give some back; agreed to buy Silence Therapeutics for about $1.3B"
+  ]
+ },
+ "BMY": {
+  "date": "2026-10-29",
+  "title": "Q3 2026 results",
+  "url": "https://www.zacks.com/stock/news/3018802/bmy-q3-earnings-tops-estimates-higher-charges-weigh-on-outlook",
+  "points": [
+   "Revenue $13.1B, up 7%; newer 'growth' drugs up 12% to $7.7B",
+   "2026 revenue guidance raised to $49.75-50.25B, but EPS guidance cut to $6.35-6.55 after $1.56B of deal-related R&D charges",
+   "Eliquis $4.7B (+25%); Opdivo $2.4B (-6%); Revlimid and Pomalyst falling fast to generics",
+   "Positive Phase 3 results for iza-bren (breast and lung cancer), admilparant (lung scarring) and RYZ101 (neuroendocrine tumors)",
+   "Milvexian heart-rhythm (AF) results due Q1 2027; Europe Eliquis generics expected to cut $1.5-2B of sales in 2027"
+  ]
+ },
+ "AMGN": {
+  "date": "2026-11-03",
+  "title": "Q3 2026 results",
+  "url": "https://www.amgen.com/newsroom/press-releases/2026/11/amgen-reports-third-quarter-2026-financial-results",
+  "points": [
+   "Revenue $10.4B, up 8%; 17 products grew double digits",
+   "2026 guidance $38.9-39.7B revenue, non-GAAP EPS $22.90-23.70",
+   "Repatha $1.1B (+37%), Tezspire $538M (+43%), Uplizna $451M (+191%), Imdelltra $406M (+128%)",
+   "Prolia (-45%) and Xgeva (-47%) hit by biosimilars; FDA asked Amgen to withdraw Tavneos in the US (Amgen requested a hearing)",
+   "MariTide obesity Phase 3 program enrolling, no efficacy results yet; Tezspire positive Phase 3 in eosinophilic esophagitis"
+  ]
+ },
+ "GILD": {
+  "date": "2026-10-29",
+  "title": "Q3 2026 results",
+  "url": "https://www.gilead.com/news/news-details/2026/gilead-sciences-announces-third-quarter-2026-financial-results",
+  "points": [
+   "Revenue $8.3B, up about 7%",
+   "2026 product sales guidance raised to $31.0-31.3B; EPS guidance moved to a loss after $12.4B of deal-related R&D charges (Arcellx, Tubulis, Ouro, PepStar)",
+   "Biktarvy $4.1B (+10%), Descovy $1.0B (+49%), Yeztugo PrEP shot $305M (about $1B expected this year), Trodelvy $506M (+42%)",
+   "Bixlenvo (bictegravir + lenacapavir) approved; Trodelvy approved for first-line triple-negative breast cancer",
+   "FDA decisions due: anito-cel (myeloma) Dec 23, 2026 and once-weekly oral lenacapavir Feb 2027; Medicare price cut on Biktarvy from 2028"
+  ]
+ },
+ "VRTX": {
+  "date": "2026-11-02",
+  "title": "Q3 2026 results",
+  "url": "https://finviz.com/news/413471/vertex-reports-third-quarter-2026-financial-results",
+  "points": [
+   "Revenue $3.44B, up 12%; 2026 guidance raised to $13.15-13.25B",
+   "Journavx pain pill $58M (750,000+ prescriptions in the quarter); Casgevy $99M",
+   "Closed the roughly $10B Crinetics acquisition on Sept 1",
+   "Povetacicept (IgA kidney disease) FDA decision due Nov 30, 2026",
+   "Dropped zimislecel (type 1 diabetes cells) in favor of VX-017; inaxaplin kidney data early 2027"
+  ]
+ },
+ "REGN": {
+  "date": "2026-10-30",
+  "title": "Q3 2026 results",
+  "url": "https://www.sec.gov/Archives/edgar/data/0000872589/000087258926000032/exhibit991q32026.htm",
+  "points": [
+   "Revenue $5.1B, up 36%; non-GAAP EPS $20.07, up 70%",
+   "Dupixent $6.5B global sales (+35%, booked by Sanofi); Regeneron's profit share $2.6B",
+   "Eylea HD US $699M (+62%) while older Eylea fell 41%; Libtayo $550M (+51%)",
+   "Expanded Sanofi deal: $1.0B up front, up to $7.0B in milestones",
+   "Pasatru approved for FOP in Aug; FDA decisions due on cemdisiran (Nov 2026) and odronextamab (Feb 2027)"
+  ]
+ },
+ "BIIB": {
+  "date": "2026-10-28",
+  "title": "Q3 2026 results",
+  "url": "https://www.zacks.com/stock/news/3017599/biibs-q3-earnings-beat-new-drugs-aid-sales-26-eps-view-tightened",
+  "points": [
+   "Revenue $2.8B, up 11%; newer products up 49% to $1.26B, helped by Apellis drugs bought in May",
+   "Non-GAAP EPS $2.62, down 46%, due to about $284M of deal charges (mainly RayThera)",
+   "Leqembi in-market sales $202M (+67%); Skyclarys +34%; Spinraza +23%",
+   "Older MS drugs keep shrinking: Tecfidera -51%, Vumerity -11%",
+   "Lupus Phase 3 results for litifilimab due first half of December 2026"
+  ]
+ },
+ "ZTS": {
+  "date": "2026-11-05",
+  "title": "Q3 2026 results (animal health)",
+  "url": "https://247wallst.com/cards/zoetis-q3-2026-earnings-zts-01m6nt56jy1mqmcbr1xtc6vxhb",
+  "points": [
+   "Revenue $2.39B, roughly flat; adjusted EPS $1.75 beat forecasts",
+   "US pet medicines fell 8% on generic and dermatology competition; livestock +7%",
+   "2026 adjusted EPS guidance raised to $6.25-6.35; revenue narrowed to $9.22-9.32B",
+   "$89M write-down tied to PetMedix research",
+   "Convenia ready-to-use approved for dogs in October; some approvals pulled forward to Q4 2026"
+  ]
+ },
+ "VTRS": {
+  "date": "2026-11-05",
+  "title": "Q3 2026 results",
+  "url": "https://www.sec.gov/Archives/edgar/data/0001792044/000179204426000053/exhibit991-3q26earningsrel.htm",
+  "points": [
+   "Revenue $3.75B, flat; adjusted EPS $0.71 (+6%)",
+   "Guidance midpoints raised: revenue $14.7-14.9B, adjusted EPS $2.56-2.63",
+   "Nashik (India) plant stopped after FDA findings, costing about $100M of sales in Q3 and Q4 each; restart expected Q1 2027",
+   "New products: Ryzumvi eye drops approved for presbyopia (Oct), Gwyn Lo contraceptive patch launched",
+   "Agreed to buy Pacira BioSciences for about $1.65B, expected to close by end of November"
+  ]
+ },
+ "INCY": {
+  "date": "2026-10-29",
+  "title": "Q3 2026 results",
+  "url": "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000063/incy-q32026xexx991.htm",
+  "points": [
+   "Revenue $1.56B, up 14%; 2026 sales guidance raised to $5.21-5.30B",
+   "Jakafi $827M (+4%); Opzelura $255M (+36%); Zynyz +157%",
+   "One-time $1.23B R&D charge for buying Vega Therapeutics",
+   "Povorcitinib (hidradenitis) got a positive EU opinion; US approval expected Q1 2027",
+   "Phase 3 results due by year-end: povorcitinib in prurigo nodularis and Opzelura in hidradenitis"
+  ]
  }
 }
