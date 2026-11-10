@@ -1,0 +1,365 @@
+{
+ "fetched_at": "2026-11-10T18:45:40.600377Z",
+ "data": [
+  {
+   "form": "10-Q",
+   "date": "2026-11-02",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000119312526443665/crsp-20260930.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-11-02",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000119312526443644/crsp-20261102.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-10-19",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000119312526425243/crsp-20261019.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2026-08-03",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000119312526330672/crsp-20260630.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-08-03",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000119312526330644/crsp-20260803.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-06-04",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000119312526257593/crsp-20260604.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2026-05-04",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000119312526204188/crsp-20260331.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-05-04",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000119312526204147/crsp-20260504.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-03-16",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000119312526108333/crsp-20260316.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-03-11",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000119312526101073/crsp-20260310.htm"
+  },
+  {
+   "form": "10-K",
+   "date": "2026-02-12",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000119312526048957/crsp-20251231.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-02-12",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000119312526048873/crsp-20260212.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-01-12",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000119312526009880/crsp-20260112.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2025-11-10",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000119312525273337/crsp-20250930.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-11-10",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000119312525273329/crsp-20251110.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-10-15",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000119312525240282/crsp-20251015.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2025-08-04",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017025102052/crsp-20250630.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-08-04",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017025102027/crsp-20250804.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-06-26",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017025090170/crsp-20250626.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-06-09",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017025083799/crsp-20250605.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-05-19",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017025074428/crsp-20250519.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2025-05-06",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017025064468/crsp-20250331.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-05-06",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017025064435/crsp-20250506.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-03-26",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017025045232/crsp-20250324.htm"
+  },
+  {
+   "form": "10-K",
+   "date": "2025-02-11",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017025017899/crsp-20241231.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-02-11",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017025017879/crsp-20250211.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2024-11-05",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017024121105/crsp-20240930.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-11-05",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017024121103/crsp-20241105.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2024-08-05",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017024090746/crsp-20240630.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-08-05",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017024090727/crsp-20240805.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-06-03",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017024067660/crsp-20240530.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-05-23",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095012324005877/crsp-20240523.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2024-05-08",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017024055719/crsp-20240331.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-05-08",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017024055689/crsp-20240508.htm"
+  },
+  {
+   "form": "10-K",
+   "date": "2024-02-21",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017024017571/crsp-20231231.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-02-21",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017024017568/crsp-20240221.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-02-13",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000119312524033973/d788919d8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-02-13",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000119312524032825/d787773d8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-01-16",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017024004616/crsp-20240116.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-12-19",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017023071505/crsp-20231214.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-12-15",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017023070582/crsp-20231215.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-12-13",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017023069892/crsp-20231212.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-12-08",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017023068974/crsp-20231208.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-12-04",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017023067774/crsp-20231204.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-11-16",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017023064341/crsp-20231115.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2023-11-06",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017023059476/crsp-20230930.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-11-06",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017023059461/crsp-20231106.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-09-07",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017023046889/crsp-20230904.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2023-08-07",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017023039075/crsp-20230630.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-08-07",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017023039057/crsp-20230807.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-06-09",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017023027277/crsp-20230608.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-06-09",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017023027129/crsp-20230608.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2023-05-08",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017023018811/crsp-20230331.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-05-08",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017023018790/crsp-20230508.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-04-03",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017023011476/crsp-20230331.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-03-29",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017023010439/crsp-20230328.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-03-27",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017023009861/crsp-20230323.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-03-14",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017023007716/crsp-20230309.htm"
+  },
+  {
+   "form": "10-K",
+   "date": "2023-02-21",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017023003441/crsp-20221231.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-02-21",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/1674416/000095017023003436/crsp-20230221.htm"
+  }
+ ]
+}
