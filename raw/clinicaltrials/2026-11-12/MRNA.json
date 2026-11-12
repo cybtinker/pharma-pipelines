@@ -1,0 +1,4843 @@
+{
+ "fetched_at": "2026-11-12T19:00:35.818403Z",
+ "data": [
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07863635",
+     "briefTitle": "A Study to Investigate the Immunogenicity and Safety of mRNA COVID-19 Variant-containing Formulations"
+    },
+    "statusModule": {
+     "overallStatus": "RECRUITING",
+     "startDateStruct": {
+      "date": "2026-10-09"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2026-12-11"
+     },
+     "completionDateStruct": {
+      "date": "2026-12-11"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-11-04"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "SARS-CoV-2"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE4"
+     ],
+     "enrollmentInfo": {
+      "count": 600
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1283"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05975099",
+     "briefTitle": "A Study to Evaluate the Safety and Immunogenicity of mRNA-1975 and mRNA-1982 Against Lyme Disease in Participants 18 Through 70 Years of Age"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2023-07-26"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2025-05-30"
+     },
+     "completionDateStruct": {
+      "date": "2025-05-30"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-07-30"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Lyme Disease"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 807
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1975"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1982"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05827978",
+     "briefTitle": "Study of mRNA-1010 Seasonal Influenza Vaccine in Adults",
+     "acronym": "IGNITE P303"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2023-04-17"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2024-06-24"
+     },
+     "completionDateStruct": {
+      "date": "2024-06-24"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-07-10"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Seasonal Influenza"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 8411
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1010"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Licensed Quadrivalent Inactivated Seasonal Influenza Vaccine"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06354998",
+     "briefTitle": "A Study of an Investigational mRNA-1273.815 COVID-19 Vaccine in Previously Vaccinated Adults"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2024-04-08"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2024-05-10"
+     },
+     "completionDateStruct": {
+      "date": "2024-05-10"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-05-25"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "SARS-CoV-2"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 217
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "Investigational mRNA-1273.815"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Licensed Spikevax Vaccine"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06623422",
+     "briefTitle": "A Study of Pembrolizumab (MK-3475) With or Without Intismeran Autogene (V940) in Participants With Non-small Cell Lung Cancer (V940-009/INTerpath-009)"
+    },
+    "statusModule": {
+     "overallStatus": "RECRUITING",
+     "startDateStruct": {
+      "date": "2024-10-21"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2033-05-16"
+     },
+     "completionDateStruct": {
+      "date": "2038-01-26"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-11-09"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Merck Sharp & Dohme LLC"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Carcinoma, Non-Small-Cell Lung"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 680
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "Pembrolizumab"
+      },
+      {
+       "type": "DRUG",
+       "name": "Cisplatin"
+      },
+      {
+       "type": "DRUG",
+       "name": "Carboplatin"
+      },
+      {
+       "type": "DRUG",
+       "name": "Pemetrexed"
+      },
+      {
+       "type": "DRUG",
+       "name": "Gemcitabine"
+      },
+      {
+       "type": "DRUG",
+       "name": "Paclitaxel"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Intismeran autogene"
+      },
+      {
+       "type": "OTHER",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05164094",
+     "briefTitle": "A Study of an Epstein-Barr Virus (EBV) Candidate Vaccine, mRNA-1189, in 10- to 30-Year-Old Healthy Adolescents and Adults"
+    },
+    "statusModule": {
+     "overallStatus": "ACTIVE_NOT_RECRUITING",
+     "startDateStruct": {
+      "date": "2021-12-28"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2026-10-05"
+     },
+     "completionDateStruct": {
+      "date": "2027-08-18"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-05-06"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Epstein-Barr Virus Infection"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 867
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1189"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05995275",
+     "briefTitle": "A Study to Investigate The Safety, Tolerability, And Immune Response of a Range of Doses of mRNA-1769 Compared With Placebo in Healthy Participants From \u226518 Years of Age to <50 Years of Age"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2023-08-15"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2025-07-08"
+     },
+     "completionDateStruct": {
+      "date": "2025-07-08"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-07-16"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Smallpox",
+      "Mpox"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 351
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1769"
+      },
+      {
+       "type": "OTHER",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT04956575",
+     "briefTitle": "A Study of mRNA-1010 Seasonal Influenza Vaccine in Healthy Adults"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2021-07-06"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2022-09-27"
+     },
+     "completionDateStruct": {
+      "date": "2022-09-27"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2023-10-27"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Seasonal Influenza"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 885
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1010"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Active Comparator"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07496450",
+     "briefTitle": "A Study of mRNA-1018-H5 Pandemic Influenza Vaccine in Healthy Adults"
+    },
+    "statusModule": {
+     "overallStatus": "ACTIVE_NOT_RECRUITING",
+     "startDateStruct": {
+      "date": "2026-03-23"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2027-01-28"
+     },
+     "completionDateStruct": {
+      "date": "2027-01-28"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-08-11"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Influenza"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 4050
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1018-H5"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07221474",
+     "briefTitle": "A Study of Intismeran Autogene (V940)/Placebo + Pembrolizumab and Chemotherapy in Metastatic Squamous Non-Small Cell Lung Cancer (V940-013)",
+     "acronym": "INTerpath-13"
+    },
+    "statusModule": {
+     "overallStatus": "RECRUITING",
+     "startDateStruct": {
+      "date": "2025-12-12"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2029-07-02"
+     },
+     "completionDateStruct": {
+      "date": "2031-05-06"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-11-12"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Merck Sharp & Dohme LLC"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Squamous Non-small Cell Lung Cancer"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 180
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "Intismeran Autogene"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Pembrolizumab"
+      },
+      {
+       "type": "DRUG",
+       "name": "Carboplatin"
+      },
+      {
+       "type": "DRUG",
+       "name": "Paclitaxel"
+      },
+      {
+       "type": "DRUG",
+       "name": "Nab-paclitaxel"
+      },
+      {
+       "type": "OTHER",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05533697",
+     "briefTitle": "Study of mRNA-4359 Administered Alone and in Combination With Immune Checkpoint Blockade in Participants With Advanced Solid Tumors"
+    },
+    "statusModule": {
+     "overallStatus": "RECRUITING",
+     "startDateStruct": {
+      "date": "2022-09-01"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2032-02-18"
+     },
+     "completionDateStruct": {
+      "date": "2032-02-18"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-07-14"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Advanced Solid Tumors"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 361
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-4359"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Pembrolizumab"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Ipilimumab"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Nivolumab"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05095727",
+     "briefTitle": "A Study of mRNA-3745 in Adult and Pediatric Participants With Glycogen Storage Disease Type 1a (GSD1a)"
+    },
+    "statusModule": {
+     "overallStatus": "ACTIVE_NOT_RECRUITING",
+     "startDateStruct": {
+      "date": "2022-06-01"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2026-11-30"
+     },
+     "completionDateStruct": {
+      "date": "2026-11-30"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-12-15"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Glycogen Storage Disease"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 15
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "mRNA-3745"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05295433",
+     "briefTitle": "An Extension Study to Evaluate the Long-Term Safety and Clinical Activity of mRNA-3705 in Participants Previously Enrolled in Other Clinical Studies of mRNA-3705"
+    },
+    "statusModule": {
+     "overallStatus": "RECRUITING",
+     "startDateStruct": {
+      "date": "2022-03-08"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2034-04-02"
+     },
+     "completionDateStruct": {
+      "date": "2034-04-02"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-12-23"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Methylmalonic Acidemia"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 56
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "mRNA-3705"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06305767",
+     "briefTitle": "A Clinical Study of Intismeran Autogene (V940) Treatment and Pembrolizumab in People With Bladder Cancer (V940-005/INTerpath-005)"
+    },
+    "statusModule": {
+     "overallStatus": "ACTIVE_NOT_RECRUITING",
+     "startDateStruct": {
+      "date": "2024-03-28"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2027-04-23"
+     },
+     "completionDateStruct": {
+      "date": "2031-10-20"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-01-13"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Merck Sharp & Dohme LLC"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Bladder Cancer"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 230
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "Pembrolizumab"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Intismeran autogene"
+      },
+      {
+       "type": "OTHER",
+       "name": "Placebo"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Enfortumab Vedotin"
+      },
+      {
+       "type": "PROCEDURE",
+       "name": "Surgery (RC plus PLND)"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06133010",
+     "briefTitle": "A Study of mRNA-1647 Cytomegalovirus Vaccine in Liver Transplant Candidates and Recipients"
+    },
+    "statusModule": {
+     "overallStatus": "WITHDRAWN",
+     "startDateStruct": {
+      "date": "2024-02-08"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2027-02-14"
+     },
+     "completionDateStruct": {
+      "date": "2027-12-14"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2024-03-15"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Cytomegalovirus Infection"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 0
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1647"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05415462",
+     "briefTitle": "A Study of mRNA-1010 Seasonal Influenza Vaccine in Adults"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2022-06-06"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2023-09-04"
+     },
+     "completionDateStruct": {
+      "date": "2023-09-04"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2024-09-24"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Seasonal Influenza"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 6102
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1010"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Fluarix Tetra"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06592794",
+     "briefTitle": "A Study to Investigate the Safety and Efficacy of mRNA-1403 in Participants \u226518 Years of Age for the Prevention of Acute Gastroenteritis",
+     "acronym": "Nova 301"
+    },
+    "statusModule": {
+     "overallStatus": "ACTIVE_NOT_RECRUITING",
+     "startDateStruct": {
+      "date": "2024-09-24"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2027-02-15"
+     },
+     "completionDateStruct": {
+      "date": "2027-02-15"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-05-13"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Acute Gastroenteritis",
+      "Norovirus Acute Gastroenteritis"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 37864
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1403"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06067230",
+     "briefTitle": "A Study to Investigate the Immunogenicity and Safety of mRNA-1345 Vaccine Targeting Respiratory Syncytial Virus (RSV) in High-risk Adults"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2023-10-06"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2026-07-24"
+     },
+     "completionDateStruct": {
+      "date": "2026-07-24"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-08-20"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Respiratory Syncytial Virus"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 1153
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1345"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05575492",
+     "briefTitle": "A Study of mRNA-1647 Cytomegalovirus Vaccine in Healthy Participants 9 to 15 Years of Age and Participants 16 to 25 Years of Age"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2022-11-07"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2026-05-12"
+     },
+     "completionDateStruct": {
+      "date": "2026-05-12"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-06-04"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Cytomegalovirus"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 873
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1647"
+      },
+      {
+       "type": "OTHER",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06143046",
+     "briefTitle": "A Study of mRNA-1345 Vaccine Targeting Respiratory Syncytial Virus in Pregnant Women and in Infants Born to Vaccinated Mothers"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2023-11-15"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2026-05-25"
+     },
+     "completionDateStruct": {
+      "date": "2026-05-25"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-06-10"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Respiratory Syncytial Virus"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 360
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1345"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT04917861",
+     "briefTitle": "A Study of Zika Vaccine mRNA-1893 in Adult Participants Living in Endemic and Non-Endemic Flavivirus Areas"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2021-06-07"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2024-07-26"
+     },
+     "completionDateStruct": {
+      "date": "2024-07-26"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-09-25"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Zika Virus"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 808
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1893"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06634797",
+     "briefTitle": "A Study to Investigate Cardiac Troponin Levels After mRNA-1273.712 Vaccine in Participants 12 Through 30 Years of Age"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2024-10-08"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2025-01-20"
+     },
+     "completionDateStruct": {
+      "date": "2025-01-20"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-02-04"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Healthy Volunteers"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE4"
+     ],
+     "enrollmentInfo": {
+      "count": 1000
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273.712"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05249829",
+     "briefTitle": "A Study to Evaluate the Immunogenicity and Safety of Omicron Variant Vaccines in Comparison With mRNA-1273 Booster Vaccine for COVID-19"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2022-02-16"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2023-06-23"
+     },
+     "completionDateStruct": {
+      "date": "2023-06-23"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2024-08-09"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "SARS-CoV-2"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2",
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 3548
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273.529"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273.214"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07790523",
+     "briefTitle": "Effectiveness of An Influenza/COVID-19 Vaccine (mCombriax [mRNA-1083]) in Adults \u2265 65 Years",
+     "acronym": "DAN-COMBO"
+    },
+    "statusModule": {
+     "overallStatus": "NOT_YET_RECRUITING",
+     "startDateStruct": {
+      "date": "2026-09-01"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2028-05-31"
+     },
+     "completionDateStruct": {
+      "date": "2028-09-30"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-08-27"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Tor Biering-S\u00f8rensen"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "COVID-19",
+      "Influenza"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE4"
+     ],
+     "enrollmentInfo": {
+      "count": 410000
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mCombriax\u00ae (mRNA-1083)"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Efluelda\u00ae (TIV-HD) and Spikevax\u00ae (mRNA-1273)"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05606965",
+     "briefTitle": "A Study to Evaluate the Safety, Reactogenicity, and Immunogenicity of mRNA-1010 in Healthy Adults"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2022-11-02"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2025-11-13"
+     },
+     "completionDateStruct": {
+      "date": "2025-11-13"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-11-24"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Influenza"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 172
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1010"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Egg-based Quadrivalent Influenza Vaccine"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Adjuvanted Quadrivalent Influenza Vaccine"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Inactivated Influenza Vaccine"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1345"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1045"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT04805125",
+     "briefTitle": "Immunocompromised Swiss Cohorts Based Trial Platform",
+     "acronym": "COVERALL"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2021-04-19"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2023-09-23"
+     },
+     "completionDateStruct": {
+      "date": "2023-09-23"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2024-01-25"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "University Hospital, Basel, Switzerland"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Immunocompromised Patients"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 610
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "Moderna COVID-19 Vaccine, mRNA-1273 (100 \u03bcg)"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Pfizer-BioNTech COVID-19 Vaccine BNT162b2 (30 \u00b5g)( Comirnaty\u00ae)"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05933577",
+     "briefTitle": "A Clinical Study of Intismeran Autogene (V940) Plus Pembrolizumab in People With High-Risk Melanoma (V940-001)"
+    },
+    "statusModule": {
+     "overallStatus": "ACTIVE_NOT_RECRUITING",
+     "startDateStruct": {
+      "date": "2023-07-19"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2029-10-26"
+     },
+     "completionDateStruct": {
+      "date": "2030-09-26"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-09-24"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Merck Sharp & Dohme LLC"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Melanoma"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 1089
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "Intismeran autogene"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Pembrolizumab"
+      },
+      {
+       "type": "OTHER",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05130437",
+     "briefTitle": "A Study to Assess the Long-term Safety and Clinical Activity of mRNA-3927 in Participants Previously Enrolled in the mRNA-3927-P101 Study"
+    },
+    "statusModule": {
+     "overallStatus": "RECRUITING",
+     "startDateStruct": {
+      "date": "2021-11-09"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2029-12-04"
+     },
+     "completionDateStruct": {
+      "date": "2031-12-04"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-03-23"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Propionic Acidemia"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 50
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-3927"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07266558",
+     "briefTitle": "A Study to Evaluate the Efficacy and Safety of mRNA-1283 and mRNA-1273 in Participants 50 to 64 Years of Age Without High-Risk Conditions for Severe Coronavirus Disease 2019 (COVID-19)"
+    },
+    "statusModule": {
+     "overallStatus": "ACTIVE_NOT_RECRUITING",
+     "startDateStruct": {
+      "date": "2025-11-26"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2027-06-16"
+     },
+     "completionDateStruct": {
+      "date": "2027-06-16"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-09-28"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "SARS-CoV-2"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE4"
+     ],
+     "enrollmentInfo": {
+      "count": 30000
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1283"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06694389",
+     "briefTitle": "Study to Investigate the Immunogenicity, Reactogenicity, and Safety of mRNA-1083 Vaccine (SARS-CoV-2 [COVID-19] and Influenza) in Adults \u226550 Years of Age"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2024-11-18"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2025-11-17"
+     },
+     "completionDateStruct": {
+      "date": "2025-11-17"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-12-02"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "COVID-19",
+      "Influenza"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 2457
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1083"
+      },
+      {
+       "type": "OTHER",
+       "name": "Placebo"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Licensed Influenza Vaccine"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "SARS-CoV-2 Vaccine"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05280158",
+     "briefTitle": "High-Dose Moderna mRNA-1273 Booster Study for Lung Transplant Recipients"
+    },
+    "statusModule": {
+     "overallStatus": "TERMINATED",
+     "startDateStruct": {
+      "date": "2022-03-10"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2023-02-27"
+     },
+     "completionDateStruct": {
+      "date": "2023-02-27"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-03-26"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "University of California, Los Angeles"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Lung Transplant Recipient",
+      "SARS-CoV-2",
+      "Immunosuppression"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 19
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "mRNA-1273 (Moderna COVID-19 vaccine)"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06735248",
+     "briefTitle": "A Study to Investigate Multiple Sclerosis Relapse Prevention With mRNA-1195 Compared With Placebo in Participants Aged 18 to \u226455 Years"
+    },
+    "statusModule": {
+     "overallStatus": "RECRUITING",
+     "startDateStruct": {
+      "date": "2025-04-16"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2029-01-08"
+     },
+     "completionDateStruct": {
+      "date": "2029-01-08"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-06-15"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Multiple Sclerosis"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 180
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1195"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06147856",
+     "briefTitle": "A Dose-finding Study to Evaluate mRNA-3210 in Participants With Phenylketonuria"
+    },
+    "statusModule": {
+     "overallStatus": "WITHDRAWN",
+     "startDateStruct": {
+      "date": "2024-03-29"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2026-08-10"
+     },
+     "completionDateStruct": {
+      "date": "2027-08-05"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2024-10-22"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Phenylketonuria"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 0
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "mRNA-3210"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06097299",
+     "briefTitle": "A Study of mRNA-1345, an mRNA Vaccine Targeting Respiratory Syncytial Virus, in Children 2 to <18 Years of Age at High Risk of Respiratory Syncytial Virus"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2023-10-24"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2025-06-27"
+     },
+     "completionDateStruct": {
+      "date": "2025-06-27"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-08-18"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Respiratory Syncytial Virus"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 349
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1345"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT04796896",
+     "briefTitle": "A Study to Evaluate Safety and Effectiveness of mRNA-1273 COVID-19 Vaccine in Healthy Children Between 6 Months of Age and Less Than 12 Years of Age"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2021-03-15"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2024-03-15"
+     },
+     "completionDateStruct": {
+      "date": "2024-03-15"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-06-13"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "SARS-CoV-2"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2",
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 11942
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273.214"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05815498",
+     "briefTitle": "A Study of mRNA-1283 Injection Compared With mRNA-1273 Injection in Participants \u226512 Years of Age to Prevent COVID-19",
+     "acronym": "NextCOVE"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2023-03-28"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2025-04-12"
+     },
+     "completionDateStruct": {
+      "date": "2025-04-12"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-05-01"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "COVID-19"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 13553
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1283.222"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273.222"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1283.815"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273.815"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05085366",
+     "briefTitle": "A Study to Evaluate the Efficacy, Safety, and Immunogenicity of mRNA-1647 Cytomegalovirus (CMV) Vaccine in Healthy Participants 16 to 40 Years of Age"
+    },
+    "statusModule": {
+     "overallStatus": "TERMINATED",
+     "startDateStruct": {
+      "date": "2021-10-26"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2025-11-04"
+     },
+     "completionDateStruct": {
+      "date": "2025-11-04"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-12-15"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Cytomegalovirus Infection"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 7454
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1647"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06585241",
+     "briefTitle": "A Study to Investigate the Immunogenicity and Safety of mRNA COVID-19 Variant-containing Vaccine Formulations"
+    },
+    "statusModule": {
+     "overallStatus": "RECRUITING",
+     "startDateStruct": {
+      "date": "2024-09-09"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2026-12-31"
+     },
+     "completionDateStruct": {
+      "date": "2026-12-31"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-03-27"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "SARS-CoV-2"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE4"
+     ],
+     "enrollmentInfo": {
+      "count": 1144
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273 Variant-containing Formulation"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06602024",
+     "briefTitle": "A Study of mRNA-1010 Compared With a Licensed Influenza Vaccine in Adults \u226550 Years of Age"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2024-09-16"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2025-08-21"
+     },
+     "completionDateStruct": {
+      "date": "2025-08-21"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-09-16"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Seasonal Influenza"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 40805
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1010"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Fluarix\u00ae"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Influsplit\u00ae Tetra"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Fluarix Tetra"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Alpharix\u00ae Tetra"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05566639",
+     "briefTitle": "A Study of mRNA-1010 Seasonal Influenza Vaccine in Adults 50 Years Old and Older"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2022-09-14"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2024-01-05"
+     },
+     "completionDateStruct": {
+      "date": "2024-01-05"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-01-16"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Seasonal Influenza"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 22502
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1010"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Fluarix Quadrivalent"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05827068",
+     "briefTitle": "A Study of mRNA-1011.1, mRNA-1011.2, and mRNA-1012.1 Candidate Seasonal Influenza Vaccines in Healthy Adults"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2023-03-27"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2023-11-20"
+     },
+     "completionDateStruct": {
+      "date": "2023-11-20"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-02-03"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Seasonal Influenza"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 698
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1011.1"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1011.2"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1012.1"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1010"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1010.2"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1010.3"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT03323398",
+     "briefTitle": "Dose Escalation and Efficacy Study of mRNA-2416 for Intratumoral Injection Alone and in Combination With Durvalumab for Participants With Advanced Malignancies"
+    },
+    "statusModule": {
+     "overallStatus": "TERMINATED",
+     "startDateStruct": {
+      "date": "2017-08-15"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2021-08-18"
+     },
+     "completionDateStruct": {
+      "date": "2021-08-18"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2024-07-31"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Relapsed/Refractory Solid Tumor Malignancies or Lymphoma",
+      "Ovarian Cancer"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 79
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-2416"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Durvalumab"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05827926",
+     "briefTitle": "A Study of mRNA-based Influenza and SARS-CoV-2 (COVID-19) Multi-component Vaccines in Healthy Adults"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2023-04-14"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2024-12-03"
+     },
+     "completionDateStruct": {
+      "date": "2024-12-03"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-12-23"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "SARS-CoV-2",
+      "Influenza"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 1758
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "Influenza Vaccine 1"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1083.1"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1083.2"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1083.3"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Investigational Influenza Vaccine 1"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Investigational COVID-19 Vaccine 1"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "COVID-19 Vaccine 1"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Investigational Influenza Vaccine 2"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Influenza Vaccine 2"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1083"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Investigational COVID-19 Vaccine 2"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "COVID-19 Vaccine 2"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06864143",
+     "briefTitle": "A Study to Investigate the Immunogenicity, Reactogenicity, and Safety of mRNA-1083 (Influenza and COVID-19) Vaccine in Adults \u226518 to <65 Years of Age"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2025-03-07"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2025-10-13"
+     },
+     "completionDateStruct": {
+      "date": "2025-10-13"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-10-20"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Influenza",
+      "SARS-CoV-2"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 1320
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1083 Composition 1 Dose A Lot A"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1083 Composition 1 Dose A Lot B"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1083 Composition 1 Dose B"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1083 Composition 1 Dose C"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1083 Composition 2 Dose A"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1083 Composition 2 Dose B"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1083 Composition 3 Dose A"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1083 Composition 3 Dose B"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Influenza Vaccine"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "COVID-19 Vaccine"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Investigational Influenza Vaccine"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Investigational COVID-19 Vaccine Lot A"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Investigational COVID-19 Vaccine Lot B"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT04405076",
+     "briefTitle": "Dose-Confirmation Study to Evaluate the Safety, Reactogenicity, and Immunogenicity of mRNA-1273 COVID-19 Vaccine in Adults Aged 18 Years and Older"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2020-05-29"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2021-10-28"
+     },
+     "completionDateStruct": {
+      "date": "2021-10-28"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2022-12-30"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "SARS-CoV-2"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 660
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "Biological: mRNA-1273"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273.351"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06077760",
+     "briefTitle": "A Study of Intismeran Autogene (V940) Plus Pembrolizumab (MK-3475) Versus Placebo Plus Pembrolizumab in Participants With Non-small Cell Lung Cancer (V940-002)",
+     "acronym": "INTerpath-002"
+    },
+    "statusModule": {
+     "overallStatus": "ACTIVE_NOT_RECRUITING",
+     "startDateStruct": {
+      "date": "2023-12-06"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2030-06-25"
+     },
+     "completionDateStruct": {
+      "date": "2035-12-21"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-09-18"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Merck Sharp & Dohme LLC"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Non-small Cell Lung Cancer"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 868
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "Intismeran autogene"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Pembrolizumab"
+      },
+      {
+       "type": "OTHER",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06833073",
+     "briefTitle": "A Clinical Study of Intismeran Autogene (V940) and BCG in People With Bladder Cancer (V940-011/INTerpath-011)"
+    },
+    "statusModule": {
+     "overallStatus": "RECRUITING",
+     "startDateStruct": {
+      "date": "2025-03-11"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2031-09-03"
+     },
+     "completionDateStruct": {
+      "date": "2031-09-03"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-10-01"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Merck Sharp & Dohme LLC"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Urinary Bladder Neoplasms",
+      "Non-Muscle Invasive Bladder Neoplasms",
+      "Carcinoma in Situ"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 308
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "Intismeran autogene"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "BCG"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT04927065",
+     "briefTitle": "A Study to Evaluate the Immunogenicity and Safety of mRNA Vaccine Boosters for SARS-CoV-2 (COVID-19) Variants"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2021-05-28"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2023-11-17"
+     },
+     "completionDateStruct": {
+      "date": "2023-11-17"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-02-28"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "SARS-CoV-2"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2",
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 5161
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273.211"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273.617.2"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273.213"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273.529"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273.214"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273.222"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273.815"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273.231"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05868382",
+     "briefTitle": "Study to Evaluate the Safety, Reactogenicity, and Immunogenicity of mRNA Vaccine Candidate Variations in Healthy Adults"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2023-05-15"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2023-12-19"
+     },
+     "completionDateStruct": {
+      "date": "2023-12-19"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2024-12-20"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Influenza"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 270
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1010"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1010.4"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1010.6"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05584202",
+     "briefTitle": "Study to Evaluate the Safety, Reactogenicity, and Effectiveness of mRNA-1273.214 SARS-CoV-2 (COVID-19) Vaccine in Infants",
+     "acronym": "BabyCOVE"
+    },
+    "statusModule": {
+     "overallStatus": "TERMINATED",
+     "startDateStruct": {
+      "date": "2022-09-30"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2024-11-15"
+     },
+     "completionDateStruct": {
+      "date": "2024-11-15"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-11-26"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "SARS-CoV-2"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 68
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273.214"
+      },
+      {
+       "type": "OTHER",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05972174",
+     "briefTitle": "A Study of mRNA-1018 Pandemic Influenza Candidate Vaccines in Healthy Adults"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2023-07-10"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2024-07-16"
+     },
+     "completionDateStruct": {
+      "date": "2024-07-16"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-07-16"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Influenza"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 1504
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1018 for H5N8"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1018 for H7N9"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1018 for H5 Only"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1018 for H7 Only"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1018 for H5 Only-CG"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07513376",
+     "briefTitle": "A Clinical Trial of Adjuvant Intismeran (V940) With or Without Pembrolizumab Coformulated With Berahyaluronidase Alfa (MK-3475A) in High-Risk Stage I Non-Small Cell Lung Cancer (V940-014)",
+     "acronym": "INTerpath-014"
+    },
+    "statusModule": {
+     "overallStatus": "RECRUITING",
+     "startDateStruct": {
+      "date": "2026-05-04"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2034-08-22"
+     },
+     "completionDateStruct": {
+      "date": "2038-05-11"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-11-09"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Merck Sharp & Dohme LLC"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Non-small Cell Lung Cancer"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 876
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "Intismeran"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Pembrolizumab coformulated with berahyaluronidase alfa"
+      },
+      {
+       "type": "OTHER",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05992935",
+     "briefTitle": "Study to Evaluate the Safety, Reactogenicity, and Immunogenicity of mRNA-1403 and mRNA-1405 to Prevent Norovirus Acute Gastroenteritis in Healthy Adults 18 to 80 Years of Age"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2023-08-25"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2026-10-07"
+     },
+     "completionDateStruct": {
+      "date": "2026-10-07"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-10-23"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Norovirus Acute Gastroenteritis"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 1407
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1403"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1405"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT04232280",
+     "briefTitle": "Dose-Finding Trial to Evaluate the Safety and Immunogenicity of Cytomegalovirus (CMV) Vaccine mRNA-1647 in Healthy Adults"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2020-01-09"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2023-01-04"
+     },
+     "completionDateStruct": {
+      "date": "2023-01-04"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-05-05"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Cytomegalovirus Infection"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 315
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1647"
+      },
+      {
+       "type": "OTHER",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05330975",
+     "briefTitle": "A Study of mRNA-1345 Vaccine Targeting Respiratory Syncytial Virus (RSV) in Adults \u226550 Years of Age",
+     "acronym": "RSVictory"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2022-04-01"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2024-11-08"
+     },
+     "completionDateStruct": {
+      "date": "2024-11-08"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-12-30"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Respiratory Syncytial Virus"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 3317
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1345"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Afluria\u00ae Quadrivalent"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273.214"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07089706",
+     "briefTitle": "A Study to Evaluate the Immunogenicity and Safety of mRNA-1283 COVID-19 Variant-containing Formulations"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2025-07-21"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2026-06-16"
+     },
+     "completionDateStruct": {
+      "date": "2026-06-16"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-07-07"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "COVID-19"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE4"
+     ],
+     "enrollmentInfo": {
+      "count": 832
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1283.251 Variant-containing Formulation"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05683457",
+     "briefTitle": "A Study to Evaluate the Efficacy, Safety, and Immunogenicity of mRNA-1647 Cytomegalovirus (CMV) Vaccine in Allogenic Hematopoietic Cell Transplantation (HCT) Participants."
+    },
+    "statusModule": {
+     "overallStatus": "ACTIVE_NOT_RECRUITING",
+     "startDateStruct": {
+      "date": "2023-04-05"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2027-03-06"
+     },
+     "completionDateStruct": {
+      "date": "2027-03-06"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-08-10"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Cytomegalovirus Infection"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 84
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1647"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT03897881",
+     "briefTitle": "An Efficacy Study of Adjuvant Treatment With the Personalized Cancer Vaccine mRNA-4157 and Pembrolizumab in Participants With High-Risk Melanoma (KEYNOTE-942)"
+    },
+    "statusModule": {
+     "overallStatus": "ACTIVE_NOT_RECRUITING",
+     "startDateStruct": {
+      "date": "2019-07-18"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2032-11-21"
+     },
+     "completionDateStruct": {
+      "date": "2032-11-21"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-09-08"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Melanoma"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 267
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "mRNA-4157"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Pembrolizumab"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT04470427",
+     "briefTitle": "A Study to Evaluate Efficacy, Safety, and Immunogenicity of mRNA-1273 Vaccine in Adults Aged 18 Years and Older to Prevent COVID-19"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2020-07-27"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2022-12-29"
+     },
+     "completionDateStruct": {
+      "date": "2022-12-29"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2024-03-21"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "SARS-CoV-2"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 30415
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT04975893",
+     "briefTitle": "A Long-Term Extension Study to Evaluate the Immunogenicity and Safety of Cytomegalovirus (CMV) mRNA-1647 Vaccine"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2021-06-18"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2026-01-19"
+     },
+     "completionDateStruct": {
+      "date": "2026-01-19"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-02-02"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Cytomegalovirus Infection"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 135
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1647"
+      },
+      {
+       "type": "OTHER",
+       "name": "mRNA-1647"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06060457",
+     "briefTitle": "A Study to Evaluate the Safety and Immune Response of mRNA-1345, a Vaccine Targeting Respiratory Syncytial Virus (RSV), When Co-administered With a Fluzone HD, in Adults \u226565 Years of Age"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2023-09-25"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2024-06-07"
+     },
+     "completionDateStruct": {
+      "date": "2024-06-07"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-07-30"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Respiratory Syncytial Virus"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 1900
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1345"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Fluzone HD"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07561294",
+     "briefTitle": "A Study to Evaluate the Safety, Reactogenicity, and Immunogenicity of mRNA-1982 to Prevent Lyme Disease in Healthy Participants (18 to 70 Years of Age)"
+    },
+    "statusModule": {
+     "overallStatus": "ACTIVE_NOT_RECRUITING",
+     "startDateStruct": {
+      "date": "2026-04-29"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2028-11-09"
+     },
+     "completionDateStruct": {
+      "date": "2028-11-09"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-08-03"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Lyme Disease"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 366
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1982"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT04899310",
+     "briefTitle": "A Study to Assess the Safety, Pharmacokinetics, and Pharmacodynamics of mRNA-3705 in Participants With Isolated Methylmalonic Acidemia"
+    },
+    "statusModule": {
+     "overallStatus": "TERMINATED",
+     "startDateStruct": {
+      "date": "2021-08-06"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2026-04-01"
+     },
+     "completionDateStruct": {
+      "date": "2026-04-01"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-05-06"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Methylmalonic Acidemia"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 18
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-3705"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT03810690",
+     "briefTitle": "Open Label Study of mRNA-3704 in Patients With Isolated Methylmalonic Acidemia"
+    },
+    "statusModule": {
+     "overallStatus": "WITHDRAWN",
+     "startDateStruct": {
+      "date": "2019-05-28"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2020-08-18"
+     },
+     "completionDateStruct": {
+      "date": "2020-08-18"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2020-11-13"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Methylmalonic Acidemia (MMA)",
+      "Metabolism, Inborn Errors"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 0
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-3704"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07884175",
+     "briefTitle": "A Study of Updated mRNA Seasonal Influenza Vaccines"
+    },
+    "statusModule": {
+     "overallStatus": "NOT_YET_RECRUITING",
+     "startDateStruct": {
+      "date": "2026-10-15"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2026-12-07"
+     },
+     "completionDateStruct": {
+      "date": "2026-12-07"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-10-20"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Seasonal Influenza"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE4"
+     ],
+     "enrollmentInfo": {
+      "count": 200
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1010"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Licensed High-Dose Seasonal Influenza Vaccine"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05127434",
+     "briefTitle": "A Study to Evaluate the Safety and Efficacy of mRNA-1345 Vaccine Targeting Respiratory Syncytial Virus (RSV) in Adults \u226560 Years of Age"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2021-11-17"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2025-07-28"
+     },
+     "completionDateStruct": {
+      "date": "2025-07-28"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-09-29"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Respiratory Syncytial Virus"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2",
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 36814
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "Placebo"
+      },
+      {
+       "type": "DRUG",
+       "name": "mRNA-1345"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07116616",
+     "briefTitle": "A Study of mRNA-2808 in Participants With Relapsed or Refractory Multiple Myeloma"
+    },
+    "statusModule": {
+     "overallStatus": "RECRUITING",
+     "startDateStruct": {
+      "date": "2025-09-30"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2030-06-17"
+     },
+     "completionDateStruct": {
+      "date": "2032-06-17"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-09-23"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Relapsed or Refractory Multiple Myeloma"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 190
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "DRUG",
+       "name": "mRNA-2808"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06033261",
+     "briefTitle": "A Study of mRNA-1608, a Herpes Simplex Virus -2 (HSV-2) Therapeutic Candidate Vaccine, in Healthy Adults 18 to 55 Years of Age With Recurrent HSV-2 Genital Herpes"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2023-09-06"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2025-04-25"
+     },
+     "completionDateStruct": {
+      "date": "2025-04-25"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-05-08"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Genital Herpes"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 303
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1608"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "BEXSERO"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06097273",
+     "briefTitle": "A Study of mRNA-1083 (SARS-CoV-2 and Influenza) Vaccine in Healthy Adult Participants, \u226550 Years of Age"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2023-10-19"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2024-05-28"
+     },
+     "completionDateStruct": {
+      "date": "2024-05-28"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-07-01"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "SARS-CoV-2",
+      "Influenza"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 8061
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1083"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Influenza Vaccine"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "COVID-19 Vaccine"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05137236",
+     "briefTitle": "A Study to Evaluate the Immunogenicity and Safety of mRNA-1283 COVID-19 Vaccine Boosters"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2021-12-06"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2023-03-23"
+     },
+     "completionDateStruct": {
+      "date": "2023-03-23"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-07-17"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "SARS-CoV-2"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 540
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1283"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1283.211"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1283.529"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT04159103",
+     "briefTitle": "Open-Label Study of mRNA-3927 in Participants With Propionic Acidemia"
+    },
+    "statusModule": {
+     "overallStatus": "RECRUITING",
+     "startDateStruct": {
+      "date": "2021-04-15"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2027-08-31"
+     },
+     "completionDateStruct": {
+      "date": "2027-08-31"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-01-22"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Propionic Acidemia"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 77
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-3927"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06307431",
+     "briefTitle": "A Study of Adjuvant Intismeran Autogene (V940) and Pembrolizumab in Renal Cell Carcinoma (V940-004).",
+     "acronym": "INTerpath-004"
+    },
+    "statusModule": {
+     "overallStatus": "ACTIVE_NOT_RECRUITING",
+     "startDateStruct": {
+      "date": "2024-04-10"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2028-01-08"
+     },
+     "completionDateStruct": {
+      "date": "2032-06-08"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-07-13"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Merck Sharp & Dohme LLC"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Renal Cell Carcinoma"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 272
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "Intismeran autogene"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Pembrolizumab"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05436834",
+     "briefTitle": "A Study to Evaluate the Safety and Immunogenicity of the mRNA COVID-19 Vaccines in Healthy Children Between 6 Months to Less Than 6 Years of Age"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2022-06-21"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2025-10-20"
+     },
+     "completionDateStruct": {
+      "date": "2025-10-20"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-11-26"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "SARS-CoV-2"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 1807
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273.214"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273.815"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT04860297",
+     "briefTitle": "A Study to Evaluate Safety and Immunogenicity of mRNA-1273 Vaccine to Prevent COVID-19 in Adult Organ Transplant Recipients and in Healthy Adult Participants"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2021-04-16"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2023-05-22"
+     },
+     "completionDateStruct": {
+      "date": "2023-05-22"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2024-06-18"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "SARS-CoV-2"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 234
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05375838",
+     "briefTitle": "A Safety, Reactogenicity, and Immunogenicity Study of mRNA-1073 (COVID-19/Influenza) Vaccine in Adults 18 to 75 Years Old"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2022-05-13"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2022-12-29"
+     },
+     "completionDateStruct": {
+      "date": "2022-12-29"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2024-02-28"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "SARS-CoV-2",
+      "Influenza"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 550
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1073"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1010"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05333289",
+     "briefTitle": "A Study of mRNA-1020 and mRNA-1030 Seasonal Influenza Vaccines in Healthy Adults"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2022-04-06"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2022-11-22"
+     },
+     "completionDateStruct": {
+      "date": "2022-11-22"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2024-02-01"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Seasonal Influenza"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE1",
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 572
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1030"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1020"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1010"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Active Comparator"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT05383560",
+     "briefTitle": "Safety and Immunogenicity of Omicron Variant-Matched Vaccine Booster in Adults",
+     "acronym": "SH-MO-214"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2022-09-05"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2024-01-31"
+     },
+     "completionDateStruct": {
+      "date": "2024-01-31"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2024-02-21"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Sheba Medical Center"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "COVID-19 Pandemic",
+      "Immunogenicity",
+      "SARS CoV 2 Infection",
+      "COVID-19"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 179
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273.214 Vaccine"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "MRNA-1273 Vaccine"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "MRNA-1273.222 Vaccine"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06295809",
+     "briefTitle": "A Study of (Neo)Adjuvant Intismeran Autogene (V940) and Pembrolizumab in Cutaneous Squamous Cell Carcinoma (V940-007)",
+     "acronym": "INTerpath-007"
+    },
+    "statusModule": {
+     "overallStatus": "TERMINATED",
+     "startDateStruct": {
+      "date": "2024-04-18"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2026-03-05"
+     },
+     "completionDateStruct": {
+      "date": "2026-03-05"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-05-08"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Merck Sharp & Dohme LLC"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Carcinoma, Squamous Cell",
+      "Skin Neoplasms"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2",
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 46
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "Pembrolizumab"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Intismeran autogene"
+      },
+      {
+       "type": "PROCEDURE",
+       "name": "Surgery"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07117487",
+     "briefTitle": "A Study of mRNA-1345 Following a Primary Dose of a Licensed Protein Subunit Respiratory Syncytial Virus (RSV) Vaccine in Adult Participants \u226560 Years of Age"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2025-08-05"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2026-03-27"
+     },
+     "completionDateStruct": {
+      "date": "2026-03-27"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-05-04"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Respiratory Syncytial Virus"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 507
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1345"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT06508320",
+     "briefTitle": "A Clinical Study to Investigate the Safety and Immunogenicity in Relation to Product Attributes of mRNA-1083 (Severe Acute Respiratory Syndrome Coronavirus 2 [SARS-CoV-2] and Influenza Vaccine)"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2024-07-15"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2025-09-25"
+     },
+     "completionDateStruct": {
+      "date": "2025-09-25"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-10-08"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "Influenza",
+      "SARS-CoV-2"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 931
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1083"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07808697",
+     "briefTitle": "A Study to Evaluate the Safety, Reactogenicity, and Immunogenicity of mRNA-1283 in Participants \u22656 Months to <12 Years of Age"
+    },
+    "statusModule": {
+     "overallStatus": "RECRUITING",
+     "startDateStruct": {
+      "date": "2026-09-04"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2029-08-30"
+     },
+     "completionDateStruct": {
+      "date": "2029-08-30"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-11-09"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "SARS-CoV-2"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2"
+     ],
+     "enrollmentInfo": {
+      "count": 300
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1283"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT07279766",
+     "briefTitle": "Effectiveness of mRNA-1273 Variant-Containing Vaccine Formulation Against Severe Outcomes in Adults Aged 50-64 Years Without Risk Factors for Severe COVID-19",
+     "acronym": "DAN-COVID"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2025-12-11"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2026-08-26"
+     },
+     "completionDateStruct": {
+      "date": "2026-09-05"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2026-10-06"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "Tor Biering-S\u00f8rensen"
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "COVID-19"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE4"
+     ],
+     "enrollmentInfo": {
+      "count": 41060
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273 (Moderna COVID-19 vaccine)"
+      }
+     ]
+    }
+   },
+   "hasResults": false
+  },
+  {
+   "protocolSection": {
+    "identificationModule": {
+     "nctId": "NCT04649151",
+     "briefTitle": "A Study to Evaluate the Safety, Reactogenicity, and Effectiveness of mRNA-1273 Vaccine in Adolescents 12 to <18 Years Old to Prevent COVID-19",
+     "acronym": "TeenCove"
+    },
+    "statusModule": {
+     "overallStatus": "COMPLETED",
+     "startDateStruct": {
+      "date": "2020-12-09"
+     },
+     "primaryCompletionDateStruct": {
+      "date": "2024-06-14"
+     },
+     "completionDateStruct": {
+      "date": "2024-06-14"
+     },
+     "lastUpdatePostDateStruct": {
+      "date": "2025-09-15"
+     }
+    },
+    "sponsorCollaboratorsModule": {
+     "leadSponsor": {
+      "name": "ModernaTX, Inc."
+     }
+    },
+    "conditionsModule": {
+     "conditions": [
+      "SARS-CoV-2"
+     ]
+    },
+    "designModule": {
+     "phases": [
+      "PHASE2",
+      "PHASE3"
+     ],
+     "enrollmentInfo": {
+      "count": 4328
+     }
+    },
+    "armsInterventionsModule": {
+     "interventions": [
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "Placebo"
+      },
+      {
+       "type": "BIOLOGICAL",
+       "name": "mRNA-1273.222"
+      }
+     ]
+    }
+   },
+   "hasResults": true
+  }
+ ]
+}
