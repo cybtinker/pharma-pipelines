@@ -1,0 +1,365 @@
+{
+ "fetched_at": "2026-11-13T18:41:24.081139Z",
+ "data": [
+  {
+   "form": "10-Q",
+   "date": "2026-10-21",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000197/jnj-20260927.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-10-13",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000189/jnj-20261013.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-08-04",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000167/jnj-20260804.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-07-29",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000163/jnj-20260729.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-07-28",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000155/jnj-20260727.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2026-07-23",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000153/jnj-20260628.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-07-15",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000146/jnj-20260715.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-04-28",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000089/jnj-20260423.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2026-04-22",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000087/jnj-20260329.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-04-14",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000076/jnj-20260414.htm"
+  },
+  {
+   "form": "10-K",
+   "date": "2026-02-11",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000016/jnj-20251228.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-01-21",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040626000002/jnj-20260121.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2025-10-22",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040625000209/jnj-20250928.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-10-14",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040625000201/jnj-20251014.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-09-09",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040625000190/jnj-20250908.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2025-07-24",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040625000178/jnj-20250629.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-07-16",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040625000170/jnj-20250716.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-06-10",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040625000152/jnj-20250610.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-04-30",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040625000141/jnj-20250424.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2025-04-23",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040625000119/jnj-20250330.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-04-15",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040625000110/jnj-20250415.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-04-03",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040625000106/jnj-20250331.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-02-26",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000119312525036773/d863514d8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-02-20",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000119312525030851/d866332d8k.htm"
+  },
+  {
+   "form": "10-K",
+   "date": "2025-02-13",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040625000038/jnj-20241229.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-01-22",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040625000003/jnj-20250122.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2024-10-23",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040624000096/jnj-20240929.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-10-15",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040624000088/jnj-20241015.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-09-20",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040624000083/jnj-20240920.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-09-10",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040624000081/jnj-20240910.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-08-26",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040624000079/jnj-20240826.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2024-07-25",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040624000075/jnj-20240630.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-07-17",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040624000071/jnj-20240717.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-05-20",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000119312524142828/d746288d8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-05-17",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040624000053/jnj-20240517.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2024-05-01",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040624000049/jnj-20240331.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-05-01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040624000048/jnj-20240501.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-04-29",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040624000043/jnj-20240425.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-04-16",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040624000031/jnj-20240416.htm"
+  },
+  {
+   "form": "10-K",
+   "date": "2024-02-16",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040624000013/jnj-20231231.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-01-23",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040624000004/jnj-20240123.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-12-05",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000115/jnj-20231130.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-12-05",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000112/jnj-20231205.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-11-30",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000109/jnj-20231130.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-11-27",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000105/jnj-20231121.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2023-10-27",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000102/jnj-20231001.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-10-23",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000096/jnj-20231020.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-10-17",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000094/jnj-20231017.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-08-30",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000091/jnj-20230830.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-08-25",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000086/jnj-20230823.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2023-07-31",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000082/jnj-20230702.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-07-28",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000162828023026095/jnj-20230728.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-07-24",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000162828023025388/jnj-20230724.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-07-20",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000073/jnj-20230720.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-05-08",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000119312523138287/d301195d8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-05-01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000059/jnj-20230427.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2023-04-28",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000056/jnj-20230402.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-04-18",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000043/jnj-20230418.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-04-04",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000037/jnj-20230404.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-04-03",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/200406/000020040623000032/jnj-20230331.htm"
+  }
+ ]
+}

@@ -1,0 +1,365 @@
+{
+ "fetched_at": "2026-11-13T18:39:54.519866Z",
+ "data": [
+  {
+   "form": "8-K",
+   "date": "2026-11-03",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000132/pfe-20261030.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2026-11-03",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000127/pfe-20260927.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-11-03",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000125/pfe-20261103.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2026-08-04",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000095/pfe-20260628.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-08-04",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000094/pfe-20260804.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-06-18",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000087/pfe-20260618.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-06-18",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000085/pfe-20260618.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2026-05-05",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000054/pfe-20260329.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-05-05",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000053/pfe-20260505.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-04-27",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000044/pfe-20260423.htm"
+  },
+  {
+   "form": "10-K",
+   "date": "2026-02-26",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000026/pfe-20251231.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-02-03",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000005/pfe-20260203.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-12-16",
+   "description": "PFIZER 8-K DECEMBER 16, 2025",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000167/pfe-20251216.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-11-21",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000119312525291406/d80089d8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-11-13",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000159/pfe-20251113.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2025-11-04",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000150/pfe-20250928.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-11-04",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000149/pfe-20251104.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2025-08-05",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000138/pfe-20250629.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-08-05",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000136/pfe-20250805.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-05-19",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000119312525122480/d60311d8k.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2025-05-05",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000114/pfe-20250330.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-04-29",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000111/pfe-20250429.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-04-28",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000109/pfe-20250424.htm"
+  },
+  {
+   "form": "10-K",
+   "date": "2025-02-27",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000054/pfe-20241231.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-02-04",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000017/pfe-20250204.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-12-17",
+   "description": "PFIZER 8-K DECEMBER 17, 2024",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000195/pfe-20241217.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2024-11-04",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000191/pfe-20240929.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-10-29",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000188/pfe-20241029.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-10-15",
+   "description": "PFIZER 8-K OCTOBER 10 2024",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000185/pfe-20241010.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2024-08-05",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000166/pfe-20240630.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-07-30",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000155/pfe-20240730.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-07-26",
+   "description": "PFIZER 8-K JULY 24 2024",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000144/pfe-20240724.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-07-10",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000130/pfe-20240709.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-07-01",
+   "description": "8-K JUNE 27, 2024",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000127/pfe-20240627.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-05-22",
+   "description": "8-K MAY 22, 2024",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000113/pfe-20240522.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2024-05-08",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000107/pfe-20240331.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-05-01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000103/pfe-20240501.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-04-29",
+   "description": "PFIZER 8-K APRIL 25 2024",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000101/pfe-20240425.htm"
+  },
+  {
+   "form": "10-K",
+   "date": "2024-02-22",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000039/pfe-20231231.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-01-30",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000017/pfe-20240130.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-01-10",
+   "description": "PFIZER 8-K JANUARY 10 2024",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000006/pfe-20240110.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-12-14",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000119312523294930/d553734d8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-12-13",
+   "description": "8-K DECEMBER 13 2023",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000120/pfe-20231213.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-12-12",
+   "description": "PFIZER 8-K DECEMBER 7 2023",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000118/pfe-20231207.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2023-11-08",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000115/pfe-20231001.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-10-31",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000111/pfe-20231031.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-10-13",
+   "description": "PFIZER 8-K OCTOBER 13 2023",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000099/pfe-20231013.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2023-08-09",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000088/pfe-20230702.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-08-01",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000085/pfe-20230801.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-07-27",
+   "description": "PFIZER IN 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000081/pfe-20230721.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-05-19",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000119312523149364/d414076d8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-05-15",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000119312523144089/d474141d8k.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2023-05-10",
+   "description": "10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000162828023017196/pfe-20230402.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-05-02",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000162828023014759/pfe-20230502.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-05-01",
+   "description": "8-K APRIL 27 2023",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000162828023014368/pfe-20230427.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-03-13",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000119312523068538/d408093d8k.htm"
+  },
+  {
+   "form": "10-K",
+   "date": "2023-02-23",
+   "description": "10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000024/pfe-20221231.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-02-21",
+   "description": "PFIZER 8-K FEB 21 2023",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000019/pfe-20230221.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-01-31",
+   "description": "8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800323000004/pfe-20230131.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2022-12-13",
+   "description": "PFIZER INC 8-K DECEMBER 9, 2022",
+   "url": "https://www.sec.gov/Archives/edgar/data/78003/000007800322000107/pfe-20221209.htm"
+  }
+ ]
+}

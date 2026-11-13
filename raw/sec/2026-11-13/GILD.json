@@ -1,0 +1,365 @@
+{
+ "fetched_at": "2026-11-13T18:42:39.477653Z",
+ "data": [
+  {
+   "form": "10-Q",
+   "date": "2026-10-30",
+   "description": "FORM 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000039/gild-20260930.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-10-29",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000037/gild-20261029.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2026-08-06",
+   "description": "FORM 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000031/gild-20260630.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-08-04",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000028/gild-20260804.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-05-20",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000110465926064518/tm2615045d1_8k.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2026-05-07",
+   "description": "FORM 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000024/gild-20260331.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-05-07",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000022/gild-20260507.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-05-04",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000008/gild-20260430.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-04-28",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000110465926049874/tm2612748d1_8k.htm"
+  },
+  {
+   "form": "10-K",
+   "date": "2026-02-24",
+   "description": "FORM 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000006/gild-20251231.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-02-23",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000110465926018314/tm267044d1_8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2026-02-10",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209526000003/gild-20260210.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-11-19",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000110465925113968/tm2531634d1_8k.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2025-11-07",
+   "description": "FORM 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209525000047/gild-20250930.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-10-30",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209525000044/gild-20251030.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-10-06",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209525000041/gild-20251006.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-08-14",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209525000035/gild-20250810.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2025-08-07",
+   "description": "FORM 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209525000032/gild-20250630.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-08-07",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209525000030/gild-20250807.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-08-04",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209525000022/gild-20250730.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-05-08",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209525000015/gild-20250507.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2025-05-07",
+   "description": "FORM 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209525000012/gild-20250331.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-04-24",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209525000009/gild-20250424.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-03-12",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000110465925023012/tm258955d1_8k.htm"
+  },
+  {
+   "form": "10-K",
+   "date": "2025-02-28",
+   "description": "FORM 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209525000006/gild-20241231.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2025-02-11",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209525000003/gild-20250211.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-11-20",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000110465924121025/tm2426602d4_8k.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2024-11-12",
+   "description": "FORM 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209524000028/gild-20240930.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-11-06",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209524000025/gild-20241106.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2024-08-08",
+   "description": "FORM 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209524000022/gild-20240630.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-08-08",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209524000020/gild-20240808.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-07-17",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000110465924080355/tm2419649d1_8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-05-09",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209524000016/gild-20240508.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2024-05-08",
+   "description": "FORM 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209524000013/gild-20240331.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-04-25",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209524000010/gild-20240425.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-03-22",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000110465924037619/tm249475d1_8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-03-14",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000110465924034493/tm248821d1_8k.htm"
+  },
+  {
+   "form": "10-K",
+   "date": "2024-02-23",
+   "description": "FORM 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209524000007/gild-20231231.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-02-12",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000095010324002027/dp206638_8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-02-06",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209524000003/gild-20240206.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2024-02-02",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000110465924010051/tm244922d1_8k.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2023-11-07",
+   "description": "FORM 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209523000031/gild-20230930.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-11-07",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209523000029/gild-20231107.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-09-14",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000110465923100638/tm2324696d5_8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-08-16",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000110465923092665/tm2323971d1_8k.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2023-08-04",
+   "description": "FORM 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209523000025/gild-20230630.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-08-03",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209523000022/gild-20230803.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-05-05",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209523000019/gild-20230503.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2023-05-03",
+   "description": "FORM 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209523000017/gild-20230331.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-04-27",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209523000014/gild-20230427.htm"
+  },
+  {
+   "form": "10-K",
+   "date": "2023-02-22",
+   "description": "FORM 10-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209523000007/gild-20221231.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-02-06",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000110465923011167/tm235492d1_8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2023-02-02",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209523000003/gild-20230202.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2022-11-02",
+   "description": "FORM 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209522000027/gild-20220930.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2022-10-27",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209522000022/gild-20221027.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2022-09-12",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000110465922099101/tm2225634d1_8k.htm"
+  },
+  {
+   "form": "10-Q",
+   "date": "2022-08-08",
+   "description": "FORM 10-Q",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209522000019/gild-20220630.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2022-08-02",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000088209522000016/gild-20220802.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2022-07-28",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000110465922083642/tm2221879d1_8k.htm"
+  },
+  {
+   "form": "8-K",
+   "date": "2022-05-31",
+   "description": "FORM 8-K",
+   "url": "https://www.sec.gov/Archives/edgar/data/882095/000110465922066521/tm2217146d1_8k.htm"
+  }
+ ]
+}
