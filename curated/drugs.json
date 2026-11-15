@@ -729,14 +729,15 @@
   "illness": "Severe high triglycerides, high LDL",
   "drug_type": "In vivo CRISPR (ANGPTL3)",
   "stage": "Phase 1b",
-  "next_event": "Phase 1b data at AHA",
-  "next_event_date": "2026-11-09",
-  "latest_result": "Top dose: -48% triglycerides, -53% LDL, lasting 1 year",
+  "next_event": "Next Phase 1b update and dose choice for later trials",
+  "next_event_date": null,
+  "latest_result": "Phase 1b (AHA, Nov 9 2026), 10 patients with very high triglycerides: one infusion cut triglycerides 63% and non-HDL cholesterol 51% at day 30, holding to day 90; no serious treatment-related side effects. Earlier Phase 1 top dose: -48% triglycerides, -53% LDL, lasting 1 year",
   "competitors": [
    "Evkeeza (Regeneron)",
    "Plozasiran (Arrowhead)"
   ],
   "sources": [
+   "https://finviz.com/news/419210/crispr-therapeutics-presents-phase-1b-data-for-ctx310-demonstrating-reductions-in-angptl3-and-triglycerides-in-patients-with-severe-hypertriglyceridemia-at-the-american-heart-association-aha-scientific-sessions-2026",
    "https://ir.crisprtx.com/news-releases/news-release-details/crispr-therapeutics-provides-business-update-and-reports-third-7"
   ],
   "needs_verification": null,
@@ -749,11 +750,11 @@
    {
     "date": "2026-11-09",
     "kind": "readout",
-    "label": "Phase 1b at AHA"
+    "label": "Phase 1b at AHA: triglycerides -63%"
    }
   ],
   "likelihood": "unknown",
-  "likelihood_why": "Only early Phase 1b data so far, even though the cholesterol drop looked large."
+  "likelihood_why": "Early Phase 1b results look strong (triglycerides cut by about two thirds after one infusion), but only 10 patients and no large trial yet."
  },
  {
   "ticker": "CRSP",
@@ -761,13 +762,14 @@
   "illness": "Lupus, scleroderma, other autoimmune; B-cell cancers",
   "drug_type": "Off-the-shelf CAR-T",
   "stage": "Phase 1/2",
-  "next_event": "Scleroderma data at ACR",
-  "next_event_date": "2026-11-08",
-  "latest_result": "Early lupus patient in drug-free remission at month 9",
+  "next_event": "Higher-dose results and more autoimmune data",
+  "next_event_date": "2026-H2",
+  "latest_result": "ACR, Nov 8 2026 (21 patients dosed): scleroderma 5 of 6 responded at month 3; muscle inflammation (myositis) 9 of 9 improved; lupus 2 of 3 in drug-free remission for 9+ months. No severe immune or nerve side effects; best dose not yet set",
   "competitors": [
    "Cabaletta, Kyverna CAR-T programs"
   ],
   "sources": [
+   "https://finviz.com/news/418747/crispr-therapeutics-provides-update-on-zugocabtagene-geleucel-zugo-cel-in-refractory-rheumatologic-autoimmune-diseases",
    "https://ir.crisprtx.com/news-releases/news-release-details/crispr-therapeutics-provides-business-update-and-reports-third-7"
   ],
   "needs_verification": null,
@@ -775,7 +777,7 @@
    {
     "date": "2026-11-08",
     "kind": "readout",
-    "label": "Scleroderma data at ACR"
+    "label": "ACR data: scleroderma 5 of 6 responded"
    },
    {
     "date": "2026-H2",
@@ -784,7 +786,7 @@
    }
   ],
   "likelihood": "unknown",
-  "likelihood_why": "Very early data in a handful of lupus patients."
+  "likelihood_why": "Encouraging early responses in scleroderma, myositis and lupus, but only 21 patients so far in an early-stage trial."
  },
  {
   "ticker": "CRSP",
