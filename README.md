@@ -9,6 +9,14 @@ Repeatable collection of public pipeline data for a watchlist of drug companies.
   Sources: ClinicalTrials.gov (trials, phases, dates, results), openFDA (approvals), SEC EDGAR (8-K, 10-Q, 10-K filings, where press releases and investor decks are filed).
 - `curated/drugs.json`: the cleaned, readable table the web page reads. One row per drug with illness, drug type, stage, next event and date, latest result, competitors and source links.
 
+## Every drug company (weekly)
+`collector/universe.py` (workflow `universe.yml`, Mondays 09:00 UTC) collects the whole industry, not just the watchlist:
+- **Which companies count.** Every company listed on NYSE, Nasdaq or NYSE American that the SEC classifies as pharmaceutical preparations (SIC 2834) or biological products (SIC 2836), plus SIC 8731 research companies that sponsor drug trials. OTC and shell companies are left out. Drugmakers listed only outside the US (Roche, Bayer, Daiichi Sankyo, CSL, Hengrui and others) are in `config/universe_extra.json`. SIC lookups are cached in `config/sec_sic_cache.json`.
+- **Financials.** Latest annual revenue, R&D, net income and cash for every SEC filer from the SEC XBRL frames API.
+- **Pipelines.** Every industry-sponsored Phase 1-3 drug trial on ClinicalTrials.gov that is running or finished in the last ~16 months, matched to companies by sponsor name (`config/sponsor_aliases.json` covers subsidiaries like Genentech or Janssen).
+- **Private companies.** `curated/private.json`: ownership, focus, published revenue where the company publishes it, and funding rounds, each with a source. Full financials are marked unavailable.
+- Snapshots: `raw/universe/<date>/{companies,financials,trials}.json.gz`. `web/universe_build.py` turns the newest one into `web/data/` (search index, one file per company, and the automatic "also in trials" competitor lists for each race board in `curated/competition.json`, matched by its `ct_terms`).
+
 ## Run
     python3 collector/collect.py
 
@@ -34,5 +42,6 @@ One-time setup (about 5 minutes):
 3. Deploy, New deployment, type Web app. Execute as: Me. Who has access: Anyone. Authorize when asked. Copy the web app URL.
 4. In this GitHub repo: Settings, Secrets and variables, Actions. Add variable `MAILER_URL` (the web app URL) and secret `MAILER_SECRET` (same value as `SEND_SECRET`).
 5. Run the "Daily collect and publish" workflow once from the Actions tab. The sign-up form on the public page goes live and writes to the "Subscribers" tab.
+6. Visitor counts: the page sends one anonymous ping a day per browser (random ID, no personal details) to the same web app. Rows land in a "Visits" tab, with daily and all-time counts in "Visit counts". If you deployed the script before this was added, paste the new `Code.gs` and use Deploy, Manage deployments, Edit, New version.
 
 Gmail sends about 100 emails a day on a free account (1,500 on Google Workspace); the mailer stops at the limit.
