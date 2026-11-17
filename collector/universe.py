@@ -20,7 +20,7 @@ Standard library only. Usage: python3 collector/universe.py [--lake PATH] [--ski
 import argparse, datetime as dt, gzip, json, pathlib, re, sys, time, urllib.error, urllib.parse, urllib.request
 
 # SEC's fair-access policy asks automated clients to give a name and a contact address.
-UA = "PharmaPipelines Research pipeline-bot@users.noreply.github.com"
+UA = "pharma-pipeline-tracker/0.1 (research tool)"  # same identification as collector/collect.py
 SEC_SICS = {"2834": "Pharmaceutical preparations", "2836": "Biological products",
             "8731": "Commercial biological research"}
 LISTED = {"Nasdaq", "NYSE", "NYSE American", "NYSE MKT", "CBOE", "NYSE Arca"}
@@ -53,29 +53,22 @@ def get(url, params=None, sec=False, raw=False):
         time.sleep(2 ** (attempt + 1))
 
 # ---------- SEC: who is listed and in the drug business ----------
-def listed_companies():
-    d = get("https://www.sec.gov/files/company_tickers_exchange.json", sec=True)
-    out = {}
-    for cik, name, ticker, exch in d["data"]:
-        if exch not in LISTED or not ticker:
-            continue
-        cik = str(cik).zfill(10)
-        out.setdefault(cik, {"cik": cik, "name": name, "ticker": ticker, "exchange": exch, "tickers": []})
-        out[cik]["tickers"].append(ticker)
-    return out
-
-def sic_members(sic):
-    """All CIKs EDGAR files under one SIC code (includes long-gone companies; we intersect later)."""
-    ciks, start = set(), 0
-    while True:
-        html = get("https://www.sec.gov/cgi-bin/browse-edgar", {
-            "action": "getcompany", "SIC": sic, "type": "", "dateb": "", "owner": "include",
-            "start": start, "count": 100}, sec=True, raw=True) or ""
-        found = set(re.findall(r"CIK=(\d{10})", html))
-        ciks |= found
-        if len(found) < 100 or start > 20000:
-            return ciks
-        start += 100
+# Only data.sec.gov is used (www.sec.gov refuses GitHub's runners). Every active filer reports
+# shares outstanding, so the dei "frames" give the full list of CIKs; each filer's submissions
+# file then gives its SIC code, tickers and exchanges. Non-drug filers are cached in
+# config/sec_sic_cache.json so later runs only look up new filers.
+def candidate_ciks():
+    today = dt.date.today()
+    y, q = today.year, (today.month - 1) // 3
+    ciks = {}
+    for _ in range(4):
+        if q == 0:
+            y, q = y - 1, 4
+        d = get(f"https://data.sec.gov/api/xbrl/frames/dei/EntityCommonStockSharesOutstanding/shares/CY{y}Q{q}I.json", sec=True)
+        for r in (d or {}).get("data", []):
+            ciks.setdefault(str(r["cik"]).zfill(10), r.get("entityName"))
+        q -= 1
+    return ciks
 
 def profile(cik):
     s = get(f"https://data.sec.gov/submissions/CIK{cik}.json", sec=True)
@@ -91,7 +84,7 @@ def profile(cik):
         if f in ("8-K", "6-K", "10-K", "10-Q", "20-F", "40-F") and len(filings) < 12:
             filings.append({"form": f, "date": d, "desc": desc,
                             "url": f"https://www.sec.gov/Archives/edgar/data/{n}/{a.replace('-', '')}/{doc}"})
-    return {"sic": s.get("sic"), "sic_desc": s.get("sicDescription"), "name": s.get("name"),
+    return {"tickers": s.get("tickers") or [], "exchanges_all": s.get("exchanges") or [], "sic": s.get("sic"), "sic_desc": s.get("sicDescription"), "name": s.get("name"),
             "former_names": [x.get("name") for x in s.get("formerNames", [])][:3],
             "country": biz.get("stateOrCountryDescription"), "state": biz.get("stateOrCountry"),
             "city": biz.get("city"), "website": s.get("website") or None,
@@ -221,34 +214,37 @@ def main():
     outdir = lake / "raw" / "universe" / today.isoformat()
     stamp = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
 
-    listed = listed_companies()
-    print("exchange-listed SEC filers:", len(listed), flush=True)
-    members = {}
-    for sic in SEC_SICS:
-        try:
-            got = sic_members(sic)
-        except Exception as e:
-            print("SIC list failed", sic, e, flush=True); got = set()
-        print(f"SIC {sic}: {len(got)} filers ever, {len(got & listed.keys())} listed now", flush=True)
-        for c in got & listed.keys():
-            members.setdefault(c, sic)
-    # watchlist companies always belong, whatever their SIC (e.g. JNJ is filed under 2834? not guaranteed)
+    cache_path = lake / "config" / "sec_sic_cache.json"
+    cache = json.loads(cache_path.read_text()) if cache_path.exists() else {}
+    cands = candidate_ciks()
+    print("active SEC filers:", len(cands), "cached:", len(cache.keys() & cands.keys()), flush=True)
     wl = json.loads((lake / "config/watchlist.json").read_text())
-    for c in wl["companies"]:
-        if c.get("sec_cik") in listed:
-            members.setdefault(c["sec_cik"], "watchlist")
-    companies = []
-    for i, cik in enumerate(sorted(members)):
-        row = dict(listed[cik])
+    wl_ciks = {c.get("sec_cik") for c in wl["companies"]}
+    profiles = {}
+    todo = [c for c in sorted(cands.keys() | wl_ciks) if c and (c not in cache or cache[c][0] in SEC_SICS or c in wl_ciks)]
+    t0 = time.time()
+    for i, cik in enumerate(todo):
+        if time.time() - t0 > 40 * 60:
+            print("time budget reached; the rest is picked up next run", flush=True); break
         try:
-            pr = profile(cik) or {}
+            pr = profile(cik)
         except Exception as e:
-            pr = {"error": str(e)}
-        row.update(pr)
-        row["sic_basis"] = members[cik]
-        companies.append(row)
-        if i % 100 == 0:
-            print("profiles", i, "/", len(members), flush=True)
+            print("profile failed", cik, e, flush=True); continue
+        if not pr:
+            continue
+        cache[cik] = [pr.get("sic"), pr.get("tickers")[:3], pr.get("exchanges_all")[:3]]
+        listed = [t for t, x in zip(pr["tickers"], pr["exchanges_all"]) if x in LISTED]
+        if (pr.get("sic") in SEC_SICS or cik in wl_ciks) and listed:
+            ex = next(x for t, x in zip(pr["tickers"], pr["exchanges_all"]) if x in LISTED)
+            pr.update({"cik": cik, "ticker": listed[0], "exchange": ex,
+                       "sic_basis": "watchlist" if pr.get("sic") not in SEC_SICS else pr.get("sic")})
+            profiles[cik] = pr
+        if i % 500 == 0:
+            print("profiles", i, "/", len(todo), "members so far", len(profiles), flush=True)
+    cache_path.write_text(json.dumps(cache, separators=(",", ":"), sort_keys=True))
+    members = set(profiles)
+    companies = [profiles[c] for c in sorted(profiles)]
+    print("pharma/biotech companies listed on US exchanges:", len(companies), flush=True)
     write(outdir / "companies.json.gz", {"fetched_at": stamp, "sics": SEC_SICS, "companies": companies})
 
     try:
