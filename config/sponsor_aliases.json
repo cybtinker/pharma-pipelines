@@ -1,0 +1,235 @@
+{
+ "note": "Lead-sponsor name starts (lowercase) that belong to a listed company: subsidiaries and acquired companies. Used only where automatic name matching would miss them.",
+ "aliases": {
+  "PFE": [
+   "pfizer",
+   "seagen",
+   "global blood therapeutics",
+   "array biopharma",
+   "hospira",
+   "metsera",
+   "arena pharmaceuticals",
+   "trillium therapeutics"
+  ],
+  "LLY": [
+   "eli lilly",
+   "lilly",
+   "loxo oncology",
+   "verve therapeutics",
+   "morphic",
+   "dice therapeutics",
+   "prevail therapeutics",
+   "akouos",
+   "pointbreak"
+  ],
+  "JNJ": [
+   "janssen",
+   "johnson & johnson",
+   "johnson and johnson",
+   "actelion",
+   "intra-cellular therapies",
+   "momenta",
+   "ambrx",
+   "proteologix",
+   "alpha-1 therapeutics"
+  ],
+  "MRK": [
+   "merck sharp",
+   "msd ",
+   "merck & co",
+   "prometheus biosciences",
+   "acceleron",
+   "harpoon therapeutics",
+   "eyebiotech",
+   "verona pharma",
+   "immune design"
+  ],
+  "ABBV": [
+   "abbvie",
+   "allergan",
+   "pharmacyclics",
+   "cerevel",
+   "immunogen",
+   "aliada",
+   "landos"
+  ],
+  "BMY": [
+   "bristol-myers squibb",
+   "bristol myers squibb",
+   "celgene",
+   "juno therapeutics",
+   "karuna",
+   "mirati",
+   "rayzebio",
+   "turning point therapeutics",
+   "myokardia",
+   "receptos",
+   "2seventy"
+  ],
+  "AMGN": [
+   "amgen",
+   "horizon therapeutics",
+   "chemocentryx",
+   "five prime"
+  ],
+  "GILD": [
+   "gilead",
+   "kite",
+   "cymabay",
+   "immunomedics",
+   "forty seven"
+  ],
+  "VRTX": [
+   "vertex pharmaceuticals",
+   "alpine immune sciences",
+   "semma"
+  ],
+  "REGN": [
+   "regeneron"
+  ],
+  "BIIB": [
+   "biogen",
+   "reata",
+   "human immunology biosciences",
+   "hi-bio"
+  ],
+  "ZTS": [
+   "zoetis"
+  ],
+  "VTRS": [
+   "viatris",
+   "mylan"
+  ],
+  "INCY": [
+   "incyte"
+  ],
+  "MRNA": [
+   "modernatx",
+   "moderna"
+  ],
+  "NVO": [
+   "novo nordisk"
+  ],
+  "CRSP": [
+   "crispr therapeutics"
+  ],
+  "AZN": [
+   "astrazeneca",
+   "medimmune",
+   "alexion",
+   "acerta",
+   "fusion pharmaceuticals",
+   "gracell"
+  ],
+  "NVS": [
+   "novartis",
+   "avexis",
+   "advanced accelerator applications",
+   "morphosys",
+   "chinook therapeutics",
+   "mariana oncology",
+   "endocyte"
+  ],
+  "SNY": [
+   "sanofi",
+   "genzyme",
+   "bioverativ",
+   "provention bio",
+   "principia biopharma",
+   "kadmon",
+   "blueprint medicines",
+   "vigil neuroscience"
+  ],
+  "GSK": [
+   "glaxosmithkline",
+   "gsk",
+   "viiv healthcare",
+   "tesaro",
+   "sierra oncology",
+   "bellus health",
+   "stiefel"
+  ],
+  "TAK": [
+   "takeda",
+   "millennium pharmaceuticals",
+   "shire",
+   "baxalta",
+   "dyax"
+  ],
+  "TEVA": [
+   "teva"
+  ],
+  "BNTX": [
+   "biontech"
+  ],
+  "ARGX": [
+   "argenx"
+  ],
+  "GMAB": [
+   "genmab"
+  ],
+  "ASND": [
+   "ascendis"
+  ],
+  "ONC": [
+   "beigene",
+   "beone"
+  ],
+  "LEGN": [
+   "legend biotech"
+  ],
+  "ZLAB": [
+   "zai lab"
+  ],
+  "HCM": [
+   "hutchmed",
+   "hutchison medipharma"
+  ],
+  "OGN": [
+   "organon"
+  ],
+  "BHC": [
+   "bausch health",
+   "valeant"
+  ],
+  "JAZZ": [
+   "jazz pharmaceuticals",
+   "gw research",
+   "gw pharma"
+  ],
+  "ALNY": [
+   "alnylam"
+  ],
+  "ARWR": [
+   "arrowhead"
+  ],
+  "IONS": [
+   "ionis"
+  ],
+  "BMRN": [
+   "biomarin"
+  ],
+  "NBIX": [
+   "neurocrine"
+  ],
+  "EXEL": [
+   "exelixis"
+  ],
+  "UTHR": [
+   "united therapeutics"
+  ],
+  "SRPT": [
+   "sarepta"
+  ],
+  "INSM": [
+   "insmed"
+  ],
+  "ALKS": [
+   "alkermes"
+  ],
+  "RDY": [
+   "dr. reddy",
+   "dr reddy"
+  ]
+ }
+}

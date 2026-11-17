@@ -19,7 +19,8 @@ Standard library only. Usage: python3 collector/universe.py [--lake PATH] [--ski
 """
 import argparse, datetime as dt, gzip, json, pathlib, re, sys, time, urllib.error, urllib.parse, urllib.request
 
-UA = "pharma-pipelines research tool (github.com/cybtinker/pharma-pipelines) bot@users.noreply.github.com"
+# SEC's fair-access policy asks automated clients to give a name and a contact address.
+UA = "PharmaPipelines Research pipeline-bot@users.noreply.github.com"
 SEC_SICS = {"2834": "Pharmaceutical preparations", "2836": "Biological products",
             "8731": "Commercial biological research"}
 LISTED = {"Nasdaq", "NYSE", "NYSE American", "NYSE MKT", "CBOE", "NYSE Arca"}
@@ -28,7 +29,7 @@ _last = [0.0]
 def get(url, params=None, sec=False, raw=False):
     if params:
         url += "?" + urllib.parse.urlencode(params)
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json, text/html"})
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Encoding": "gzip"})
     for attempt in range(5):
         if sec:  # SEC asks for at most 10 requests a second
             wait = 0.13 - (time.time() - _last[0])
@@ -38,6 +39,8 @@ def get(url, params=None, sec=False, raw=False):
         try:
             with urllib.request.urlopen(req, timeout=90) as r:
                 body = r.read()
+                if r.headers.get("Content-Encoding") == "gzip":
+                    body = gzip.decompress(body)
                 return body.decode("utf-8", "replace") if raw else json.loads(body)
         except urllib.error.HTTPError as e:
             if e.code == 404:
