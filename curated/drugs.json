@@ -7,7 +7,7 @@
   "stage": "Approved 2026-08-05",
   "next_event": "Confirmatory efficacy study in 65+ (accelerated approval)",
   "next_event_date": null,
-  "latest_result": "Phase 3 in 40,805 adults: 26.6% better than standard flu shot. Limited US launch for 2026-27 season; also approved in Canada",
+  "latest_result": "Phase 3 in 40,805 adults: 26.6% better than standard flu shot. Limited US launch passed 110,000 shots (Analyst Day, Nov 12); broader launch planned for the 2027-28 season. Also approved in Canada",
   "competitors": [
    "Fluzone High-Dose (Sanofi)",
    "Flublok (Sanofi)",
@@ -16,7 +16,8 @@
   "sources": [
    "https://finviz.com/news/418243/moderna-reports-third-quarter-2026-financial-results-and-provides-business-updates",
    "https://www.fda.gov/media/194538/download",
-   "https://www.biopharmadive.com/news/fda-approval-decisions-watch-2026/808684/"
+   "https://www.biopharmadive.com/news/fda-approval-decisions-watch-2026/808684/",
+   "https://www.newswire.com/news/moderna-outlines-next-phase-of-growth-at-analyst-day-22888276"
   ],
   "needs_verification": null,
   "milestones": [
@@ -109,9 +110,11 @@
   "competitors": [],
   "sources": [
    "https://finviz.com/news/418243/moderna-reports-third-quarter-2026-financial-results-and-provides-business-updates",
-   "https://www.marketbeat.com/stocks/NASDAQ/MRNA/fda-events/"
+   "https://www.marketbeat.com/stocks/NASDAQ/MRNA/fda-events/",
+   "https://www.newswire.com/news/moderna-outlines-next-phase-of-growth-at-analyst-day-22888276",
+   "https://www.trefis.com/stock/mrna/articles/624900/why-is-moderna-stock-falling/2026-11-13"
   ],
-  "needs_verification": "Filing timing not given; H1 2027 is an estimate",
+  "needs_verification": "Moderna gave no filing date at its Nov 12 Analyst Day; a Trefis report says Moderna is preparing to file by end of 2026. Page keeps H1 2027 until the company confirms.",
   "milestones": [
    {
     "date": "2024-06-03",
@@ -302,7 +305,7 @@
   "stage": "Phase 3",
   "next_event": "First potential approval",
   "next_event_date": "2028",
-  "latest_result": "Phase 3 VESPER program enrolling",
+  "latest_result": "Phase 3 VESPER program enrolling; on Nov 11, 2026 Blackstone Life Sciences agreed to fund up to $1.5B of the program through 2028 (up to 10 Phase 3 trials) in return for milestone payments if it is approved and hits sales goals",
   "competitors": [
    "Zepbound (Lilly)",
    "Wegovy (Novo Nordisk)",
@@ -310,7 +313,8 @@
   ],
   "sources": [
    "https://gloom.sh/stocks/pfe/transcripts/q3-2026",
-   "https://za.investing.com/news/stock-market-news/pfizer-q3-2026-slides-32-growth-in-new-products-guidance-raised-93CH-4547008"
+   "https://za.investing.com/news/stock-market-news/pfizer-q3-2026-slides-32-growth-in-new-products-guidance-raised-93CH-4547008",
+   "https://www.biopharmadive.com/news/blackstone-pfizer-berobenatide-deal/874483/"
   ],
   "needs_verification": null,
   "milestones": [
@@ -318,6 +322,11 @@
     "date": "2025-11-13",
     "kind": "deal",
     "label": "Pfizer closes Metsera deal"
+   },
+   {
+    "date": "2026-11-11",
+    "kind": "deal",
+    "label": "Blackstone to fund up to $1.5B of trials"
    },
    {
     "date": "2028",
@@ -729,14 +738,15 @@
   "illness": "Severe high triglycerides, high LDL",
   "drug_type": "In vivo CRISPR (ANGPTL3)",
   "stage": "Phase 1b",
-  "next_event": "Phase 1b data at AHA",
-  "next_event_date": "2026-11-09",
-  "latest_result": "Top dose: -48% triglycerides, -53% LDL, lasting 1 year",
+  "next_event": "Next Phase 1b update and dose choice for later trials",
+  "next_event_date": null,
+  "latest_result": "Phase 1b (AHA, Nov 9 2026), 10 patients with very high triglycerides: one infusion cut triglycerides 63% and non-HDL cholesterol 51% at day 30, holding to day 90; no serious treatment-related side effects. Earlier Phase 1 top dose: -48% triglycerides, -53% LDL, lasting 1 year",
   "competitors": [
    "Evkeeza (Regeneron)",
    "Plozasiran (Arrowhead)"
   ],
   "sources": [
+   "https://finviz.com/news/419210/crispr-therapeutics-presents-phase-1b-data-for-ctx310-demonstrating-reductions-in-angptl3-and-triglycerides-in-patients-with-severe-hypertriglyceridemia-at-the-american-heart-association-aha-scientific-sessions-2026",
    "https://ir.crisprtx.com/news-releases/news-release-details/crispr-therapeutics-provides-business-update-and-reports-third-7"
   ],
   "needs_verification": null,
@@ -749,11 +759,11 @@
    {
     "date": "2026-11-09",
     "kind": "readout",
-    "label": "Phase 1b at AHA"
+    "label": "Phase 1b at AHA: triglycerides -63%"
    }
   ],
   "likelihood": "unknown",
-  "likelihood_why": "Only early Phase 1b data so far, even though the cholesterol drop looked large."
+  "likelihood_why": "Early Phase 1b results look strong (triglycerides cut by about two thirds after one infusion), but only 10 patients and no large trial yet."
  },
  {
   "ticker": "CRSP",
@@ -761,13 +771,14 @@
   "illness": "Lupus, scleroderma, other autoimmune; B-cell cancers",
   "drug_type": "Off-the-shelf CAR-T",
   "stage": "Phase 1/2",
-  "next_event": "Scleroderma data at ACR",
-  "next_event_date": "2026-11-08",
-  "latest_result": "Early lupus patient in drug-free remission at month 9",
+  "next_event": "Higher-dose results and more autoimmune data",
+  "next_event_date": "2026-H2",
+  "latest_result": "ACR, Nov 8 2026 (21 patients dosed): scleroderma 5 of 6 responded at month 3; muscle inflammation (myositis) 9 of 9 improved; lupus 2 of 3 in drug-free remission for 9+ months. No severe immune or nerve side effects; best dose not yet set",
   "competitors": [
    "Cabaletta, Kyverna CAR-T programs"
   ],
   "sources": [
+   "https://finviz.com/news/418747/crispr-therapeutics-provides-update-on-zugocabtagene-geleucel-zugo-cel-in-refractory-rheumatologic-autoimmune-diseases",
    "https://ir.crisprtx.com/news-releases/news-release-details/crispr-therapeutics-provides-business-update-and-reports-third-7"
   ],
   "needs_verification": null,
@@ -775,7 +786,7 @@
    {
     "date": "2026-11-08",
     "kind": "readout",
-    "label": "Scleroderma data at ACR"
+    "label": "ACR data: scleroderma 5 of 6 responded"
    },
    {
     "date": "2026-H2",
@@ -784,7 +795,7 @@
    }
   ],
   "likelihood": "unknown",
-  "likelihood_why": "Very early data in a handful of lupus patients."
+  "likelihood_why": "Encouraging early responses in scleroderma, myositis and lupus, but only 21 patients so far in an early-stage trial."
  },
  {
   "ticker": "CRSP",
@@ -821,7 +832,7 @@
   "stage": "Phase 3 positive, filing planned",
   "next_event": "FDA submission",
   "next_event_date": "2027-Q1",
-  "latest_result": "Up to 22.6% weight loss at 80 weeks (TRIUMPH-3); beat Ozempic 2 mg head to head in diabetes",
+  "latest_result": "Up to 22.6% weight loss at 80 weeks (TRIUMPH-3); beat Ozempic 2 mg head to head in diabetes; at ObesityWeek (Nov 15) cut sleep-apnea events by up to 61% and knee arthritis pain by up to 76%",
   "competitors": [
    "CagriSema (Novo Nordisk)",
    "Wegovy (Novo Nordisk)",
@@ -829,7 +840,8 @@
   ],
   "sources": [
    "https://www.hcplive.com/view/retatrutide-meets-phase-3-weight-loss-endpoints-in-2-obesity-trials",
-   "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm"
+   "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm",
+   "https://investor.lilly.com/news-releases/news-release-details/lilly-present-new-data-across-zepbound-foundayo-eloratzp-and"
   ],
   "needs_verification": null,
   "milestones": [
@@ -837,6 +849,11 @@
     "date": "2026-07-23",
     "kind": "readout",
     "label": "TRIUMPH-2 and -3 positive"
+   },
+   {
+    "date": "2026-11-15",
+    "kind": "readout",
+    "label": "Sleep apnea and knee pain data at ObesityWeek"
    },
    {
     "date": "2027-Q1",
@@ -853,16 +870,18 @@
   "illness": "Obesity, type 2 diabetes",
   "drug_type": "Oral GLP-1 pill",
   "stage": "Approved 2026 (obesity)",
-  "next_event": "More indications",
-  "next_event_date": null,
-  "latest_result": "Q3 2026 sales $184M in first full quarters; showed heart safety in largest diabetes study",
+  "next_event": "FDA submission for obstructive sleep apnea",
+  "next_event_date": "2026-12",
+  "latest_result": "China approved it for weight management (Nov 12, 2026), the first GLP-1 pill for obesity there; diabetes use still under review in China. Phase 3 ATTAIN-OSA (Nov 9, 2026): cut sleep-apnea breathing interruptions by 44% without a CPAP machine and 28% with one (placebo 3-6%), with about 11% weight loss; Q3 2026 sales $184M",
   "competitors": [
    "Wegovy pill (Novo Nordisk)",
    "Zepbound (Lilly)"
   ],
   "sources": [
    "https://www.pharmacytimes.com/view/oral-glp-1-orforglipron-approved-for-obesity",
-   "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm"
+   "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm",
+   "https://finviz.com/news/419221/lillys-foundayo-orforglipron-significantly-reduced-obstructive-sleep-apnea-severity-reinforcing-its-potential-to-improve-health-beyond-weight-loss",
+   "https://pharmaphorum.com/news/lilly-beats-novo-china-oral-glp-1-obesity"
   ],
   "needs_verification": "Exact approval date not captured",
   "milestones": [
@@ -870,6 +889,21 @@
     "date": "2026",
     "kind": "approval",
     "label": "FDA approval, obesity"
+   },
+   {
+    "date": "2026-11-09",
+    "kind": "readout",
+    "label": "Phase 3 sleep apnea positive (ATTAIN-OSA)"
+   },
+   {
+    "date": "2026-11-12",
+    "kind": "approval",
+    "label": "China approval, obesity"
+   },
+   {
+    "date": "2026-12",
+    "kind": "filing",
+    "label": "Sleep apnea filing planned"
    }
   ]
  },
@@ -921,15 +955,21 @@
   "stage": "Phase 3 starting",
   "next_event": "Phase 3 start",
   "next_event_date": "2026-Q4",
-  "latest_result": "Phase 2: more weight loss and A1C drop than tirzepatide 15 mg alone",
+  "latest_result": "Phase 2 full results at ObesityWeek (Nov 15, 2026): up to 23.3% weight loss at 48 weeks in people with type 2 diabetes, A1C down up to 2.9 points; beat tirzepatide 15 mg alone",
   "competitors": [
    "CagriSema (Novo Nordisk)"
   ],
   "sources": [
-   "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm"
+   "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm",
+   "https://investor.lilly.com/news-releases/news-release-details/lilly-present-new-data-across-zepbound-foundayo-eloratzp-and"
   ],
   "needs_verification": null,
   "milestones": [
+   {
+    "date": "2026-11-15",
+    "kind": "readout",
+    "label": "Phase 2 data at ObesityWeek"
+   },
    {
     "date": "2026-Q4",
     "kind": "start",
@@ -998,7 +1038,7 @@
   "stage": "Filed, FDA decision expected by year-end",
   "next_event": "FDA decision",
   "next_event_date": "2026-Q4",
-  "latest_result": "REDEFINE: about 21-23% weight loss at 68 weeks; US launch planned early 2027",
+  "latest_result": "REDEFINE: about 21-23% weight loss at 68 weeks; REDEFINE 9 (Nov 14, 2026): lower doses still gave about 21% weight loss; Novo still expects the FDA decision in Q4 2026",
   "competitors": [
    "Zepbound (Lilly)",
    "Retatrutide (Lilly)"
@@ -1006,7 +1046,9 @@
   "sources": [
    "https://chemxplore.com/news/novo-nordisk-q3-2026-financial-report",
    "https://pharmaphorum.com/news/oral-wegovy-bolsters-novo-q3",
-   "https://lifesciencedaily.news/cagrisema-fda-review-novo-nordisk-nda-timeline-explained/"
+   "https://lifesciencedaily.news/cagrisema-fda-review-novo-nordisk-nda-timeline-explained/",
+   "https://www.novonordisk.com/news-and-media/news-and-ir-materials/news-details.html?id=920561",
+   "https://www.novonordisk.com/news-and-media/news-and-ir-materials/news-details.html?id=920645"
   ],
   "needs_verification": null,
   "milestones": [
@@ -1014,6 +1056,11 @@
     "date": "2025-12-18",
     "kind": "filing",
     "label": "NDA submitted"
+   },
+   {
+    "date": "2026-11-14",
+    "kind": "readout",
+    "label": "REDEFINE 9 lower-dose Phase 3 results"
    },
    {
     "date": "2026-Q4",
