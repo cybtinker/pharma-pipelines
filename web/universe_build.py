@@ -42,12 +42,15 @@ def core(n):
 US_STATES = set("AL AK AZ AR CA CO CT DE DC FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY PR".split())
 KEEP_UPPER = {"PLC", "AG", "SA", "NV", "SE", "ASA", "AB", "LLC", "LP", "II", "III", "USA", "US", "UK", "KGAA", "BV", "CO", "AS", "ADR", "MD", "RNA", "DNA", "AI"}
 
+SUFFIX = re.compile(r",?\s+(inc\.?|incorporated|corp\.?|corporation|ltd\.?|limited|plc\.?|&|n\.?v\.?|s\.?a\.?|ag|se|a/s|ab|asa|co\.?|co\.?,? ltd\.?|holdings,? inc\.?|holdings|/[a-z]{2,3}/?)$", re.I)
+
 def pretty(name):
-    name = re.sub(r"\s*/[A-Z]{2,3}/?\s*$", "", (name or "").strip())  # SEC suffixes like /DE/
+    name = (name or "").strip()
+    for _ in range(3):
+        name = SUFFIX.sub("", name).strip(" ,")
     allcaps = name.isupper() or name.islower()
-    name = " ".join(w if w.strip(".,") in KEEP_UPPER or not (allcaps or (w.isupper() and len(w) > 4)) else w.capitalize()
+    name = " ".join(w if w.strip(".,") in KEEP_UPPER or (allcaps and len(w) <= 3 and w.isupper()) or not (allcaps or (w.isupper() and len(w) > 4)) else w.capitalize()
                     for w in name.split())
-    name = re.sub(r",?\s+(Inc\.?|Incorporated|Corp\.?|Corporation|Ltd\.?|Limited|PLC|plc|N\.?V\.?|S\.?A\.?|AG|SE|A/S|AB|ASA|Co\.?,? Ltd\.?|Holdings,? Inc\.?)$", "", name)
     return name.strip(" ,")
 
 def latest_snapshot():
@@ -99,6 +102,7 @@ def build():
 
     # ---- company table ----
     cos = {}
+    overrides = json.loads((root / "config/universe_exclude.json").read_text()).get("display_names", {})
     exclude = set(json.loads((root / "config/universe_exclude.json").read_text())["tickers"])
     for c in comp_raw["companies"]:
         cid = c["ticker"].upper()
@@ -107,7 +111,7 @@ def build():
         f = fin.get(c["cik"], {})
         st = (c.get("state") or "").upper()
         country = "United States" if st in US_STATES else ((c.get("country") or "").title() or None)
-        cos[cid] = {"id": cid, "name": wl_names.get(cid) or pretty(c.get("name")), "legal_name": c.get("name"), "ticker": c["ticker"],
+        cos[cid] = {"id": cid, "name": wl_names.get(cid) or overrides.get(cid) or pretty(c.get("name")), "legal_name": c.get("name"), "ticker": c["ticker"],
                     "exchange": c["exchange"], "country": country, "kind": "public",
                     "sic": c.get("sic"), "sic_desc": c.get("sic_desc"), "cik": c["cik"], "website": c.get("website"),
                     "filings": c.get("filings", [])[:8], "fin": f, "sic_basis": c.get("sic_basis"),

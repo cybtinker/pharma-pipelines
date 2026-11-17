@@ -1,2 +1,31 @@
-{"note": "SEC-classified as pharma or research but not drug developers: contract research organizations and similar service firms.",
- "tickers": ["IQV", "ICLR", "MEDP", "CRL", "FTRE", "SYNH"]}
+{
+ "note": "SEC-classified as pharma or research but not drug developers: contract research organizations and similar service firms.",
+ "tickers": [
+  "IQV",
+  "ICLR",
+  "MEDP",
+  "CRL",
+  "FTRE",
+  "SYNH"
+ ],
+ "display_names": {
+  "AZN": "AstraZeneca",
+  "GSK": "GSK",
+  "TAK": "Takeda",
+  "NVS": "Novartis",
+  "SNY": "Sanofi",
+  "BNTX": "BioNTech",
+  "ONC": "BeOne Medicines",
+  "ARGX": "argenx",
+  "ZLAB": "Zai Lab",
+  "GMAB": "Genmab",
+  "IONS": "Ionis Pharmaceuticals",
+  "UTHR": "United Therapeutics",
+  "PRGO": "Perrigo",
+  "BMRN": "BioMarin Pharmaceutical",
+  "RDY": "Dr. Reddy's Laboratories",
+  "OGN": "Organon",
+  "BCRX": "BioCryst Pharmaceuticals",
+  "TECH": "Bio-Techne"
+ }
+}
