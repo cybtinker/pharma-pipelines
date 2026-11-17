@@ -39,6 +39,16 @@ def norm(s):
 def core(n):
     return " ".join(w for w in n.split() if w not in GENERIC and w not in LEGAL)
 
+US_STATES = set("AL AK AZ AR CA CO CT DE DC FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY PR".split())
+KEEP_UPPER = {"PLC", "AG", "SA", "NV", "SE", "ASA", "AB", "LLC", "LP", "II", "III", "USA", "US", "UK", "KGAA", "BV", "CO", "AS", "ADR", "MD", "RNA", "DNA", "AI"}
+
+def pretty(name):
+    name = re.sub(r"\s*/[A-Z]{2,3}/?\s*$", "", (name or "").strip())  # SEC suffixes like /DE/
+    if name.isupper() or name.islower():
+        name = " ".join(w if w.strip(".,") in KEEP_UPPER else w.capitalize() for w in name.split())
+    name = re.sub(r",?\s+(Inc\.?|Incorporated|Corp\.?|Corporation|Ltd\.?|Limited|PLC|plc|N\.?V\.?|S\.?A\.?|AG|SE|A/S|AB|ASA|Co\.?,? Ltd\.?|Holdings,? Inc\.?)$", "", name)
+    return name.strip(" ,")
+
 def latest_snapshot():
     base = root / "raw" / "universe"
     days = sorted(p for p in base.glob("*") if (p / "trials.json.gz").exists()) if base.exists() else []
@@ -70,15 +80,19 @@ def build():
     extra = json.loads((root / "config/universe_extra.json").read_text())["companies"]
     aliases = json.loads((root / "config/sponsor_aliases.json").read_text())["aliases"]
     private = json.loads((root / "curated/private.json").read_text())["companies"]
-    watch = {c["ticker"] for c in json.loads((root / "config/watchlist.json").read_text())["companies"]}
+    wl = json.loads((root / "config/watchlist.json").read_text())["companies"]
+    watch = {c["ticker"] for c in wl}
+    wl_names = {c["ticker"]: c["name"] for c in wl}
 
     # ---- company table ----
     cos = {}
     for c in comp_raw["companies"]:
         cid = c["ticker"].upper()
         f = fin.get(c["cik"], {})
-        cos[cid] = {"id": cid, "name": c.get("name") or c["name"], "ticker": c["ticker"], "exchange": c["exchange"],
-                    "country": (c.get("country") or "").title() or None, "kind": "public_us" if c.get("state") and len(c.get("state")) == 2 and not (c.get("country") or "").strip() else "public",
+        st = (c.get("state") or "").upper()
+        country = "United States" if st in US_STATES else ((c.get("country") or "").title() or None)
+        cos[cid] = {"id": cid, "name": wl_names.get(cid) or pretty(c.get("name")), "legal_name": c.get("name"), "ticker": c["ticker"],
+                    "exchange": c["exchange"], "country": country, "kind": "public",
                     "sic": c.get("sic"), "sic_desc": c.get("sic_desc"), "cik": c["cik"], "website": c.get("website"),
                     "filings": c.get("filings", [])[:8], "fin": f, "sic_basis": c.get("sic_basis"),
                     "sponsors": aliases.get(cid, [])}
@@ -200,7 +214,7 @@ def build():
         return {"val": v["val"], "cur": v["cur"], "period": v["period"]} if v else None
     for cid, c in cos.items():
         items = by_co.get(cid, [])
-        if c["kind"] == "public" or c["kind"] == "public_us":
+        if c["kind"] == "public":
             # SIC 8731 research firms only count when they actually sponsor drug trials
             if c.get("sic_basis") == "8731" and not items and cid not in watch:
                 continue
