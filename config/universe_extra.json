@@ -1,0 +1,1018 @@
+{
+ "note": "Drugmakers listed outside the US that do not file with the SEC, so SEC financials are not available for them; see each company's investor page. Matched to ClinicalTrials.gov by the sponsor names listed.",
+ "companies": [
+  {
+   "id": "ROG",
+   "name": "Roche",
+   "ticker": "ROG.SW",
+   "exchange": "SIX Swiss",
+   "country": "Switzerland",
+   "sponsors": [
+    "hoffmann-la roche",
+    "genentech",
+    "roche"
+   ],
+   "ir": "https://www.roche.com/investors"
+  },
+  {
+   "id": "BAYN",
+   "name": "Bayer",
+   "ticker": "BAYN.DE",
+   "exchange": "Xetra",
+   "country": "Germany",
+   "sponsors": [
+    "bayer"
+   ],
+   "ir": "https://www.bayer.com/en/investors"
+  },
+  {
+   "id": "MRK.DE",
+   "name": "Merck KGaA",
+   "ticker": "MRK.DE",
+   "exchange": "Xetra",
+   "country": "Germany",
+   "sponsors": [
+    "merck kgaa",
+    "emd serono",
+    "merck healthcare kgaa"
+   ],
+   "ir": "https://www.merckgroup.com/en/investors.html"
+  },
+  {
+   "id": "4568.T",
+   "name": "Daiichi Sankyo",
+   "ticker": "4568.T",
+   "exchange": "Tokyo",
+   "country": "Japan",
+   "sponsors": [
+    "daiichi sankyo"
+   ],
+   "ir": "https://www.daiichisankyo.com/investors/"
+  },
+  {
+   "id": "4503.T",
+   "name": "Astellas Pharma",
+   "ticker": "4503.T",
+   "exchange": "Tokyo",
+   "country": "Japan",
+   "sponsors": [
+    "astellas"
+   ],
+   "ir": "https://www.astellas.com/en/investors"
+  },
+  {
+   "id": "4519.T",
+   "name": "Chugai Pharmaceutical",
+   "ticker": "4519.T",
+   "exchange": "Tokyo",
+   "country": "Japan",
+   "sponsors": [
+    "chugai"
+   ],
+   "ir": "https://www.chugai-pharm.co.jp/english/ir/"
+  },
+  {
+   "id": "4578.T",
+   "name": "Otsuka Holdings",
+   "ticker": "4578.T",
+   "exchange": "Tokyo",
+   "country": "Japan",
+   "sponsors": [
+    "otsuka",
+    "taiho",
+    "astex"
+   ],
+   "ir": "https://www.otsuka.com/en/ir/"
+  },
+  {
+   "id": "4523.T",
+   "name": "Eisai",
+   "ticker": "4523.T",
+   "exchange": "Tokyo",
+   "country": "Japan",
+   "sponsors": [
+    "eisai"
+   ],
+   "ir": "https://www.eisai.com/ir/"
+  },
+  {
+   "id": "4507.T",
+   "name": "Shionogi",
+   "ticker": "4507.T",
+   "exchange": "Tokyo",
+   "country": "Japan",
+   "sponsors": [
+    "shionogi"
+   ],
+   "ir": "https://www.shionogi.com/global/en/investors.html"
+  },
+  {
+   "id": "4528.T",
+   "name": "Ono Pharmaceutical",
+   "ticker": "4528.T",
+   "exchange": "Tokyo",
+   "country": "Japan",
+   "sponsors": [
+    "ono pharmaceutical",
+    "deciphera"
+   ],
+   "ir": "https://www.ono-pharma.com/en/ir"
+  },
+  {
+   "id": "4151.T",
+   "name": "Kyowa Kirin",
+   "ticker": "4151.T",
+   "exchange": "Tokyo",
+   "country": "Japan",
+   "sponsors": [
+    "kyowa kirin"
+   ],
+   "ir": "https://www.kyowakirin.com/investors/"
+  },
+  {
+   "id": "4506.T",
+   "name": "Sumitomo Pharma",
+   "ticker": "4506.T",
+   "exchange": "Tokyo",
+   "country": "Japan",
+   "sponsors": [
+    "sumitomo pharma",
+    "sumitomo dainippon",
+    "sunovion"
+   ],
+   "ir": "https://www.sumitomo-pharma.com/ir/"
+  },
+  {
+   "id": "4536.T",
+   "name": "Santen Pharmaceutical",
+   "ticker": "4536.T",
+   "exchange": "Tokyo",
+   "country": "Japan",
+   "sponsors": [
+    "santen"
+   ],
+   "ir": "https://www.santen.com/en/ir"
+  },
+  {
+   "id": "CSL",
+   "name": "CSL",
+   "ticker": "CSL.AX",
+   "exchange": "ASX",
+   "country": "Australia",
+   "sponsors": [
+    "csl behring",
+    "csl seqirus",
+    "seqirus",
+    "csl limited",
+    "vifor"
+   ],
+   "ir": "https://investors.csl.com/"
+  },
+  {
+   "id": "UCB",
+   "name": "UCB",
+   "ticker": "UCB.BR",
+   "exchange": "Euronext Brussels",
+   "country": "Belgium",
+   "sponsors": [
+    "ucb"
+   ],
+   "ir": "https://www.ucb.com/investors"
+  },
+  {
+   "id": "LUN.CO",
+   "name": "Lundbeck",
+   "ticker": "HLUN-B.CO",
+   "exchange": "Nasdaq Copenhagen",
+   "country": "Denmark",
+   "sponsors": [
+    "h. lundbeck",
+    "lundbeck"
+   ],
+   "ir": "https://www.lundbeck.com/global/investors"
+  },
+  {
+   "id": "ZEAL.CO",
+   "name": "Zealand Pharma",
+   "ticker": "ZEAL.CO",
+   "exchange": "Nasdaq Copenhagen",
+   "country": "Denmark",
+   "sponsors": [
+    "zealand pharma"
+   ],
+   "ir": "https://www.zealandpharma.com/investors/"
+  },
+  {
+   "id": "BAVA.CO",
+   "name": "Bavarian Nordic",
+   "ticker": "BAVA.CO",
+   "exchange": "Nasdaq Copenhagen",
+   "country": "Denmark",
+   "sponsors": [
+    "bavarian nordic"
+   ],
+   "ir": "https://www.bavarian-nordic.com/investor.aspx"
+  },
+  {
+   "id": "IPN.PA",
+   "name": "Ipsen",
+   "ticker": "IPN.PA",
+   "exchange": "Euronext Paris",
+   "country": "France",
+   "sponsors": [
+    "ipsen"
+   ],
+   "ir": "https://www.ipsen.com/investors/"
+  },
+  {
+   "id": "REC.MI",
+   "name": "Recordati",
+   "ticker": "REC.MI",
+   "exchange": "Borsa Italiana",
+   "country": "Italy",
+   "sponsors": [
+    "recordati"
+   ],
+   "ir": "https://www.recordati.com/en/investors/"
+  },
+  {
+   "id": "HIK.L",
+   "name": "Hikma Pharmaceuticals",
+   "ticker": "HIK.L",
+   "exchange": "London",
+   "country": "United Kingdom",
+   "sponsors": [
+    "hikma"
+   ],
+   "ir": "https://www.hikma.com/investors/"
+  },
+  {
+   "id": "GALD.SW",
+   "name": "Galderma",
+   "ticker": "GALD.SW",
+   "exchange": "SIX Swiss",
+   "country": "Switzerland",
+   "sponsors": [
+    "galderma"
+   ],
+   "ir": "https://investors.galderma.com/"
+  },
+  {
+   "id": "SDZ.SW",
+   "name": "Sandoz",
+   "ticker": "SDZ.SW",
+   "exchange": "SIX Swiss",
+   "country": "Switzerland",
+   "sponsors": [
+    "sandoz"
+   ],
+   "ir": "https://www.sandoz.com/investors/"
+  },
+  {
+   "id": "IDIA.SW",
+   "name": "Idorsia",
+   "ticker": "IDIA.SW",
+   "exchange": "SIX Swiss",
+   "country": "Switzerland",
+   "sponsors": [
+    "idorsia"
+   ],
+   "ir": "https://www.idorsia.com/investors"
+  },
+  {
+   "id": "ALM.MC",
+   "name": "Almirall",
+   "ticker": "ALM.MC",
+   "exchange": "Madrid",
+   "country": "Spain",
+   "sponsors": [
+    "almirall"
+   ],
+   "ir": "https://www.almirall.com/investors"
+  },
+  {
+   "id": "PHM.MC",
+   "name": "PharmaMar",
+   "ticker": "PHM.MC",
+   "exchange": "Madrid",
+   "country": "Spain",
+   "sponsors": [
+    "pharma mar"
+   ],
+   "ir": "https://pharmamar.com/en/investors/"
+  },
+  {
+   "id": "ORNBV.HE",
+   "name": "Orion",
+   "ticker": "ORNBV.HE",
+   "exchange": "Nasdaq Helsinki",
+   "country": "Finland",
+   "sponsors": [
+    "orion corporation",
+    "orion pharma"
+   ],
+   "ir": "https://www.orion.fi/en/investors/"
+  },
+  {
+   "id": "RICHT.BD",
+   "name": "Gedeon Richter",
+   "ticker": "RICHTER.BD",
+   "exchange": "Budapest",
+   "country": "Hungary",
+   "sponsors": [
+    "gedeon richter"
+   ],
+   "ir": "https://www.gedeonrichter.com/en/investors"
+  },
+  {
+   "id": "KRKG.LJ",
+   "name": "Krka",
+   "ticker": "KRKG.LJ",
+   "exchange": "Ljubljana",
+   "country": "Slovenia",
+   "sponsors": [
+    "krka"
+   ],
+   "ir": "https://www.krka.biz/en/investors/"
+  },
+  {
+   "id": "SOBI.ST",
+   "name": "Swedish Orphan Biovitrum (Sobi)",
+   "ticker": "SOBI.ST",
+   "exchange": "Nasdaq Stockholm",
+   "country": "Sweden",
+   "sponsors": [
+    "swedish orphan biovitrum",
+    "sobi"
+   ],
+   "ir": "https://www.sobi.com/en/investors"
+  },
+  {
+   "id": "CAMX.ST",
+   "name": "Camurus",
+   "ticker": "CAMX.ST",
+   "exchange": "Nasdaq Stockholm",
+   "country": "Sweden",
+   "sponsors": [
+    "camurus"
+   ],
+   "ir": "https://www.camurus.com/investors/"
+  },
+  {
+   "id": "SUNPHARMA.NS",
+   "name": "Sun Pharmaceutical",
+   "ticker": "SUNPHARMA.NS",
+   "exchange": "NSE India",
+   "country": "India",
+   "sponsors": [
+    "sun pharma"
+   ],
+   "ir": "https://sunpharma.com/investors/"
+  },
+  {
+   "id": "CIPLA.NS",
+   "name": "Cipla",
+   "ticker": "CIPLA.NS",
+   "exchange": "NSE India",
+   "country": "India",
+   "sponsors": [
+    "cipla"
+   ],
+   "ir": "https://www.cipla.com/investors"
+  },
+  {
+   "id": "LUPIN.NS",
+   "name": "Lupin",
+   "ticker": "LUPIN.NS",
+   "exchange": "NSE India",
+   "country": "India",
+   "sponsors": [
+    "lupin"
+   ],
+   "ir": "https://www.lupin.com/investors/"
+  },
+  {
+   "id": "ZYDUSLIFE.NS",
+   "name": "Zydus Lifesciences",
+   "ticker": "ZYDUSLIFE.NS",
+   "exchange": "NSE India",
+   "country": "India",
+   "sponsors": [
+    "zydus",
+    "cadila healthcare"
+   ],
+   "ir": "https://www.zyduslife.com/investor"
+  },
+  {
+   "id": "GLENMARK.NS",
+   "name": "Glenmark Pharmaceuticals",
+   "ticker": "GLENMARK.NS",
+   "exchange": "NSE India",
+   "country": "India",
+   "sponsors": [
+    "glenmark",
+    "ichnos"
+   ],
+   "ir": "https://www.glenmarkpharma.com/investors"
+  },
+  {
+   "id": "BIOCON.NS",
+   "name": "Biocon",
+   "ticker": "BIOCON.NS",
+   "exchange": "NSE India",
+   "country": "India",
+   "sponsors": [
+    "biocon"
+   ],
+   "ir": "https://www.biocon.com/investor-relations/"
+  },
+  {
+   "id": "600276.SS",
+   "name": "Jiangsu Hengrui Pharmaceuticals",
+   "ticker": "600276.SS / 1276.HK",
+   "exchange": "Shanghai, Hong Kong",
+   "country": "China",
+   "sponsors": [
+    "jiangsu hengrui",
+    "hengrui",
+    "shanghai hengrui",
+    "suzhou suncadia",
+    "shandong suncadia",
+    "fujian shengdi",
+    "guangdong hengrui",
+    "chengdu suncadia",
+    "beijing suncadia",
+    "shanghai shengdi",
+    "tianjin hengrui"
+   ],
+   "ir": "https://www.hengrui.com/en/"
+  },
+  {
+   "id": "3692.HK",
+   "name": "Hansoh Pharmaceutical",
+   "ticker": "3692.HK",
+   "exchange": "Hong Kong",
+   "country": "China",
+   "sponsors": [
+    "hansoh",
+    "jiangsu hansoh",
+    "shanghai hansoh"
+   ],
+   "ir": "https://www.hspharm.com/"
+  },
+  {
+   "id": "1801.HK",
+   "name": "Innovent Biologics",
+   "ticker": "1801.HK",
+   "exchange": "Hong Kong",
+   "country": "China",
+   "sponsors": [
+    "innovent"
+   ],
+   "ir": "https://www.innoventbio.com/InvestorsAndMedia/"
+  },
+  {
+   "id": "9926.HK",
+   "name": "Akeso",
+   "ticker": "9926.HK",
+   "exchange": "Hong Kong",
+   "country": "China",
+   "sponsors": [
+    "akeso"
+   ],
+   "ir": "https://www.akesobio.com/en/investors/"
+  },
+  {
+   "id": "1177.HK",
+   "name": "Sino Biopharmaceutical",
+   "ticker": "1177.HK",
+   "exchange": "Hong Kong",
+   "country": "China",
+   "sponsors": [
+    "chia tai tianqing",
+    "sino biopharm",
+    "shanghai chia tai tianqing",
+    "nanjing chia tai tianqing",
+    "nanjing chia-tai tianqing",
+    "jiangsu chia tai"
+   ],
+   "ir": "https://www.sinobiopharm.com/"
+  },
+  {
+   "id": "1093.HK",
+   "name": "CSPC Pharmaceutical",
+   "ticker": "1093.HK",
+   "exchange": "Hong Kong",
+   "country": "China",
+   "sponsors": [
+    "cspc"
+   ],
+   "ir": "https://www.cspc.com.hk/en/"
+  },
+  {
+   "id": "6990.HK",
+   "name": "Sichuan Kelun-Biotech",
+   "ticker": "6990.HK",
+   "exchange": "Hong Kong",
+   "country": "China",
+   "sponsors": [
+    "sichuan kelun",
+    "kelun"
+   ],
+   "ir": "https://www.kelun-biotech.com/"
+  },
+  {
+   "id": "9606.HK",
+   "name": "Duality Biotherapeutics",
+   "ticker": "9606.HK",
+   "exchange": "Hong Kong",
+   "country": "China",
+   "sponsors": [
+    "duality biologics",
+    "duality bio",
+    "dualitybio"
+   ],
+   "ir": "https://www.dualitybiologics.com/"
+  },
+  {
+   "id": "2269.HK",
+   "name": "WuXi Biologics",
+   "ticker": "2269.HK",
+   "exchange": "Hong Kong",
+   "country": "China",
+   "sponsors": [
+    "wuxi biologics"
+   ],
+   "ir": "https://www.wuxibiologics.com/investors/"
+  },
+  {
+   "id": "1530.HK",
+   "name": "3SBio",
+   "ticker": "1530.HK",
+   "exchange": "Hong Kong",
+   "country": "China",
+   "sponsors": [
+    "3sbio",
+    "shenyang sunshine"
+   ],
+   "ir": "https://www.3sbio.com/"
+  },
+  {
+   "id": "2696.HK",
+   "name": "Henlius",
+   "ticker": "2696.HK",
+   "exchange": "Hong Kong",
+   "country": "China",
+   "sponsors": [
+    "shanghai henlius",
+    "henlius"
+   ],
+   "ir": "https://www.henlius.com/en/"
+  },
+  {
+   "id": "688235.SS",
+   "name": "Remegen",
+   "ticker": "688235.SS / 9995.HK",
+   "exchange": "Shanghai, Hong Kong",
+   "country": "China",
+   "sponsors": [
+    "remegen"
+   ],
+   "ir": "https://www.remegen.com/"
+  },
+  {
+   "id": "068270.KS",
+   "name": "Celltrion",
+   "ticker": "068270.KS",
+   "exchange": "Korea Exchange",
+   "country": "South Korea",
+   "sponsors": [
+    "celltrion"
+   ],
+   "ir": "https://www.celltrion.com/en-us/investment"
+  },
+  {
+   "id": "207940.KS",
+   "name": "Samsung Biologics / Samsung Bioepis",
+   "ticker": "207940.KS",
+   "exchange": "Korea Exchange",
+   "country": "South Korea",
+   "sponsors": [
+    "samsung bioepis",
+    "samsung biologics"
+   ],
+   "ir": "https://samsungbiologics.com/ir"
+  },
+  {
+   "id": "128940.KS",
+   "name": "Hanmi Pharmaceutical",
+   "ticker": "128940.KS",
+   "exchange": "Korea Exchange",
+   "country": "South Korea",
+   "sponsors": [
+    "hanmi"
+   ],
+   "ir": "https://www.hanmi.co.kr/"
+  },
+  {
+   "id": "000100.KS",
+   "name": "Yuhan",
+   "ticker": "000100.KS",
+   "exchange": "Korea Exchange",
+   "country": "South Korea",
+   "sponsors": [
+    "yuhan"
+   ],
+   "ir": "https://www.yuhan.co.kr/"
+  },
+  {
+   "id": "196170.KQ",
+   "name": "Alteogen",
+   "ticker": "196170.KQ",
+   "exchange": "KOSDAQ",
+   "country": "South Korea",
+   "sponsors": [
+    "alteogen"
+   ],
+   "ir": "https://www.alteogen.com/"
+  },
+  {
+   "id": "326030.KS",
+   "name": "SK Biopharmaceuticals",
+   "ticker": "326030.KS",
+   "exchange": "Korea Exchange",
+   "country": "South Korea",
+   "sponsors": [
+    "sk biopharmaceuticals",
+    "sk life science"
+   ],
+   "ir": "https://www.skbp.com/"
+  },
+  {
+   "id": "VLA.PA",
+   "name": "Valneva",
+   "ticker": "VLA.PA",
+   "exchange": "Euronext Paris",
+   "country": "France",
+   "sponsors": [
+    "valneva"
+   ],
+   "ir": "https://valneva.com/investors/"
+  },
+  {
+   "id": "EVT.DE",
+   "name": "Evotec",
+   "ticker": "EVT.DE",
+   "exchange": "Xetra",
+   "country": "Germany",
+   "sponsors": [
+    "evotec"
+   ],
+   "ir": "https://www.evotec.com/en/investor-relations"
+  },
+  {
+   "id": "688506.SS",
+   "name": "Sichuan Biokin Pharmaceutical",
+   "ticker": "688506.SS",
+   "exchange": "Shanghai",
+   "country": "China",
+   "sponsors": [
+    "sichuan baili",
+    "sichuan biokin",
+    "systimmune"
+   ],
+   "ir": null
+  },
+  {
+   "id": "002653.SZ",
+   "name": "Haisco Pharmaceutical",
+   "ticker": "002653.SZ",
+   "exchange": "Shenzhen",
+   "country": "China",
+   "sponsors": [
+    "haisco"
+   ],
+   "ir": null
+  },
+  {
+   "id": "000661.SZ",
+   "name": "Changchun High & New Technology (GeneScience)",
+   "ticker": "000661.SZ",
+   "exchange": "Shenzhen",
+   "country": "China",
+   "sponsors": [
+    "changchun genescience"
+   ],
+   "ir": null
+  },
+  {
+   "id": "2162.HK",
+   "name": "Keymed Biosciences",
+   "ticker": "2162.HK",
+   "exchange": "Hong Kong",
+   "country": "China",
+   "sponsors": [
+    "keymed"
+   ],
+   "ir": null
+  },
+  {
+   "id": "9969.HK",
+   "name": "InnoCare Pharma",
+   "ticker": "9969.HK / 688428.SS",
+   "exchange": "Hong Kong, Shanghai",
+   "country": "China",
+   "sponsors": [
+    "beijing innocare",
+    "innocare"
+   ],
+   "ir": null
+  },
+  {
+   "id": "000963.SZ",
+   "name": "Huadong Medicine",
+   "ticker": "000963.SZ",
+   "exchange": "Shenzhen",
+   "country": "China",
+   "sponsors": [
+    "hangzhou zhongmei huadong",
+    "huadong medicine"
+   ],
+   "ir": null
+  },
+  {
+   "id": "688266.SS",
+   "name": "Suzhou Zelgen Biopharmaceuticals",
+   "ticker": "688266.SS",
+   "exchange": "Shanghai",
+   "country": "China",
+   "sponsors": [
+    "suzhou zelgen",
+    "zelgen"
+   ],
+   "ir": null
+  },
+  {
+   "id": "688520.SS",
+   "name": "Sinocelltech",
+   "ticker": "688520.SS",
+   "exchange": "Shanghai",
+   "country": "China",
+   "sponsors": [
+    "sinocelltech"
+   ],
+   "ir": null
+  },
+  {
+   "id": "603087.SS",
+   "name": "Gan & Lee Pharmaceuticals",
+   "ticker": "603087.SS",
+   "exchange": "Shanghai",
+   "country": "China",
+   "sponsors": [
+    "gan and lee",
+    "gan & lee"
+   ],
+   "ir": null
+  },
+  {
+   "id": "688062.SS",
+   "name": "Mabwell Bioscience",
+   "ticker": "688062.SS",
+   "exchange": "Shanghai",
+   "country": "China",
+   "sponsors": [
+    "mabwell"
+   ],
+   "ir": null
+  },
+  {
+   "id": "2196.HK",
+   "name": "Shanghai Fosun Pharmaceutical",
+   "ticker": "2196.HK / 600196.SS",
+   "exchange": "Hong Kong, Shanghai",
+   "country": "China",
+   "sponsors": [
+    "shanghai fosun",
+    "fosun pharma",
+    "shanghai henlius"
+   ],
+   "ir": null
+  },
+  {
+   "id": "2096.HK",
+   "name": "Simcere Pharmaceutical",
+   "ticker": "2096.HK",
+   "exchange": "Hong Kong",
+   "country": "China",
+   "sponsors": [
+    "jiangsu simcere",
+    "simcere"
+   ],
+   "ir": null
+  },
+  {
+   "id": "688192.SS",
+   "name": "Dizal Pharmaceutical",
+   "ticker": "688192.SS",
+   "exchange": "Shanghai",
+   "country": "China",
+   "sponsors": [
+    "dizal"
+   ],
+   "ir": null
+  },
+  {
+   "id": "002294.SZ",
+   "name": "Shenzhen Salubris Pharmaceuticals",
+   "ticker": "002294.SZ",
+   "exchange": "Shenzhen",
+   "country": "China",
+   "sponsors": [
+    "shenzhen salubris",
+    "salubris"
+   ],
+   "ir": null
+  },
+  {
+   "id": "PHIL.MI",
+   "name": "Philogen",
+   "ticker": "PHIL.MI",
+   "exchange": "Borsa Italiana",
+   "country": "Italy",
+   "sponsors": [
+    "philogen"
+   ],
+   "ir": null
+  },
+  {
+   "id": "069620.KS",
+   "name": "Daewoong Pharmaceutical",
+   "ticker": "069620.KS",
+   "exchange": "Korea Exchange",
+   "country": "South Korea",
+   "sponsors": [
+    "daewoong"
+   ],
+   "ir": null
+  },
+  {
+   "id": "170900.KS",
+   "name": "Dong-A ST",
+   "ticker": "170900.KS",
+   "exchange": "Korea Exchange",
+   "country": "South Korea",
+   "sponsors": [
+    "dong a st",
+    "dong-a st"
+   ],
+   "ir": null
+  },
+  {
+   "id": "2186.HK",
+   "name": "Luye Pharma",
+   "ticker": "2186.HK",
+   "exchange": "Hong Kong",
+   "country": "China",
+   "sponsors": [
+    "luye pharma"
+   ],
+   "ir": null
+  },
+  {
+   "id": "300558.SZ",
+   "name": "Betta Pharmaceuticals",
+   "ticker": "300558.SZ",
+   "exchange": "Shenzhen",
+   "country": "China",
+   "sponsors": [
+    "betta pharmaceuticals"
+   ],
+   "ir": null
+  },
+  {
+   "id": "003850.KS",
+   "name": "Boryung",
+   "ticker": "003850.KS",
+   "exchange": "Korea Exchange",
+   "country": "South Korea",
+   "sponsors": [
+    "boryung"
+   ],
+   "ir": null
+  },
+  {
+   "id": "688177.SS",
+   "name": "Bio-Thera Solutions",
+   "ticker": "688177.SS",
+   "exchange": "Shanghai",
+   "country": "China",
+   "sponsors": [
+    "bio thera",
+    "bio-thera"
+   ],
+   "ir": null
+  },
+  {
+   "id": "185750.KS",
+   "name": "Chong Kun Dang",
+   "ticker": "185750.KS",
+   "exchange": "Korea Exchange",
+   "country": "South Korea",
+   "sponsors": [
+    "chong kun dang"
+   ],
+   "ir": null
+  },
+  {
+   "id": "688578.SS",
+   "name": "Allist Pharmaceuticals",
+   "ticker": "688578.SS",
+   "exchange": "Shanghai",
+   "country": "China",
+   "sponsors": [
+    "allist"
+   ],
+   "ir": null
+  },
+  {
+   "id": "TLX.AX",
+   "name": "Telix Pharmaceuticals",
+   "ticker": "TLX.AX",
+   "exchange": "ASX",
+   "country": "Australia",
+   "sponsors": [
+    "telix"
+   ],
+   "ir": null
+  },
+  {
+   "id": "1672.HK",
+   "name": "Ascletis Pharma",
+   "ticker": "1672.HK",
+   "exchange": "Hong Kong",
+   "country": "China",
+   "sponsors": [
+    "ascletis"
+   ],
+   "ir": null
+  },
+  {
+   "id": "688321.SS",
+   "name": "Chipscreen Biosciences",
+   "ticker": "688321.SS",
+   "exchange": "Shanghai",
+   "country": "China",
+   "sponsors": [
+    "chipscreen"
+   ],
+   "ir": null
+  },
+  {
+   "id": "2157.HK",
+   "name": "Lepu Biopharma",
+   "ticker": "2157.HK",
+   "exchange": "Hong Kong",
+   "country": "China",
+   "sponsors": [
+    "lepu biopharma"
+   ],
+   "ir": null
+  },
+  {
+   "id": "6185.HK",
+   "name": "CanSino Biologics",
+   "ticker": "6185.HK",
+   "exchange": "Hong Kong",
+   "country": "China",
+   "sponsors": [
+    "cansino"
+   ],
+   "ir": null
+  },
+  {
+   "id": "006280.KS",
+   "name": "GC Biopharma",
+   "ticker": "006280.KS",
+   "exchange": "Korea Exchange",
+   "country": "South Korea",
+   "sponsors": [
+    "gc biopharma",
+    "green cross"
+   ],
+   "ir": null
+  },
+  {
+   "id": "1558.HK",
+   "name": "YiChang HEC Changjiang Pharmaceutical",
+   "ticker": "1558.HK",
+   "exchange": "Hong Kong",
+   "country": "China",
+   "sponsors": [
+    "sunshine lake",
+    "hec pharm"
+   ],
+   "ir": null
+  }
+ ]
+}

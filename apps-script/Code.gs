@@ -6,6 +6,9 @@
  *   2. Unsubscribe: GET ?action=unsubscribe&token=... (link in every email) -> marks the row.
  *   3. Send:        POST from the daily GitHub job (action=send, secret, subject, body) -> emails
  *                   every active subscriber from your Gmail, each with their own unsubscribe link.
+ *   4. Visits:      POST from the web page (action=visit) at most once a day per browser -> one row in
+ *                   "Visits" with a random visitor ID (no name, email or IP), new/returning, and the
+ *                   companies picked. See daily and total counts in the "Visit counts" sheet.
  *
  * Set the shared secret once: Project Settings > Script properties > add SEND_SECRET.
  * Gmail limit: about 100 recipients a day on a free account, 1,500 on Google Workspace.
@@ -31,6 +34,7 @@ function json_(obj) {
 function doPost(e) {
   const p = e.parameter || {};
   if (p.action === 'send') return send_(p);
+  if (p.action === 'visit') return visit_(p);
   return signup_(p);
 }
 
@@ -90,4 +94,23 @@ function send_(p) {
     sent++;
   }
   return json_({ ok: true, sent: sent, skipped_over_quota: skipped });
+}
+
+function visit_(p) {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  let sh = ss.getSheetByName('Visits');
+  if (!sh) {
+    sh = ss.insertSheet('Visits');
+    sh.appendRow(['Date', 'Visitor ID (random)', 'First visit', 'Companies picked']);
+    sh.setFrozenRows(1);
+    const c = ss.insertSheet('Visit counts');
+    c.getRange('A1:C1').setValues([['Date', 'Visitors', 'New visitors']]);
+    c.getRange('A2').setFormula("=QUERY(Visits!A2:C, \"select toDate(A), count(B), sum(C) where A is not null group by toDate(A) order by toDate(A) desc label toDate(A) '', count(B) '', sum(C) ''\", 0)");
+    c.getRange('E1:E2').setValues([['Unique visitors, all time'], ['=COUNTUNIQUE(Visits!B2:B)']]);
+  }
+  const vid = String(p.vid || '').replace(/[^A-Za-z0-9-]/g, '').slice(0, 40);
+  if (!vid) return json_({ ok: false });
+  const cos = String(p.cos || '').replace(/[^A-Za-z0-9.,_-]/g, '').slice(0, 300);
+  sh.appendRow([new Date(), vid, p.first === '1' ? 1 : 0, cos]);
+  return json_({ ok: true });
 }

@@ -47,7 +47,7 @@ jobs:
           SIGNUP_URL: ${{ vars.MAILER_URL }}
         run: |
           python3 web/build.py
-          mkdir -p _site && cp web/index.html _site/index.html && cp curated/drugs.json _site/drugs.json
+          mkdir -p _site && cp web/index.html _site/index.html && cp curated/drugs.json _site/drugs.json && if [ -d web/data ]; then cp -r web/data _site/data; fi
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

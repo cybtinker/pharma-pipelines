@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <title>Pipeline Watch</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -145,6 +146,53 @@ h2{font-family:var(--display);font-weight:700;font-size:1.6rem;margin:0;text-tra
 .cotag span{color:var(--muted);font-size:1rem;line-height:1}
 .cotag:hover span{color:var(--ink)}
 .cosel select{width:auto}
+.cosearch{position:relative;display:inline-block}
+.cosearch input{width:min(320px,80vw)}
+.cosugg{position:absolute;left:0;top:calc(100% + 4px);z-index:30;background:var(--paper);border:1px solid var(--ink);width:min(460px,92vw);max-height:360px;overflow:auto;box-shadow:0 6px 24px rgba(0,0,0,.15)}
+.cosugg button{display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);padding:7px 10px;color:var(--ink);font:500 .88rem var(--body);cursor:pointer}
+.cosugg button:hover,.cosugg button.on{background:var(--accent-soft)}
+.cosugg button b{font-family:var(--mono);font-size:.8rem;margin-right:6px}
+.cosugg small{display:block;color:var(--muted);font-size:.74rem}
+.cosugg .none{padding:8px 10px;color:var(--muted);font-size:.85rem}
+.kind{display:inline-block;font:600 .64rem var(--mono);letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line);border-radius:2px;padding:1px 5px;margin-left:6px;color:var(--muted);vertical-align:1px}
+.kind.pvt{border-color:var(--start);color:var(--start)}
+.start{background:var(--paper);border:1px solid var(--line);padding:16px;margin-top:18px}
+.start h2{font-family:var(--display);font-size:1.4rem;margin:0 0 4px}
+.start p{margin:0 0 10px;color:var(--muted);max-width:70ch}
+body.nocos .needco{display:none}
+.saved{font-size:.75rem;color:var(--muted)}
+.prof{background:var(--paper);border:1px solid var(--line);margin-bottom:12px}
+.prof>header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 12px;padding:10px 12px;border-bottom:1px solid var(--line)}
+.prof>header b{font-family:var(--display);font-size:1.25rem}
+.prof>header .meta{font-size:.8rem;color:var(--muted)}
+.prof .links{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:.8rem}.prof .links a,.prof a{color:var(--accent)}
+.fin{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));border-bottom:1px solid var(--line)}
+.fin div{padding:8px 12px;box-shadow:inset -1px 0 var(--line)}
+.fin .na{box-shadow:none;border-top:1px solid var(--line)}
+.fin .na:first-child{border-top:0}
+.fin .v{font-family:var(--mono);font-size:1.05rem;font-weight:600;display:block}
+.fin small{color:var(--muted);font-size:.72rem;display:block}
+.fin .na{grid-column:1/-1;font-size:.86rem;color:var(--muted)}
+.pipe{width:100%;border-collapse:collapse;font-size:.86rem}
+.pipe th{text-align:left;font-size:.68rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600;padding:7px 10px;border-bottom:1px solid var(--ink)}
+.pipe td{padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.pipe td small{display:block;color:var(--muted);font-size:.74rem}
+.pipe td.num{font-family:var(--mono);white-space:nowrap;font-size:.8rem}
+.pipe details summary{cursor:pointer;color:var(--accent);font-size:.78rem}
+.pipe details ul{margin:4px 0 0;padding-left:16px;font-size:.78rem}
+.ph{font:600 .72rem var(--mono);white-space:nowrap}
+.ph3{color:var(--approved)}.ph2{color:var(--filed)}.ph1{color:var(--muted)}
+.pbox{overflow-x:auto}.pbox table{min-width:640px}
+.more{margin:8px 12px;font-size:.8rem}
+.rv{padding:4px 12px 10px;font-size:.84rem}
+.rv summary{cursor:pointer;font-weight:600;padding:6px 0}
+.rv h5{margin:8px 0 2px;font-size:.78rem;font-family:var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.rv ul,.also ul{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:4px}
+.rv li,.also li{border:1px solid var(--line);border-radius:3px;padding:2px 6px;font-size:.78rem;background:var(--bg)}
+.rv li button,.also li button{background:none;border:0;padding:0;color:var(--accent);font:inherit;font-weight:600;cursor:pointer;text-decoration:underline dotted}
+.also{padding:6px 12px 10px;font-size:.84rem;border-top:1px dashed var(--line)}
+.also summary{cursor:pointer;color:var(--accent);font-weight:600}
+.also p{margin:4px 0 6px;color:var(--muted);font-size:.78rem}
 footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
 </style>
 
@@ -163,8 +211,9 @@ footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
     <button type="button" class="chip" id="reset">Clear</button>
     <div class="cosel" id="cosel" aria-label="Companies shown"></div>
   </div>
+  <div class="start" id="start" hidden></div>
 
-  <section>
+  <section class="needco">
     <div class="sh"><h2>Catalyst timeline</h2><div class="legend" id="legend"></div></div>
     <div class="tlbox"><svg id="tl" role="img" aria-label="Timeline of drug milestones"></svg></div>
     <p class="hint">Filled marks have happened; outlined marks are expected. The dot beside a pipeline drug is its chance of success: green likely, amber unknown, red likely failure. Bars are guided windows (a quarter or half-year). Tap a drug for details and sources.</p>
@@ -176,12 +225,18 @@ footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
     <div id="drawer"></div>
   </section>
 
-  <section>
+  <section class="needco">
+    <div class="sh"><h2>Full pipeline of every company you picked</h2></div>
+    <p class="hint" style="margin-top:0">Every drug each company is testing in people, from ClinicalTrials.gov, refreshed weekly. "Next readout" is when a trial's main results are due, as estimated by the sponsor. Financials come from SEC filings; private companies show only what they publish.</p>
+    <div id="profiles"></div>
+  </section>
+
+  <section class="needco">
     <div class="sh"><h2>Race board</h2><span class="legend"><span class="tok mine key">Company you track</span><span class="tok key">Competitor</span></span></div>
     <div id="board"></div>
   </section>
 
-  <section>
+  <section class="needco">
     <div class="sh"><h2>Approved drugs and patent cliffs</h2><span class="legend" id="cliffleg"></span></div>
     <div class="two">
       <div class="chartbox"><h3>Projected sales, before and after US patent expiry</h3><svg id="cliff" role="img" aria-label="Projected sales of approved drugs around patent expiry"></svg></div>
@@ -197,13 +252,13 @@ footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
     <p class="hint" id="launchnote"></p>
   </section>
 
-  <section>
+  <section class="needco">
     <div class="sh"><h2>If approved: market share</h2><span class="legend">Move a slider to test your own share assumption</span></div>
     <div class="mkt"><table><thead><tr><th>Drug</th><th>Market</th><th>Market size</th><th>Assumed share</th><th>Implied yearly sales</th><th>Analyst or company figure</th></tr></thead><tbody id="mkt"></tbody></table></div>
     <p class="hint">Market sizes are cited analyst figures. Share percentages are this tracker's starting assumptions, not forecasts from the companies.</p>
   </section>
 
-  <section>
+  <section class="needco">
     <div class="sh"><h2>Latest earnings, in five lines</h2></div>
     <div class="briefs" id="briefs"></div>
   </section>
@@ -221,17 +276,25 @@ footer{margin-top:36px;font-size:.8rem;color:var(--muted);max-width:80ch}
     </div>
   </section>
 
-  <footer>Sources: company releases, FDA documents and Q3 2026 earnings coverage; each drug links its sources in the timeline details. Quarter and half-year dates are company guidance, not FDA goal dates. Race board competitors in development were checked on Nov 9, 2026; underlined names link to the source. Research only, not investment advice.</footer>
+  <footer>Sources: company releases, FDA documents and Q3 2026 earnings coverage; each drug links its sources in the timeline details. Quarter and half-year dates are company guidance, not FDA goal dates. Race board competitors in development were checked on Nov 9, 2026; underlined names link to the source. "Also in trials" lists and full pipelines come from ClinicalTrials.gov; company financials from SEC XBRL filings. <span id="cutoff"></span> Your company picks and filters are saved in this browser only. Visits are counted anonymously (a random ID, no personal details). Research only, not investment advice.</footer>
 </div>
 
 <script>
 const DATA=/*DATA*/[];
 const COMP=/*COMP*/{markets:[]};
 const ASOF="/*ASOF*/";
-const NAMES={PFE:"Pfizer",LLY:"Eli Lilly",JNJ:"Johnson & Johnson",ABBV:"AbbVie",MRK:"Merck",BMY:"Bristol Myers Squibb",AMGN:"Amgen",GILD:"Gilead Sciences",VRTX:"Vertex",REGN:"Regeneron",BIIB:"Biogen",ZTS:"Zoetis",VTRS:"Viatris",INCY:"Incyte",MRNA:"Moderna",NVO:"Novo Nordisk",CRSP:"CRISPR Therapeutics"};
+const UNI=/*UNI*/{rows:[]};
+const CUR={PFE:"Pfizer",LLY:"Eli Lilly",JNJ:"Johnson & Johnson",ABBV:"AbbVie",MRK:"Merck",BMY:"Bristol Myers Squibb",AMGN:"Amgen",GILD:"Gilead Sciences",VRTX:"Vertex",REGN:"Regeneron",BIIB:"Biogen",ZTS:"Zoetis",VTRS:"Viatris",INCY:"Incyte",MRNA:"Moderna",NVO:"Novo Nordisk",CRSP:"CRISPR Therapeutics"};
 const SP500=new Set(["PFE","LLY","JNJ","ABBV","MRK","BMY","AMGN","GILD","VRTX","REGN","BIIB","ZTS","VTRS","INCY","MRNA"]);
-const DEFAULT_COS=["PFE"];
-const COL=Object.fromEntries(Object.keys(NAMES).map(t=>[t,`var(--c-${t.toLowerCase()})`]));
+const DEFAULT_COS=[];
+const NAMES={...CUR},UROW={};
+UNI.rows.forEach(r=>{UROW[r[0]]=r;if(!NAMES[r[0]])NAMES[r[0]]=r[1]});
+const COL=Object.fromEntries(Object.keys(CUR).map(t=>[t,`var(--c-${t.toLowerCase()})`]));
+const PAL=["#2f6f8f","#8f4a2f","#4f7f2f","#7a3f8f","#8f2f55","#2f8f72","#6b6b2f","#3f4f9f","#9f6a1f","#5a5a6a"];
+Object.keys(NAMES).forEach(t=>{if(!COL[t]){let h=0;for(const c of t)h=(h*31+c.charCodeAt(0))>>>0;COL[t]=PAL[h%PAL.length]}});
+const KINDL={public:"US-listed",public_us:"US-listed",public_intl:"Listed outside US",private_pharma:"Private",private_biotech:"Private"};
+const tick=t=>UROW[t]?(UROW[t][2]||""):(CUR[t]?t:"");
+const label=t=>(tick(t)?tick(t)+" · ":"")+NAMES[t];
 const KIND={approval:["Approval","--approved"],filing:["Filing","--filed"],adcom:["Advisory vote","--filed"],readout:["Data readout","--readout"],start:["Trial start","--start"],deal:["Deal","--start"],fail:["Failure","--fail"]};
 const today=new Date(ASOF+"T00:00:00");
 function range(v){let m;
@@ -255,21 +318,59 @@ const sel=document.getElementById("type");
 // dropdowns
 const ILLS=["Obesity","Diabetes","Alzheimer","Myeloma","Lymphoma","Lung cancer","Breast cancer","Prostate","Bladder","Sickle cell","Hemophilia","Flu","COVID","RSV","Melanoma","Eczema","Psoriasis","Crohn","Arthritis","Vitiligo","Hidradenitis","Migraine","Parkinson","Triglycerides","Blood clots","Heart","HIV","Kidney","Lupus","Myasthenia","Pain","Cystic fibrosis","Multiple sclerosis","Asthma","Cholesterol","Pulmonary","Eye","Spinal"];
 function fill(id,opts){const el=document.getElementById(id);opts.forEach(([v,l])=>{const o=document.createElement("option");o.value=v;o.textContent=l;el.append(o)});return el}
-function coPicker(){const el=document.getElementById("cosel"),on=Object.keys(NAMES).filter(t=>state.cos.has(t)),off=Object.keys(NAMES).filter(t=>!state.cos.has(t));
-  el.innerHTML=`<span class="lab">Companies</span>`+on.map(t=>`<button type="button" class="cotag" data-t="${t}" title="Remove ${esc(NAMES[t])}"><i class="swatch" style="background:${COL[t]}"></i>${t} · ${esc(NAMES[t])}<span aria-hidden="true">×</span></button>`).join("")+
-    (off.length?`<select id="coadd" aria-label="Add a company"><option value="">+ Add company</option>${off.length>1?`<option value="*">Add all ${off.length}</option>`:""}${off.map(t=>`<option value="${t}">${t} · ${esc(NAMES[t])}${SP500.has(t)?"":" (not S&P 500)"}</option>`).join("")}</select>`:"")+
-    (on.length>1?`<button type="button" class="chip" id="coonly">Back to Pfizer only</button>`:"");
-  el.querySelectorAll(".cotag").forEach(b=>b.onclick=()=>{if(state.cos.size>1){state.cos.delete(b.dataset.t);coChanged()}});
-  const a=document.getElementById("coadd");if(a)a.onchange=()=>{(a.value==="*"?off:[a.value]).forEach(t=>state.cos.add(t));coChanged()};
-  const o=document.getElementById("coonly");if(o)o.onclick=()=>{state.cos=new Set(DEFAULT_COS);coChanged()}}
+function coPicker(){const el=document.getElementById("cosel"),on=[...state.cos],cur=Object.keys(CUR),missing=cur.filter(t=>!state.cos.has(t));
+  el.innerHTML=`<span class="lab">Companies</span>`+on.map(t=>`<button type="button" class="cotag" data-t="${esc(t)}" title="Remove ${esc(NAMES[t])}"><i class="swatch" style="background:${COL[t]}"></i>${esc(label(t))}<span aria-hidden="true">×</span></button>`).join("")+
+    `<span class="cosearch"><input id="coq" type="search" placeholder="${on.length?"+ Add a company":"Type a company or ticker: PFE, Moderna, Boehringer"}" autocomplete="off" aria-label="Add a company" aria-controls="cosugg"><div class="cosugg" id="cosugg" role="listbox" hidden></div></span>`+
+    (on.length&&missing.length?`<button type="button" class="chip" id="coall">+ All ${cur.length} featured</button>`:"")+
+    (on.length?`<button type="button" class="chip" id="conone">Remove all</button>`:"")+
+    `<span class="saved">${on.length?"Saved in this browser":""}</span>`;
+  el.querySelectorAll(".cotag").forEach(b=>b.onclick=()=>{state.cos.delete(b.dataset.t);coChanged()});
+  const a=document.getElementById("coall");if(a)a.onclick=()=>{missing.forEach(t=>state.cos.add(t));coChanged()};
+  const o=document.getElementById("conone");if(o)o.onclick=()=>{state.cos.clear();coChanged()};
+  const q=document.getElementById("coq"),sg=document.getElementById("cosugg");let hits=[],hi=0;
+  const pick=t=>{state.cos.add(t);coChanged();const n=document.getElementById("coq");if(n)n.focus()};
+  const draw=()=>{sg.hidden=!q.value.trim();if(sg.hidden)return;
+    sg.innerHTML=hits.length?hits.map((t,i)=>{const r=UROW[t];const k=r?r[5]:"public";
+      const bits=[r&&r[4],r&&r[6]?r[6]+" active trials":null,r&&r[8]?"$"+r[8]+"B revenue":null].filter(Boolean).join(" · ");
+      return`<button type="button" role="option" data-t="${esc(t)}" class="${i===hi?"on":""}"><b>${esc(tick(t))}</b>${esc(NAMES[t])}<span class="kind${String(k).startsWith("private")?" pvt":""}">${KINDL[k]||""}</span>${CUR[t]?`<span class="kind">Featured</span>`:""}${bits?`<small>${esc(bits)}</small>`:""}</button>`}).join(""):`<div class="none">No company matches. Coverage: ${(UNI.rows.length||cur.length).toLocaleString()} companies.</div>`;
+    sg.querySelectorAll("button").forEach(b=>b.onmousedown=e=>{e.preventDefault();pick(b.dataset.t)})};
+  q.oninput=()=>{const v=q.value.trim().toLowerCase();hi=0;
+    if(!v){hits=[];draw();return}
+    const sc=[];for(const t of Object.keys(NAMES)){if(state.cos.has(t))continue;const tk=tick(t).toLowerCase(),nm=NAMES[t].toLowerCase(),r=UROW[t];
+      const s=tk===v?0:tk&&tk.startsWith(v)?1:nm.startsWith(v)?2:nm.includes(" "+v)?3:nm.includes(v)?4:-1;
+      if(s<0)continue;sc.push([s,CUR[t]?0:1,-(r&&r[8]||0),-(r&&r[6]||0),t])}
+    sc.sort((a,b)=>a[0]-b[0]||a[1]-b[1]||a[2]-b[2]||a[3]-b[3]);hits=sc.slice(0,14).map(x=>x[4]);draw()};
+  q.onkeydown=e=>{if(e.key==="ArrowDown"){hi=Math.min(hi+1,hits.length-1);draw();e.preventDefault()}
+    else if(e.key==="ArrowUp"){hi=Math.max(hi-1,0);draw();e.preventDefault()}
+    else if(e.key==="Enter"&&hits[hi]){pick(hits[hi]);e.preventDefault()}
+    else if(e.key==="Escape"){q.value="";hits=[];draw()}};
+  q.onblur=()=>setTimeout(()=>{sg.hidden=true},150);
+  startPanel()}
 function coChanged(){coPicker();fillDrugs();render()}
+function startPanel(){const el=document.getElementById("start"),empty=!state.cos.size;document.body.classList.toggle("nocos",empty);
+  if(!empty){el.hidden=true;el.innerHTML="";return}
+  const n=UNI.rows.length,pv=UNI.rows.filter(r=>String(r[5]).startsWith("private")).length;
+  el.hidden=false;el.innerHTML=`<h2>Pick the companies you want to follow</h2><p>Search above by name or ticker${n?` across ${n.toLocaleString()} drug companies (${(n-pv).toLocaleString()} public, ${pv} private)`:""}, or start with one of these. Your picks are remembered in this browser.</p>
+    <div class="chips">${Object.keys(CUR).map(t=>`<button type="button" class="chip" data-t="${t}">${t} · ${esc(CUR[t])}</button>`).join("")}</div>`;
+  el.querySelectorAll("button[data-t]").forEach(b=>b.onclick=()=>{state.cos.add(b.dataset.t);coChanged()})}
+function addCo(t){if(!NAMES[t])return;state.cos.add(t);coChanged();const p=document.getElementById("pf-"+fid(t));if(p)p.scrollIntoView({behavior:"smooth",block:"start"})}
+// remember each visitor's picks and filters (this browser only); a #co=PFE,LLY link overrides the saved picks
+const SKEY="pipelinewatch.settings.v1";
+function saveSettings(){try{localStorage.setItem(SKEY,JSON.stringify({cos:[...state.cos],q:state.q,type:state.type,ill:state.ill,drug:state.drug}))}catch(e){}}
+function loadSettings(){let s=null;try{s=JSON.parse(localStorage.getItem(SKEY)||"null")}catch(e){}
+  const h=decodeURIComponent(location.hash||"").match(/co=([^&]+)/);
+  if(h)s={...(s||{}),cos:h[1].split(",")};
+  if(!s)return;
+  state.cos=new Set((s.cos||[]).filter(t=>NAMES[t]));["q","type","ill","drug"].forEach(k=>{if(typeof s[k]==="string")state[k]=s[k]})}
+loadSettings();
 coPicker();
 fill("ill",ILLS.map(i=>[i.toLowerCase(),i])).onchange=e=>{state.ill=e.target.value;render()};
+document.getElementById("ill").value=state.ill;document.getElementById("q").value=state.q;
 function fillDrugs(){const el=document.getElementById("drug"),cur=state.drug;el.length=1;
   const ds=[...new Set([...DATA.filter(d=>state.cos.has(d.ticker)).map(d=>d.drug),...APPR.products.filter(p=>state.cos.has(p.ticker)).map(p=>p.drug)])].sort((a,b)=>a.localeCompare(b));
   fill("drug",ds.map(d=>[d,d]));el.value=ds.includes(cur)?cur:"";state.drug=el.value}
 document.getElementById("drug").onchange=e=>{state.drug=e.target.value;render()};
-document.getElementById("reset").onclick=()=>{state.q="";state.type="";state.ill="";state.drug="";state.cos=new Set(DEFAULT_COS);["q","type","ill","drug"].forEach(id=>document.getElementById(id).value="");coChanged()};
+document.getElementById("reset").onclick=()=>{state.q="";state.type="";state.ill="";state.drug="";["q","type","ill","drug"].forEach(id=>document.getElementById(id).value="");coChanged()};
 // one text test shared by every section: search words, illness and drug dropdowns
 function textOk(parts){const h=parts.join(" ").toLowerCase();
   if(state.q&&!state.q.split(/\s+/).every(w=>h.includes(w)))return false;
@@ -277,7 +378,7 @@ function textOk(parts){const h=parts.join(" ").toLowerCase();
   if(state.drug){const k=state.drug.toLowerCase().split(/[ (/]/)[0];if(!h.includes(k))return false}
   return true}
 document.getElementById("q").oninput=e=>{state.q=e.target.value.trim().toLowerCase();render()};
-sel.onchange=e=>{state.type=e.target.value;render()};
+sel.onchange=e=>{state.type=e.target.value;render()};sel.value=state.type;
 document.getElementById("asof").textContent="Data as of "+fmt(ASOF);
 
 function mark(kind,x,y,past){const c=`var(${KIND[kind][1]})`,s=`stroke="${c}" stroke-width="2" fill="${past?c:"var(--paper)"}"`;
@@ -341,7 +442,7 @@ const LANES=[["early","Phase 1–2"],["p3","Phase 3"],["filed","Filed"],["approv
 function board(){const el=document.getElementById("board");
   const ms=COMP.markets.filter(m=>{
     if(state.type&&m.drug_class!==state.type)return false;
-    if(!m.players.some(p=>p.ticker&&state.cos.has(p.ticker)))return false;
+    if(!m.players.some(p=>p.ticker&&state.cos.has(p.ticker))&&!((AUTO[m.id]||{}).rows||[]).some(r=>r.id&&state.cos.has(r.id)))return false;
     if(!textOk([m.market,m.mechanism,m.drug_class,...m.players.flatMap(p=>[p.drug,p.company,p.ticker||""])]))return false;
     return true});
   if(!ms.length){el.innerHTML=`<p class="empty">No markets match these filters.</p>`;return}
@@ -349,8 +450,15 @@ function board(){const el=document.getElementById("board");
   el.innerHTML=Object.entries(byC).map(([c,list])=>`<div class="cls"><h3>${esc(c)}</h3>${list.map(m=>{
     const lane=k=>m.players.filter(p=>(p.stage==="p1"||p.stage==="p2"?"early":p.stage)===k);
     const appr=lane("approved").length;
-    return`<article class="race"><header><b>${esc(m.market)}</b><span>${esc(m.mechanism)} · ${appr} approved · ${m.players.length-appr} in development</span></header>
-    <div class="track">${LANES.map(([k,l])=>`<div class="lane${k==="approved"?" finish":""}"><span class="lab">${l}</span>${lane(k).map(p=>`<div class="tok${p.ticker&&state.cos.has(p.ticker)?" mine":""}"><b>${p.source?`<a class="tl" href="${esc(p.source)}" target="_blank" rel="noopener">${esc(p.drug)}</a>`:esc(p.drug)}</b><small>${esc(p.company)}${p.note?" · "+esc(p.note):""}</small></div>`).join("")}</div>`).join("")}</div></article>`}).join("")}</div>`).join("")}
+    return`<article class="race"><header><b>${esc(m.market)}</b><span>${esc(m.mechanism)} · ${appr} approved · ${m.players.length-appr} in development${AUTO[m.id]?` · ${AUTO[m.id].sponsors} more companies in trials`:""}</span></header>
+    <div class="track">${LANES.map(([k,l])=>`<div class="lane${k==="approved"?" finish":""}"><span class="lab">${l}</span>${lane(k).map(p=>`<div class="tok${p.ticker&&state.cos.has(p.ticker)?" mine":""}"><b>${p.source?`<a class="tl" href="${esc(p.source)}" target="_blank" rel="noopener">${esc(p.drug)}</a>`:esc(p.drug)}</b><small>${esc(p.company)}${p.note?" · "+esc(p.note):""}</small></div>`).join("")}</div>`).join("")}</div>${alsoHTML(m)}</article>`}).join("")}</div>`).join("")}
+let AUTO={};
+function coLink(id,name){return id&&NAMES[id]?(state.cos.has(id)?`<b>${esc(name)}</b>`:`<button type="button" data-add="${esc(id)}" title="Follow ${esc(name)}">${esc(name)}</button>`):esc(name)}
+function alsoHTML(m){const a=AUTO[m.id];if(!a||!a.n)return"";
+  const rows=a.rows.slice().sort((x,y)=>(state.cos.has(y.id)?1:0)-(state.cos.has(x.id)?1:0));
+  return`<details class="also"${rows.some(r=>state.cos.has(r.id))?" open":""}><summary>Also in trials: ${a.n} drugs from ${a.sponsors} companies</summary><p>Every other company with an active Phase 2 or 3 trial in this illness, from ClinicalTrials.gov. Not all of them work the same way. Tap a company to follow it.</p><ul>${rows.map(r=>`<li>${coLink(r.id,r.co)} · <a href="https://clinicaltrials.gov/study/${esc(r.nct)}" target="_blank" rel="noopener">${esc(r.drug.length>40?r.drug.slice(0,39)+"…":r.drug)}</a> <span class="ph">${esc(r.phase)}</span></li>`).join("")}</ul>${a.n>a.rows.length?`<p>Showing the ${a.rows.length} furthest along.</p>`:""}</details>`}
+document.addEventListener("click",e=>{const b=e.target.closest("button[data-add]");if(b){e.preventDefault();addCo(b.dataset.add)}});
+fetch("data/competition_auto.json").then(r=>r.ok?r.json():{}).then(j=>{AUTO=j||{};board()}).catch(()=>{});
 
 const MKT=/*MKT*/{rows:[]};
 const BRIEFS=/*BRIEFS*/{};
@@ -375,7 +483,7 @@ function proj(p,y){const c=APPR.erosion[p.kind].curve,at=i=>c[Math.min(Math.max(
 function approved(){
   const rows=APPR.products.filter(p=>state.cos.has(p.ticker)&&textOk([p.ticker,NAMES[p.ticker],p.drug,p.use]))
     .sort((a,b)=>(a.us_loe||9999)-(b.us_loe||9999));
-  document.getElementById("cliffleg").innerHTML=Object.keys(NAMES).map(t=>`<span><i class="swatch" style="background:${COL[t]}"></i>${t}</span>`).join("")+`<span><i class="swatch" style="background:var(--cliff)"></i>After expiry</span>`;
+  document.getElementById("cliffleg").innerHTML=Object.keys(CUR).filter(t=>state.cos.has(t)).map(t=>`<span><i class="swatch" style="background:${COL[t]}"></i>${t}</span>`).join("")+`<span><i class="swatch" style="background:var(--cliff)"></i>After expiry</span>`;
   // ribbon chart
   const svg=document.getElementById("cliff"),LW=220,W=Math.max(760,svg.parentElement.clientWidth-2),PW=W-LW-14,RH=36,TOP=26,n=Y1-Y0+1,cw=PW/n;
   let g="",y=TOP;
@@ -452,7 +560,7 @@ function drawCo(L,appr,fs,cs){
 }
 function flows(appr){
   const L=LAUNCH.launches.filter(r=>state.cos.has(r.ticker)&&textOk([r.ticker,NAMES[r.ticker],r.drug,r.why])),yrs=[];for(let y=2026;y<=2037;y++)yrs.push(y);
-  const cos=Object.keys(NAMES).filter(t=>state.cos.has(t)&&(L.some(r=>r.ticker===t)||appr.some(p=>p.ticker===t&&p.us_loe&&p.us_loe>=2026)));
+  const cos=Object.keys(CUR).filter(t=>state.cos.has(t)&&(L.some(r=>r.ticker===t)||appr.some(p=>p.ticker===t&&p.us_loe&&p.us_loe>=2026)));
   const grid=document.getElementById("cogrid");
   grid.innerHTML=cos.map(t=>`<article class="copanel"><header><b><i class="swatch" style="background:${COL[t]}"></i>${t} · ${esc(NAMES[t])}</b><span class="net" id="net-${t}"></span></header>
     <h4>Each year: launches vs sales losing US protection</h4><div class="cb"><svg id="fl-${t}" role="img" aria-label="${esc(NAMES[t])} launches versus expiries"></svg></div>
@@ -462,7 +570,58 @@ function flows(appr){
   document.getElementById("launches").innerHTML=L.sort((a,b)=>a.launch_year-b.launch_year||b.est_sales-a.est_sales).map(r=>`<tr><td><b>${esc(r.drug)}</b><small>${r.ticker} · ${esc(NAMES[r.ticker])}</small></td><td class="num">${r.launch_year}</td><td class="num">~${money(r.est_sales)}<small>${esc(r.basis)}</small></td><td>${lkPill(r.likelihood)}</td><td>${esc(r.why)}${r.sources?`<span class="src">${r.sources.map((u,i)=>`<a href="${esc(u)}" target="_blank" rel="noopener">Source ${i+1}</a>`).join("")}</span>`:""}</td></tr>`).join("")||`<tr><td colspan="5" class="empty">No pipeline launches for these filters.</td></tr>`;
   document.getElementById("launchnote").textContent=LAUNCH.note;
 }
+const COCACHE={},OPEN=new Set();
+function fid(id){return id.replace(/[^A-Za-z0-9._-]/g,"_")}
+function loadCo(id){if(!COCACHE[id])COCACHE[id]=fetch("data/co/"+fid(id)+".json").then(r=>{if(!r.ok)throw 0;return r.json()}).catch(()=>({error:true}));return COCACHE[id]}
+const big=(v,cur)=>{if(v==null)return"—";const s=cur==="USD"?"$":cur+" ",a=Math.abs(v),sg=v<0?"−":"";
+  return sg+s+(a>=1e9?(a/1e9).toFixed(a>=1e10?1:2)+"B":a>=1e6?Math.round(a/1e6)+"M":Math.round(a/1e3)+"K")};
+const per=p=>p?String(p.period||"").replace(/^CY(\d{4})Q(\d)I$/,"end of Q$2 $1").replace(/^CY(\d{4})$/,"FY$1"):"";
+const cur$=c=>c==="EUR"?"€":c==="USD"?"$":c+" ";
+function finHTML(d){const f=d.financials,pf=d.private_financials;
+  if(f&&(f.revenue||f.rnd||f.cash||f.net_income)){const r=f.revenue,rp=f.revenue_prev,g=r&&rp&&rp.cur===r.cur&&rp.val>0?Math.round((r.val/rp.val-1)*100):null;
+    const t=(lab,x,extra)=>`<div><small>${lab}</small><span class="v">${x?big(x.val,x.cur):"—"}</span><small>${x?per(x):"not reported"}${extra||""}</small></div>`;
+    return`<div class="fin">${t("Revenue",r,g!=null?` · ${g>=0?"+":""}${g}% vs prior year`:"")}${t("R&amp;D spend",f.rnd)}${t("Net income",f.net_income)}${t("Cash",f.cash)}</div>`}
+  if(pf){const bits=[];if(pf.revenue!=null)bits.push(`<div><small>Revenue</small><span class="v">${cur$(pf.currency)}${pf.revenue}B</span><small>${esc(pf.period||"")}</small></div>`);
+    if(pf.rnd!=null)bits.push(`<div><small>R&amp;D spend</small><span class="v">${cur$(pf.currency)}${pf.rnd}B</span><small>${esc(pf.period||"")}</small></div>`);
+    if(pf.funding_total_usd_m!=null)bits.push(`<div><small>Equity raised to date</small><span class="v">$${pf.funding_total_usd_m}M</span><small>as reported</small></div>`);
+    if(pf.latest_round)bits.push(`<div><small>Latest round</small><span class="v" style="font-size:.9rem">${esc(pf.latest_round)}</span><small>${esc(pf.latest_round_date?fmt(pf.latest_round_date):"")}</small></div>`);
+    return`<div class="fin">${bits.join("")}<div class="na">${esc(pf.note||"Private company: full financials not available.")} ${pf.source?`<a href="${esc(pf.source)}" target="_blank" rel="noopener">Source</a>`:""}${pf.source2?` · <a href="${esc(pf.source2)}" target="_blank" rel="noopener">Source 2</a>`:""}</div></div>`}
+  if(d.kind==="public_intl")return`<div class="fin"><div class="na">Listed outside the US and not an SEC filer, so financials are not collected automatically. ${d.profile&&d.profile.ir?`<a href="${esc(d.profile.ir)}" target="_blank" rel="noopener">Investor page</a>`:""}</div></div>`;
+  return`<div class="fin"><div class="na">No financials found in SEC data for this company.</div></div>`}
+function phCls(r){return r>=4?"ph3":r>=2?"ph2":"ph1"}
+function profHTML(id,d){
+  if(d.error)return`<header><b>${esc(label(id))}</b></header><p class="empty" style="padding:10px 12px">Full pipeline data isn't available here yet. It appears on the public site after the weekly data run.</p>`;
+  const k=d.kind,p=d.profile||{},meta=[d.ticker&&d.exchange?`${d.ticker} on ${d.exchange}`:d.ticker,d.country,p.ownership,p.sic_desc].filter(Boolean).join(" · ");
+  const fl=d.filings||[],ann=fl.find(x=>/10-K|20-F|40-F/.test(x.form)),ek=fl.find(x=>/8-K|6-K/.test(x.form));
+  const links=[p.website&&`<a href="${esc(/^http/.test(p.website)?p.website:"https://"+p.website)}" target="_blank" rel="noopener">Website</a>`,p.ir&&`<a href="${esc(p.ir)}" target="_blank" rel="noopener">Investors</a>`,
+    ann&&`<a href="${esc(ann.url)}" target="_blank" rel="noopener">Annual report (${esc(ann.form)}, ${esc(fmt(ann.date))})</a>`,ek&&`<a href="${esc(ek.url)}" target="_blank" rel="noopener">Latest ${esc(ek.form)} (${esc(fmt(ek.date))})</a>`,
+    p.cik&&`<a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=${esc(p.cik)}&type=8-K" target="_blank" rel="noopener">All filings and decks</a>`].filter(Boolean).join("");
+  const drugs=(d.drugs||[]).filter(r=>textOk([NAMES[id],id,r.drug,...r.conds]));
+  const showAll=OPEN.has(id),shown=showAll?drugs:drugs.slice(0,12);
+  const rows=shown.map(r=>`<tr><td><b>${esc(r.drug)}</b>${r.partner?`<small>partner's trial</small>`:""}</td><td><span class="ph ${phCls(r.rank)}">${esc(r.phase)}</span></td><td>${esc(r.conds.join(", "))}</td>
+    <td class="num">${r.next?esc(fmt(r.next)):"—"}</td><td>${r.active} active${r.n_trials>r.active?` / ${r.n_trials} total`:""}${r.results?`<small>${r.results} with results posted</small>`:""}
+    <details><summary>Trials</summary><ul>${r.trials.map(t=>`<li><a href="https://clinicaltrials.gov/study/${esc(t.id)}" target="_blank" rel="noopener">${esc(t.t||t.id)}</a> · ${esc(t.ph)} · ${esc(t.s)}${t.pcd?` · main results ${t.est?"due ":""}${esc(fmt(t.pcd))}`:""}${t.res?" · results posted":""}</li>`).join("")}</ul></details></td></tr>`).join("");
+  const rv=Object.entries(d.rivals||{}).filter(([c,v])=>textOk([c,...(v.rows||[]).map(x=>x.drug+" "+x.co)]));
+  return`<header><b><i class="swatch" style="background:${COL[id]}"></i>${esc(d.name)}<span class="kind${String(k).startsWith("private")?" pvt":""}">${KINDL[k]||""}</span></b><span class="meta">${esc(meta)}</span></header>
+    ${p.focus||p.lead?`<div class="rv" style="padding-top:8px">${p.focus?`<b>Focus:</b> ${esc(p.focus)}. `:""}${p.lead?`<b>Lead program:</b> ${esc(p.lead)}`:""}</div>`:""}
+    ${finHTML(d)}${links?`<div class="links" style="padding:8px 12px">${links}</div>`:""}
+    ${drugs.length?`<div class="pbox"><table class="pipe"><thead><tr><th>Drug</th><th>Furthest stage</th><th>Illness</th><th>Next readout</th><th>Trials</th></tr></thead><tbody>${rows}</tbody></table></div>
+    ${drugs.length>12?`<button type="button" class="chip more" data-more="${esc(id)}">${showAll?"Show fewer":`Show all ${drugs.length} drugs`}</button>`:""}`
+    :`<p class="empty" style="padding:10px 12px">${(d.drugs||[]).length?"No drugs match these filters.":"No active or recent industry trials found on ClinicalTrials.gov for this company."}</p>`}
+    ${rv.length?`<details class="rv"><summary>Competitors in the same illnesses</summary>${rv.map(([c,v])=>`<h5>${esc(c)} · ${v.total_sponsors} other companies</h5><ul>${v.rows.map(x=>`<li>${coLink(x.id,x.co)} · <a href="https://clinicaltrials.gov/study/${esc(x.nct)}" target="_blank" rel="noopener">${esc(x.drug.length>36?x.drug.slice(0,35)+"…":x.drug)}</a> <span class="ph">${esc(x.phase)}</span></li>`).join("")}</ul>`).join("")}</details>`:""}
+    <p class="hint" style="margin:6px 12px 10px">From ClinicalTrials.gov, ${esc(fmt(d.as_of||ASOF))}. Drug names are as the sponsor lists them and can include partner or comparison drugs.</p>`}
+function profiles(){const el=document.getElementById("profiles"),ids=[...state.cos];
+  el.innerHTML=ids.map(id=>`<article class="prof" id="pf-${fid(id)}"><header><b>${esc(label(id))}</b><span class="meta">Loading…</span></header></article>`).join("");
+  ids.forEach(id=>loadCo(id).then(d=>{const box=document.getElementById("pf-"+fid(id));if(box)box.innerHTML=profHTML(id,d)}))}
+document.addEventListener("click",e=>{const b=e.target.closest("button[data-more]");if(b){const id=b.dataset.more;OPEN.has(id)?OPEN.delete(id):OPEN.add(id);loadCo(id).then(d=>{const box=document.getElementById("pf-"+fid(id));if(box)box.innerHTML=profHTML(id,d)})}});
+if(UNI.cutoff)document.getElementById("cutoff").textContent="Coverage: "+UNI.cutoff;
+// anonymous visit count (once a day per browser) when the Google Apps Script endpoint is connected
+(function(){if(!SIGNUP_URL.startsWith("https://script.google.com/"))return;try{const day=new Date().toISOString().slice(0,10);let v=localStorage.getItem("pipelinewatch.vid");const first=!v;
+  if(!v){v=(crypto.randomUUID?crypto.randomUUID():String(Math.random()).slice(2));localStorage.setItem("pipelinewatch.vid",v)}
+  if(localStorage.getItem("pipelinewatch.lastping")===day)return;localStorage.setItem("pipelinewatch.lastping",day);
+  fetch(SIGNUP_URL,{method:"POST",mode:"no-cors",body:new URLSearchParams({action:"visit",vid:v,first:first?"1":"0",cos:[...state.cos].slice(0,30).join(",")})}).catch(()=>{})}catch(e){}})();
 function render(){
+  saveSettings();profiles();
   const rows=DATA.filter(matches);if(state.sel&&!rows.some(r=>r.drug===state.sel))state.sel=null;
   timeline(rows);drawer(rows);board();approved();market();briefs()}
 let rt;addEventListener("resize",()=>{clearTimeout(rt);rt=setTimeout(render,150)});
