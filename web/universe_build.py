@@ -67,8 +67,20 @@ STATUS = {"RECRUITING": "Recruiting", "NOT_YET_RECRUITING": "Not yet recruiting"
           "WITHDRAWN": "Withdrawn", "SUSPENDED": "Suspended", "UNKNOWN": "Status unknown"}
 GENERIC_DRUGS = re.compile(r"^(chemotherapy|standard|best|docetaxel|paclitaxel|carboplatin|cisplatin|pemetrexed|gemcitabine|"
                            r"dexamethasone|prednisone|metformin|insulin|rituximab|fulvestrant|letrozole|capecitabine|"
-                           r"oxaliplatin|fluorouracil|5-fu|leucovorin|bevacizumab|cyclophosphamide|lenalidomide|"
+                           r"oxaliplatin|fluorouracil|5-fu|leucovorin|taxane|nab-paclitaxel|doxorubicin|irinotecan|etoposide|temozolomide|bendamustine|azacitidine|cytarabine|folfox|folfiri|bevacizumab|cyclophosphamide|lenalidomide|"
                            r"methotrexate|acetaminophen|paracetamol|midazolam|itraconazole|rifampin|omeprazole)\b", re.I)
+
+DOSE = re.compile(r"\s*(\(?\b(dose|tablets?|capsules?|injection|infusion|cohort|arm|part|regimen|oral|iv|sc)\b.*|\s\d+(\.\d+)?\s*(mg|mcg|µg|ug|g|ml|mg/kg|iu)\b.*)$", re.I)
+SALT = re.compile(r"\s+(sodium|hydrochloride|hcl|potassium|mesylate|tartrate|acetate|maleate|citrate|besylate|tosylate)\b", re.I)
+NOT_A_CONDITION = {"Healthy", "Healthy Volunteers", "Healthy Participants", "Healthy Subjects", "Recurrence", "Neoplasms", "Disease"}
+
+def clean_drug(d):
+    d = SALT.sub("", DOSE.sub("", d or "")).strip(" ,;:-")
+    return d or None
+
+def drug_key(d):
+    words = re.sub(r"\(.*?\)", " ", d.lower()).split()[:2]
+    return re.sub(r"[^a-z0-9]+", "", "".join(words))[:40]
 
 def build():
     snap = latest_snapshot()
@@ -151,23 +163,43 @@ def build():
             m = match(col)
             if m and m != t["_lead"]:
                 by_co[m].append((t, "partner"))
-        for m in set((t.get("m") or []) or (t.get("c") or [])[:2]):
+        for m in set((t.get("m") or []) or (t.get("c") or [])[:2]) - NOT_A_CONDITION:
             by_mesh[m].append(t)
 
     def phase_of(t):
         return PH_RANK.get(t.get("ph", ""), 0)
 
-    def drug_rows(items):
+    owner = collections.defaultdict(collections.Counter)  # drug key -> lead company -> trials
+    for t in trials:
+        for d in t.get("d") or []:
+            cd = clean_drug(d)
+            if cd and t["_lead"]:
+                owner[drug_key(cd)][t["_lead"]] += 1
+
+    def own_names(t, cid):
+        names = [clean_drug(d) for d in (t.get("d") or []) if not GENERIC_DRUGS.match(d)]
+        names = [n for n in names if n]
+        mine = []
+        for n in names:
+            o = owner.get(drug_key(n))
+            top = o.most_common(1)[0] if o else None
+            # skip another company's drug used in combination (e.g. Keytruda in a Pfizer trial)
+            if top and top[0] != cid and o[cid] * 3 < top[1]:
+                continue
+            mine.append(n)
+        return mine or names[:1]
+
+    def drug_rows(items, cid):
         drugs = {}
         for t, role in items:
-            names = [d for d in (t.get("d") or []) if not GENERIC_DRUGS.match(d)] or (t.get("d") or [])[:1] or ["(not named)"]
+            names = own_names(t, cid) or ["(not named)"]
             for d in names[:3]:
-                k = re.sub(r"[^a-z0-9]+", "", d.lower())[:40]
+                k = drug_key(d)
                 r = drugs.setdefault(k, {"drug": d, "ph": "", "conds": collections.Counter(), "trials": [], "next": None,
                                          "active": 0, "results": 0, "partner": role == "partner"})
                 if phase_of(t) > PH_RANK.get(r["ph"], 0):
                     r["ph"] = t.get("ph", "")
-                for c in (t.get("m") or t.get("c") or [])[:3]:
+                for c in [c for c in (t.get("m") or t.get("c") or []) if c not in NOT_A_CONDITION][:3]:
                     r["conds"][c] += 1
                 act = t.get("s") in ACTIVE
                 r["active"] += act
@@ -200,10 +232,10 @@ def build():
                 if t["_lead"] == cid or t.get("s") not in ACTIVE:
                     continue
                 name, rid = sponsor_label(t)
-                drug = next((d for d in (t.get("d") or []) if not GENERIC_DRUGS.match(d)), None)
+                drug = (own_names(t, t["_lead"]) or [None])[0]
                 if not drug:
                     continue
-                k = (name, drug.lower())
+                k = (name, drug_key(drug))
                 if k not in seen or phase_of(t) > PH_RANK.get(seen[k]["ph_code"], 0):
                     seen[k] = {"co": name, "id": rid, "drug": drug, "ph_code": t.get("ph", ""), "nct": t["id"]}
             rows = sorted(seen.values(), key=lambda r: -PH_RANK.get(r["ph_code"], 0))[:limit]
@@ -227,7 +259,7 @@ def build():
             # SIC 8731 research firms only count when they actually sponsor drug trials
             if c.get("sic_basis") == "8731" and not items and cid not in watch:
                 continue
-        drugs = drug_rows(items)
+        drugs = drug_rows(items, cid)
         top_conds = [cnd for cnd, _ in collections.Counter(cn for d in drugs for cn in d["conds"][:2]).most_common(8)]
         fin = c.get("fin") or {}
         rec = {"id": cid, "name": c["name"], "ticker": c.get("ticker"), "exchange": c.get("exchange"), "country": c.get("country"),
@@ -247,7 +279,7 @@ def build():
     index.sort(key=lambda r: (-(r[8] or 0), -r[6], r[1]))
     meta = {"as_of": tr.get("fetched_at", "")[:10], "trials": len(trials), "since": tr.get("since"),
             "fields": ["id", "name", "ticker", "exchange", "country", "kind", "active_trials", "late_stage_drugs", "revenue_usd_b", "curated"],
-            "cutoff": "Public: every company listed on NYSE, Nasdaq or NYSE American that the SEC classifies as pharmaceutical preparations (SIC 2834) or biological products (SIC 2836), plus SIC 8731 research companies that sponsor drug trials, plus major drugmakers listed only outside the US. Private: companies in curated/private.json. OTC and shell companies are left out.",
+            "cutoff": "Public: every company listed on NYSE, Nasdaq or NYSE American that the SEC classifies as pharmaceutical preparations (SIC 2834) or biological products (SIC 2836), plus SIC 8731 research companies that sponsor drug trials, plus major drugmakers listed only outside the US. Private: notable privately held drugmakers and well-funded private biotechs, with sourced figures. OTC and shell companies are left out.",
             "rows": index}
     (OUT / "universe.json").write_text(json.dumps(meta, separators=(",", ":"), ensure_ascii=False))
 
@@ -268,11 +300,11 @@ def build():
                 continue
             if m.get("ct_must") and not re.search(m["ct_must"], " ".join(t.get("d") or []) + " " + t["t"], re.I):
                 continue
-            drug = next((d for d in (t.get("d") or []) if not GENERIC_DRUGS.match(d)), None)
+            drug = (own_names(t, t["_lead"]) or [None])[0]
             if not drug or re.sub(r"[^a-z0-9]", "", drug.split(" ")[0].lower()) in mine:
                 continue
             name, rid = sponsor_label(t)
-            k = (name, drug.lower())
+            k = (name, drug_key(drug))
             if k not in seen or phase_of(t) > PH_RANK.get(seen[k]["ph_code"], 0):
                 seen[k] = {"co": name, "id": rid, "drug": drug, "ph_code": t.get("ph", ""), "nct": t["id"]}
         rows = sorted(seen.values(), key=lambda r: (-PH_RANK.get(r["ph_code"], 0), r["co"] or ""))
