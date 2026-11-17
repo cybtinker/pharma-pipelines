@@ -90,10 +90,10 @@
      "drug": "Ivonescimab",
      "company": "Summit / Akeso",
      "ticker": null,
-     "stage": "filed",
-     "note": "FDA decision Nov 14, 2026 (EGFR-mutant, after TKI); 1st-line still Phase 3",
-     "source": "https://www.drugs.com/history/ivonescimab.html",
-     "checked": "2026-11-09"
+     "stage": "p3",
+     "note": "FDA rejected it Nov 15, 2026 (EGFR-mutant, after TKI), citing no overall survival win; 1st-line still Phase 3",
+     "source": "https://www.statnews.com/2026/11/15/fda-rejects-ivonescimab-lung-cancer-treatment-summit-therapeutics/",
+     "checked": "2026-11-17"
     },
     {
      "drug": "Tivunatamig",

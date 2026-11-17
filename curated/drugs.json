@@ -305,7 +305,7 @@
   "stage": "Phase 3",
   "next_event": "First potential approval",
   "next_event_date": "2028",
-  "latest_result": "Phase 3 VESPER program enrolling",
+  "latest_result": "Phase 3 VESPER program enrolling; on Nov 11, 2026 Blackstone Life Sciences agreed to fund up to $1.5B of the program through 2028 (up to 10 Phase 3 trials) in return for milestone payments if it is approved and hits sales goals",
   "competitors": [
    "Zepbound (Lilly)",
    "Wegovy (Novo Nordisk)",
@@ -313,7 +313,8 @@
   ],
   "sources": [
    "https://gloom.sh/stocks/pfe/transcripts/q3-2026",
-   "https://za.investing.com/news/stock-market-news/pfizer-q3-2026-slides-32-growth-in-new-products-guidance-raised-93CH-4547008"
+   "https://za.investing.com/news/stock-market-news/pfizer-q3-2026-slides-32-growth-in-new-products-guidance-raised-93CH-4547008",
+   "https://www.biopharmadive.com/news/blackstone-pfizer-berobenatide-deal/874483/"
   ],
   "needs_verification": null,
   "milestones": [
@@ -321,6 +322,11 @@
     "date": "2025-11-13",
     "kind": "deal",
     "label": "Pfizer closes Metsera deal"
+   },
+   {
+    "date": "2026-11-11",
+    "kind": "deal",
+    "label": "Blackstone to fund up to $1.5B of trials"
    },
    {
     "date": "2028",
@@ -866,7 +872,7 @@
   "stage": "Approved 2026 (obesity)",
   "next_event": "FDA submission for obstructive sleep apnea",
   "next_event_date": "2026-12",
-  "latest_result": "Phase 3 ATTAIN-OSA (Nov 9, 2026): cut sleep-apnea breathing interruptions by 44% without a CPAP machine and 28% with one (placebo 3-6%), with about 11% weight loss; Q3 2026 sales $184M",
+  "latest_result": "China approved it for weight management (Nov 12, 2026), the first GLP-1 pill for obesity there; diabetes use still under review in China. Phase 3 ATTAIN-OSA (Nov 9, 2026): cut sleep-apnea breathing interruptions by 44% without a CPAP machine and 28% with one (placebo 3-6%), with about 11% weight loss; Q3 2026 sales $184M",
   "competitors": [
    "Wegovy pill (Novo Nordisk)",
    "Zepbound (Lilly)"
@@ -874,7 +880,8 @@
   "sources": [
    "https://www.pharmacytimes.com/view/oral-glp-1-orforglipron-approved-for-obesity",
    "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000104/q326lillysalesandearningsp.htm",
-   "https://finviz.com/news/419221/lillys-foundayo-orforglipron-significantly-reduced-obstructive-sleep-apnea-severity-reinforcing-its-potential-to-improve-health-beyond-weight-loss"
+   "https://finviz.com/news/419221/lillys-foundayo-orforglipron-significantly-reduced-obstructive-sleep-apnea-severity-reinforcing-its-potential-to-improve-health-beyond-weight-loss",
+   "https://pharmaphorum.com/news/lilly-beats-novo-china-oral-glp-1-obesity"
   ],
   "needs_verification": "Exact approval date not captured",
   "milestones": [
@@ -887,6 +894,11 @@
     "date": "2026-11-09",
     "kind": "readout",
     "label": "Phase 3 sleep apnea positive (ATTAIN-OSA)"
+   },
+   {
+    "date": "2026-11-12",
+    "kind": "approval",
+    "label": "China approval, obesity"
    },
    {
     "date": "2026-12",
