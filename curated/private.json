@@ -1106,6 +1106,135 @@
    "sponsors": [
     "solstice oncology"
    ]
+  },
+  {
+   "id": "pvt-qilu-pharmaceutical",
+   "name": "Qilu Pharmaceutical",
+   "country": "China",
+   "ownership": "Privately held",
+   "kind": "private_pharma",
+   "financials": {
+    "revenue": null,
+    "note": "Private company: full financials are not published here."
+   },
+   "focus": null,
+   "sponsors": [
+    "qilu pharmaceutical"
+   ],
+   "website": "https://www.qilu-pharma.com"
+  },
+  {
+   "id": "pvt-jemincare",
+   "name": "Jemincare",
+   "country": "China",
+   "ownership": "Privately held",
+   "kind": "private_pharma",
+   "financials": {
+    "revenue": null,
+    "note": "Private company: full financials are not published here."
+   },
+   "focus": null,
+   "sponsors": [
+    "jemincare",
+    "jiangxi jemincare"
+   ],
+   "website": "https://www.jemincare.com"
+  },
+  {
+   "id": "pvt-debiopharm",
+   "name": "Debiopharm",
+   "country": "Switzerland",
+   "ownership": "Privately held",
+   "kind": "private_pharma",
+   "financials": {
+    "revenue": null,
+    "note": "Private company: full financials are not published here."
+   },
+   "focus": null,
+   "sponsors": [
+    "debiopharm"
+   ],
+   "website": "https://www.debiopharm.com"
+  },
+  {
+   "id": "pvt-biocad",
+   "name": "Biocad",
+   "country": "Russia",
+   "ownership": "Privately held",
+   "kind": "private_pharma",
+   "financials": {
+    "revenue": null,
+    "note": "Private company: full financials are not published here."
+   },
+   "focus": null,
+   "sponsors": [
+    "biocad"
+   ],
+   "website": "https://biocad.ru/en"
+  },
+  {
+   "id": "pvt-eurofarma",
+   "name": "Eurofarma",
+   "country": "Brazil",
+   "ownership": "Privately held",
+   "kind": "private_pharma",
+   "financials": {
+    "revenue": null,
+    "note": "Private company: full financials are not published here."
+   },
+   "focus": null,
+   "sponsors": [
+    "eurofarma"
+   ],
+   "website": "https://eurofarma.com"
+  },
+  {
+   "id": "pvt-ems-grupo-nc",
+   "name": "EMS (Grupo NC)",
+   "country": "Brazil",
+   "ownership": "Privately held",
+   "kind": "private_pharma",
+   "financials": {
+    "revenue": null,
+    "note": "Private company: full financials are not published here."
+   },
+   "focus": null,
+   "sponsors": [
+    "ems"
+   ],
+   "website": "https://www.ems.com.br"
+  },
+  {
+   "id": "pvt-italfarmaco",
+   "name": "Italfarmaco",
+   "country": "Italy",
+   "ownership": "Privately held",
+   "kind": "private_pharma",
+   "financials": {
+    "revenue": null,
+    "note": "Private company: full financials are not published here."
+   },
+   "focus": null,
+   "sponsors": [
+    "italfarmaco"
+   ],
+   "website": "https://www.italfarmaco.com"
+  },
+  {
+   "id": "pvt-leo-pharma",
+   "name": "LEO Pharma",
+   "country": "Denmark",
+   "ownership": "Foundation-owned (LEO Foundation)",
+   "kind": "private_pharma",
+   "financials": {
+    "revenue": null,
+    "note": "Private company: full financials are not published here."
+   },
+   "focus": null,
+   "sponsors": [
+    "leo pharma"
+   ],
+   "website": "https://www.leo-pharma.com"
   }
  ]
 }

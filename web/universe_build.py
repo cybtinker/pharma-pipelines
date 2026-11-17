@@ -44,8 +44,9 @@ KEEP_UPPER = {"PLC", "AG", "SA", "NV", "SE", "ASA", "AB", "LLC", "LP", "II", "II
 
 def pretty(name):
     name = re.sub(r"\s*/[A-Z]{2,3}/?\s*$", "", (name or "").strip())  # SEC suffixes like /DE/
-    if name.isupper() or name.islower():
-        name = " ".join(w if w.strip(".,") in KEEP_UPPER else w.capitalize() for w in name.split())
+    allcaps = name.isupper() or name.islower()
+    name = " ".join(w if w.strip(".,") in KEEP_UPPER or not (allcaps or (w.isupper() and len(w) > 4)) else w.capitalize()
+                    for w in name.split())
     name = re.sub(r",?\s+(Inc\.?|Incorporated|Corp\.?|Corporation|Ltd\.?|Limited|PLC|plc|N\.?V\.?|S\.?A\.?|AG|SE|A/S|AB|ASA|Co\.?,? Ltd\.?|Holdings,? Inc\.?)$", "", name)
     return name.strip(" ,")
 
@@ -86,8 +87,11 @@ def build():
 
     # ---- company table ----
     cos = {}
+    exclude = set(json.loads((root / "config/universe_exclude.json").read_text())["tickers"])
     for c in comp_raw["companies"]:
         cid = c["ticker"].upper()
+        if cid in exclude:
+            continue
         f = fin.get(c["cik"], {})
         st = (c.get("state") or "").upper()
         country = "United States" if st in US_STATES else ((c.get("country") or "").title() or None)
@@ -114,6 +118,7 @@ def build():
         k = core(n)
         if len(k) >= 4:
             cores[k].add(cid)
+    by_len = sorted(((n, cid) for n, cid in exact.items() if len(n) >= 8 and core(n)), key=lambda x: -len(x[0]))
     cache = {}
     def match(sponsor):
         if sponsor in cache:
@@ -125,6 +130,10 @@ def build():
                 hit = cid; break
         if not hit:
             hit = exact.get(n)
+        if not hit:  # "Harmony Biosciences Management" -> Harmony Biosciences
+            for cn, cid in by_len:
+                if n.startswith(cn + " "):
+                    hit = cid; break
         if not hit:
             k = core(n)
             if len(k) >= 4 and len(cores.get(k, ())) == 1:
@@ -271,6 +280,8 @@ def build():
             r["phase"] = PH_LABEL.get(r.pop("ph_code"), "")
         auto[m["id"]] = {"n": len(rows), "sponsors": len({r["co"] for r in rows}), "rows": rows[:60]}
     (OUT / "competition_auto.json").write_text(json.dumps(auto, separators=(",", ":"), ensure_ascii=False))
+    unmatched = collections.Counter(t.get("sp") for t in trials if not t["_lead"])
+    (OUT / "unmatched_sponsors.json").write_text(json.dumps(unmatched.most_common(300), ensure_ascii=False, indent=0))
     print(f"universe: {len(index)} companies, {len(trials)} trials, matched {sum(1 for t in trials if t['_lead'])} to a company")
     return meta
 

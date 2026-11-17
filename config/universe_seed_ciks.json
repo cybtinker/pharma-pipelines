@@ -1,0 +1,2 @@
+{"note": "SEC filers that must always be checked even if the XBRL frames miss them (mostly foreign 20-F filers). Membership still depends on SIC code and a US listing.",
+ "ciks": ["0000901832", "0001395064", "0001434265", "0001704292"]}

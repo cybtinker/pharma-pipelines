@@ -68,6 +68,18 @@ def candidate_ciks():
         for r in (d or {}).get("data", []):
             ciks.setdefault(str(r["cik"]).zfill(10), r.get("entityName"))
         q -= 1
+    # filers that skip the cover-page share count in frames: catch them through their financial statements
+    for tax, concept, curs in [("us-gaap", "Assets", ["USD"]),
+                               ("ifrs-full", "Assets", ["USD", "EUR", "DKK", "GBP", "CHF", "JPY", "CNY", "AUD", "CAD", "SEK"])]:
+        for cur in curs:
+            for period in (f"CY{today.year - 1}Q4I", f"CY{today.year}Q2I"):
+                d = get(f"https://data.sec.gov/api/xbrl/frames/{tax}/{concept}/{cur}/{period}.json", sec=True)
+                for r in (d or {}).get("data", []):
+                    ciks.setdefault(str(r["cik"]).zfill(10), r.get("entityName"))
+    seed = pathlib.Path(__file__).resolve().parents[1] / "config" / "universe_seed_ciks.json"
+    if seed.exists():
+        for c in json.loads(seed.read_text())["ciks"]:
+            ciks.setdefault(str(c).zfill(10), None)
     return ciks
 
 def profile(cik):
