@@ -1171,19 +1171,20 @@
  },
  {
   "ticker": "NVO",
-  "drug": "Denecimig (Mim8)",
+  "drug": "Frehemgo (denecimig, Mim8)",
   "illness": "Hemophilia A",
   "drug_type": "Bispecific antibody (weekly or monthly)",
-  "stage": "EU positive opinion; US review",
+  "stage": "Approved in EU 2026-11-13; US review",
   "next_event": "US decision and launch",
   "next_event_date": "2027-H1",
-  "latest_result": "CHMP positive opinion Sept 17, 2026",
+  "latest_result": "European Commission approved Frehemgo on Nov 13, 2026 for adults and children with hemophilia A, with or without inhibitors, dosed weekly, every two weeks or monthly from one pen. First EU launches planned in 2027; still under FDA review.",
   "competitors": [
    "Hemlibra (Roche)"
   ],
   "sources": [
    "https://chemxplore.com/news/novo-nordisk-q3-2026-financial-report",
-   "https://pharmaphorum.com/news/oral-wegovy-bolsters-novo-q3"
+   "https://pharmaphorum.com/news/oral-wegovy-bolsters-novo-q3",
+   "https://www.novonordisk.com/news-and-media/news-and-ir-materials/news-details.html?id=920487"
   ],
   "needs_verification": null,
   "milestones": [
@@ -1193,13 +1194,18 @@
     "label": "EU CHMP positive opinion"
    },
    {
+    "date": "2026-11-13",
+    "kind": "approval",
+    "label": "EU approval (Frehemgo)"
+   },
+   {
     "date": "2027-H1",
     "kind": "approval",
     "label": "Potential US launch"
    }
   ],
   "likelihood": "likely",
-  "likelihood_why": "EU regulators gave a positive opinion on Sept 17, 2026; US review is under way."
+  "likelihood_why": "Approved in the EU on Nov 13, 2026; the US application is under FDA review."
  },
  {
   "ticker": "NVO",
@@ -1288,24 +1294,26 @@
   "drug": "Rybrevant subcutaneous (head and neck)",
   "illness": "Head and neck cancer",
   "drug_type": "Bispecific antibody (EGFR x MET)",
-  "stage": "Under FDA review",
-  "next_event": "FDA approval expected",
-  "next_event_date": "2026-Q4",
-  "latest_result": "Rybrevant sales +64% in Q3",
+  "stage": "Approved 2026-11 (US, accelerated approval)",
+  "next_event": null,
+  "next_event_date": null,
+  "latest_result": "FDA granted accelerated approval in early November 2026 to Rybrevant Faspro (under-the-skin amivantamab) for previously treated recurrent or metastatic head and neck cancer; full approval depends on a confirmatory trial.",
   "competitors": [],
   "sources": [
-   "https://www.jnj.com/media-center/press-releases/johnson-johnson-q3-2026-earnings-ceo-and-cfo-prepared-remarks/"
+   "https://www.jnj.com/media-center/press-releases/johnson-johnson-q3-2026-earnings-ceo-and-cfo-prepared-remarks/",
+   "https://www.cancernetwork.com/view/fda-approves-sc-amivantamab-for-recurrent-metastatic-hnscc",
+   "https://pharmaphorum.com/news/jjs-rybrevant-faspro-moves-beyond-lung-cancer-fda-nod"
   ],
-  "needs_verification": null,
+  "needs_verification": "Exact approval date: trade press dated Nov 5-6, 2026; confirm on the FDA or J&J release.",
   "milestones": [
    {
-    "date": "2026-Q4",
+    "date": "2026-11-05",
     "kind": "approval",
-    "label": "FDA decision expected"
+    "label": "FDA accelerated approval"
    }
   ],
   "likelihood": "likely",
-  "likelihood_why": "Under FDA review and J&J expects approval by year-end."
+  "likelihood_why": "FDA granted accelerated approval in November 2026; a confirmatory trial is still needed for full approval."
  },
  {
   "ticker": "JNJ",
@@ -1898,31 +1906,37 @@
  },
  {
   "ticker": "REGN",
-  "drug": "Cemdisiran",
+  "drug": "Livsayis (cemdisiran)",
   "illness": "Generalized myasthenia gravis",
   "drug_type": "siRNA (C5)",
-  "stage": "Under FDA review",
-  "next_event": "FDA decision",
-  "next_event_date": "2026-11",
-  "latest_result": "FDA decision expected November 2026",
+  "stage": "Approved 2026-11-18 (US)",
+  "next_event": "EU decision",
+  "next_event_date": "2027-H2",
+  "latest_result": "FDA approved Nov 18, 2026 for adults with anti-AChR antibody-positive generalized myasthenia gravis; first siRNA for the disease, dosed under the skin four times a year. In the NIMBLE Phase 3, daily-living score improved 4.5 points vs 2.2 on placebo. Label carries a boxed warning for meningococcal infection.",
   "competitors": [
    "Vyvgart (argenx)",
    "Imaavy (J&J)"
   ],
   "sources": [
    "https://www.sec.gov/Archives/edgar/data/0000872589/000087258926000032/exhibit991q32026.htm",
-   "https://www.zacks.com/stock/news/3019989/regn-q3-earnings-beat-on-dupixent-profits-&-eylea-hd-growth,-stock-up"
+   "https://www.zacks.com/stock/news/3019989/regn-q3-earnings-beat-on-dupixent-profits-&-eylea-hd-growth,-stock-up",
+   "https://investor.regeneron.com/news-releases/news-release-details/livsayistm-cemdisiran-approved-fda-first-and-only-sirna-therapy"
   ],
   "needs_verification": null,
   "milestones": [
    {
-    "date": "2026-11",
+    "date": "2026-11-18",
     "kind": "approval",
-    "label": "FDA decision"
+    "label": "FDA approval"
+   },
+   {
+    "date": "2027-H2",
+    "kind": "approval",
+    "label": "EU decision expected"
    }
   ],
   "likelihood": "likely",
-  "likelihood_why": "Filed with the FDA, decision expected this month."
+  "likelihood_why": "Approved by the FDA on Nov 18, 2026 after the NIMBLE Phase 3 met its main goal."
  },
  {
   "ticker": "REGN",
@@ -2164,9 +2178,12 @@
   "next_event": "Phase 1 MF data",
   "next_event_date": "2026-Q4",
   "latest_result": "Phase 3 in ET started mid-2026",
-  "competitors": [],
+  "competitors": [
+   "Calytrix mutant-CALR antibody (Lilly, preclinical; deal announced Nov 16, 2026)"
+  ],
   "sources": [
-   "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000063/incy-q32026xexx991.htm"
+   "https://www.sec.gov/Archives/edgar/data/0000879169/000087916926000063/incy-q32026xexx991.htm",
+   "https://www.biospace.com/press-releases/calytrix-bio-enters-an-agreement-to-be-acquired-by-lilly-to-advance-outcomes-for-patients-living-with-essential-thrombocythemia-and-myelofibrosis"
   ],
   "needs_verification": null,
   "milestones": [
