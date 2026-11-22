@@ -111,15 +111,16 @@
   },
   {
    "ticker": "NVO",
-   "drug": "Denecimig (Mim8)",
+   "drug": "Frehemgo (denecimig, Mim8)",
    "launch_year": 2027,
    "est_sales": 1.0,
    "basis": "Our rough estimate",
    "likelihood": "likely",
-   "why": "EU regulators gave a positive opinion on Sept 17, 2026; US review is under way.",
+   "why": "Approved in the EU on Nov 13, 2026; the US application is under FDA review.",
    "sources": [
     "https://chemxplore.com/news/novo-nordisk-q3-2026-financial-report",
-    "https://pharmaphorum.com/news/oral-wegovy-bolsters-novo-q3"
+    "https://pharmaphorum.com/news/oral-wegovy-bolsters-novo-q3",
+    "https://www.novonordisk.com/news-and-media/news-and-ir-materials/news-details.html?id=920487"
    ]
   },
   {
@@ -309,9 +310,10 @@
    "est_sales": 0.5,
    "basis": "Our rough estimate",
    "likelihood": "likely",
-   "why": "Under FDA review and J&J expects approval by year-end.",
+   "why": "FDA granted accelerated approval in November 2026; a confirmatory trial is still needed for full approval.",
    "sources": [
-    "https://www.jnj.com/media-center/press-releases/johnson-johnson-q3-2026-earnings-ceo-and-cfo-prepared-remarks/"
+    "https://www.jnj.com/media-center/press-releases/johnson-johnson-q3-2026-earnings-ceo-and-cfo-prepared-remarks/",
+    "https://www.cancernetwork.com/view/fda-approves-sc-amivantamab-for-recurrent-metastatic-hnscc"
    ]
   },
   {
@@ -498,15 +500,16 @@
   },
   {
    "ticker": "REGN",
-   "drug": "Cemdisiran",
+   "drug": "Livsayis (cemdisiran)",
    "launch_year": 2027,
    "est_sales": 0.5,
    "basis": "Our rough estimate",
    "likelihood": "likely",
-   "why": "Filed with the FDA, decision expected this month.",
+   "why": "Approved by the FDA on Nov 18, 2026 after the NIMBLE Phase 3 met its main goal.",
    "sources": [
     "https://www.sec.gov/Archives/edgar/data/0000872589/000087258926000032/exhibit991q32026.htm",
-    "https://www.zacks.com/stock/news/3019989/regn-q3-earnings-beat-on-dupixent-profits-&-eylea-hd-growth,-stock-up"
+    "https://www.zacks.com/stock/news/3019989/regn-q3-earnings-beat-on-dupixent-profits-&-eylea-hd-growth,-stock-up",
+    "https://investor.regeneron.com/news-releases/news-release-details/livsayistm-cemdisiran-approved-fda-first-and-only-sirna-therapy"
    ]
   },
   {
